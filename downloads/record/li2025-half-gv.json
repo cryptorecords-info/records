@@ -1,0 +1,31 @@
+{
+  "id": "li2025-half-gv",
+  "categoryId": "isd-half-distance",
+  "paperId": "li2025-ternary",
+  "date": "2025-10-12",
+  "time": {
+    "coefficient": 0.0453,
+    "expression": "2^{0.0453 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "heuristic"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Published heuristic claim; not independently proof-audited.",
+  "extra": {},
+  "evidence": {
+    "url": "https://doi.org/10.3390/info16100887",
+    "locator": "Abstract; Table 1; Section 5",
+    "sourceVersion": "Published 2025-10-12"
+  }
+}

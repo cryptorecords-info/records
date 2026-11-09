@@ -1,0 +1,31 @@
+{
+  "id": "bgj-overlattice14",
+  "categoryId": "svp-heuristic",
+  "paperId": "paper-9617f5d3fa09",
+  "year": 2014,
+  "date": "2013-10-24",
+  "time": {
+    "coefficient": 0.3774,
+    "expression": "2^{0.3774 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.2925,
+    "expression": "2^{0.2925 n + o(n)}"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "ANTS 2014, published under “A sieve algorithm based on overlattices”; first ePrint 24 October 2013. A tower of overlattices and translated cosets replaces a single-lattice sieve. The stated decimal coefficients are rounded: time 0.3774 and memory 0.2925. Analysis depends on the Gaussian heuristic, rather than an arbitrary-lattice correctness theorem.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Under the stated sieve heuristic",
+    "model": "Classical randomized; polynomial factors suppressed",
+    "heuristic": "Gaussian heuristic for intermediate overlattices and cosets",
+    "reference": "BGJ14"
+  }
+}

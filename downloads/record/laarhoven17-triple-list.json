@@ -1,0 +1,38 @@
+{
+  "id": "laarhoven17-triple-list",
+  "categoryId": "svp-triple-heuristic",
+  "paperId": "laarhoven-tuple-2017",
+  "date": "2017-05-08",
+  "year": 2017,
+  "time": {
+    "coefficient": 0.3588,
+    "expression": "2^{0.3588 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.1887,
+    "expression": "2^{0.1887 n + o(n)}"
+  },
+  "tags": [
+    "heuristic",
+    "triple sieving",
+    "time–space trade-off"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Original solo preprint; later joint work gives additional tradeoffs.",
+  "extra": {
+    "model": "Classical; spherical locality-sensitive filters",
+    "preprocessing": "Included",
+    "reference": "Section 5 and Table 1, pp. 10–11"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1705.02828v1",
+    "locator": "Section 5 and Table 1, pp. 10–11",
+    "sourceVersion": "arXiv:1705.02828v1, 8 May 2017"
+  }
+}

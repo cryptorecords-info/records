@@ -1,0 +1,248 @@
+[
+  {
+    "id": "kt17-shamir-schroeppel",
+    "categoryId": "isd-quantum-full-distance",
+    "paperId": "paper-c95c0e507206",
+    "year": 2017,
+    "date": "2017-03-01",
+    "time": {
+      "coefficient": 0.0597,
+      "expression": "2^{0.05970 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "quantum",
+      "ISD",
+      "binary",
+      "random codes",
+      "full GV distance",
+      "maximum over rates",
+      "quantum walks"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Introductory comparison table, full GV distance and maximum over rates. First arXiv date shown; two variants share this date. The more precise 2018 reanalysis (https://arxiv.org/pdf/1808.00714, Table 1) is corroborating analysis of the same time exponent, not a separate historical improvement; source-reported decimals are retained here.",
+    "extra": {
+      "field": "𝔽₂",
+      "rate": "Maximize over 0≤R≤1",
+      "weight": "Full GV distance: n H₂⁻¹(1−R)",
+      "model": "Quantum Grover search and quantum walk; source setup/update/check costs",
+      "access": "Source quantum list-memory/oracle model",
+      "reference": "KT17"
+    }
+  },
+  {
+    "id": "kt17-mmt",
+    "categoryId": "isd-quantum-full-distance",
+    "paperId": "paper-c95c0e507206",
+    "year": 2017,
+    "date": "2017-03-01",
+    "time": {
+      "coefficient": 0.05869,
+      "expression": "2^{0.05869 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "quantum",
+      "ISD",
+      "binary",
+      "random codes",
+      "full GV distance",
+      "maximum over rates",
+      "quantum walks"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Introductory comparison table, full GV distance and maximum over rates. First arXiv date shown; two variants share this date. The more precise 2018 reanalysis (https://arxiv.org/pdf/1808.00714, Table 1) is corroborating analysis of the same time exponent, not a separate historical improvement; source-reported decimals are retained here.",
+    "extra": {
+      "field": "𝔽₂",
+      "rate": "Maximize over 0≤R≤1",
+      "weight": "Full GV distance: n H₂⁻¹(1−R)",
+      "model": "Quantum Grover search and quantum walk; source setup/update/check costs",
+      "access": "Source quantum list-memory/oracle model",
+      "reference": "KT17"
+    }
+  },
+  {
+    "id": "bernstein10-grover",
+    "categoryId": "isd-quantum-full-distance",
+    "paperId": "paper-1121d4329e21",
+    "year": 2010,
+    "date": "2009-11-23",
+    "time": {
+      "coefficient": 0.06035,
+      "expression": "2^{0.06035 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "quantum",
+      "ISD",
+      "binary",
+      "random codes",
+      "full GV distance",
+      "maximum over rates",
+      "quantum walks"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Prange with Grover search. The five-digit full-GV specialization is tabulated in Kachigar–Tillich 2017. Date is the author-listed original manuscript date.",
+    "extra": {
+      "field": "𝔽₂",
+      "rate": "Maximize over 0≤R≤1",
+      "weight": "Full GV distance: n H₂⁻¹(1−R)",
+      "model": "Quantum Grover search of information sets",
+      "access": "Polynomial-size decoding circuit; no exponential lookup table",
+      "reference": "Bernstein10",
+      "coefficient_source": "https://arxiv.org/pdf/1703.00263"
+    }
+  },
+  {
+    "id": "kirshanova2018-full-nn",
+    "categoryId": "isd-quantum-full-distance",
+    "paperId": "kirshanova2018",
+    "date": "2018-08-02",
+    "time": {
+      "coefficient": 0.059922,
+      "expression": "2^{0.059922 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.00897,
+      "expression": "2^{0.00897 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Corrected full-version analysis; quantum list-memory model.",
+    "extra": {
+      "source_variant": "Theorem 3"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1808.00714",
+      "locator": "Theorem 3",
+      "sourceVersion": "arXiv:1808.00714v1"
+    }
+  },
+  {
+    "id": "kirshanova2018-full-ss-nn",
+    "categoryId": "isd-quantum-full-distance",
+    "paperId": "kirshanova2018",
+    "date": "2018-08-02",
+    "time": {
+      "coefficient": 0.05945,
+      "expression": "2^{0.05945 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.00808,
+      "expression": "2^{0.00808 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Corrected full-version analysis; quantum list-memory model.",
+    "extra": {
+      "source_variant": "Theorem 3, SS variant"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1808.00714",
+      "locator": "Theorem 3, SS variant",
+      "sourceVersion": "arXiv:1808.00714v1"
+    }
+  },
+  {
+    "id": "kirshanova2018-full-mmt",
+    "categoryId": "isd-quantum-full-distance",
+    "paperId": "kirshanova2018",
+    "date": "2018-08-02",
+    "time": {
+      "coefficient": 0.059037,
+      "expression": "2^{0.059037 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.01502,
+      "expression": "2^{0.01502 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Corrected full-version analysis; quantum list-memory model.",
+    "extra": {
+      "source_variant": "Table 1, MMT"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1808.00714",
+      "locator": "Table 1, MMT",
+      "sourceVersion": "arXiv:1808.00714v1"
+    }
+  },
+  {
+    "id": "li2025-quantum-full-gv",
+    "categoryId": "isd-quantum-full-distance",
+    "paperId": "li2025-ternary",
+    "date": "2025-10-12",
+    "time": {
+      "coefficient": 0.058326,
+      "expression": "2^{0.058326 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "heuristic",
+      "exponential qubits"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Published heuristic claim using exponential quantum workspace.",
+    "extra": {},
+    "evidence": {
+      "url": "https://doi.org/10.3390/info16100887",
+      "locator": "Abstract; Table 1; Section 5",
+      "sourceVersion": "Published 2025-10-12"
+    }
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "peikert10-dgs-parallel-online",
+    "categoryId": "dgs-operator-width-online",
+    "paperId": "peikert-2010-gaussian",
+    "year": 2010,
+    "date": "2010-12-31",
+    "datePrecision": "year",
+    "time": {
+      "coefficient": null,
+      "expression": "O(n^2) online real operations; O(n^2/P) per processor"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Offline matrices and fresh perturbation vector"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "trapdoor",
+      "parallel",
+      "offline online",
+      "shifted DGS"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The scalar width is controlled by the largest singular value, not the longest Gram–Schmidt vector. Publication year is known; the detailed theorem was checked in the 2011 full author version.",
+    "extra": {
+      "width": "Covariance Sigma > r^2 B B^T, r=omega(sqrt(log n)); spherical sufficient condition s > r s_1(B)",
+      "preprocessing": "Matrix factorization/inversion and one fresh continuous-Gaussian perturbation before each query",
+      "output": "One sample on L+c, arbitrary real shift c",
+      "error": "Negligible statistical distance",
+      "model": "Theorem 4.2: P <= n^2 processors; O(n^2/P) sufficiently precise real operations per processor"
+    },
+    "evidence": {
+      "url": "https://web.eecs.umich.edu/~cpeikert/pubs/pargauss.pdf",
+      "locator": "Algorithm 1 and Theorem 4.2, printed pp. 11–12",
+      "sourceVersion": "CRYPTO 2010 paper; checked full author version dated 13 April 2011"
+    }
+  }
+]

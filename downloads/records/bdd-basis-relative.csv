@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"klein00-bdd-basis-radius","klein-2000","Finding the closest lattice vector when it's unusually close","Philip Klein","SODA 2000","2000","published","2000-12-31","year","","n^{k^2+O(1)}","","Not stated in the cited introduction","https://doi.org/10.1145/338219.338661","source-checked"

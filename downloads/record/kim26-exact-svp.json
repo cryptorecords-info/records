@@ -1,0 +1,42 @@
+{
+  "id": "kim26-exact-svp",
+  "categoryId": "svp-provable",
+  "paperId": "kim-2026-one-dgs",
+  "date": "2026-08-04",
+  "datePrecision": "day",
+  "year": 2026,
+  "time": {
+    "coefficient": 0.7315,
+    "expression": "2^{c₀ n + o(n)}, c₀ ≈ 0.7315"
+  },
+  "space": {
+    "coefficient": 0.5,
+    "expression": "2^{n/2 + o(n)}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "arbitrary lattices",
+    "discrete Gaussian sampling",
+    "random superlattices"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The exact-SVP consequence is separate from the paper’s one-sample DGS theorem. Theorem 6.6 gives success probability at least 2/3, time coefficient c₀ = 1/2 + β_Lev²/(4e ln 2) ≈ 0.7315 and space coefficient 1/2 on every execution. This was not an overall time record: Hhan’s 0.6039 result had appeared the preceding day. Source checked; proof not independently audited.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "At least 2/3",
+    "model": "Randomized Turing machine; polynomial input-length factors suppressed",
+    "reference": "Theorem 6.6; §6 constants"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/2608.03220v1",
+    "locator": "Abstract; §6 constant definitions, printed p. 17; Theorem 6.6, printed p. 23",
+    "sourceVersion": "arXiv:2608.03220v1, 4 August 2026; original PDF checked"
+  }
+}

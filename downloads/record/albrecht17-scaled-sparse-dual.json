@@ -1,0 +1,45 @@
+{
+  "id": "albrecht17-scaled-sparse-dual",
+  "categoryId": "lwe-sparse-secret-dual-models",
+  "paperId": "albrecht2017-dual-small-secret",
+  "year": 2017,
+  "date": "2017-05-18",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "Scaled-dual log₂ cost ≈ [2L/(2L+1)] · (unscaled-dual log₂ cost), in the stated sparse-FHE regime"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Depends on the chosen dual-lattice solver."
+  },
+  "tags": [
+    "dual",
+    "sparse secret",
+    "relative improvement",
+    "FHE regime"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "A relative improvement in the source’s fixed-width sparse-FHE regime q=n^L·2^{O(L)}. It is not a universal exponent for LWE and need not beat exhaustive sparse-secret search when h is constant.",
+  "extra": {
+    "parameters": "q(n) with log₂q=L log₂n+O(L), fixed L>0, constant Gaussian width αq=8 and fixed sparse weight h (source example h=64); source scaled dimension m′=2n.",
+    "noise": "Discrete Gaussian width αq=8, i.e. standard deviation 8/√(2π), independent of n.",
+    "secret": "Uniform sparse ternary secret of fixed Hamming weight h, as in the source’s HElib asymptotic model.",
+    "samples": "Enough samples for the selected dual-lattice dimension; actual m must be enforced when instantiating.",
+    "objective": "Decision-LWE under a scaled dual-lattice attack.",
+    "model": "Relative exponent scaling 2L/(2L+1) against the corresponding unscaled dual model.",
+    "assumptions": "Source lattice-reduction and small-secret scaling model; fixed h and L are essential.",
+    "success": "Use the same target distinguishing advantage in both compared dual cost models."
+  },
+  "evidence": {
+    "url": "https://github.com/malb/publications/blob/2fc91ddbe45e21d7c337bfc658e4fd8926dd887c/on-dual-attacks-against-small-secret-lwe/small-sparse-secret.tex",
+    "locator": "Abstract and Section Modulus switching / asymptotic behaviour",
+    "sourceVersion": "Author TeX commit 2fc91ddbe45e21d7c337bfc658e4fd8926dd887c, 18 May 2017; associated ePrint last revised 6 May 2017"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "hhan-coset26",
+  "categoryId": "svp-provable",
+  "paperId": "paper-0f3a0f011219",
+  "year": 2026,
+  "date": "2026-09-02",
+  "time": {
+    "coefficient": 0.5,
+    "expression": "2^{n/2 + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.5,
+    "expression": "2^{0.5 n + o(n)}"
+  },
+  "tags": [
+    "arbitrary lattices",
+    "Euclidean"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Preprint claim: exact worst-case SVP in time and space 2^{n/2+o(n)}. Its separate distance-guarantee CVP result is not treated as unrestricted exact CVP here. Source checked; proof not independently audited.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "High probability",
+    "model": "Classical randomized; polynomial factors suppressed",
+    "reference": "Hhan26b"
+  }
+}

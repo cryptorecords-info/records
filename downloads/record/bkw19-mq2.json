@@ -1,0 +1,32 @@
+{
+  "id": "bkw19-mq2",
+  "categoryId": "mq-binary-classical-provable",
+  "paperId": "bkw19-mq",
+  "date": "2019-07-04",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 0.804,
+    "expression": "O*(2^{0.804n})"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not stated in the checked source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Worst-case bound for all Boolean quadratic systems. Date is the verified ICALP publication date.",
+  "extra": {
+    "success": "Randomized; parity-counting self-reduction"
+  },
+  "evidence": {
+    "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ICALP.2019.26",
+    "locator": "Abstract; official publication date 2019-07-04",
+    "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+  }
+}

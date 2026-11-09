@@ -1,0 +1,31 @@
+{
+  "id": "bjmm12",
+  "categoryId": "isd-half-distance",
+  "paperId": "paper-f1a990a4cd6f",
+  "year": 2012,
+  "date": "2012-01-20",
+  "time": {
+    "coefficient": 0.0494,
+    "expression": "2^{0.0494 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "EUROCRYPT 2012. Historical asymptotic half-distance bound, maximized over rates. This coefficient must not be transferred to full-distance decoding or a fixed-rate instance.",
+  "extra": {
+    "field": "𝔽₂",
+    "rate": "Worst rate in the half-distance convention",
+    "weight": "Half the GV distance",
+    "model": "Asymptotic ISD operation count",
+    "reference": "BJMM12"
+  }
+}

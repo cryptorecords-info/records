@@ -1,0 +1,39 @@
+{
+  "id": "lmvp15-quantum-aks-birthday",
+  "categoryId": "svp-quantum-provable",
+  "paperId": "paper-caa5f6c38871",
+  "date": "2015-04-14",
+  "year": 2015,
+  "time": {
+    "coefficient": 1.986,
+    "expression": "2^{1.986 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 1.324,
+    "expression": "2^{1.324 n + o(n)}"
+  },
+  "tags": [
+    "quantum",
+    "provable",
+    "QCRAM"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "AKS-Sieve-Birthday analysis; alternative bound rather than a new best-time milestone.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Randomized, provable analysis",
+    "model": "Sequential quantum search",
+    "qram": "Quantum-addressable classical lists"
+  },
+  "evidence": {
+    "url": "https://pure.tue.nl/ws/files/18141878/LaarhovenFinding2015.pdf",
+    "locator": "Table 1; Section 8.3",
+    "sourceVersion": "DCC version published online 14 April 2015"
+  }
+}

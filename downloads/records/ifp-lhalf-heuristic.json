@@ -1,0 +1,34 @@
+[
+  {
+    "id": "lenstra87-balanced",
+    "categoryId": "ifp-lhalf-heuristic",
+    "paperId": "lenstra87",
+    "date": "1987-11-30",
+    "datePrecision": "month",
+    "time": {
+      "coefficient": 1,
+      "expression": "L_N[1/2, 1]"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not extracted from the source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "For balanced semiprimes p ≍ sqrt(N), the conjectured ECM bound becomes the displayed L_N[1/2,1] bound. This is a direct parameter specialization of the paper’s small-factor expression.",
+    "extra": {
+      "derivation": "Substitute log p = (1/2+o(1)) log N into sqrt(2 log p log log p)."
+    },
+    "evidence": {
+      "url": "https://annals.math.princeton.edu/1987/126-3/p09",
+      "locator": "Abstract; balanced-factor specialization",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  }
+]

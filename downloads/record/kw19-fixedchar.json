@@ -1,0 +1,33 @@
+{
+  "id": "kw19-fixedchar",
+  "categoryId": "dlog-fixed-proven",
+  "paperId": "kw19",
+  "date": "2019-06-25",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "(p n)^{2 log₂ n + O(1)} expected time, Q=p^n"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not extracted from the source"
+  },
+  "tags": [
+    "unconditional",
+    "quasi-polynomial"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Proven expected-time bound for all finite fields of fixed characteristic. The factor 2 is retained in the expression; it is not converted into a generic 2^{cn} coefficient.",
+  "extra": {},
+  "evidence": {
+    "url": "https://arxiv.org/abs/1906.10668",
+    "locator": "Abstract",
+    "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+  }
+}

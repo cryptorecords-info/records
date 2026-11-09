@@ -1,0 +1,32 @@
+{
+  "id": "shor95-factoring",
+  "categoryId": "ifp-quantum",
+  "paperId": "shor95",
+  "date": "1995-08-30",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "poly(log N) quantum and classical work"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not extracted from the source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Unconditional polynomial-time quantum factorization. The cited full-paper preprint dates from 1995; the preliminary FOCS paper Algorithms for quantum computation: Discrete logarithms and factoring appeared in November 1994. No exponential coefficient is assigned.",
+  "extra": {
+    "historicalPredecessor": "FOCS 1994, pp. 124–134; different paper title."
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/quant-ph/9508027",
+    "locator": "Abstract; introduction",
+    "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+  }
+}

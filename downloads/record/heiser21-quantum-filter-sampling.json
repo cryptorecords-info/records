@@ -1,0 +1,38 @@
+{
+  "id": "heiser21-quantum-filter-sampling",
+  "categoryId": "svp-quantum-heuristic",
+  "paperId": "heiser-2021",
+  "date": "2021-09-27",
+  "year": 2021,
+  "time": {
+    "coefficient": 0.2571,
+    "expression": "2^{0.2571 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "quantum",
+    "heuristic",
+    "locality-sensitive filtering"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Independent filter-sampling approach; .2570 via quantum walks was already available.",
+  "extra": {
+    "qram": "Quantum access to classical sieve buckets",
+    "qubits": "No single workspace coefficient extracted",
+    "model": "Grover search with random-product-code filter sampling"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2021/1295.pdf",
+    "locator": "Theorem 1; Section 3.2.3",
+    "sourceVersion": "ePrint 2021/1295, received 27 September 2021"
+  }
+}

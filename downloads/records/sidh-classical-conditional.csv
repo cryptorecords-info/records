@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"cd22-sidh","cd22","An efficient key recovery attack on SIDH","Wouter Castryck · Thomas Decru","Eurocrypt 2023","2023","published","2022-07-30","day","","Heuristic polynomial time, apart from parameter-dependent integer factorizations","","Not stated in the checked source","https://eprint.iacr.org/2022/975","source-checked"

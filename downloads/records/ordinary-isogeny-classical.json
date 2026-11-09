@@ -1,0 +1,35 @@
+[
+  {
+    "id": "gs11-ordinary",
+    "categoryId": "ordinary-isogeny-classical",
+    "paperId": "gs11-isogeny",
+    "date": "2011-05-31",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.25,
+      "expression": "O~(q^{1/4})"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not stated in the checked source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The ordinary horizontal-isogeny random-walk method has q^{1/4} scale; this work improves practical constants, not that exponent. The paper reports an approximately 14-fold speedup on a 160-bit prime field.",
+    "extra": {
+      "scale-evidence": "CJS Section 1 describes Galbraith–Stolbunov as fourth-root q",
+      "primary-source": "https://arxiv.org/abs/1105.6331"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1012.4019",
+      "locator": "Abstract; asymptotic scale also stated in CJS Section 1",
+      "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+    }
+  }
+]

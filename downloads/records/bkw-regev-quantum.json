@@ -1,0 +1,116 @@
+[
+  {
+    "id": "bkw-quantum-coded17",
+    "categoryId": "bkw-regev-quantum",
+    "paperId": "paper-46a7c73ed460",
+    "year": 2017,
+    "date": "2017-12-03",
+    "time": {
+      "coefficient": 0.8856,
+      "expression": "2^{0.8856 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "quantum",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "unlimited samples",
+      "coherent reads"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Quantum-search variant; Table I of Mårtensson 2019 reproduces this coefficient. Date uses the ASIACRYPT 2017 opening day.",
+    "extra": {
+      "samples": "2^{Θ(n)} fresh classical equations",
+      "model": "Assumptions of the cited BKW/list analysis",
+      "schedule": "Exact prefix; common factor γ = 1",
+      "access": "Coherent indexed reads; Grover search"
+    }
+  },
+  {
+    "id": "bkw-quantum-common19",
+    "categoryId": "bkw-regev-quantum",
+    "paperId": "paper-c64ff7d0568b",
+    "year": 2019,
+    "date": "2019-01-09",
+    "time": {
+      "coefficient": 0.8795,
+      "expression": "2^{0.8795 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "quantum",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "unlimited samples",
+      "coherent reads"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Quantum-search variant, optimized common factor. This coefficient is also reproduced in Mårtensson 2019 Table I.",
+    "extra": {
+      "samples": "2^{Θ(n)} fresh classical equations",
+      "model": "Assumptions of the cited BKW/list analysis",
+      "schedule": "Optimized constant γ",
+      "access": "Coherent indexed reads; Grover search"
+    }
+  },
+  {
+    "id": "bkw-quantum-progression19",
+    "categoryId": "bkw-regev-quantum",
+    "paperId": "paper-f792611a7feb",
+    "year": 2019,
+    "date": "2019-01-19",
+    "time": {
+      "coefficient": 0.8782,
+      "expression": "2^{0.8782 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "quantum",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "unlimited samples",
+      "coherent reads"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "ISIT 2019. Table I, exponential-sample quantum column; uses quantum searching in the sieve.",
+    "extra": {
+      "samples": "2^{Θ(n)} fresh classical equations",
+      "model": "Assumptions of the cited BKW/list analysis",
+      "schedule": "Arithmetic progression of γᵢ",
+      "access": "Coherent indexed reads; Grover search"
+    }
+  }
+]

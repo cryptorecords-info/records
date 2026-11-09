@@ -1,0 +1,45 @@
+{
+  "id": "albrecht17-dual-amortized",
+  "categoryId": "lwe-dual-lattice-models",
+  "paperId": "albrecht2017-dual-small-secret",
+  "year": 2017,
+  "date": "2017-05-18",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "T_BKZ(m,β) + M·[T_rerandomize(m) + T_BKZ(m,β′)], with β′≤β"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Reduced basis plus M short dual vectors, if stored."
+  },
+  "tags": [
+    "dual",
+    "amortization",
+    "heuristic",
+    "fixed samples"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Reuses an expensive reduced basis to generate many shorter dual relations. The claimed reduction relies on relations being sufficiently short and sufficiently random; fixed-sample correlations remain a heuristic.",
+  "extra": {
+    "parameters": "Fix n,q, Gaussian width αq, lattice dimension m, block sizes β,β′ and required relation count M.",
+    "noise": "Discrete Gaussian width αq.",
+    "secret": "General LWE secret; this amortization does not require a short secret.",
+    "samples": "Works on the available LWE matrix; reuses it, unlike fully independent fresh-sample amplification.",
+    "objective": "Decision-LWE with amplified distinguishing advantage.",
+    "model": "One BKZ-β preprocessing followed by sparse unimodular rerandomization and cheaper BKZ-β′; source instantiation β′=2.",
+    "assumptions": "Cheap rerandomization yields short, adequately random relations; dependence can be ignored in the statistical test.",
+    "success": "Target advantage determines M; source estimates use dual-vector norm inflation by a factor of two."
+  },
+  "evidence": {
+    "url": "https://github.com/malb/publications/blob/2fc91ddbe45e21d7c337bfc658e4fd8926dd887c/on-dual-attacks-against-small-secret-lwe/small-sparse-secret.tex",
+    "locator": "Section Amortising costs, Algorithm 1 and its Heuristic paragraph",
+    "sourceVersion": "Author TeX commit 2fc91ddbe45e21d7c337bfc658e4fd8926dd887c, 18 May 2017; associated ePrint last revised 6 May 2017"
+  }
+}

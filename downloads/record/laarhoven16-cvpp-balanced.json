@@ -1,0 +1,37 @@
+{
+  "id": "laarhoven16-cvpp-balanced",
+  "categoryId": "cvpp-heuristic-query",
+  "paperId": "laarhoven-cvp-2016",
+  "date": "2016-07-16",
+  "year": 2016,
+  "time": {
+    "coefficient": 0.136,
+    "expression": "2^{0.136 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.636,
+    "expression": "2^{0.636 n + o(n)}"
+  },
+  "tags": [
+    "CVPP",
+    "query cost",
+    "heuristic"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Heuristic query-time point; preprocessing is excluded from the query cost.",
+  "extra": {
+    "model": "Classical; Gaussian and spherical-list heuristics",
+    "preprocessing": "2^{0.636 n + o(n)}"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1607.04789",
+    "locator": "Abstract; non-adaptive sieving tradeoff",
+    "sourceVersion": "2016-07-16"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "kmpm19-small-memory",
+  "categoryId": "svp-quantum-low-memory",
+  "paperId": "kirshanova-et-al-2019",
+  "date": "2019-09-10",
+  "year": 2019,
+  "time": {
+    "coefficient": 0.29893,
+    "expression": "2^{0.29893 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.1395,
+    "expression": "2^{0.1395 n + o(n)}"
+  },
+  "tags": [
+    "heuristic",
+    "QRAM",
+    "tuple sieving"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Heuristic low-memory tuple sieve in the QRAM model. Audit: Correctly classified as sequential time, not parallel depth. Added precision .29893 is not a new milestone.",
+  "extra": {
+    "model": "Sequential QRAM time; representative tuple size k=30; classical memory 2^{0.1395n+o(n)} and poly(n) qubits",
+    "qram": "2^{0.1395n+o(n)}",
+    "preprocessing": "Included",
+    "reference": "Table 2, k=28–30; Algorithms 4.1/4.2"
+  },
+  "evidence": {
+    "url": "https://elenakirshanova.github.io/Papers/quantum_sieving.pdf",
+    "locator": "Abstract; Table 2, k=28–30; Section 4 QRAM model",
+    "sourceVersion": "ePrint 2019/1016, 10 September 2019"
+  }
+}

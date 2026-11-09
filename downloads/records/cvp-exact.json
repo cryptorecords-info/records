@@ -1,0 +1,67 @@
+[
+  {
+    "id": "mv-cvp10",
+    "categoryId": "cvp-exact",
+    "paperId": "paper-a68a0bb5d70f",
+    "date": "2011-12-31",
+    "time": {
+      "coefficient": 2,
+      "expression": "2^{2 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1,
+      "expression": "2^{1 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Deterministic exact CVP; conference lineage STOC 2010, journal SIAM J. Comput. 2013. The original 2011 chapter explicitly presents the 2^{2n} time / 2^n space Voronoi result. The separate 22-page author full version is dated 8 December 2010, but its first public date is unverified. A conservative public-by-2011 date is therefore supported without backdating the result to the original 2010 conference abstract.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "preprocessing": "Included",
+      "target": "Arbitrary target",
+      "reference": "MV10/13"
+    },
+    "datePrecision": "year",
+    "evidence": {
+      "url": "https://perso.ens-lyon.fr/guillaume.hanrot/Papers/iwcc.pdf",
+      "locator": "Original 2011 chapter, introduction and Table 1, PDF p. 3; §3.1, PDF pp. 8–10; end of §3.2, PDF p. 13",
+      "sourceVersion": "Original uncorrected IWCC 2011 author PDF"
+    }
+  },
+  {
+    "id": "ads-cvp15",
+    "categoryId": "cvp-exact",
+    "paperId": "paper-eb07a87a7ce7",
+    "year": 2015,
+    "date": "2015-04-08",
+    "time": {
+      "coefficient": 1,
+      "expression": "2^{n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1,
+      "expression": "2^{1 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "FOCS 2015. Randomized exact CVP on arbitrary n-dimensional Euclidean lattices and arbitrary targets; total time and space 2^{n+o(n)}.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "preprocessing": "Included",
+      "target": "Arbitrary target",
+      "reference": "ADS15"
+    }
+  }
+]

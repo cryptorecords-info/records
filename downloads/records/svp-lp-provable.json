@@ -1,0 +1,42 @@
+[
+  {
+    "id": "mukh21-exact-lp",
+    "categoryId": "svp-lp-provable",
+    "paperId": "mukhopadhyay-2019-lp-sieving",
+    "date": "2021-12-19",
+    "datePrecision": "day",
+    "year": 2021,
+    "time": {
+      "coefficient": 2.751,
+      "expression": "2^{2.751 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 2.751,
+      "expression": "2^{2.751 n + o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "arbitrary lattices",
+      "all ℓp norms"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "A single exact-SVP bound valid for every fixed ℓp norm, 1 ≤ p ≤ ∞. Theorem 3.2 and the following optimization use γ = 0.598 and ξ = 0.82. This row is dated to the checked v3; the numerical all-norm coefficient is not assumed to have appeared in the 2019 first version. It is not an improvement over the special Euclidean bound.",
+    "extra": {
+      "norm": "Every fixed ℓp, 1 ≤ p ≤ ∞",
+      "success": "At least 1/2",
+      "model": "Classical; polynomial input-size factors suppressed"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/html/1907.04406v3",
+      "locator": "Theorem 3.2; comparison paragraph following it; Table 1",
+      "sourceVersion": "arXiv:1907.04406v3, 19 December 2021"
+    }
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "id": "aps15-lwe-primal-embedding-model",
+  "categoryId": "lwe-primal-embedding-models",
+  "paperId": "albrecht-player-scott2015-concrete",
+  "year": 2015,
+  "date": "2015-10-02",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "T_BKZ(m+1,δ₀); log₂δ₀=[log₂(ε′τ α√(2e))]²/(4nlog₂q)"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Depends on the SVP oracle and embedding implementation."
+  },
+  "tags": [
+    "primal",
+    "embedding",
+    "uSVP",
+    "historical cost model"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Kannan embedding cost model stated with the empirical uSVP gap-to-reduction parameter τ. It is not a theorem that a root-Hermite factor alone solves every uSVP instance.",
+  "extra": {
+    "parameters": "Fix n,q, Gaussian width αq; ε′>1 controls the error tail; τ≤1 and ε_τ model uSVP success; m≈√(nlog₂q/log₂δ₀).",
+    "noise": "Discrete Gaussian width αq, standard deviation αq/√(2π).",
+    "secret": "General LWE secret.",
+    "samples": "At least optimized m samples; cap the choice by the actual sample budget.",
+    "objective": "Recover the secret by BDD-to-uSVP embedding.",
+    "model": "Source uses embedding factor t=||e||; success model ε_τ for gap τδ₀^m.",
+    "assumptions": "Gaussian heuristic for q-ary lattice minima; empirically calibrated uSVP success law.",
+    "success": "ε_τ·[1−(ε′exp((1−ε′²)/2))^m], under the source model."
+  },
+  "evidence": {
+    "url": "https://www.degruyterbrill.com/document/doi/10.1515/jmc-2015-0016/pdf?licenseType=open-access",
+    "locator": "§5.5, Lemmas 5.17–5.18, pp. 190–191; Lemma 5.17 is attributed to Albrecht–Fitzpatrick–Göpfert Lemma 2",
+    "sourceVersion": "Journal of Mathematical Cryptology 9(3), published 2 October 2015"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "nv08-lowmem",
+  "categoryId": "svp-low-memory",
+  "paperId": "paper-601546f46af3",
+  "year": 2008,
+  "date": "2008-09-11",
+  "time": {
+    "coefficient": 0.41503749927884376,
+    "expression": "(4/3)^{n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.20751874963942188,
+    "expression": "2^{0.20751874963942188 n + o(n)}"
+  },
+  "tags": [
+    "SVP",
+    "classical",
+    "heuristic",
+    "arbitrary lattices",
+    "low memory",
+    "time–space trade-off"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Heuristic AKS variant: limiting time coefficient log₂(4/3) ≈ 0.4150 and space coefficient ½log₂(4/3) ≈ 0.2075. The source states (4/3+ε)^n time for every fixed ε>0. Chronology uses the 11 September 2008 online-publication date reported by the institutional repository, https://authors.library.caltech.edu/records/etxts-sdp80; it does not assert the earliest circulated draft date. This row is the source variant satisfying the baseline-list-space constraint.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Under the stated sieve heuristic",
+    "model": "Classical randomized; polynomial factors suppressed",
+    "heuristic": "Sieve-list uniformity heuristic",
+    "reference": "NV08"
+  }
+}

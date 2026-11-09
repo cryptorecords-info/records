@@ -1,0 +1,31 @@
+{
+  "id": "both-may2017-half-depth4",
+  "categoryId": "isd-half-distance",
+  "paperId": "both-may2017-high-error",
+  "date": "2017-11-27",
+  "time": {
+    "coefficient": 0.0465,
+    "expression": "2^{0.0465 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.0294,
+    "expression": "2^{0.0294 n + o(n)}"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Depth 4; Figure 6.",
+  "extra": {
+    "depth": "4"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2017/1139.pdf",
+    "locator": "Theorem 3; Figure 6",
+    "sourceVersion": "2018-01-31"
+  }
+}

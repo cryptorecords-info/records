@@ -1,0 +1,37 @@
+[
+  {
+    "id": "dhkw24-mq-f4",
+    "categoryId": "mq-f4-classical-provable",
+    "paperId": "dhkw24",
+    "date": "2024-10-26",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.698,
+      "expression": "O*(4^{0.698n})"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not stated in the checked source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Numerical upper bound from Figure 1 for fixed q=4, d=2. Theorem 1.1 defines the general exponent analytically in Section 3.5. This is a randomized worst-case decision bound.",
+    "extra": {
+      "success": "Bounded-error randomized decision",
+      "field": "F_4",
+      "degree": "2",
+      "normalization": "base 4, not base 2"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/html/2410.20162v1",
+      "locator": "Theorem 1.1 and Figure 1",
+      "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+    }
+  }
+]

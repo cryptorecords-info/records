@@ -1,0 +1,38 @@
+{
+  "id": "bkw-progression19-polynomial",
+  "categoryId": "bkw-regev-polynomial",
+  "paperId": "paper-f792611a7feb",
+  "year": 2019,
+  "date": "2019-01-19",
+  "time": {
+    "coefficient": 1.6399,
+    "expression": "2^{1.6399 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "classical",
+    "heuristic",
+    "LWE",
+    "BKW",
+    "Regev regime",
+    "polynomial samples"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Polynomial-sample column of Mårtensson 2019 Table I; amplification noise included. First public archive date shown.",
+  "extra": {
+    "samples": "poly(n) fresh input equations; amplification allowed",
+    "model": "Assumptions of the cited BKW/list analysis",
+    "schedule": "Arithmetic progression of γᵢ",
+    "access": "Classical tables",
+    "coefficient_source": "https://arxiv.org/html/1901.06558v2#S6.T1"
+  }
+}

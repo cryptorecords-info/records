@@ -1,0 +1,135 @@
+[
+  {
+    "id": "ag10-lwe-small-gaussian",
+    "categoryId": "lwe-gaussian-algebraic-history",
+    "paperId": "arora-ge2010-eccc",
+    "year": 2011,
+    "date": "2010-12-13",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "2^{Õ(n^{2ε})}, for αq=n^ε and fixed ε<1/2"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Exponential-size linearization; no numerical space coefficient extracted."
+    },
+    "tags": [
+      "small Gaussian error",
+      "provable",
+      "oracle samples"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Subexponential only in the stated small-error regime. Date is the checked ECCC revision, preceding ICALP 2011.",
+    "extra": {
+      "parameters": "Prime q=q(n) with q ≫ (αq log n)²; αq=n^ε, fixed 0≤ε<1/2.",
+      "noise": "Source Gaussian Ψ_α over GF(q), width parameter αq.",
+      "secret": "Arbitrary fixed u∈GF(q)^n.",
+      "samples": "Oracle access; 2^{Õ(n^{2ε})} samples allowed, not a linear-sample claim.",
+      "objective": "Recover the full secret.",
+      "model": "Classical randomized polynomial-system linearization; polynomial input-size factors implicit.",
+      "assumptions": "Theorem for the specified Gaussian distribution and modulus regime.",
+      "success": "High probability as in Theorems 3.1 and 3.3."
+    },
+    "evidence": {
+      "url": "https://eccc.weizmann.ac.il/report/2010/066/revision/1/download",
+      "locator": "§3, Theorem 3.1, p. 8; construction and Theorem 3.3",
+      "sourceVersion": "ECCC TR10-066 revision 1, 13 December 2010"
+    }
+  },
+  {
+    "id": "acfp15-gaussian-linearization",
+    "categoryId": "lwe-gaussian-algebraic-history",
+    "paperId": "albrecht-cid-faugere-perret2014-algebraic",
+    "year": 2014,
+    "date": "2015-02-26",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "O(2^{ω D log₂(n/D)} · σq log q) if D=o(n); O(2^{ω n log₂(D/n)} · σq log q) if n=o(σ² log n); D=8σ² log₂ n+1"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Replace ω by 2 in the two time exponents."
+    },
+    "tags": [
+      "algebraic",
+      "linearization",
+      "Gaussian error"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Refined historical analysis of linearization, distinct from the conditional Gröbner-basis improvement. Bounds are recorded as source asymptotic expressions.",
+    "extra": {
+      "parameters": "Prime q polynomial in n; σ=αq/√(2π); D=8σ²log₂n+1; 2≤ω<3.",
+      "noise": "Discrete Gaussian error with standard-deviation convention σ.",
+      "secret": "Arbitrary secret in Z_q^n.",
+      "samples": "As many samples as the linearization construction requires; exponential/subexponential sample counts are permitted.",
+      "objective": "Recover the secret.",
+      "model": "Classical dense linear algebra over Z_q; field-operation count.",
+      "assumptions": "Gaussian-tail truncation and algebraic linearization as analyzed in Theorem 4.",
+      "success": "As in the paper’s truncation/linearization construction; not a limited-sample guarantee."
+    },
+    "evidence": {
+      "url": "https://iacr.steepath.eu/2014/1018-AlgebraicAlgorithmsforLWE.pdf",
+      "locator": "§4, Theorem 4, pp. 8–9; D_AG definition; multiplicative σq log q factor",
+      "sourceVersion": "ePrint 2014/1018 revised 26 February 2015"
+    }
+  },
+  {
+    "id": "acfp15-gaussian-groebner",
+    "categoryId": "lwe-gaussian-algebraic-history",
+    "paperId": "albrecht-cid-faugere-perret2014-algebraic",
+    "year": 2014,
+    "date": "2015-02-26",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "O(2^{n[ω(1+C_A)H₂(C_A/(1+C_A)) + πlog₂(e)/(4A²)]})"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "O(2^{n[2(1+C_A)H₂(C_A/(1+C_A)) + πlog₂(e)/(4A²)]})"
+    },
+    "tags": [
+      "conditional",
+      "semi-regularity",
+      "Gaussian error",
+      "exponential samples"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Conditional on the generated equations being semi-regular. A=1 gives the paper’s rounded time exponent (2.35ω+1.13)n and rounded memory exponent 5.85n. These are historical algebraic bounds, not best overall LWE exponents.",
+    "extra": {
+      "parameters": "Prime q(n) sufficiently large for degree n/A; error σ=√n/√(2π); A≥1 fixed; C_A is the degree-of-regularity constant from Lemma 6 / Proposition 3; C_1≈1.41.",
+      "noise": "Discrete Gaussian with standard deviation σ=√n/√(2π), hence width αq=√n.",
+      "secret": "Arbitrary secret in Z_q^n.",
+      "samples": "m≈exp(πn/(4A²)); exponential oracle samples required.",
+      "objective": "Recover the secret.",
+      "model": "Field operations; ω is the chosen dense linear-algebra exponent; H₂ is binary entropy.",
+      "assumptions": "Assumption 1: semi-regularity of the generated high-degree LWE equations.",
+      "success": "At least 1−2/(π√n), conditional on the stated algebraic assumption."
+    },
+    "evidence": {
+      "url": "https://iacr.steepath.eu/2014/1018-AlgebraicAlgorithmsforLWE.pdf",
+      "locator": "§5, Lemma 6 and Theorem 5, pp. 10–11; Eq. (6)",
+      "sourceVersion": "ePrint 2014/1018 revised 26 February 2015"
+    }
+  }
+]

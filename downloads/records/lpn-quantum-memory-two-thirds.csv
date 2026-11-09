@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"lpn-qbkw2018-c4","esser2018-dissection-bkw","Dissection-BKW","Andre Esser · Felix Heuer · Robert Kübler · Alexander May · Christian Sohler","Crypto 2018","2018","published","2018-12-31","year","1.3333333333333333","2^{((4/(2·3)) log₂(4)+ε) n/log₂ n}","0.6666666666666666","2^{(log₂(4)/3+ε) n/log₂ n}","https://eprint.iacr.org/2018/569","source-checked"

@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"shor95-rsa","shor95","Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer","Peter W. Shor","SIAM Journal on Computing 1997","1997","published","1995-08-30","day","","poly(log N) quantum and classical work","","Not extracted from the source","https://arxiv.org/abs/quant-ph/9508027","source-checked"

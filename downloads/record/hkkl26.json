@@ -1,0 +1,33 @@
+{
+  "id": "hkkl26",
+  "categoryId": "svp-provable",
+  "paperId": "paper-c70730f20075",
+  "year": 2026,
+  "date": "2026-11-04",
+  "time": {
+    "coefficient": 0.409,
+    "expression": "2^{0.409 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.259,
+    "expression": "2^{0.259 n + o(n)}"
+  },
+  "tags": [
+    "arbitrary lattices",
+    "Euclidean"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Claim in the 4 November 2026 preprint abstract: optimized worst-case SVP time 0.409 and space 0.259. Dense superlattices, random shifts, and midpoint-shell tests. Source checked; proof not independently audited.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "High probability",
+    "model": "Classical randomized; polynomial factors suppressed",
+    "reference": "HKKL26"
+  }
+}

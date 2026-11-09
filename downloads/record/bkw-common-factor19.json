@@ -1,0 +1,38 @@
+{
+  "id": "bkw-common-factor19",
+  "categoryId": "bkw-regev",
+  "paperId": "paper-c64ff7d0568b",
+  "year": 2019,
+  "date": "2019-01-09",
+  "time": {
+    "coefficient": 0.8927,
+    "expression": "2^{0.8927 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "classical",
+    "heuristic",
+    "LWE",
+    "BKW",
+    "Regev regime",
+    "unlimited samples",
+    "unstructured"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "IEEE TIT 2019; major revision of the ASIACRYPT work. The rounded abstract says 0.893; 0.8927 is the table value. First ePrint date shown.",
+  "extra": {
+    "samples": "2^{Θ(n)} fresh classical equations",
+    "model": "Assumptions of the cited BKW/list analysis",
+    "schedule": "Optimized constant γ",
+    "access": "Classical tables"
+  }
+}

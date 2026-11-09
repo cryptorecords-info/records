@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"lenstra87-smallfactor","lenstra87","Factoring integers with elliptic curves","Hendrik W. Lenstra Jr.","Annals of Mathematics 1987","1987","published","1987-11-30","month","1.4142135623730951","L_p[1/2, sqrt(2)] (log N)^2","","Not extracted from the source","https://annals.math.princeton.edu/1987/126-3/p09","source-checked"

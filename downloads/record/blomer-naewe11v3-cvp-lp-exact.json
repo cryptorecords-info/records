@@ -1,0 +1,41 @@
+{
+  "id": "blomer-naewe11v3-cvp-lp-exact",
+  "categoryId": "cvp-lp-exact-arithmetic",
+  "paperId": "blomer-naewe-2011",
+  "year": 2011,
+  "date": "2011-07-12",
+  "time": {
+    "coefficient": 2,
+    "expression": "poly(p, log r) · n^{(2 + o(1))n} arithmetic operations"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Polynomial in the encoded input size"
+  },
+  "tags": [
+    "ℓp norms",
+    "exact",
+    "polynomial space"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Version 3 improves the ℓp-family leading coefficient from 5/2 to 2 and explicitly bounds the working space and intermediate number sizes polynomially. The arXiv landing-page abstract remains stale; the original versioned PDF contains this stronger statement.",
+  "extra": {
+    "norm": "Every fixed ℓp, 1 < p < ∞",
+    "target": "Target in span(L); restrict to full-rank L ⊂ R^n",
+    "preprocessing": "Included",
+    "model": "Deterministic arithmetic count with polynomial intermediate bit size",
+    "success": "Exact output",
+    "input": "r bounds encoded basis/target coefficients; polynomial p-dependence suppressed"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1104.3720v3",
+    "locator": "Abstract; Theorems 3.2 and 3.3; Corollary 6.5",
+    "sourceVersion": "arXiv:1104.3720v3, 12 July 2011"
+  }
+}

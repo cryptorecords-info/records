@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"dhkw24-mq-f4","dhkw24","Solving Polynomial Equations Over Finite Fields","Holger Dell · Anselm Haak · Melvin Kallmayer · Leo Wennmann","SODA 2025","2025","published","2024-10-26","day","0.698","O*(4^{0.698n})","","Not stated in the checked source","https://arxiv.org/abs/2410.20162","source-checked"

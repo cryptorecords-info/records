@@ -1,0 +1,40 @@
+{
+  "id": "bkw-kf2015-coded-q2s1",
+  "categoryId": "bkw-q2-s1-unlimited",
+  "paperId": "paper-e014be9a6925",
+  "date": "2015-06-29",
+  "datePrecision": "day",
+  "year": 2015,
+  "time": {
+    "coefficient": 0.5301399509068676,
+    "expression": "2^{(1/(1/2+2 ln 2)+o(1)) n}"
+  },
+  "space": {
+    "coefficient": 0.5301399509068676,
+    "expression": "2^{(1/(1/2+2 ln 2)+o(1)) n}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "LWE",
+    "BKW"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Gaussian-width exponent 1 corresponds to β=n^{3/2+o(1)} in this paper’s normalization.",
+  "extra": {
+    "samples": "Exponential fresh samples",
+    "model": "Independent samples; normal-form secret",
+    "formula": "d=2,c=3/2 in Corollary 1"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1506.02717v4",
+    "locator": "Corollary 1; Theorem 5; Definition 2",
+    "sourceVersion": "arXiv:1506.02717v4, 29 June 2015"
+  }
+}

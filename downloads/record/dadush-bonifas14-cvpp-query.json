@@ -1,0 +1,41 @@
+{
+  "id": "dadush-bonifas14-cvpp-query",
+  "categoryId": "cvpp-query",
+  "paperId": "dadush-bonifas-2014",
+  "year": 2014,
+  "date": "2014-12-18",
+  "time": {
+    "coefficient": 1,
+    "expression": "Õ(2^n) expected query time"
+  },
+  "space": {
+    "coefficient": 1,
+    "expression": "Õ(2^n) stored advice and space"
+  },
+  "tags": [
+    "preprocessing",
+    "exact",
+    "Las Vegas"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "A Las Vegas query algorithm given the Voronoi-relevant vectors, improving the previous Õ(4^n) query bound. The theorem counts polynomially many operations per relevant vector. Generating the advice is separate and may use the Õ(4^n) Voronoi algorithm.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "preprocessing": "VR list supplied; Õ(4^n) construction available",
+    "advice": "All Voronoi-relevant vectors, at most 2(2^n−1)",
+    "target": "Arbitrary target",
+    "success": "Las Vegas: exact answer, expected running time",
+    "model": "Randomized arithmetic operations; polynomial dependence on encoded basis and target"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/1412.6168v1",
+    "locator": "Abstract; full paper Theorem 8 (CVP with VR advice)",
+    "sourceVersion": "arXiv:1412.6168v1, 18 December 2014"
+  }
+}

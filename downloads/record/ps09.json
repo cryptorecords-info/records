@@ -1,0 +1,33 @@
+{
+  "id": "ps09",
+  "categoryId": "svp-provable",
+  "paperId": "paper-11d2e4157eb4",
+  "year": 2009,
+  "date": "2009-12-09",
+  "time": {
+    "coefficient": 2.465,
+    "expression": "2^{2.465 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 1.233,
+    "expression": "2^{1.233 n + o(n)}"
+  },
+  "tags": [
+    "arbitrary lattices",
+    "Euclidean"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Source states time 2.465 and space 1.233. The ePrint is dated 2009 and marks the work as published elsewhere; its publication venue is unspecified there.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "High probability",
+    "model": "Classical randomized; polynomial factors suppressed",
+    "reference": "PS09"
+  }
+}

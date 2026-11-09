@@ -1,0 +1,40 @@
+{
+  "id": "kt17-mmt",
+  "categoryId": "isd-quantum-full-distance",
+  "paperId": "paper-c95c0e507206",
+  "year": 2017,
+  "date": "2017-03-01",
+  "time": {
+    "coefficient": 0.05869,
+    "expression": "2^{0.05869 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "quantum",
+    "ISD",
+    "binary",
+    "random codes",
+    "full GV distance",
+    "maximum over rates",
+    "quantum walks"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Introductory comparison table, full GV distance and maximum over rates. First arXiv date shown; two variants share this date. The more precise 2018 reanalysis (https://arxiv.org/pdf/1808.00714, Table 1) is corroborating analysis of the same time exponent, not a separate historical improvement; source-reported decimals are retained here.",
+  "extra": {
+    "field": "𝔽₂",
+    "rate": "Maximize over 0≤R≤1",
+    "weight": "Full GV distance: n H₂⁻¹(1−R)",
+    "model": "Quantum Grover search and quantum walk; source setup/update/check costs",
+    "access": "Source quantum list-memory/oracle model",
+    "reference": "KT17"
+  }
+}

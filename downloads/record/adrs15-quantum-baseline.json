@@ -1,0 +1,35 @@
+{
+  "id": "adrs15-quantum-baseline",
+  "categoryId": "svp-quantum-provable",
+  "paperId": "paper-86925aff6e6c",
+  "date": "2014-12-26",
+  "year": 2014,
+  "time": {
+    "coefficient": 1,
+    "expression": "2^{n + o(n)}"
+  },
+  "space": {
+    "coefficient": 1,
+    "expression": "2^{n + o(n)}"
+  },
+  "tags": [
+    "classical baseline",
+    "worst-case"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Classical algorithm is a valid baseline on a quantum computer; it uses no quantum speedup.",
+  "extra": {
+    "model": "Classical baseline, applicable on a quantum computer"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/1412.7994",
+    "locator": "Abstract; classical baseline",
+    "sourceVersion": "2014-12-26"
+  }
+}

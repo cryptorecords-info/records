@@ -1,0 +1,40 @@
+{
+  "id": "lpn-naive2018-c4",
+  "categoryId": "lpn-memory-two-thirds",
+  "paperId": "esser2018-dissection-bkw",
+  "date": "2018-12-31",
+  "datePrecision": "year",
+  "year": 2018,
+  "time": {
+    "coefficient": 2,
+    "expression": "2^{(log₂(4)+ε) n/log₂ n}"
+  },
+  "space": {
+    "coefficient": 0.6666666666666666,
+    "expression": "2^{(log₂(4)/(4−1)+ε) n/log₂ n}"
+  },
+  "tags": [
+    "classical",
+    "heuristic",
+    "LPN",
+    "time-memory tradeoff"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "For every fixed ε>0.",
+  "extra": {
+    "samples": "Same leading exponent as stored list",
+    "model": "Independence Heuristic",
+    "formula": "c=4; time log₂ c; memory log₂ c/(c−1)"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2018/569.pdf",
+    "locator": "Theorem 4.1",
+    "sourceVersion": "ePrint 2018/569 full version, 31 pages, checked 2026-11-08; original-version diff not available"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "bkw-coded-sieve17",
+  "categoryId": "bkw-regev",
+  "paperId": "paper-46a7c73ed460",
+  "year": 2017,
+  "date": "2017-12-03",
+  "time": {
+    "coefficient": 0.8951,
+    "expression": "2^{0.8951 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "classical",
+    "heuristic",
+    "LWE",
+    "BKW",
+    "Regev regime",
+    "unlimited samples",
+    "unstructured"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "ASIACRYPT 2017. The four-digit coefficient is reproduced in Mårtensson 2019 Table I. Date uses the conference opening day; an earlier first-disclosure date has not been established.",
+  "extra": {
+    "samples": "2^{Θ(n)} fresh classical equations",
+    "model": "Assumptions of the cited BKW/list analysis",
+    "schedule": "Exact prefix; common factor γ = 1",
+    "access": "Classical tables"
+  }
+}

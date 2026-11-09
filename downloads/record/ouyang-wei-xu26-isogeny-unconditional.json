@@ -1,0 +1,42 @@
+{
+  "categoryId": "ssip-classical-provable",
+  "year": 2026,
+  "datePrecision": "day",
+  "tags": [
+    "classical",
+    "supersingular isogenies",
+    "unconditional claim",
+    "preprint"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "id": "ouyang-wei-xu26-isogeny-unconditional",
+  "paperId": "ouyang-wei-xu26-frobenius-smoothness",
+  "date": "2026-10-15",
+  "time": {
+    "coefficient": 0.3333333333333333,
+    "expression": "p^{1/3+o(1)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Memory of the referenced Wesolowski algorithm; not independently re-derived here"
+  },
+  "notes": "The source studies the minimum degree of an isogeny to the Frobenius conjugate for a uniformly random supersingular geometric isomorphism class. Its abstract claims smoothness bounds making Wesolowski’s p^{1/3+o(1)} endomorphism-ring attack unconditional. The known reductions and random self-reducibility connect this with general supersingular isogeny search. This is a supporting-analysis record, not a further time-exponent improvement over Delgado 2026. Preprint/source-attributed claim; full proof and reduction details were not independently audited. ePrint 2026/2677 was posted later, on 29 October; chronology follows the first arXiv submission.",
+  "extra": {
+    "model": "Classical; unconditional-analysis claim for the referenced algorithm",
+    "distribution": "Uniform geometric supersingular isomorphism classes in the smoothness theorem",
+    "related-algorithm": "Wesolowski, ePrint 2026/1486",
+    "reduction": "Unconditional equivalence/random self-reduction: arXiv:2502.17010",
+    "source-chronology": "arXiv v1 submitted 15 October 2026; ePrint 29 October"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/2610.21488",
+    "locator": "Abstract",
+    "sourceVersion": "arXiv:2610.21488; first version 15 October 2026; revised 25 October 2026"
+  }
+}

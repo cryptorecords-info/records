@@ -1,0 +1,131 @@
+[
+  {
+    "id": "klein00-bdd-polynomial-advice",
+    "categoryId": "bdd-polynomial-advice",
+    "paperId": "klein-2000",
+    "year": 2000,
+    "date": "2000-12-31",
+    "datePrecision": "year",
+    "time": {
+      "coefficient": null,
+      "expression": "poly(input size), for fixed radius constant"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Polynomial-size supplied basis"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "preprocessing",
+      "small radius"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "A sufficiently good preprocessed basis turns the basis-relative bound into polynomial-time decoding at radius c lambda_1(L)/n for any fixed constant c covered by the time bound. Advice construction is not charged.",
+    "extra": {
+      "radius": "c lambda_1(L)/n for a fixed constant c (O(lambda_1/n) historical regime)",
+      "advice": "A suitable Korkin–Zolotarev basis; polynomial-size advice",
+      "preprocessing": "Unbounded; supplying the good basis is essential",
+      "success": "High probability",
+      "model": "Online query only; not an end-to-end polynomial BDD algorithm"
+    },
+    "evidence": {
+      "url": "https://cs.brown.edu/research/pubs/pdfs/2000/Klein-2000-FCL.pdf",
+      "locator": "Introduction and §1.1, p. 937; independently cross-checked in LLM06 §3, Theorem 1",
+      "sourceVersion": "SODA 2000 original statement; primary indexed PDF"
+    }
+  },
+  {
+    "id": "llm06-bdd-polynomial-advice",
+    "categoryId": "bdd-polynomial-advice",
+    "paperId": "liu-lyubashevsky-micciancio-2006",
+    "year": 2006,
+    "date": "2006-08-31",
+    "datePrecision": "month",
+    "time": {
+      "coefficient": null,
+      "expression": "poly(input size)"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "poly(input size) advice"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "preprocessing",
+      "periodic Gaussian"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The decoding radius improves the O(lambda_1/n) predecessor. The asymptotic radius hides a suitable constant; no universal constant-radius guarantee is asserted.",
+    "extra": {
+      "radius": "c sqrt(log n/n) lambda_1(L), suitable absolute c > 0",
+      "advice": "Polynomial-size advice string, including the periodic-Gaussian estimator",
+      "preprocessing": "Unbounded target-independent preprocessing",
+      "success": "Advice supports every target within the promised radius",
+      "model": "Polynomial-time online exact decoding"
+    },
+    "evidence": {
+      "url": "https://cseweb.ucsd.edu/~vlyubash/papers/bdd.pdf",
+      "locator": "Abstract; §3, Theorems 1 and 2",
+      "sourceVersion": "RANDOM 2006 author version; month established by author publication page"
+    }
+  },
+  {
+    "id": "drs14-bdd-dual-smoothing",
+    "categoryId": "bdd-polynomial-advice",
+    "paperId": "dadush-regev-stephens-davidowitz-2014",
+    "year": 2014,
+    "date": "2014-09-29",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "O(nN(1+log n/log(1/epsilon))) arithmetic operations"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "N=O(n log(1/epsilon)/sqrt(epsilon)) dual vectors"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "preprocessing",
+      "dual smoothing parameter"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Take epsilon inverse polynomial for polynomial advice and query cost. The matrix inverse can be stored during preprocessing. The radius depends on the lattice, rather than only lambda_1.",
+    "extra": {
+      "radius": "(1/2-2/(pi s_epsilon^2)) s_epsilon / eta_epsilon(L*), s_epsilon=sqrt(log(2(1+epsilon)/epsilon)/pi)",
+      "advice": "N=O(n log(1/epsilon)/sqrt(epsilon)) samples from D_{L*,eta_epsilon(L*)}",
+      "preprocessing": "Unbounded; dual samples and matrix inverse prepared before the target",
+      "success": "There exists advice valid for all targets in the decoding ball",
+      "model": "Arithmetic operations; epsilon inverse polynomial and 0 < epsilon < 1/200"
+    },
+    "evidence": {
+      "url": "https://www.noahsd.com/papers/cvpp.pdf",
+      "locator": "Theorem 3.1, printed pp. 13–14; §1.1",
+      "sourceVersion": "2014 author manuscript, corresponding to arXiv:1409.8063; first arXiv date shown, conference paper appeared earlier"
+    }
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "id": "regev04-fixed-parameters",
+  "categoryId": "svp-provable",
+  "paperId": "regev-2004-svp-lecture",
+  "date": "2004-12-31",
+  "datePrecision": "year",
+  "year": 2004,
+  "time": {
+    "coefficient": 16,
+    "expression": "2^{16 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 8,
+    "expression": "2^{8 n + o(n)}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "arbitrary lattices"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Lecture 8 fixes N = 2^{8n} log R₀ and ends by testing all pairs. The displayed 16/8 coefficients normalize this particular fixed-parameter presentation, rather than an optimized AKS bound. Nguyen–Vidick 2008, immediately after Theorem 3.1, explicitly confirms the 16 time coefficient and roughly 2^{8n} points. The course header attributes the lecture to Oded Regev and the scribing to Michael Khanevsky. Only the year is known.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Randomized; see the stated source guarantee",
+    "model": "Classical; polynomial input-size factors suppressed"
+  },
+  "evidence": {
+    "url": "https://cims.nyu.edu/~regev/teaching/lattices_fall_2004/ln/svpalg.pdf",
+    "locator": "PDF p. 1 algorithm, steps 1 and 3; analysis pp. 2–4; NV08 §3 following Theorem 3.1",
+    "sourceVersion": "Fall 2004 Lecture 8"
+  }
+}

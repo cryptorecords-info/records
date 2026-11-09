@@ -1,0 +1,31 @@
+{
+  "id": "kirshanova2018-full-mmt",
+  "categoryId": "isd-quantum-full-distance",
+  "paperId": "kirshanova2018",
+  "date": "2018-08-02",
+  "time": {
+    "coefficient": 0.059037,
+    "expression": "2^{0.059037 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.01502,
+    "expression": "2^{0.01502 n + o(n)}"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Corrected full-version analysis; quantum list-memory model.",
+  "extra": {
+    "source_variant": "Table 1, MMT"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1808.00714",
+    "locator": "Table 1, MMT",
+    "sourceVersion": "arXiv:1808.00714v1"
+  }
+}

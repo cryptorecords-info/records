@@ -1,0 +1,1 @@
+[{"id":"ifp-small-factor-ecm","name":"Heuristic · dependence on smallest factor","metric":"L_p[1/2,c] · poly(log N)","parameter":"p","direction":"min","historyCount":1,"featured":false}]

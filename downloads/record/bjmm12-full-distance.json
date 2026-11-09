@@ -1,0 +1,39 @@
+{
+  "id": "bjmm12-full-distance",
+  "categoryId": "isd-full-distance",
+  "paperId": "paper-f1a990a4cd6f",
+  "year": 2012,
+  "date": "2012-01-20",
+  "time": {
+    "coefficient": 0.102,
+    "expression": "2^{0.102 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "classical",
+    "ISD",
+    "binary",
+    "random codes",
+    "full GV distance",
+    "maximum over rates"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Rounded full-distance coefficient stated in May–Ozerov 2015 abstract; 0.0494 is the different half-distance bound.",
+  "extra": {
+    "field": "𝔽₂",
+    "rate": "Maximize over 0≤R≤1",
+    "weight": "Full GV distance: n H₂⁻¹(1−R)",
+    "model": "Classical random-code ISD analysis",
+    "reference": "BJMM12",
+    "coefficient_source": "https://link.springer.com/chapter/10.1007/978-3-662-46800-5_9"
+  }
+}

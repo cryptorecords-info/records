@@ -1,0 +1,38 @@
+{
+  "id": "cl23-triple-classical-low-memory",
+  "categoryId": "svp-triple-heuristic",
+  "paperId": "chailloux-loyer-tuple-2023",
+  "date": "2023-08-02",
+  "year": 2023,
+  "time": {
+    "coefficient": 0.3383,
+    "expression": "2^{0.3383 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.1887,
+    "expression": "2^{0.1887 n + o(n)}"
+  },
+  "tags": [
+    "heuristic",
+    "triple sieving",
+    "tailored LSF"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Original theorem uses .338; .3383 follows the later comparison table. This is one result, not two improvements.",
+  "extra": {
+    "model": "Classical Nguyen–Vidick style; spherical-list heuristic",
+    "preprocessing": "Included",
+    "reference": "Theorem 4; later Table 1"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/2510.08473",
+    "locator": "Original Theorem 4 rounds to .338; finer .3383 in Engelberts et al., Table 1 (arXiv:2510.08473v3)",
+    "sourceVersion": "CL23 ePrint revision 2 August 2023; finer precision checked in arXiv:2510.08473v3, 7 July 2026"
+  }
+}

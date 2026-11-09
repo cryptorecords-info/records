@@ -1,0 +1,36 @@
+{
+  "id": "ldw15-spherical",
+  "categoryId": "svp-heuristic",
+  "paperId": "paper-2b6476ef7d09",
+  "year": 2015,
+  "date": "2015-03-06",
+  "time": {
+    "coefficient": 0.2972,
+    "expression": "2^{0.2972 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "LATINCRYPT 2015; first ePrint 6 March 2015. Spherical LSH gives the stated 0.298 time bound. The current 2018-revised abstract states space 0.208, while the original balanced SphereSieve presentation uses space about 0.298. Space is left unspecified on this historical row to avoid silently backdating the later memory refinement. Specify the variant when submitting a tighter space claim. Audit: More precise coefficient for the existing spherical-LSH result; do not create a later improvement from .298 to .2972. Original March paper/version needs checking before changing its space field.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Under the stated sieve heuristic",
+    "model": "Classical randomized; polynomial factors suppressed",
+    "heuristic": "Sieve-list heuristic; spherical locality-sensitive hashing",
+    "reference": "LdW15"
+  },
+  "evidence": {
+    "url": "https://pure.tue.nl/ws/files/18141878/LaarhovenFinding2015.pdf",
+    "locator": "Section 6.2; thesis Section 14.2.8 also agrees",
+    "sourceVersion": "DCC version, 14 April 2015"
+  }
+}

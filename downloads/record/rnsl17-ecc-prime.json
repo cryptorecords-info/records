@@ -1,0 +1,33 @@
+{
+  "id": "rnsl17-ecc-prime",
+  "categoryId": "ecdlp-prime-quantum",
+  "paperId": "rnsl17",
+  "date": "2017-06-21",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "At most 448 n^3 log₂(n) + 4090 n^3 logical Toffoli gates"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "At most 9n + 2 ceil(log₂ n) + 10 logical qubits"
+  },
+  "tags": [
+    "logical Toffoli gates",
+    "logical qubits"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Resource estimate for a specific quantum circuit over an n-bit prime field. Counts logical gates and qubits; excludes physical error correction. This is a proved circuit bound rather than a measured quantum attack.",
+  "extra": {},
+  "evidence": {
+    "url": "https://eprint.iacr.org/2017/598",
+    "locator": "Abstract",
+    "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+  }
+}

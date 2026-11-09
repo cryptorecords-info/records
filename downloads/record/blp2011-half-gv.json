@@ -1,0 +1,29 @@
+{
+  "id": "blp2011-half-gv",
+  "categoryId": "isd-half-distance",
+  "paperId": "blp2010",
+  "date": "2011-03-07",
+  "time": {
+    "coefficient": 0.0556,
+    "expression": "2^{0.0556 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Half-distance coefficient rounded in the successor abstract.",
+  "extra": {},
+  "evidence": {
+    "url": "https://eprint.iacr.org/2012/026",
+    "locator": "Abstract",
+    "sourceVersion": "2012-01-20"
+  }
+}

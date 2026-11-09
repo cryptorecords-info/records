@@ -1,0 +1,31 @@
+{
+  "id": "deek2024-full-baseline",
+  "categoryId": "isd-full-distance",
+  "paperId": "deek2023",
+  "date": "2024-03-18",
+  "time": {
+    "coefficient": 0.117,
+    "expression": "2^{0.117 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Initial sieving baseline analyzed in this source.",
+  "extra": {
+    "variant": "Baseline sieving analysis"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2023/1577",
+    "locator": "Abstract",
+    "sourceVersion": "2024-03-18"
+  }
+}

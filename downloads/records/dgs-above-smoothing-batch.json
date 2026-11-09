@@ -1,0 +1,40 @@
+[
+  {
+    "id": "adrs15-dgs-smoothing",
+    "categoryId": "dgs-above-smoothing-batch",
+    "paperId": "paper-86925aff6e6c",
+    "year": 2015,
+    "date": "2014-12-26",
+    "time": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "DGS",
+      "above smoothing",
+      "batch sampling"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The refined above-smoothing sampler produces 2^{n/2} samples in 2^{n/2+o(n)} total time and space (abstract).",
+    "extra": {
+      "width": "Above smoothing; source theorem conditions apply",
+      "output": "2^{n/2} samples",
+      "error": "As specified by the source theorem",
+      "model": "Randomized classical; total batch cost",
+      "reference": "ADRS15"
+    }
+  }
+]

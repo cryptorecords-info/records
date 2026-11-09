@@ -1,0 +1,39 @@
+{
+  "id": "aks01-single-exponential",
+  "categoryId": "svp-provable",
+  "paperId": "ajtai-kumar-sivakumar-2001",
+  "date": "2001-07-06",
+  "datePrecision": "day",
+  "year": 2001,
+  "time": {
+    "coefficient": null,
+    "expression": "2^{O(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "2^{O(n)}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "arbitrary lattices"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "First randomized singly exponential exact-SVP milestone. The original publisher abstract states 2^{O(n)} time without an explicit coefficient. A later optimized coefficient is not backdated to this paper. Exponential space is also reported in the Nguyen–Vidick primary introduction. Chronology uses ACM’s publication date.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Randomized; see the stated source guarantee",
+    "model": "Classical; polynomial input-size factors suppressed"
+  },
+  "evidence": {
+    "url": "https://doi.org/10.1145/380752.380857",
+    "locator": "Publisher abstract; corroboration: Nguyen–Vidick 2008, abstract and §3",
+    "sourceVersion": "STOC 2001 publisher record; later primary corroboration"
+  }
+}

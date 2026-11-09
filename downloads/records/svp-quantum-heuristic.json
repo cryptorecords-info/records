@@ -1,0 +1,373 @@
+[
+  {
+    "id": "cl21",
+    "categoryId": "svp-quantum-heuristic",
+    "paperId": "paper-3219d85db441",
+    "year": 2021,
+    "date": "2021-05-12",
+    "time": {
+      "coefficient": 0.257,
+      "expression": "2^{0.2570 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "ASIACRYPT 2021. Heuristic sieving time; the paper supplies memory trade-offs. A single total-space coefficient is intentionally not inferred from its abstract.",
+    "extra": {
+      "qram": "Quantum random-access assumptions; see paper trade-offs",
+      "qubits": "Time-memory trade-off; see source",
+      "model": "Quantum sieving, random-list heuristic",
+      "reference": "CL21"
+    }
+  },
+  {
+    "id": "bcss23",
+    "categoryId": "svp-quantum-heuristic",
+    "paperId": "paper-8837c0491680",
+    "year": 2023,
+    "date": "2022-05-27",
+    "time": {
+      "coefficient": 0.2563,
+      "expression": "2^{0.2563 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "EUROCRYPT 2023. Reuses a quantum-walk state to find many collisions. The SVP application retains the lattice-sieving heuristic. Date tracks first arXiv availability, arXiv:2205.14023.",
+    "extra": {
+      "qram": "Quantum random access; see algorithm model",
+      "qubits": "Time-memory trade-off; see source",
+      "model": "Quantum sieving, random-list heuristic",
+      "reference": "BCSS23"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/2205.14023v1",
+      "locator": "Version 1 abstract gives the 0.2563 SVP bound; arXiv submission history records 27 May 2022, 14:50:45 UTC",
+      "sourceVersion": "arXiv:2205.14023v1, 27 May 2022; earlier than the 30 May ePrint receipt"
+    }
+  },
+  {
+    "id": "lmvp13-quantum",
+    "categoryId": "svp-quantum-heuristic",
+    "paperId": "paper-1873724e57d1",
+    "year": 2013,
+    "date": "2013-01-25",
+    "time": {
+      "coefficient": 0.312,
+      "expression": "2^{0.312 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.208,
+      "expression": "2^{0.208 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "PQCrypto 2013. The original arXiv abstract gives heuristic quantum SVP time 0.312 and separately provable time 1.799. This row records only the heuristic result. Uses Grover search within sieve algorithms; coherent lookup and memory details must be checked in the algorithm model. Audit: The original theorem supplies space and distinguishes classical coherent storage from ordinary qubits.",
+    "extra": {
+      "qram": "Quantum-addressable classical lists",
+      "qubits": "O(n) ordinary qubits",
+      "model": "Sequential quantum search under the sieve-distribution heuristic",
+      "reference": "LMvP13"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1301.6176v1",
+      "locator": "Theorem 1; Section 1.3.2",
+      "sourceVersion": "arXiv:1301.6176v1"
+    }
+  },
+  {
+    "id": "lmvp15-quantum",
+    "categoryId": "svp-quantum-heuristic",
+    "paperId": "paper-caa5f6c38871",
+    "year": 2015,
+    "date": "2015-04-14",
+    "time": {
+      "coefficient": 0.268,
+      "expression": "2^{0.268 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.268,
+      "expression": "2^{0.268 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Journal extension published online 14 April 2015. Theorem 4 explicitly gives heuristic quantum time and space exponents approximately 0.268 for the balanced SphereSieve parameters. This is journal rounding of the same result, not a separate later improvement. Quantum random access to classical hash tables and the underlying sieve-list heuristic remain part of the model.",
+    "extra": {
+      "qram": "Quantum-addressable classical hash tables and sieve lists; see Sections 1.3 and 6.3",
+      "qubits": "Quantum search workspace; the displayed space exponent counts the classical data structures with coherent access",
+      "model": "Sequential quantum search with SphereSieve; balanced time/space parameters from Theorem 4",
+      "reference": "LMvP15"
+    },
+    "evidence": {
+      "url": "https://pure.tue.nl/ws/files/18141878/LaarhovenFinding2015.pdf",
+      "locator": "Theorem 4, Section 6.3",
+      "sourceVersion": "DCC version, 14 April 2015"
+    }
+  },
+  {
+    "id": "laarhoven-thesis-quantum-lsf",
+    "categoryId": "svp-quantum-heuristic",
+    "paperId": "laarhoven-thesis-2016",
+    "date": "2016-02-16",
+    "year": 2016,
+    "time": {
+      "coefficient": 0.2652573583493899,
+      "expression": "(13/9)^{n/2 + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.2652573583493899,
+      "expression": "(13/9)^{n/2 + o(n)}"
+    },
+    "tags": [
+      "quantum",
+      "heuristic",
+      "QCRAM",
+      "LSF"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Section 14.2.10, equation (14.6)–(14.7): heuristic quantum LSF bound. The author-hosted draft is dated 10 November 2015; chronology uses the documented thesis publication date.",
+    "extra": {
+      "model": "Quantum RAM access to classical data; heuristic spherical list model",
+      "reference": "Section 14.2.10"
+    },
+    "evidence": {
+      "url": "https://thijs.com/docs/phd.pdf",
+      "locator": "Chapter 14, Section 14.2.10, printed p.186 / PDF p.193",
+      "sourceVersion": "2016-02-16"
+    }
+  },
+  {
+    "id": "lmvp14-quantum-angular-preprint",
+    "categoryId": "svp-quantum-heuristic",
+    "paperId": "paper-caa5f6c38871",
+    "date": "2014-11-04",
+    "year": 2014,
+    "time": {
+      "coefficient": 0.286,
+      "expression": "2^{0.286 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "quantum",
+      "heuristic",
+      "angular LSH"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Earlier preprint abstract states .286. Space for that original version was not independently recovered.",
+    "extra": {
+      "qram": "Quantum-addressable classical lists",
+      "qubits": "Consult source version",
+      "model": "Sequential quantum search with angular LSH"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2014/907",
+      "locator": "Abstract and archive history (2014-11-04 received); later journal Theorem 3",
+      "sourceVersion": "ePrint 2014/907 abstract; received 4 November 2014"
+    }
+  },
+  {
+    "id": "heiser21-quantum-filter-sampling",
+    "categoryId": "svp-quantum-heuristic",
+    "paperId": "heiser-2021",
+    "date": "2021-09-27",
+    "year": 2021,
+    "time": {
+      "coefficient": 0.2571,
+      "expression": "2^{0.2571 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "quantum",
+      "heuristic",
+      "locality-sensitive filtering"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Independent filter-sampling approach; .2570 via quantum walks was already available.",
+    "extra": {
+      "qram": "Quantum access to classical sieve buckets",
+      "qubits": "No single workspace coefficient extracted",
+      "model": "Grover search with random-product-code filter sampling"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2021/1295.pdf",
+      "locator": "Theorem 1; Section 3.2.3",
+      "sourceVersion": "ePrint 2021/1295, received 27 September 2021"
+    }
+  },
+  {
+    "id": "kmpm19-tuple-unrestricted",
+    "categoryId": "svp-quantum-heuristic",
+    "paperId": "kirshanova-et-al-2019",
+    "date": "2019-09-10",
+    "year": 2019,
+    "time": {
+      "coefficient": 0.29893,
+      "expression": "2^{0.29893 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1395,
+      "expression": "2^{0.1395 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "QRAM",
+      "tuple sieving",
+      "memory tradeoff"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Quantum approximate k-list search supplies a new low-memory tuple-sieving framework. The representative k=30 point is included without claiming an improvement over the unrestricted quantum pair-sieve record. Heuristic low-memory tuple sieve in the QRAM model. Audit: Correctly classified as sequential time, not parallel depth. Added precision .29893 is not a new milestone.",
+    "extra": {
+      "model": "Sequential QRAM time; representative tuple size k=30; classical memory 2^{0.1395n+o(n)} and poly(n) qubits",
+      "qram": "Coherent access to classical memory; exponent 0.1395",
+      "preprocessing": "Included",
+      "reference": "Table 2, k=28–30; Algorithms 4.1/4.2",
+      "qubits": "2^{o(n)}; see the source’s access model"
+    },
+    "evidence": {
+      "url": "https://elenakirshanova.github.io/Papers/quantum_sieving.pdf",
+      "locator": "Abstract; Table 2, k=28–30; Section 4 QRAM model",
+      "sourceVersion": "ePrint 2019/1016, 10 September 2019"
+    }
+  },
+  {
+    "id": "cl23-triple-quantum-unrestricted",
+    "categoryId": "svp-quantum-heuristic",
+    "paperId": "chailloux-loyer-tuple-2023",
+    "date": "2023-08-02",
+    "year": 2023,
+    "time": {
+      "coefficient": 0.3098,
+      "expression": "2^{0.3098 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "quantum",
+      "heuristic",
+      "triple sieving",
+      "QCRAM",
+      "memory tradeoff"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Tailored filtering before quantum tuple search improves triple sieving at the stated memory budget. It is not an unrestricted quantum-SVP time record. Triple-sieving point using tailored filtering.",
+    "extra": {
+      "model": "Sequential quantum time; .1887n classical QCRAM exponent; poly(n) qubits",
+      "preprocessing": "Included",
+      "reference": "Theorem 6",
+      "qram": "Coherent access to classical memory; exponent 0.1887",
+      "qubits": "2^{o(n)}; see the source’s access model"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2023/200.pdf",
+      "locator": "Theorem 6, pp. 26–27; Table 3",
+      "sourceVersion": "ePrint 2023/200 revision 2 August 2023; original full text checked via public mirror"
+    }
+  },
+  {
+    "id": "engelberts25-quantum-triple-unrestricted",
+    "categoryId": "svp-quantum-heuristic",
+    "paperId": "engelberts-et-al-2025",
+    "date": "2025-10-09",
+    "year": 2025,
+    "time": {
+      "coefficient": 0.2846,
+      "expression": "2^{0.2846 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "QCRAM",
+      "triple sieving",
+      "memory tradeoff"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Two-level amplitude amplification with nearby-center preprocessing improves quantum triple sieving at memory exponent 0.1887. It is a memory-constrained improvement, not a new unrestricted quantum-SVP time record. Version 1 already states the bound; publication followed at CRYPTO 2026.",
+    "extra": {
+      "model": "Quantum; 2^{0.1887n} classical and QCRAM bits; 2^{o(n)} qubits",
+      "qram": "Coherent access to classical memory; exponent 0.1887",
+      "qubits": "2^{o(n)}; see the source’s access model"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/2510.08473v1",
+      "locator": "Abstract",
+      "sourceVersion": "2025-10-09"
+    }
+  }
+]

@@ -1,0 +1,454 @@
+[
+  {
+    "id": "hhan-midpoint-q26",
+    "categoryId": "svp-quantum-provable",
+    "paperId": "paper-2fcc11c09e6a",
+    "year": 2026,
+    "date": "2026-08-03",
+    "time": {
+      "coefficient": 0.5411,
+      "expression": "2^{0.5411 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "arbitrary lattices",
+      "Euclidean"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Preprint abstract states quantum time 0.5411 and space 0.5. Access-model details must be checked in the paper before comparison with other quantum models. This starter category is incomplete and does not assert the current best quantum result.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Randomized",
+      "model": "Quantum; see source for operation and memory accounting",
+      "qram": "Consult full paper",
+      "reference": "Hhan26a"
+    }
+  },
+  {
+    "id": "hkkl26-quantum-worstcase",
+    "categoryId": "svp-quantum-provable",
+    "paperId": "paper-c70730f20075",
+    "date": "2026-11-04",
+    "year": 2026,
+    "time": {
+      "coefficient": 0.2469,
+      "expression": "2^{0.2469 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.247,
+      "expression": "2^{0.247 n + o(n)}"
+    },
+    "tags": [
+      "quantum",
+      "worst-case",
+      "Euclidean",
+      "author-supplied precision"
+    ],
+    "review": {
+      "status": "unreviewed"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The public abstract states worst-case quantum time and space 2^{0.247n+o(n)}. The more precise 0.2469 is supplied by coauthor Thijs Laarhoven in this update; full-PDF precision was not independently checked.",
+    "extra": {
+      "model": "Quantum; worst-case exact Euclidean SVP",
+      "precision": "Public abstract rounds to 0.247; author-supplied 0.2469"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2026/2761",
+      "locator": "Abstract; finer decimal supplied by coauthor",
+      "sourceVersion": "2026-11-04"
+    }
+  },
+  {
+    "id": "lmvp15-quantum-provable",
+    "categoryId": "svp-quantum-provable",
+    "paperId": "paper-caa5f6c38871",
+    "date": "2015-04-14",
+    "year": 2015,
+    "time": {
+      "coefficient": 1.799,
+      "expression": "2^{1.799 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1.286,
+      "expression": "2^{1.286 n + o(n)}"
+    },
+    "tags": [
+      "quantum",
+      "provable",
+      "QCRAM"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The provable quantum sieving bound in the journal article.",
+    "extra": {
+      "model": "Quantum search; coherent classical-list access",
+      "reference": "DCC 77:375–400"
+    },
+    "evidence": {
+      "url": "https://link.springer.com/article/10.1007/s10623-015-0067-5",
+      "locator": "Abstract; provable sieve analysis",
+      "sourceVersion": "2015-04-14"
+    }
+  },
+  {
+    "id": "adrs15-quantum-baseline",
+    "categoryId": "svp-quantum-provable",
+    "paperId": "paper-86925aff6e6c",
+    "date": "2014-12-26",
+    "year": 2014,
+    "time": {
+      "coefficient": 1,
+      "expression": "2^{n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1,
+      "expression": "2^{n + o(n)}"
+    },
+    "tags": [
+      "classical baseline",
+      "worst-case"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Classical algorithm is a valid baseline on a quantum computer; it uses no quantum speedup.",
+    "extra": {
+      "model": "Classical baseline, applicable on a quantum computer"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/1412.7994",
+      "locator": "Abstract; classical baseline",
+      "sourceVersion": "2014-12-26"
+    }
+  },
+  {
+    "id": "accs21-quantum-provable",
+    "categoryId": "svp-quantum-provable",
+    "paperId": "accs-stacs-2021",
+    "date": "2021-03-10",
+    "year": 2021,
+    "time": {
+      "coefficient": 0.9533,
+      "expression": "2^{0.9533 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "provable",
+      "quantum",
+      "no QRAM"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Published conference version; polynomially many qubits and exponential classical memory.",
+    "extra": {
+      "model": "Quantum; poly(n) qubits; no QRAM",
+      "classical-memory": "2^{0.5n+o(n)}"
+    },
+    "evidence": {
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.STACS.2021.4",
+      "locator": "Abstract, result 2",
+      "sourceVersion": "2021-03-10"
+    }
+  },
+  {
+    "id": "accs22-quantum-provable",
+    "categoryId": "svp-quantum-provable",
+    "paperId": "accs-arxiv-2022",
+    "date": "2022-05-10",
+    "year": 2022,
+    "time": {
+      "coefficient": 0.95,
+      "expression": "2^{0.95 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "provable",
+      "quantum",
+      "No QRAM"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Version 5 contains this bound; the journal article appeared in 2025.",
+    "extra": {
+      "model": "Quantum; polynomially many qubits",
+      "qram": "No QRAM",
+      "classical-memory": "2^{0.5n+o(n)}"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/2002.07955v5",
+      "locator": "Abstract, quantum SVP result",
+      "sourceVersion": "2022-05-10"
+    }
+  },
+  {
+    "id": "accs22-quantum-qram",
+    "categoryId": "svp-quantum-provable",
+    "paperId": "accs-arxiv-2022",
+    "date": "2022-05-10",
+    "year": 2022,
+    "time": {
+      "coefficient": 0.835,
+      "expression": "2^{0.835 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "provable",
+      "quantum",
+      "QRAM size 2^{0.293n+o(n)}"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Version 5 contains this bound; the journal article appeared in 2025.",
+    "extra": {
+      "model": "Quantum; polynomially many qubits",
+      "qram": "QRAM size 2^{0.293n+o(n)}",
+      "classical-memory": "2^{0.5n+o(n)}"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/2002.07955v5",
+      "locator": "Abstract, quantum SVP result",
+      "sourceVersion": "2022-05-10"
+    }
+  },
+  {
+    "id": "lmvp13-quantum-provable-original",
+    "categoryId": "svp-quantum-provable",
+    "paperId": "paper-1873724e57d1",
+    "date": "2013-01-25",
+    "year": 2013,
+    "time": {
+      "coefficient": 1.799,
+      "expression": "2^{1.799 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1.286,
+      "expression": "2^{1.286 n + o(n)}"
+    },
+    "tags": [
+      "quantum",
+      "provable",
+      "QCRAM"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Original public bound predates the 2015 journal version.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Probability exponentially close to 1",
+      "model": "Sequential quantum search",
+      "qram": "Quantum-addressable classical lists; O(n) ordinary qubits"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1301.6176v1",
+      "locator": "Theorem 2, p. 10; Section 1.3 memory model",
+      "sourceVersion": "arXiv:1301.6176v1, 25 January 2013"
+    }
+  },
+  {
+    "id": "lmvp15-quantum-aks",
+    "categoryId": "svp-quantum-provable",
+    "paperId": "paper-caa5f6c38871",
+    "date": "2015-04-14",
+    "year": 2015,
+    "time": {
+      "coefficient": 2.672,
+      "expression": "2^{2.672 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1.877,
+      "expression": "2^{1.877 n + o(n)}"
+    },
+    "tags": [
+      "quantum",
+      "provable",
+      "QCRAM"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "AKS-Sieve analysis; alternative bound rather than a new best-time milestone.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Randomized, provable analysis",
+      "model": "Sequential quantum search",
+      "qram": "Quantum-addressable classical lists"
+    },
+    "evidence": {
+      "url": "https://pure.tue.nl/ws/files/18141878/LaarhovenFinding2015.pdf",
+      "locator": "Table 1; Section 8.1, equation (24)",
+      "sourceVersion": "DCC version published online 14 April 2015"
+    }
+  },
+  {
+    "id": "lmvp15-quantum-list",
+    "categoryId": "svp-quantum-provable",
+    "paperId": "paper-caa5f6c38871",
+    "date": "2015-04-14",
+    "year": 2015,
+    "time": {
+      "coefficient": 2.527,
+      "expression": "2^{2.527 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1.351,
+      "expression": "2^{1.351 n + o(n)}"
+    },
+    "tags": [
+      "quantum",
+      "provable",
+      "QCRAM"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "ListSieve analysis; alternative bound rather than a new best-time milestone.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Randomized, provable analysis",
+      "model": "Sequential quantum search",
+      "qram": "Quantum-addressable classical lists"
+    },
+    "evidence": {
+      "url": "https://pure.tue.nl/ws/files/18141878/LaarhovenFinding2015.pdf",
+      "locator": "Table 1; Section 8.2",
+      "sourceVersion": "DCC version published online 14 April 2015"
+    }
+  },
+  {
+    "id": "lmvp15-quantum-aks-birthday",
+    "categoryId": "svp-quantum-provable",
+    "paperId": "paper-caa5f6c38871",
+    "date": "2015-04-14",
+    "year": 2015,
+    "time": {
+      "coefficient": 1.986,
+      "expression": "2^{1.986 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1.324,
+      "expression": "2^{1.324 n + o(n)}"
+    },
+    "tags": [
+      "quantum",
+      "provable",
+      "QCRAM"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "AKS-Sieve-Birthday analysis; alternative bound rather than a new best-time milestone.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Randomized, provable analysis",
+      "model": "Sequential quantum search",
+      "qram": "Quantum-addressable classical lists"
+    },
+    "evidence": {
+      "url": "https://pure.tue.nl/ws/files/18141878/LaarhovenFinding2015.pdf",
+      "locator": "Table 1; Section 8.3",
+      "sourceVersion": "DCC version published online 14 April 2015"
+    }
+  },
+  {
+    "id": "ccl17-quantum-half-space",
+    "categoryId": "svp-quantum-provable",
+    "paperId": "chen-chung-lai-2017",
+    "date": "2017-08-31",
+    "year": 2017,
+    "time": {
+      "coefficient": 1.2553,
+      "expression": "2^{1.2553 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "quantum",
+      "provable",
+      "bounded memory"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Classical discrete-Gaussian advice; polynomial quantum workspace.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Randomized; high success probability",
+      "model": "Elementary quantum-gate complexity; sequential",
+      "qram": "Classical advice and poly(n) qubits; see circuit construction"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/1709.00378v1",
+      "locator": "arXiv v1 abstract; final Theorem 12, pp. 18–19",
+      "sourceVersion": "arXiv:1709.00378v1, 31 August 2017; final theorem checked in v2"
+    }
+  }
+]

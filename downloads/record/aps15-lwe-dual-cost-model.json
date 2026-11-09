@@ -1,0 +1,44 @@
+{
+  "id": "aps15-lwe-dual-cost-model",
+  "categoryId": "lwe-dual-lattice-models",
+  "paperId": "albrecht-player-scott2015-concrete",
+  "year": 2015,
+  "date": "2015-10-02",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "O(ε⁻² · T_BKZ(m,δ₀)); log₂δ₀=[log₂(f(ε)/α)]²/(4nlog₂q), f(ε)=√(ln(1/ε)/π)"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Depends on the chosen SVP oracle inside BKZ."
+  },
+  "tags": [
+    "dual",
+    "historical cost model",
+    "oracle samples"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Historical dual model combining target vector length with a stated BKZ oracle. Its rule-of-thumb relation β/log₂β≈1/(2log₂δ₀) avoids falsely extrapolating an empirical seconds fit into a subexponential LWE algorithm.",
+  "extra": {
+    "parameters": "Fix n,q(n), Gaussian width αq, target one-vector bias ε and BKZ cost model; enough samples for optimized m.",
+    "noise": "Discrete Gaussian width αq, standard deviation αq/√(2π).",
+    "secret": "General LWE secret in Z_q^n.",
+    "samples": "Unlimited samples in this historical survey; m≈√(nlog₂q/log₂δ₀) per fresh dual-vector instance, repeated for amplification.",
+    "objective": "Distinguish LWE from uniform with constant final advantage.",
+    "model": "||v||≈δ₀^m q^{n/m}; bias≈exp(−π(α||v||)²); β/log₂β≈1/(2log₂δ₀). Select the SVP-oracle cost explicitly.",
+    "assumptions": "Lattice-reduction/Gaussian heuristic model and independent repetitions.",
+    "success": "One-vector bias ε; O(ε⁻²) independent observations for constant final advantage."
+  },
+  "evidence": {
+    "url": "https://www.degruyterbrill.com/document/doi/10.1515/jmc-2015-0016/pdf?licenseType=open-access",
+    "locator": "§3.2, Corollary 3.2 / Remark 3.3; §4.1, Lemma 4.1; §5.3, Lemma 5.12 and following amplification discussion",
+    "sourceVersion": "Journal of Mathematical Cryptology 9(3), published 2 October 2015"
+  }
+}

@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"bl16-ideal","paper-777c2d2d89d5","Efficient (ideal) lattice sieving using cross-polytope LSH","Anja Becker · Thijs Laarhoven","Africacrypt 2016","2016","published","2015-08-24","day","0.2972","2^{0.2972 n + o(n)}","","","https://eprint.iacr.org/2015/823","source-checked"

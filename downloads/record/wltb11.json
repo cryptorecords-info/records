@@ -1,0 +1,31 @@
+{
+  "id": "wltb11",
+  "categoryId": "svp-heuristic",
+  "paperId": "paper-0d12f3e7f365",
+  "year": 2011,
+  "date": "2010-12-21",
+  "time": {
+    "coefficient": 0.3836,
+    "expression": "2^{0.3836 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.2557,
+    "expression": "2^{0.2557 n + o(n)}"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "ASIACCS 2011; first ePrint received 21 December 2010. The source states time coefficient 0.3836 and space 0.2557. Two-level sphere covering trades additional memory for a better time exponent. Uses the Nguyen–Vidick sieve heuristic.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Under the stated sieve heuristic",
+    "model": "Classical randomized; polynomial factors suppressed",
+    "heuristic": "Uniform sieve lists; two-level spherical covering",
+    "reference": "WLTB11"
+  }
+}

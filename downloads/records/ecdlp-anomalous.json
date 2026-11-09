@@ -1,0 +1,35 @@
+[
+  {
+    "id": "smart97-trace-one",
+    "categoryId": "ecdlp-anomalous",
+    "paperId": "smart97",
+    "date": "1997-10-31",
+    "datePrecision": "month",
+    "time": {
+      "coefficient": null,
+      "expression": "Polynomial time in log p for trace-one curves"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not extracted from the source"
+    },
+    "tags": [
+      "anomalous curves",
+      "p-adic logarithm"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The HP technical report (October 1997), subsequently published in Journal of Cryptology (1999), gives the p-adic attack for #E(F_p)=p. Its stated linear algorithm is not translated into a bit-complexity exponent here. This exceptional-family attack does not solve general ECDLP.",
+    "extra": {},
+    "evidence": {
+      "url": "https://cryptodeeptech.ru/doc/HPL-97-128.pdf",
+      "locator": "HPL-97-128 abstract and construction",
+      "sourceVersion": "HPL-97-128, October 1997; journal publication 1999"
+    }
+  }
+]

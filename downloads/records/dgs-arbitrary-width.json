@@ -1,0 +1,123 @@
+[
+  {
+    "id": "adrs15-dgs-any",
+    "categoryId": "dgs-arbitrary-width",
+    "paperId": "paper-86925aff6e6c",
+    "year": 2015,
+    "date": "2014-12-26",
+    "time": {
+      "coefficient": 1,
+      "expression": "2^{1 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1,
+      "expression": "2^{1 n + o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "DGS",
+      "arbitrary width",
+      "unstructured"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "STOC 2015; first arXiv date shown. Total cost for a batch of 2^{n/2} samples (abstract). Retaining one sample gives the displayed upper bound.",
+    "extra": {
+      "width": "Any positive Gaussian parameter",
+      "output": "2^{n/2} samples",
+      "error": "As specified by the source theorem",
+      "model": "Randomized classical; preprocessing included",
+      "reference": "ADRS15"
+    }
+  },
+  {
+    "id": "hkkl26-dgs-any",
+    "categoryId": "dgs-arbitrary-width",
+    "paperId": "paper-c70730f20075",
+    "year": 2026,
+    "date": "2026-11-04",
+    "time": {
+      "coefficient": 0.292,
+      "expression": "2^{0.292 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.208,
+      "expression": "2^{0.208 n + o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "DGS",
+      "arbitrary width",
+      "unstructured"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Public preprint abstract claims arbitrary-width DGS with polynomial dependence on κ for error 2^{-κ}. Source-attributed bound; proof not independently audited.",
+    "extra": {
+      "width": "Any positive Gaussian parameter",
+      "output": "One fresh sample; output batch not normalized",
+      "error": "2^{-κ}; poly(κ) factors suppressed",
+      "model": "Randomized classical worst-case analysis",
+      "reference": "HKKL26"
+    }
+  },
+  {
+    "id": "kim26-dgs-arbitrary-one",
+    "categoryId": "dgs-arbitrary-width",
+    "paperId": "kim-2026-one-dgs",
+    "year": 2026,
+    "date": "2026-08-04",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.5,
+      "expression": "2^{n/2+o(n)} expected bit operations"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{n/2+o(n)} bits on every execution"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "DGS",
+      "arbitrary width",
+      "centered",
+      "single sample"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "One centered sample, rather than the older 2^{n/2}-output arbitrary-width batch. Polynomial dependence on basis and squared-width encoding lengths is explicit in the theorem.",
+    "extra": {
+      "width": "Any rational s^2 > 0 on a rank-n lattice with rational basis",
+      "output": "One sample from D_{L,s}",
+      "error": "exp(-Omega(n^3)) statistical distance",
+      "model": "Randomized classical; expected time and bounded space per execution",
+      "reference": "Kim26"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/2608.03220v1",
+      "locator": "Theorem 4.3, printed p. 10; Theorem 1.1",
+      "sourceVersion": "arXiv:2608.03220v1, 4 August 2026"
+    }
+  }
+]

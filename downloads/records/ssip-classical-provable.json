@@ -1,0 +1,116 @@
+[
+  {
+    "id": "udovenko26-general",
+    "categoryId": "ssip-classical-provable",
+    "paperId": "udovenko26-isogeny",
+    "date": "2026-08-03",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.4,
+      "expression": "p^{2/5+o(1)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "p^{2/5+o(1)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Unconditional asymptotic time and memory bound based on theoretical bivariate multipoint evaluation. The source explicitly cautions that this does not provide a practical threat to current parameter sets.",
+    "extra": {
+      "source-chronology": "Received 31 July; approved 3 August 2026"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2026/1575",
+      "locator": "Abstract; approved 2026-08-03",
+      "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+    }
+  },
+  {
+    "categoryId": "ssip-classical-provable",
+    "year": 2026,
+    "datePrecision": "day",
+    "tags": [
+      "classical",
+      "supersingular isogenies",
+      "unconditional claim",
+      "preprint"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "id": "delgado26-isogeny-unconditional",
+    "paperId": "delgado26-unconditional-isogeny",
+    "date": "2026-09-18",
+    "time": {
+      "coefficient": 0.3333333333333333,
+      "expression": "p^{1/3} exp(O(sqrt(log p log log p))) = p^{1/3+o(1)} expected time"
+    },
+    "space": {
+      "coefficient": 0.3333333333333333,
+      "expression": "p^{1/3+o(1)} expected memory"
+    },
+    "notes": "The source abstract claims a Las Vegas OneEnd algorithm analyzed without a smoothness heuristic, with the displayed expected time and memory. Known unconditional reductions transfer OneEnd to the supersingular endomorphism-ring and isogeny problems. This is a preprint claim checked against the primary arXiv abstract; the full proof was not independently audited. The p exponent remains exponential in log p and is not a concrete parameter-set break.",
+    "extra": {
+      "model": "Classical Las Vegas; expected time and memory",
+      "reduction": "OneEnd to EndRing and Isogeny; see also arXiv:2502.17010",
+      "source-chronology": "arXiv v1 submitted 18 September 2026"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/2609.22018",
+      "locator": "Abstract",
+      "sourceVersion": "arXiv:2609.22018v1"
+    }
+  },
+  {
+    "categoryId": "ssip-classical-provable",
+    "year": 2026,
+    "datePrecision": "day",
+    "tags": [
+      "classical",
+      "supersingular isogenies",
+      "unconditional claim",
+      "preprint"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "id": "ouyang-wei-xu26-isogeny-unconditional",
+    "paperId": "ouyang-wei-xu26-frobenius-smoothness",
+    "date": "2026-10-15",
+    "time": {
+      "coefficient": 0.3333333333333333,
+      "expression": "p^{1/3+o(1)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Memory of the referenced Wesolowski algorithm; not independently re-derived here"
+    },
+    "notes": "The source studies the minimum degree of an isogeny to the Frobenius conjugate for a uniformly random supersingular geometric isomorphism class. Its abstract claims smoothness bounds making Wesolowski’s p^{1/3+o(1)} endomorphism-ring attack unconditional. The known reductions and random self-reducibility connect this with general supersingular isogeny search. This is a supporting-analysis record, not a further time-exponent improvement over Delgado 2026. Preprint/source-attributed claim; full proof and reduction details were not independently audited. ePrint 2026/2677 was posted later, on 29 October; chronology follows the first arXiv submission.",
+    "extra": {
+      "model": "Classical; unconditional-analysis claim for the referenced algorithm",
+      "distribution": "Uniform geometric supersingular isomorphism classes in the smoothness theorem",
+      "related-algorithm": "Wesolowski, ePrint 2026/1486",
+      "reduction": "Unconditional equivalence/random self-reduction: arXiv:2502.17010",
+      "source-chronology": "arXiv v1 submitted 15 October 2026; ePrint 29 October"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/2610.21488",
+      "locator": "Abstract",
+      "sourceVersion": "arXiv:2610.21488; first version 15 October 2026; revised 25 October 2026"
+    }
+  }
+]

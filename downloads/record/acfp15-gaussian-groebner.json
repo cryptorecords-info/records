@@ -1,0 +1,45 @@
+{
+  "id": "acfp15-gaussian-groebner",
+  "categoryId": "lwe-gaussian-algebraic-history",
+  "paperId": "albrecht-cid-faugere-perret2014-algebraic",
+  "year": 2014,
+  "date": "2015-02-26",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "O(2^{n[ω(1+C_A)H₂(C_A/(1+C_A)) + πlog₂(e)/(4A²)]})"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "O(2^{n[2(1+C_A)H₂(C_A/(1+C_A)) + πlog₂(e)/(4A²)]})"
+  },
+  "tags": [
+    "conditional",
+    "semi-regularity",
+    "Gaussian error",
+    "exponential samples"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Conditional on the generated equations being semi-regular. A=1 gives the paper’s rounded time exponent (2.35ω+1.13)n and rounded memory exponent 5.85n. These are historical algebraic bounds, not best overall LWE exponents.",
+  "extra": {
+    "parameters": "Prime q(n) sufficiently large for degree n/A; error σ=√n/√(2π); A≥1 fixed; C_A is the degree-of-regularity constant from Lemma 6 / Proposition 3; C_1≈1.41.",
+    "noise": "Discrete Gaussian with standard deviation σ=√n/√(2π), hence width αq=√n.",
+    "secret": "Arbitrary secret in Z_q^n.",
+    "samples": "m≈exp(πn/(4A²)); exponential oracle samples required.",
+    "objective": "Recover the secret.",
+    "model": "Field operations; ω is the chosen dense linear-algebra exponent; H₂ is binary entropy.",
+    "assumptions": "Assumption 1: semi-regularity of the generated high-degree LWE equations.",
+    "success": "At least 1−2/(π√n), conditional on the stated algebraic assumption."
+  },
+  "evidence": {
+    "url": "https://iacr.steepath.eu/2014/1018-AlgebraicAlgorithmsforLWE.pdf",
+    "locator": "§5, Lemma 6 and Theorem 5, pp. 10–11; Eq. (6)",
+    "sourceVersion": "ePrint 2014/1018 revised 26 February 2015"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "hh21-deterministic",
+  "categoryId": "ifp-deterministic",
+  "paperId": "hh21",
+  "date": "2021-05-24",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 0.2,
+    "expression": "O(N^{1/5} (log N)^{16/5} / (log log N)^{3/5}) bit operations"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not extracted from the source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Same leading exponent 1/5; improves the logarithmic factors. This should appear as a tied leading exponent rather than an artificial exponent improvement.",
+  "extra": {
+    "coefficientExact": "1/5"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/2105.11105",
+    "locator": "Abstract",
+    "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+  }
+}

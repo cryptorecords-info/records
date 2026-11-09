@@ -1,0 +1,75 @@
+[
+  {
+    "id": "accs21-quantum-no-qram",
+    "categoryId": "svp-quantum-no-qram",
+    "paperId": "accs-stacs-2021",
+    "date": "2021-03-10",
+    "year": 2021,
+    "time": {
+      "coefficient": 0.9533,
+      "expression": "2^{0.9533 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "provable",
+      "no QRAM"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The same published result, indexed in the category excluding QRAM.",
+    "extra": {
+      "model": "Quantum; poly(n) qubits; no QRAM"
+    },
+    "evidence": {
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.STACS.2021.4",
+      "locator": "Abstract, result 2",
+      "sourceVersion": "2021-03-10"
+    }
+  },
+  {
+    "id": "accs22-quantum-no-qram",
+    "categoryId": "svp-quantum-no-qram",
+    "paperId": "accs-arxiv-2022",
+    "date": "2022-05-10",
+    "year": 2022,
+    "time": {
+      "coefficient": 0.95,
+      "expression": "2^{0.95 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "provable",
+      "quantum",
+      "No QRAM"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Version 5 contains this bound; the journal article appeared in 2025.",
+    "extra": {
+      "model": "Quantum; polynomially many qubits",
+      "qram": "No QRAM",
+      "classical-memory": "2^{0.5n+o(n)}"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/2002.07955v5",
+      "locator": "Abstract, quantum SVP result",
+      "sourceVersion": "2022-05-10"
+    }
+  }
+]

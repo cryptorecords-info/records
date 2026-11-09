@@ -1,0 +1,30 @@
+{
+  "id": "cl21",
+  "categoryId": "svp-quantum-heuristic",
+  "paperId": "paper-3219d85db441",
+  "year": 2021,
+  "date": "2021-05-12",
+  "time": {
+    "coefficient": 0.257,
+    "expression": "2^{0.2570 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "ASIACRYPT 2021. Heuristic sieving time; the paper supplies memory trade-offs. A single total-space coefficient is intentionally not inferred from its abstract.",
+  "extra": {
+    "qram": "Quantum random-access assumptions; see paper trade-offs",
+    "qubits": "Time-memory trade-off; see source",
+    "model": "Quantum sieving, random-list heuristic",
+    "reference": "CL21"
+  }
+}

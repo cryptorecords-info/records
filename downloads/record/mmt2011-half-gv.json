@@ -1,0 +1,30 @@
+{
+  "id": "mmt2011-half-gv",
+  "categoryId": "isd-half-distance",
+  "paperId": "mmt2011",
+  "date": "2011-12-31",
+  "time": {
+    "coefficient": 0.0537,
+    "expression": "2^{0.0537 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Half-GV coefficient corroborated by the successor abstract.",
+  "extra": {},
+  "evidence": {
+    "url": "https://eprint.iacr.org/2012/026",
+    "locator": "Abstract",
+    "sourceVersion": "2012-01-20"
+  },
+  "datePrecision": "year"
+}

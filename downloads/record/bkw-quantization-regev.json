@@ -1,0 +1,38 @@
+{
+  "id": "bkw-quantization-regev",
+  "categoryId": "bkw-regev",
+  "paperId": "paper-e014be9a6925",
+  "year": 2015,
+  "date": "2015-06-08",
+  "time": {
+    "coefficient": 0.9299,
+    "expression": "2^{0.9299 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "classical",
+    "heuristic",
+    "LWE",
+    "BKW",
+    "Regev regime",
+    "unlimited samples",
+    "unstructured"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "CRYPTO 2015. Rounded Regev specialization of progressive quantization; the asymptotic coefficient is (1/2 + 2 ln(4/3))⁻¹. This is an abundant-sample row, not the separate bounded-error subexponential theorem.",
+  "extra": {
+    "samples": "2^{Θ(n)} fresh classical equations",
+    "model": "Assumptions of the cited BKW/list analysis",
+    "schedule": "Progressive quantization",
+    "access": "Classical tables"
+  }
+}

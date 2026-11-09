@@ -1,0 +1,36 @@
+{
+  "id": "fgl26-polynomial-space",
+  "categoryId": "svp-enumeration",
+  "paperId": "feng-gao-liu-2026",
+  "date": "2026-09-18",
+  "year": 2026,
+  "time": {
+    "coefficient": 0.09196986029286058,
+    "expression": "n^{n/(4e) + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "poly(n)"
+  },
+  "tags": [
+    "provable",
+    "polynomial space",
+    "n log n scale"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Randomized polynomial-space algorithm; compare on the n log n scale.",
+  "extra": {
+    "model": "Classical randomized; polynomial space"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/2609.21612",
+    "locator": "Abstract",
+    "sourceVersion": "2026-09-18"
+  }
+}

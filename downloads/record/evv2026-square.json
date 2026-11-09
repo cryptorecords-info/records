@@ -1,0 +1,31 @@
+{
+  "id": "evv2026-square",
+  "categoryId": "rank-square-classical",
+  "paperId": "esser-verbel-villanueva2026",
+  "date": "2026-01-19",
+  "time": {
+    "coefficient": 0.1481,
+    "expression": "2^{0.1481 n² + o(n²)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Worst-parameter m=n baseline, attained by algebraic and combinatorial methods. The coefficient is quoted in the base-2 normalization of the source abstract. It is not a universal coefficient for arbitrary base fields q; field and bit/field-operation conventions must be kept as in the source.",
+  "extra": {
+    "field-convention": "Source abstract normalization; no change-of-base or arbitrary-q extrapolation is asserted."
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2026/082",
+    "locator": "Abstract",
+    "sourceVersion": "2026-01-19"
+  }
+}

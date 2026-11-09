@@ -1,0 +1,30 @@
+{
+  "id": "lp92-unconditional",
+  "categoryId": "ifp-lhalf-proven",
+  "paperId": "lp92",
+  "date": "1992-07-31",
+  "datePrecision": "month",
+  "time": {
+    "coefficient": 1,
+    "expression": "L_N[1/2, 1]"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not extracted from the source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Unconditional randomized expected-time theorem for complete prime factorization. This must be kept apart from deterministic bounds and heuristic smoothness analyses.",
+  "extra": {},
+  "evidence": {
+    "url": "https://www.cs.umd.edu/~gasarch/TOPICS/factoring/rigorous.pdf",
+    "locator": "First-page theorem",
+    "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+  }
+}

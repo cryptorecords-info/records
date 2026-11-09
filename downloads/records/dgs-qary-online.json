@@ -1,0 +1,47 @@
+[
+  {
+    "id": "peikert10-dgs-qary-online",
+    "categoryId": "dgs-qary-online",
+    "paperId": "peikert-2010-gaussian",
+    "year": 2010,
+    "date": "2010-12-31",
+    "datePrecision": "year",
+    "time": {
+      "coefficient": null,
+      "expression": "O(n^2) integer operations plus n randomized-rounding calls online"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "O(n^2 log q) matrix bits plus O(n log q) bits per fresh perturbation"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "q-ary",
+      "trapdoor",
+      "offline online",
+      "parallel"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The integer arithmetic bound excludes offline preparation and fresh perturbation generation. It uses the stronger operator-norm width promise.",
+    "extra": {
+      "width": "s >= r(2 s_1(B)+1), r=omega(sqrt(log n)), for spherical covariance",
+      "preprocessing": "Precompute inverse and perturbations; a fresh perturbation is consumed for each output",
+      "output": "One sample on L+c; q Z^n contained in L contained in Z^n and c integral",
+      "error": "Negligible statistical distance",
+      "model": "P <= n^2 processors: O(n^2/P) integer operations and ceil(n/P) rounding calls each; arithmetic can be modulo q or q^2"
+    },
+    "evidence": {
+      "url": "https://web.eecs.umich.edu/~cpeikert/pubs/pargauss.pdf",
+      "locator": "§1.2; Algorithm 2 and Theorem 4.3, printed pp. 12–14",
+      "sourceVersion": "CRYPTO 2010; full author version 13 April 2011"
+    }
+  }
+]

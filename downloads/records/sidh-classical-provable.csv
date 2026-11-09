@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"robert22-sidh","robert22","Breaking SIDH in polynomial time","Damien Robert","Eurocrypt 2023","2023","published","2022-08-10","day","","Polynomial in the input size","","Not stated in the checked source","https://eprint.iacr.org/2022/1038","source-checked"

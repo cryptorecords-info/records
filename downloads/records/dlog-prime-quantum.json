@@ -1,0 +1,35 @@
+[
+  {
+    "id": "eg23-prime-quantum",
+    "categoryId": "dlog-prime-quantum",
+    "paperId": "eg23",
+    "date": "2023-11-09",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "Regev-type polynomial-time quantum circuits and polynomial classical post-processing"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not extracted from the source"
+    },
+    "tags": [
+      "number-theoretic heuristic",
+      "multiple quantum runs"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Extension of Regev’s method to prime-field discrete logarithms. Circuit size per run, repetitions, arithmetic implementation and post-processing are separate resources. The original construction uses number-theoretic heuristic assumptions; later unconditional variants are analysed by Pilatte.",
+    "extra": {},
+    "evidence": {
+      "url": "https://arxiv.org/abs/2311.05545",
+      "locator": "Abstract; discrete logarithm construction",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  }
+]

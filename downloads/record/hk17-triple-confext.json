@@ -1,0 +1,37 @@
+{
+  "id": "hk17-triple-confext",
+  "categoryId": "svp-triple-heuristic",
+  "paperId": "herold-kirshanova-2017",
+  "date": "2017-01-26",
+  "year": 2017,
+  "time": {
+    "coefficient": 0.3717,
+    "expression": "2^{0.3717 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.1887,
+    "expression": "2^{0.1887 n + o(n)}"
+  },
+  "tags": [
+    "heuristic",
+    "triple sieving"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Configuration extension retains the triple-list space exponent.",
+  "extra": {
+    "model": "Classical; heuristic spherical lists",
+    "preprocessing": "Included",
+    "reference": "Abstract; Section 7.2, p. 21"
+  },
+  "evidence": {
+    "url": "https://elenakirshanova.github.io/Papers/improved_kList_euclid.pdf",
+    "locator": "Abstract; Section 7.2, p. 21",
+    "sourceVersion": "ePrint 2017/017 revised 26 January 2017"
+  }
+}

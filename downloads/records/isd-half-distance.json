@@ -1,0 +1,247 @@
+[
+  {
+    "id": "bjmm12",
+    "categoryId": "isd-half-distance",
+    "paperId": "paper-f1a990a4cd6f",
+    "year": 2012,
+    "date": "2012-01-20",
+    "time": {
+      "coefficient": 0.0494,
+      "expression": "2^{0.0494 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "EUROCRYPT 2012. Historical asymptotic half-distance bound, maximized over rates. This coefficient must not be transferred to full-distance decoding or a fixed-rate instance.",
+    "extra": {
+      "field": "𝔽₂",
+      "rate": "Worst rate in the half-distance convention",
+      "weight": "Half the GV distance",
+      "model": "Asymptotic ISD operation count",
+      "reference": "BJMM12"
+    }
+  },
+  {
+    "id": "mo15",
+    "categoryId": "isd-half-distance",
+    "paperId": "paper-bb2a5c84c79d",
+    "year": 2015,
+    "date": "2015-04-26",
+    "time": {
+      "coefficient": 0.0473,
+      "expression": "2^{0.0473 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "EUROCRYPT 2015. Source gives 0.0473 in the half (bounded) distance setting. Historical reference, not a claim that all later ISD improvements have been included. Date denotes EUROCRYPT 2015 opening day, not a verified first preprint date.",
+    "extra": {
+      "field": "𝔽₂",
+      "rate": "Worst rate in the half-distance convention",
+      "weight": "Half the GV distance",
+      "model": "Asymptotic nearest-neighbor ISD",
+      "reference": "MO15"
+    }
+  },
+  {
+    "id": "mmt2011-half-gv",
+    "categoryId": "isd-half-distance",
+    "paperId": "mmt2011",
+    "date": "2011-12-31",
+    "time": {
+      "coefficient": 0.0537,
+      "expression": "2^{0.0537 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Half-GV coefficient corroborated by the successor abstract.",
+    "extra": {},
+    "evidence": {
+      "url": "https://eprint.iacr.org/2012/026",
+      "locator": "Abstract",
+      "sourceVersion": "2012-01-20"
+    },
+    "datePrecision": "year"
+  },
+  {
+    "id": "blp2011-half-gv",
+    "categoryId": "isd-half-distance",
+    "paperId": "blp2010",
+    "date": "2011-03-07",
+    "time": {
+      "coefficient": 0.0556,
+      "expression": "2^{0.0556 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Half-distance coefficient rounded in the successor abstract.",
+    "extra": {},
+    "evidence": {
+      "url": "https://eprint.iacr.org/2012/026",
+      "locator": "Abstract",
+      "sourceVersion": "2012-01-20"
+    }
+  },
+  {
+    "id": "both-may2017-half-depth2",
+    "categoryId": "isd-half-distance",
+    "paperId": "both-may2017-high-error",
+    "date": "2017-11-27",
+    "time": {
+      "coefficient": 0.0488,
+      "expression": "2^{0.0488 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.029,
+      "expression": "2^{0.029 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Depth 2; Figure 6.",
+    "extra": {
+      "depth": "2"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2017/1139.pdf",
+      "locator": "Theorem 3; Figure 6",
+      "sourceVersion": "2018-01-31"
+    }
+  },
+  {
+    "id": "both-may2017-half-depth3",
+    "categoryId": "isd-half-distance",
+    "paperId": "both-may2017-high-error",
+    "date": "2017-11-27",
+    "time": {
+      "coefficient": 0.0478,
+      "expression": "2^{0.0478 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.029,
+      "expression": "2^{0.029 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Depth 3; Figure 6.",
+    "extra": {
+      "depth": "3"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2017/1139.pdf",
+      "locator": "Theorem 3; Figure 6",
+      "sourceVersion": "2018-01-31"
+    }
+  },
+  {
+    "id": "both-may2017-half-depth4",
+    "categoryId": "isd-half-distance",
+    "paperId": "both-may2017-high-error",
+    "date": "2017-11-27",
+    "time": {
+      "coefficient": 0.0465,
+      "expression": "2^{0.0465 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.0294,
+      "expression": "2^{0.0294 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Depth 4; Figure 6.",
+    "extra": {
+      "depth": "4"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2017/1139.pdf",
+      "locator": "Theorem 3; Figure 6",
+      "sourceVersion": "2018-01-31"
+    }
+  },
+  {
+    "id": "li2025-half-gv",
+    "categoryId": "isd-half-distance",
+    "paperId": "li2025-ternary",
+    "date": "2025-10-12",
+    "time": {
+      "coefficient": 0.0453,
+      "expression": "2^{0.0453 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "heuristic"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Published heuristic claim; not independently proof-audited.",
+    "extra": {},
+    "evidence": {
+      "url": "https://doi.org/10.3390/info16100887",
+      "locator": "Abstract; Table 1; Section 5",
+      "sourceVersion": "Published 2025-10-12"
+    }
+  }
+]

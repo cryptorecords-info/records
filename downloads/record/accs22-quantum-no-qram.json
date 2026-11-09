@@ -1,0 +1,38 @@
+{
+  "id": "accs22-quantum-no-qram",
+  "categoryId": "svp-quantum-no-qram",
+  "paperId": "accs-arxiv-2022",
+  "date": "2022-05-10",
+  "year": 2022,
+  "time": {
+    "coefficient": 0.95,
+    "expression": "2^{0.95 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.5,
+    "expression": "2^{0.5 n + o(n)}"
+  },
+  "tags": [
+    "provable",
+    "quantum",
+    "No QRAM"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Version 5 contains this bound; the journal article appeared in 2025.",
+  "extra": {
+    "model": "Quantum; polynomially many qubits",
+    "qram": "No QRAM",
+    "classical-memory": "2^{0.5n+o(n)}"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/2002.07955v5",
+    "locator": "Abstract, quantum SVP result",
+    "sourceVersion": "2022-05-10"
+  }
+}

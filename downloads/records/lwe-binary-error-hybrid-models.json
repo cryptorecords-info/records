@@ -1,0 +1,92 @@
+[
+  {
+    "id": "bgpw16-binary-error-hybrid",
+    "categoryId": "lwe-binary-error-hybrid-models",
+    "paperId": "buchmann-goepfert-player-wunderer2016-hybrid",
+    "year": 2016,
+    "date": "2016-04-13",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "T_reduce(m,δ) + 2^16 binom(r,c) / sqrt(p·binom(2c,c)), r=4c"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Collision tables scale with the number of guessed/stored partial secrets; source theorem does not give a common cn memory coefficient."
+    },
+    "tags": [
+      "binary error",
+      "binary secret",
+      "hybrid",
+      "heuristic cost"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The online expression is conditional on termination and on the source’s collision and per-loop heuristics. Basis reduction is a separate preprocessing cost. p is the admissibility/collision probability from Theorem 1, depending on the reduced-basis profile.",
+    "extra": {
+      "parameters": "Fix n,m,q; r=4c guessed coordinates; reduced q-ary basis B with root-Hermite factor δ.",
+      "noise": "Independent uniform binary error in {0,1}; recentered to ±1/2 before decoding.",
+      "secret": "Independent uniform binary secret in {0,1}^n.",
+      "samples": "Exactly the given m samples; comparisons instantiate at most m=2n.",
+      "objective": "Find a valid binary error and recover the secret.",
+      "model": "Nearest-plane plus meet-in-the-middle; p from Theorem 1; 2^16 operations per inner loop is an empirical estimate.",
+      "assumptions": "Heuristics 2 and 4; sufficient nearest-plane decoding quality for the correct residual target.",
+      "success": "Termination probability at least p₀=2^{−r}binom(r,2c) under Theorem 1 assumptions; amplification/restarts are additional."
+    },
+    "evidence": {
+      "url": "https://download.hrz.tu-darmstadt.de/media/FB20/Dekanat/Publikationen/Crossing/hybrid_attack.pdf",
+      "locator": "§3.2, Theorem 1, PDF pp. 8–9; §3.3 on preprocessing; §4 sample cap",
+      "sourceVersion": "Author-hosted AFRICACRYPT 2016 manuscript; ePrint revision 13 April 2016"
+    }
+  },
+  {
+    "id": "bgpw16-binary-error-n256",
+    "categoryId": "lwe-binary-error-hybrid-models",
+    "paperId": "buchmann-goepfert-player-wunderer2016-hybrid",
+    "year": 2016,
+    "date": "2016-04-13",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "Approximately 2^85 bit operations for (n,m,q)=(256,512,256)"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "No numerical space estimate extracted."
+    },
+    "tags": [
+      "finite instance",
+      "binary error",
+      "hybrid",
+      "historical estimate"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Source Table 1’s concrete hybrid estimate, including the paper’s basis-reduction model. Its empirical LP-based BKZ estimate was later criticized; keep this as historical finite-instance evidence, without an asymptotic cn coefficient.",
+    "extra": {
+      "parameters": "Fixed finite instance n=256, m=512, q=256; no q(n) asymptotic family asserted.",
+      "noise": "Independent uniform binary errors.",
+      "secret": "Independent uniform binary secret.",
+      "samples": "At most 512=2n samples.",
+      "objective": "Recover the secret / valid error.",
+      "model": "Historical bit-operation estimate; source Table 1, row V. BKZ model is the empirical Eq. (1).",
+      "assumptions": "Hybrid collision heuristics, basis-profile model and historical lattice-reduction estimator.",
+      "success": "As estimated in the paper’s attack/parameter optimization."
+    },
+    "evidence": {
+      "url": "https://download.hrz.tu-darmstadt.de/media/FB20/Dekanat/Publikationen/Crossing/hybrid_attack.pdf",
+      "locator": "Abstract; §4, Table 1, row V, PDF p. 15; Eq. (1) for the historical BKZ estimator",
+      "sourceVersion": "Author-hosted AFRICACRYPT 2016 manuscript; ePrint revision 13 April 2016"
+    }
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "id": "hkkl26-quantum-worstcase",
+  "categoryId": "svp-quantum-provable",
+  "paperId": "paper-c70730f20075",
+  "date": "2026-11-04",
+  "year": 2026,
+  "time": {
+    "coefficient": 0.2469,
+    "expression": "2^{0.2469 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.247,
+    "expression": "2^{0.247 n + o(n)}"
+  },
+  "tags": [
+    "quantum",
+    "worst-case",
+    "Euclidean",
+    "author-supplied precision"
+  ],
+  "review": {
+    "status": "unreviewed"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The public abstract states worst-case quantum time and space 2^{0.247n+o(n)}. The more precise 0.2469 is supplied by coauthor Thijs Laarhoven in this update; full-PDF precision was not independently checked.",
+  "extra": {
+    "model": "Quantum; worst-case exact Euclidean SVP",
+    "precision": "Public abstract rounds to 0.247; author-supplied 0.2469"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2026/2761",
+    "locator": "Abstract; finer decimal supplied by coauthor",
+    "sourceVersion": "2026-11-04"
+  }
+}

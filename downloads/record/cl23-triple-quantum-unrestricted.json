@@ -1,0 +1,42 @@
+{
+  "id": "cl23-triple-quantum-unrestricted",
+  "categoryId": "svp-quantum-heuristic",
+  "paperId": "chailloux-loyer-tuple-2023",
+  "date": "2023-08-02",
+  "year": 2023,
+  "time": {
+    "coefficient": 0.3098,
+    "expression": "2^{0.3098 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.1887,
+    "expression": "2^{0.1887 n + o(n)}"
+  },
+  "tags": [
+    "quantum",
+    "heuristic",
+    "triple sieving",
+    "QCRAM",
+    "memory tradeoff"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Tailored filtering before quantum tuple search improves triple sieving at the stated memory budget. It is not an unrestricted quantum-SVP time record. Triple-sieving point using tailored filtering.",
+  "extra": {
+    "model": "Sequential quantum time; .1887n classical QCRAM exponent; poly(n) qubits",
+    "preprocessing": "Included",
+    "reference": "Theorem 6",
+    "qram": "Coherent access to classical memory; exponent 0.1887",
+    "qubits": "2^{o(n)}; see the source’s access model"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2023/200.pdf",
+    "locator": "Theorem 6, pp. 26–27; Table 3",
+    "sourceVersion": "ePrint 2023/200 revision 2 August 2023; original full text checked via public mirror"
+  }
+}

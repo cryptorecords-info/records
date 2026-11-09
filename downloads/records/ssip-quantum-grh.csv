@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"bjs14-general","bjs14","A quantum algorithm for computing isogenies between supersingular elliptic curves","Jean-François Biasse · David Jao · Anirudh Sankar","Indocrypt 2014","2014","published","2014-12-31","year","0.25","O~(p^{1/4})","","Not stated in the checked source","https://cacr.uwaterloo.ca/techreports/2014/cacr2014-24.pdf","source-checked"

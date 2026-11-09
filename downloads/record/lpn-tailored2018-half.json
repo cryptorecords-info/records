@@ -1,0 +1,41 @@
+{
+  "id": "lpn-tailored2018-half",
+  "categoryId": "lpn-memory-half",
+  "paperId": "esser2018-dissection-bkw",
+  "date": "2018-12-31",
+  "datePrecision": "year",
+  "year": 2018,
+  "time": {
+    "coefficient": 1.8073549220576042,
+    "expression": "2^{(log₂(7)−1+ε) n/log₂ n}"
+  },
+  "space": {
+    "coefficient": 0.5,
+    "expression": "2^{(1/2+ε) n/log₂ n}"
+  },
+  "tags": [
+    "classical",
+    "heuristic",
+    "LPN",
+    "time-memory tradeoff",
+    "tailoring heuristic"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Uses the full memory cap; both named heuristics are required.",
+  "extra": {
+    "samples": "Same leading exponent as memory",
+    "model": "Independence and Tailoring Heuristics",
+    "formula": "time log₂7−2·(1/2)"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2018/569.pdf",
+    "locator": "Theorem 5.2, i=2, c_i=7, α=3/log₂7; cf. Corollary 5.1",
+    "sourceVersion": "ePrint 2018/569 full version, 31 pages, checked 2026-11-08; original-version diff not available"
+  }
+}

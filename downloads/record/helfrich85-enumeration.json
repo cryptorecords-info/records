@@ -1,0 +1,39 @@
+{
+  "id": "helfrich85-enumeration",
+  "categoryId": "svp-enumeration",
+  "paperId": "helfrich-1985",
+  "date": "1985-12-31",
+  "datePrecision": "year",
+  "year": 1985,
+  "time": {
+    "coefficient": 0.5,
+    "expression": "n^{n/2+o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "poly(input size)"
+  },
+  "tags": [
+    "enumeration",
+    "polynomial space",
+    "n log n scale"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The n^{n/2+o(n)} SVP refinement is explicitly attributed to Helfrich 1985 by Hanrot–Stehlé 2007. That later primary research paper was read; the original Helfrich theorem was not retrieved. This row records the checked historical attribution, rather than claiming an independent reading of the 1985 proof. The scale is n log n and must remain separate from singly exponential SVP.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Deterministic exact algorithm",
+    "model": "Classical; polynomial input-size factors suppressed"
+  },
+  "evidence": {
+    "url": "https://perso.ens-lyon.fr/damien.stehle/downloads/crypto2007.pdf",
+    "locator": "Introduction, PDF p. 2; §3.3; reference [13]",
+    "sourceVersion": "CRYPTO 2007 author preprint; checked historical attribution"
+  }
+}

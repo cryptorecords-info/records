@@ -1,0 +1,42 @@
+[
+  {
+    "id": "eisenbrand-venzin20-cvp-lp-approx",
+    "categoryId": "cvp-constant-approximation-lp",
+    "paperId": "eisenbrand-venzin-2020",
+    "year": 2020,
+    "date": "2020-06-16",
+    "time": {
+      "coefficient": 0.802,
+      "expression": "2^{(0.802 + ε)n}, for every fixed ε > 0"
+    },
+    "space": {
+      "coefficient": 0.401,
+      "expression": "2^{(0.401 + ε)n}"
+    },
+    "tags": [
+      "ℓp norms",
+      "constant approximation",
+      "full rank"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Theorem 3.2 covers p ≥ 2; §4 extends the result to 1 ≤ p < 2. For each time slack ε the guarantee uses a constant approximation factor depending on ε. The general-ℓp result is dated to v2; v1 on 11 May covered ℓ∞.",
+    "extra": {
+      "norm": "Any fixed ℓp, 1 ≤ p ≤ ∞; full-rank L ⊂ R^n",
+      "approximation": "γ(p,ε) = O_{p,ε}(1); not a fixed 1.97 or exact guarantee",
+      "preprocessing": "Included",
+      "success": "Constant probability, amplifiable",
+      "model": "Classical randomized list sieve; polynomial input-size factors suppressed"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/2005.04957v2",
+      "locator": "Theorem 3.2; §4 for p < 2; §1 ambient-dimension discussion",
+      "sourceVersion": "arXiv:2005.04957v2, 16 June 2020"
+    }
+  }
+]

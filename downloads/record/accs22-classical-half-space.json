@@ -1,0 +1,35 @@
+{
+  "id": "accs22-classical-half-space",
+  "categoryId": "svp-provable",
+  "paperId": "accs-arxiv-2022",
+  "date": "2022-05-10",
+  "year": 2022,
+  "time": {
+    "coefficient": 1.669,
+    "expression": "2^{1.669 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.5,
+    "expression": "2^{0.5 n + o(n)}"
+  },
+  "tags": [
+    "provable",
+    "time-space tradeoff"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "A time–space tradeoff, not a time-only improvement over the 2^n algorithm.",
+  "extra": {
+    "model": "Classical randomized; memory exponent 0.5"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/2002.07955v5",
+    "locator": "Abstract, classical SVP result",
+    "sourceVersion": "2022-05-10"
+  }
+}

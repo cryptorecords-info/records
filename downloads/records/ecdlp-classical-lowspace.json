@@ -1,0 +1,37 @@
+[
+  {
+    "id": "wz11-ecdlp",
+    "categoryId": "ecdlp-classical-lowspace",
+    "paperId": "wz11",
+    "date": "2011-01-05",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.5,
+      "expression": "r^{1/2+o(1)} expected group operations"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Low-storage random walk; constant-size local state (plus distinguished-point storage for parallel variants)"
+    },
+    "tags": [
+      "negation map",
+      "random-walk heuristic"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "A rho/negation-map method for ordinary prime-order elliptic-curve subgroups. It addresses fruitless cycles and approaches a sqrt(2) speedup, which changes the multiplicative constant but leaves the leading exponent 1/2. The random-walk model remains heuristic.",
+    "extra": {
+      "coefficientExact": "1/2"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2011/008",
+      "locator": "Abstract; rho analysis",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  }
+]

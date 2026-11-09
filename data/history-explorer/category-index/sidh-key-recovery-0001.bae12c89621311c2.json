@@ -1,0 +1,1 @@
+[{"id":"sidh-classical-conditional","name":"Classical · known endomorphism ring","metric":"Parameter-dependent","parameter":"log p","direction":"min","historyCount":0,"featured":false},{"id":"sidh-classical-provable","name":"Classical · polynomial time","metric":"Polynomial in input size","parameter":"log p","direction":"min","historyCount":0,"featured":false}]

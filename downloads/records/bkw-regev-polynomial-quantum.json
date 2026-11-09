@@ -1,0 +1,124 @@
+[
+  {
+    "id": "bkw-quantum-coded17-polynomial",
+    "categoryId": "bkw-regev-polynomial-quantum",
+    "paperId": "paper-f792611a7feb",
+    "year": 2019,
+    "date": "2019-01-19",
+    "time": {
+      "coefficient": 1.6364,
+      "expression": "2^{1.6364 n+o(n)}"
+    },
+    "space": {
+      "coefficient": 1.6364,
+      "expression": "2^{1.6364 n+o(n)}"
+    },
+    "tags": [
+      "quantum",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "polynomial samples"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "2019 source analysis of the earlier algorithm. The 2017 conference version §6.4 deferred this sample-limited comparison to future work.",
+    "extra": {
+      "samples": "Polynomially many original samples, amplified",
+      "model": "Heuristics of the cited BKW/list analysis",
+      "schedule": "Common factor γ=1",
+      "access": "Coherent indexed reads; Grover search",
+      "coefficient_source": "https://arxiv.org/html/1901.06558v2#S6.T1",
+      "original_algorithm": "Guo–Johansson–Mårtensson–Stankovski, Coded-BKW with Sieving, ASIACRYPT 2017",
+      "original_paper_id": "paper-46a7c73ed460"
+    },
+    "datePrecision": "day",
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1901.06558v1",
+      "locator": "§VI, Table I; §V.E polynomial-sample transformation",
+      "sourceVersion": "arXiv:1901.06558v1, 19 January 2019, Table I checked directly"
+    }
+  },
+  {
+    "id": "bkw-quantum-common19-polynomial",
+    "categoryId": "bkw-regev-polynomial-quantum",
+    "paperId": "paper-c64ff7d0568b",
+    "year": 2019,
+    "date": "2019-01-09",
+    "time": {
+      "coefficient": 1.6211,
+      "expression": "2^{1.6211 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "quantum",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "polynomial samples"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Polynomial-sample column of Mårtensson 2019 Table I; amplification noise included. First public archive date shown.",
+    "extra": {
+      "samples": "poly(n) fresh input equations; amplification allowed",
+      "model": "Assumptions of the cited BKW/list analysis",
+      "schedule": "Optimized constant γ",
+      "access": "Coherent indexed reads; Grover search",
+      "coefficient_source": "https://arxiv.org/html/1901.06558v2#S6.T1"
+    }
+  },
+  {
+    "id": "bkw-quantum-progression19-polynomial",
+    "categoryId": "bkw-regev-polynomial-quantum",
+    "paperId": "paper-f792611a7feb",
+    "year": 2019,
+    "date": "2019-01-19",
+    "time": {
+      "coefficient": 1.6168,
+      "expression": "2^{1.6168 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "quantum",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "polynomial samples"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Polynomial-sample column of Mårtensson 2019 Table I; amplification noise included. First public archive date shown.",
+    "extra": {
+      "samples": "poly(n) fresh input equations; amplification allowed",
+      "model": "Assumptions of the cited BKW/list analysis",
+      "schedule": "Arithmetic progression of γᵢ",
+      "access": "Coherent indexed reads; Grover search",
+      "coefficient_source": "https://arxiv.org/html/1901.06558v2#S6.T1"
+    }
+  }
+]

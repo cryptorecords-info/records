@@ -1,0 +1,35 @@
+[
+  {
+    "id": "bjs14-general",
+    "categoryId": "ssip-quantum-grh",
+    "paperId": "bjs14",
+    "date": "2014-12-31",
+    "datePrecision": "year",
+    "time": {
+      "coefficient": 0.25,
+      "expression": "O~(p^{1/4})"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not stated in the checked source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Theorem 1 is conditional on GRH. This is the general supersingular-isogeny problem, not SIDH with auxiliary torsion information. Only the publication year was verified for chronology.",
+    "extra": {
+      "assumption": "GRH",
+      "date-basis": "Publication year 2014; day not asserted"
+    },
+    "evidence": {
+      "url": "https://cacr.uwaterloo.ca/techreports/2014/cacr2014-24.pdf",
+      "locator": "Theorem 1 (Main result), p.4",
+      "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+    }
+  }
+]

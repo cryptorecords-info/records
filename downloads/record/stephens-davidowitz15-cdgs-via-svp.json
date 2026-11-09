@@ -1,0 +1,47 @@
+{
+  "id": "stephens-davidowitz15-cdgs-via-svp",
+  "categoryId": "dgs-arbitrary-width-inverse-poly-error",
+  "paperId": "stephens-davidowitz-2016-dgs",
+  "year": 2016,
+  "date": "2015-06-24",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 1,
+    "expression": "Claimed 2^{n+o(n)} expected total time, using ADRS15 as the SVP oracle"
+  },
+  "space": {
+    "coefficient": 1,
+    "expression": "2^{n+o(n)} with the ADRS15 oracle"
+  },
+  "tags": [
+    "classical",
+    "worst case",
+    "centered",
+    "arbitrary width",
+    "sparsification",
+    "dimension-preserving reduction",
+    "inverse-polynomial error",
+    "historical claim",
+    "proof gap reported"
+  ],
+  "review": {
+    "status": "disputed"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Historical claim of an expected-polynomial-time, dimension-preserving reduction from arbitrary-width centered DGS to exact SVP on sublattices. Instantiating the claimed reduction with ADRS15 gives coefficient 1, without improving the already known DGS exponent 1. The first arXiv version contains the stated reduction and accuracy guarantee, but GHH26 Appendix D.1 identifies a counterexample to the additive squared-radius grid comparison in this proof; its multiplicative-grid replacement repairs the reduction in 2026. This entry is therefore disputed and excluded from admitted historical bounds and result markers. The exponent 1 itself remains independently supported by the ADRS15 sampler; the issue concerns this particular reduction proof. The multiplicative accuracy is inverse polynomial, not negligible TV error.",
+  "extra": {
+    "width": "Any rational s > 0; centered distribution on a rational lattice",
+    "output": "One sample",
+    "error": "(1+1/f(n), 2^{-f(n)})-close for every efficiently computable 1 <= f(n) <= poly(n); implied TV error inverse polynomial",
+    "model": "Expected-polynomial-time reduction with an exact-SVP oracle; ADRS15 oracle costs included",
+    "proof-status": "Original radius-grid argument has a reported counterexample; corrected reduction in GHH26 Theorem 12.6 and Appendix D, https://arxiv.org/abs/2611.04336v1"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1506.07490v1",
+    "locator": "§4.3, Theorem 4.5 and its additive squared-radius grid in the original v1; gap and repair: GHH26 §12.4, Theorem 12.6, Appendix D.1 (printed pp. 89–90)",
+    "sourceVersion": "arXiv:1506.07490v1, 24 June 2015; gap cross-checked against arXiv:2611.04336v1, 3 November 2026"
+  }
+}

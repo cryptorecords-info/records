@@ -1,0 +1,43 @@
+{
+  "id": "klein00-bdd-polynomial-advice",
+  "categoryId": "bdd-polynomial-advice",
+  "paperId": "klein-2000",
+  "year": 2000,
+  "date": "2000-12-31",
+  "datePrecision": "year",
+  "time": {
+    "coefficient": null,
+    "expression": "poly(input size), for fixed radius constant"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Polynomial-size supplied basis"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "worst case",
+    "preprocessing",
+    "small radius"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "A sufficiently good preprocessed basis turns the basis-relative bound into polynomial-time decoding at radius c lambda_1(L)/n for any fixed constant c covered by the time bound. Advice construction is not charged.",
+  "extra": {
+    "radius": "c lambda_1(L)/n for a fixed constant c (O(lambda_1/n) historical regime)",
+    "advice": "A suitable Korkin–Zolotarev basis; polynomial-size advice",
+    "preprocessing": "Unbounded; supplying the good basis is essential",
+    "success": "High probability",
+    "model": "Online query only; not an end-to-end polynomial BDD algorithm"
+  },
+  "evidence": {
+    "url": "https://cs.brown.edu/research/pubs/pdfs/2000/Klein-2000-FCL.pdf",
+    "locator": "Introduction and §1.1, p. 937; independently cross-checked in LLM06 §3, Theorem 1",
+    "sourceVersion": "SODA 2000 original statement; primary indexed PDF"
+  }
+}

@@ -1,0 +1,1 @@
+[{"id":"dlog-generic-classical","name":"Classical · randomized low storage","metric":"r^{c+o(1)} group operations","parameter":"r","direction":"min","historyCount":1,"featured":false},{"id":"dlog-generic-quantum","name":"Quantum · abelian groups","metric":"Expression only","parameter":"log₂ r","direction":"min","historyCount":0,"featured":false}]

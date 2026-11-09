@@ -1,0 +1,39 @@
+{
+  "id": "lpn-bkw2000-subexponential",
+  "categoryId": "lpn-fixed-noise",
+  "paperId": "bkw2000-noise-tolerant",
+  "date": "2000-10-15",
+  "datePrecision": "day",
+  "year": 2000,
+  "time": {
+    "coefficient": null,
+    "expression": "2^{O(n/log₂ n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "2^{O(n/log₂ n)}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "LPN",
+    "BKW"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Original search algorithm also gives a decision bound; no numeric constant is inferred from Big-O.",
+  "extra": {
+    "samples": "2^{O(n/log₂ n)}",
+    "model": "Independent Bernoulli noise with constant probability below 1/2"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/cs/0010022v1",
+    "locator": "Introduction, p. 2; §3",
+    "sourceVersion": "arXiv:cs/0010022v1, submitted 15 October 2000"
+  }
+}

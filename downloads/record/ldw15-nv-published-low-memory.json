@@ -1,0 +1,38 @@
+{
+  "id": "ldw15-nv-published-low-memory",
+  "categoryId": "svp-low-memory",
+  "paperId": "paper-2b6476ef7d09",
+  "date": "2015-08-31",
+  "datePrecision": "month",
+  "time": {
+    "coefficient": 0.2972,
+    "expression": "2^{0.2972 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.20751874963942188,
+    "expression": "(4/3)^{n/2+o(n)}"
+  },
+  "tags": [
+    "classical",
+    "heuristic",
+    "sequential hash tables",
+    "low memory"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The published LATINCRYPT 2015 chapter, Theorem 1, explicitly gives time exponent 0.2972 with baseline list space by processing hash tables sequentially. This is distinct from Proposition 1's balanced time/space point. Date is a conservative cutoff for the August 2015 published chapter; it does not assert that this memory refinement was present in the first March preprint.",
+  "extra": {
+    "model": "Nguyen–Vidick variant with one hash table stored at a time",
+    "version": "LATINCRYPT 2015 published chapter, pages 101–118"
+  },
+  "evidence": {
+    "url": "https://math.deweger.net/papers/%5B56%5DLdW-SievLSH-LatinCrypt%5B2015%5D.pdf",
+    "locator": "Theorem 1, printed page 111; preceding sequential-table argument",
+    "sourceVersion": "Published LATINCRYPT 2015 chapter"
+  }
+}

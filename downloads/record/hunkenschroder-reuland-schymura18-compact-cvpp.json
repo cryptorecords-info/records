@@ -1,0 +1,44 @@
+{
+  "id": "hunkenschroder-reuland-schymura18-compact-cvpp",
+  "categoryId": "cvpp-compact-basis",
+  "paperId": "hunkenschroder-reuland-schymura-2018",
+  "year": 2020,
+  "date": "2018-11-20",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "O((2c+1)^n · 2^n · poly(n)) per query"
+  },
+  "space": {
+    "coefficient": 0,
+    "expression": "poly(input size) online working space and stored compact-basis advice"
+  },
+  "tags": [
+    "CVPP",
+    "exact",
+    "classical",
+    "provable",
+    "polynomial space",
+    "compact Voronoi representation",
+    "preprocessing"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The gain is a polynomial-space representation and query algorithm, not a smaller unrestricted CVP time exponent. Every lattice has an n²-compact basis, but the source leaves efficient construction without computing the Voronoi cell as an open problem. All preprocessing needed to supply the basis is excluded from the query bound.",
+  "extra": {
+    "compactness": "Input c-compact basis; every Voronoi-relevant vector lies in B[-c,c]^n",
+    "preprocessing": "Unbounded advice preparation excluded; advice consists of B and c",
+    "target": "Arbitrary target for the fixed lattice",
+    "model": "Deterministic exact CVPP; Voronoi-vector superset enumerated as needed"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1811.08532v1",
+    "locator": "Corollary 4.1 and discussion following it; Theorem 2.4; Problem 4.2",
+    "sourceVersion": "arXiv:1811.08532v1, 20 November 2018"
+  }
+}

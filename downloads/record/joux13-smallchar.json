@@ -1,0 +1,33 @@
+{
+  "id": "joux13-smallchar",
+  "categoryId": "dlog-small-heuristic-expression",
+  "paperId": "joux13",
+  "date": "2013-02-21",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "L_Q(1/4+o(1))"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not extracted from the source"
+  },
+  "tags": [
+    "field embeddings",
+    "heuristic descent"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Heuristic complexity under the source’s field-presentation and descent assumptions. Some input fields are embedded into an extension of degree at most 2 ceil(log_p n); do not assign a fake constant in a fixed L_Q[1/4,c] scale.",
+  "extra": {},
+  "evidence": {
+    "url": "https://eprint.iacr.org/2013/095",
+    "locator": "Abstract",
+    "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+  }
+}

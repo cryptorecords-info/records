@@ -1,0 +1,40 @@
+{
+  "id": "bkw-hkm-nlogn-coded-q2s1",
+  "categoryId": "bkw-q2-s1-nlogn",
+  "paperId": "hkm2015-asymptotic",
+  "date": "2018-12-31",
+  "datePrecision": "year",
+  "year": 2018,
+  "time": {
+    "coefficient": 0.7213475204444817,
+    "expression": "2^{(1/[2 ln(2)]+o(1)) n}"
+  },
+  "space": {
+    "coefficient": 0.7213475204444817,
+    "expression": "2^{(1/[2 ln(2)]+o(1)) n}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "LWE",
+    "BKW"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Parameter substitution in the checked analysis; no priority claim for the underlying algorithm.",
+  "extra": {
+    "samples": "Θ(n log n) original samples",
+    "model": "q exponent 2; Gaussian-width exponent 1; the strict theorem inequalities hold",
+    "formula": "1/[2 ln(2)]"
+  },
+  "evidence": {
+    "url": "https://elenakirshanova.github.io/Papers/on_the_asymptotic_complexity.pdf",
+    "locator": "Theorem 11, first display",
+    "sourceVersion": "Undated 30-page author manuscript checked 2026-11-08; journal 86(1), 2018; original 2015 preprint not version-compared"
+  }
+}

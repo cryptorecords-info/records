@@ -1,0 +1,43 @@
+{
+  "id": "mr08-lwe-dual-geometry",
+  "categoryId": "lwe-dual-lattice-models",
+  "paperId": "micciancio-regev2008-lbc",
+  "year": 2009,
+  "date": "2008-11-07",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "T_reduce(m, δ); m ≈ sqrt(n log₂(q) / log₂(δ))"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Depends on the selected lattice-reduction algorithm."
+  },
+  "tags": [
+    "dual",
+    "historical model"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Early explicit dual-LWE geometry model. Shortness and dimension predictions do not supply a universal LWE running-time exponent.",
+  "extra": {
+    "parameters": "Prime q=q(n); secret dimension n; root-Hermite factor δ; choose m only when enough samples are available.",
+    "noise": "Rounded Gaussian width αq; continuous standard deviation αq/√(2π).",
+    "secret": "General LWE secret in Z_q^n.",
+    "samples": "At least m ≈ √(n log₂ q / log₂ δ); cap m by the actual sample budget.",
+    "objective": "Distinguish LWE from uniform using a short dual vector.",
+    "model": "Unscaled dual length ≈ q⁻¹ min(q, 2^{2√(n log₂(q) log₂(δ))}); source Eqs. (10)–(11).",
+    "assumptions": "Empirical lattice-reduction quality model for random q-ary lattices.",
+    "success": "Non-negligible distinguishing signal requires suitably small αq·||w||; no common fixed advantage is imposed here."
+  },
+  "evidence": {
+    "url": "https://cseweb.ucsd.edu/~daniele/papers/PostQuantum.pdf",
+    "locator": "§5, Security discussion, pp. 21–22, Eqs. (10)–(11)",
+    "sourceVersion": "Author manuscript dated 7 November 2008; edited chapter February 2009"
+  }
+}

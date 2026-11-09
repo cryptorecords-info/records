@@ -1,0 +1,44 @@
+{
+  "id": "ag10-lwe-small-gaussian",
+  "categoryId": "lwe-gaussian-algebraic-history",
+  "paperId": "arora-ge2010-eccc",
+  "year": 2011,
+  "date": "2010-12-13",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "2^{Õ(n^{2ε})}, for αq=n^ε and fixed ε<1/2"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Exponential-size linearization; no numerical space coefficient extracted."
+  },
+  "tags": [
+    "small Gaussian error",
+    "provable",
+    "oracle samples"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Subexponential only in the stated small-error regime. Date is the checked ECCC revision, preceding ICALP 2011.",
+  "extra": {
+    "parameters": "Prime q=q(n) with q ≫ (αq log n)²; αq=n^ε, fixed 0≤ε<1/2.",
+    "noise": "Source Gaussian Ψ_α over GF(q), width parameter αq.",
+    "secret": "Arbitrary fixed u∈GF(q)^n.",
+    "samples": "Oracle access; 2^{Õ(n^{2ε})} samples allowed, not a linear-sample claim.",
+    "objective": "Recover the full secret.",
+    "model": "Classical randomized polynomial-system linearization; polynomial input-size factors implicit.",
+    "assumptions": "Theorem for the specified Gaussian distribution and modulus regime.",
+    "success": "High probability as in Theorems 3.1 and 3.3."
+  },
+  "evidence": {
+    "url": "https://eccc.weizmann.ac.il/report/2010/066/revision/1/download",
+    "locator": "§3, Theorem 3.1, p. 8; construction and Theorem 3.3",
+    "sourceVersion": "ECCC TR10-066 revision 1, 13 December 2010"
+  }
+}

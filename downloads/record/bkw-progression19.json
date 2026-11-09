@@ -1,0 +1,38 @@
+{
+  "id": "bkw-progression19",
+  "categoryId": "bkw-regev",
+  "paperId": "paper-f792611a7feb",
+  "year": 2019,
+  "date": "2019-01-19",
+  "time": {
+    "coefficient": 0.8917,
+    "expression": "2^{0.8917 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "classical",
+    "heuristic",
+    "LWE",
+    "BKW",
+    "Regev regime",
+    "unlimited samples",
+    "unstructured"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "ISIT 2019. Table I, exponential-sample classical column. An arithmetic progression of per-round reduction factors improves the common-factor schedule.",
+  "extra": {
+    "samples": "2^{Θ(n)} fresh classical equations",
+    "model": "Assumptions of the cited BKW/list analysis",
+    "schedule": "Arithmetic progression of γᵢ",
+    "access": "Classical tables"
+  }
+}

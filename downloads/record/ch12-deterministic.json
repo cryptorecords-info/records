@@ -1,0 +1,32 @@
+{
+  "id": "ch12-deterministic",
+  "categoryId": "ifp-deterministic",
+  "paperId": "ch12",
+  "date": "2012-01-10",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 0.25,
+    "expression": "O(M_int(N^{1/4} log N) / sqrt(log log N))"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not extracted from the source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The exact improvement is a sqrt(log log N) factor over the Bostan–Gaudry–Schost bound. The normalized exponent is still 1/4. M_int(k) denotes k-bit integer multiplication cost.",
+  "extra": {
+    "coefficientExact": "1/4"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/1201.2116",
+    "locator": "Abstract",
+    "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+  }
+}

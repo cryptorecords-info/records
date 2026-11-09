@@ -1,0 +1,36 @@
+{
+  "id": "engelberts25-quantum-triple",
+  "categoryId": "svp-quantum-low-memory",
+  "paperId": "engelberts-et-al-2025",
+  "date": "2025-10-09",
+  "year": 2025,
+  "time": {
+    "coefficient": 0.2846,
+    "expression": "2^{0.2846 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.1887,
+    "expression": "2^{0.1887 n + o(n)}"
+  },
+  "tags": [
+    "heuristic",
+    "QCRAM",
+    "triple sieving"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Version 1 already states the bound; publication followed at CRYPTO 2026.",
+  "extra": {
+    "model": "Quantum; 2^{0.1887n} classical and QCRAM bits; 2^{o(n)} qubits"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/2510.08473v1",
+    "locator": "Abstract",
+    "sourceVersion": "2025-10-09"
+  }
+}

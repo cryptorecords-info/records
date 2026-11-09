@@ -1,0 +1,46 @@
+{
+  "id": "drs14-bdd-radius-tradeoff",
+  "categoryId": "bdd-preprocessing-tradeoffs",
+  "paperId": "dadush-regev-stephens-davidowitz-2014",
+  "year": 2014,
+  "date": "2014-09-29",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "2^{(log_2(e) alpha^2/(1-2alpha)^2)n+o(n)} per query"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "2^{(log_2(e) alpha^2/(1-2alpha)^2)n+o(n)} advice"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "worst case",
+    "preprocessing",
+    "constant radius",
+    "parameterized bound"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "For fixed alpha, suppressing polynomial factors gives this expression from Corollary 3.3. The first arXiv abstract already states N≈Õ(n exp(alpha²n/(1−2alpha)²)) advice vectors and Õ(nN) query time. At alpha=1/4 this specializes to exp(n/4+o(n)) time and advice, or base-2 coefficient log₂(e)/4≈0.3606737602. This example is part of the same tradeoff rather than a separate result or category. All costs here are per query or stored advice after unbounded target-independent preprocessing.",
+  "extra": {
+    "radius": "dist(t,L) <= alpha lambda_1(L)",
+    "preprocessing": "Unbounded; source counts advice rather than its construction time",
+    "advice": "N=O(alpha^2 n^2/(1-2alpha)^2 * exp(alpha^2 n/(1-2alpha)^2 + 4/(1-2alpha))) vectors",
+    "parameters": "Any fixed 0 < alpha < 1/2; exact corollary allows Omega(1/sqrt(n)) < alpha < 1/2",
+    "success": "Advice can be chosen to decode every promised target",
+    "quarterRadiusExample": "alpha=1/4: query time and advice exp(n/4+o(n)) = 2^{(log₂(e)/4)n+o(n)}, coefficient ≈0.36067376022224085",
+    "model": "Classical; query time after unbounded target-independent preprocessing"
+  },
+  "evidence": {
+    "url": "https://www.noahsd.com/papers/cvpp.pdf",
+    "locator": "Corollary 3.3, printed pp. 14–15; original v1 abstract includes the formula, alpha=1/4 is a direct substitution",
+    "sourceVersion": "2014 author manuscript / arXiv:1409.8063; first arXiv date"
+  }
+}

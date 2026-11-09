@@ -1,0 +1,242 @@
+[
+  {
+    "id": "bkw-plain-regev",
+    "categoryId": "bkw-regev",
+    "paperId": "paper-87fab2296b57",
+    "year": 2012,
+    "date": "2012-11-11",
+    "time": {
+      "coefficient": 1,
+      "expression": "2^{n+o(n)}"
+    },
+    "space": {
+      "coefficient": 1,
+      "expression": "2^{n+o(n)}"
+    },
+    "tags": [
+      "classical",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "unlimited samples",
+      "unstructured"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Decision-LWE specialization of the original free-depth corollary: choose a≈2 log₂n and b=n/a. Then q^b=2^{n+o(n)} and m=exp(O(n/log₂⁴n))=2^{o(n)}. The simplified Search-LWE Theorem 1 fixes a≈log₂n and instead gives coefficient 2; do not conflate the two statements.",
+    "extra": {
+      "samples": "2^{n+o(n)} fresh samples",
+      "model": "Original Decision-LWE corollary; expectation and distribution assumptions as in the source",
+      "schedule": "Exact block cancellation",
+      "access": "Classical tables",
+      "variant": "Decision-LWE",
+      "formula": "a≈2 log₂n, b=n/a; q^b=2^{n+o(n)}",
+      "success": "Constant target distinguishing advantage; polynomial amplification permitted"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2012/636.pdf",
+      "locator": "Corollary 1, pp. 2–3; Corollary 3, Equations (15)–(18); distinguish simplified Search-LWE Theorem 1",
+      "sourceVersion": "ePrint 2012/636 PDF checked 2026-11-08; original version not separately diffed"
+    }
+  },
+  {
+    "id": "bkw-quantization-regev",
+    "categoryId": "bkw-regev",
+    "paperId": "paper-e014be9a6925",
+    "year": 2015,
+    "date": "2015-06-08",
+    "time": {
+      "coefficient": 0.9299,
+      "expression": "2^{0.9299 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "classical",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "unlimited samples",
+      "unstructured"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "CRYPTO 2015. Rounded Regev specialization of progressive quantization; the asymptotic coefficient is (1/2 + 2 ln(4/3))⁻¹. This is an abundant-sample row, not the separate bounded-error subexponential theorem.",
+    "extra": {
+      "samples": "2^{Θ(n)} fresh classical equations",
+      "model": "Assumptions of the cited BKW/list analysis",
+      "schedule": "Progressive quantization",
+      "access": "Classical tables"
+    }
+  },
+  {
+    "id": "bkw-coded-sieve17",
+    "categoryId": "bkw-regev",
+    "paperId": "paper-46a7c73ed460",
+    "year": 2017,
+    "date": "2017-12-03",
+    "time": {
+      "coefficient": 0.8951,
+      "expression": "2^{0.8951 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "classical",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "unlimited samples",
+      "unstructured"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "ASIACRYPT 2017. The four-digit coefficient is reproduced in Mårtensson 2019 Table I. Date uses the conference opening day; an earlier first-disclosure date has not been established.",
+    "extra": {
+      "samples": "2^{Θ(n)} fresh classical equations",
+      "model": "Assumptions of the cited BKW/list analysis",
+      "schedule": "Exact prefix; common factor γ = 1",
+      "access": "Classical tables"
+    }
+  },
+  {
+    "id": "bkw-common-factor19",
+    "categoryId": "bkw-regev",
+    "paperId": "paper-c64ff7d0568b",
+    "year": 2019,
+    "date": "2019-01-09",
+    "time": {
+      "coefficient": 0.8927,
+      "expression": "2^{0.8927 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "classical",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "unlimited samples",
+      "unstructured"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "IEEE TIT 2019; major revision of the ASIACRYPT work. The rounded abstract says 0.893; 0.8927 is the table value. First ePrint date shown.",
+    "extra": {
+      "samples": "2^{Θ(n)} fresh classical equations",
+      "model": "Assumptions of the cited BKW/list analysis",
+      "schedule": "Optimized constant γ",
+      "access": "Classical tables"
+    }
+  },
+  {
+    "id": "bkw-progression19",
+    "categoryId": "bkw-regev",
+    "paperId": "paper-f792611a7feb",
+    "year": 2019,
+    "date": "2019-01-19",
+    "time": {
+      "coefficient": 0.8917,
+      "expression": "2^{0.8917 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "classical",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "unlimited samples",
+      "unstructured"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "ISIT 2019. Table I, exponential-sample classical column. An arithmetic progression of per-round reduction factors improves the common-factor schedule.",
+    "extra": {
+      "samples": "2^{Θ(n)} fresh classical equations",
+      "model": "Assumptions of the cited BKW/list analysis",
+      "schedule": "Arithmetic progression of γᵢ",
+      "access": "Classical tables"
+    }
+  },
+  {
+    "id": "bkw-sieve17-without-preprocessing",
+    "categoryId": "bkw-regev",
+    "paperId": "paper-46a7c73ed460",
+    "date": "2017-12-03",
+    "datePrecision": "day",
+    "year": 2017,
+    "time": {
+      "coefficient": 0.9054,
+      "expression": "2^{0.9054 n+o(n)}"
+    },
+    "space": {
+      "coefficient": 0.9054,
+      "expression": "2^{0.9054 n+o(n)}"
+    },
+    "tags": [
+      "classical",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "unlimited samples"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Published table’s four-decimal value for the version without plain-BKW preprocessing.",
+    "extra": {
+      "samples": "Exponential fresh samples",
+      "model": "Sieve/list-distribution heuristics",
+      "formula": "λ/[1−exp(−λ(1+2(c_q−c_s))/c_s)], λ=.292,c_q=2,c_s=1.5"
+    },
+    "evidence": {
+      "url": "https://iacr.org/archive/asiacrypt2017/106240219/106240219.pdf",
+      "locator": "§6.1, Theorem 1; §6.3, Table 1",
+      "sourceVersion": "ASIACRYPT 2017 proceedings version"
+    }
+  }
+]

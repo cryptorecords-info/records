@@ -1,0 +1,37 @@
+[
+  {
+    "id": "pollard78-generic",
+    "categoryId": "dlog-generic-classical",
+    "paperId": "pollard78",
+    "date": "1978-07-31",
+    "datePrecision": "month",
+    "time": {
+      "coefficient": 0.5,
+      "expression": "O(sqrt(r)) expected group operations"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "O(1) group elements"
+    },
+    "tags": [
+      "random-walk heuristic"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Rho’s square-root running time uses a random-walk/random-function heuristic; storage is a constant number of group elements. The original paper formulates index computation modulo p; the generic group-operation formulation is its standard representation-independent specialization.",
+    "extra": {
+      "coefficientExact": "1/2",
+      "parameter": "r is the prime subgroup order, not the finite-field cardinality."
+    },
+    "evidence": {
+      "url": "https://www.ams.org/mcom/1978-32-143/S0025-5718-1978-0491431-9/S0025-5718-1978-0491431-9.pdf",
+      "locator": "Rho method section",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  }
+]

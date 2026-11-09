@@ -1,0 +1,741 @@
+[
+  {
+    "id": "ps09",
+    "categoryId": "svp-provable",
+    "paperId": "paper-11d2e4157eb4",
+    "year": 2009,
+    "date": "2009-12-09",
+    "time": {
+      "coefficient": 2.465,
+      "expression": "2^{2.465 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1.233,
+      "expression": "2^{1.233 n + o(n)}"
+    },
+    "tags": [
+      "arbitrary lattices",
+      "Euclidean"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Source states time 2.465 and space 1.233. The ePrint is dated 2009 and marks the work as published elsewhere; its publication venue is unspecified there.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "High probability",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "reference": "PS09"
+    }
+  },
+  {
+    "id": "mv10",
+    "categoryId": "svp-provable",
+    "paperId": "paper-a68a0bb5d70f",
+    "date": "2011-12-31",
+    "time": {
+      "coefficient": 2,
+      "expression": "2^{2 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1,
+      "expression": "2^{1 n + o(n)}"
+    },
+    "tags": [
+      "arbitrary lattices",
+      "Euclidean"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "STOC 2010 / SIAM J. Comput. 2013. The original 2011 chapter explicitly presents the 2^{2n} time / 2^n space Voronoi result. The separate 22-page author full version is dated 8 December 2010, but its first public date is unverified. A conservative public-by-2011 date is therefore supported without backdating the result to the original 2010 conference abstract.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Deterministic",
+      "model": "Deterministic; polynomial factors suppressed",
+      "reference": "MV10/13"
+    },
+    "datePrecision": "year",
+    "evidence": {
+      "url": "https://perso.ens-lyon.fr/guillaume.hanrot/Papers/iwcc.pdf",
+      "locator": "Original 2011 chapter, introduction and Table 1, PDF p. 3; §3.1, PDF pp. 8–10; end of §3.2, PDF p. 13",
+      "sourceVersion": "Original uncorrected IWCC 2011 author PDF"
+    }
+  },
+  {
+    "id": "adrs15",
+    "categoryId": "svp-provable",
+    "paperId": "paper-86925aff6e6c",
+    "year": 2015,
+    "date": "2014-12-26",
+    "time": {
+      "coefficient": 1,
+      "expression": "2^{n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1,
+      "expression": "2^{1 n + o(n)}"
+    },
+    "tags": [
+      "arbitrary lattices",
+      "Euclidean"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "STOC 2015. Randomized exact Euclidean SVP via DGS; time and space 2^{n+o(n)}. The chronology uses the first arXiv submission date.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "High probability",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "reference": "ADRS15"
+    }
+  },
+  {
+    "id": "gfh26",
+    "categoryId": "svp-provable",
+    "paperId": "paper-0cb7a1aa50d2",
+    "year": 2026,
+    "date": "2026-08-03",
+    "time": {
+      "coefficient": 0.7314,
+      "expression": "2^{0.7314 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "arbitrary lattices",
+      "Euclidean"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Preprint claim. The source gives E₀ = 0.73133754… and states the rounded bound 0.7314. This corrects the transposed 0.713 in the illustrative sequence. Source checked; proof not independently audited.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "High probability",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "reference": "GFH26"
+    }
+  },
+  {
+    "id": "hhan-midpoint26",
+    "categoryId": "svp-provable",
+    "paperId": "paper-2fcc11c09e6a",
+    "year": 2026,
+    "date": "2026-08-03",
+    "time": {
+      "coefficient": 0.6039,
+      "expression": "2^{0.6039 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "arbitrary lattices",
+      "Euclidean"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Preprint claim, also arXiv:2608.02478. Uses the Hessian of the periodic Gaussian at a half shortest vector. First arXiv date shown. Source checked; proof not independently audited.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "High probability",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "reference": "Hhan26a"
+    }
+  },
+  {
+    "id": "hhan-coset26",
+    "categoryId": "svp-provable",
+    "paperId": "paper-0f3a0f011219",
+    "year": 2026,
+    "date": "2026-09-02",
+    "time": {
+      "coefficient": 0.5,
+      "expression": "2^{n/2 + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "arbitrary lattices",
+      "Euclidean"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Preprint claim: exact worst-case SVP in time and space 2^{n/2+o(n)}. Its separate distance-guarantee CVP result is not treated as unrestricted exact CVP here. Source checked; proof not independently audited.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "High probability",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "reference": "Hhan26b"
+    }
+  },
+  {
+    "id": "ghh26",
+    "categoryId": "svp-provable",
+    "paperId": "paper-fd038bb9c63f",
+    "year": 2026,
+    "date": "2026-10-30",
+    "time": {
+      "coefficient": 0.413,
+      "expression": "2^{0.4130 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.3138,
+      "expression": "2^{0.3138 n + o(n)}"
+    },
+    "tags": [
+      "arbitrary lattices",
+      "Euclidean"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Preprint claim for arbitrary lattices in a word-RAM model, returning a shortest vector with high probability. Also arXiv:2611.04336. Source checked; proof not independently audited.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "High probability",
+      "model": "Word RAM",
+      "reference": "GHH26"
+    }
+  },
+  {
+    "id": "hkkl26",
+    "categoryId": "svp-provable",
+    "paperId": "paper-c70730f20075",
+    "year": 2026,
+    "date": "2026-11-04",
+    "time": {
+      "coefficient": 0.409,
+      "expression": "2^{0.409 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.259,
+      "expression": "2^{0.259 n + o(n)}"
+    },
+    "tags": [
+      "arbitrary lattices",
+      "Euclidean"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Claim in the 4 November 2026 preprint abstract: optimized worst-case SVP time 0.409 and space 0.259. Dense superlattices, random shifts, and midpoint-shell tests. Source checked; proof not independently audited.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "High probability",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "reference": "HKKL26"
+    }
+  },
+  {
+    "id": "accs22-classical-half-space",
+    "categoryId": "svp-provable",
+    "paperId": "accs-arxiv-2022",
+    "date": "2022-05-10",
+    "year": 2022,
+    "time": {
+      "coefficient": 1.669,
+      "expression": "2^{1.669 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "provable",
+      "time-space tradeoff"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "A time–space tradeoff, not a time-only improvement over the 2^n algorithm.",
+    "extra": {
+      "model": "Classical randomized; memory exponent 0.5"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/2002.07955v5",
+      "locator": "Abstract, classical SVP result",
+      "sourceVersion": "2022-05-10"
+    }
+  },
+  {
+    "id": "aks01-single-exponential",
+    "categoryId": "svp-provable",
+    "paperId": "ajtai-kumar-sivakumar-2001",
+    "date": "2001-07-06",
+    "datePrecision": "day",
+    "year": 2001,
+    "time": {
+      "coefficient": null,
+      "expression": "2^{O(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "2^{O(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "arbitrary lattices"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "First randomized singly exponential exact-SVP milestone. The original publisher abstract states 2^{O(n)} time without an explicit coefficient. A later optimized coefficient is not backdated to this paper. Exponential space is also reported in the Nguyen–Vidick primary introduction. Chronology uses ACM’s publication date.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Randomized; see the stated source guarantee",
+      "model": "Classical; polynomial input-size factors suppressed"
+    },
+    "evidence": {
+      "url": "https://doi.org/10.1145/380752.380857",
+      "locator": "Publisher abstract; corroboration: Nguyen–Vidick 2008, abstract and §3",
+      "sourceVersion": "STOC 2001 publisher record; later primary corroboration"
+    }
+  },
+  {
+    "id": "regev04-fixed-parameters",
+    "categoryId": "svp-provable",
+    "paperId": "regev-2004-svp-lecture",
+    "date": "2004-12-31",
+    "datePrecision": "year",
+    "year": 2004,
+    "time": {
+      "coefficient": 16,
+      "expression": "2^{16 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 8,
+      "expression": "2^{8 n + o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "arbitrary lattices"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Lecture 8 fixes N = 2^{8n} log R₀ and ends by testing all pairs. The displayed 16/8 coefficients normalize this particular fixed-parameter presentation, rather than an optimized AKS bound. Nguyen–Vidick 2008, immediately after Theorem 3.1, explicitly confirms the 16 time coefficient and roughly 2^{8n} points. The course header attributes the lecture to Oded Regev and the scribing to Michael Khanevsky. Only the year is known.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Randomized; see the stated source guarantee",
+      "model": "Classical; polynomial input-size factors suppressed"
+    },
+    "evidence": {
+      "url": "https://cims.nyu.edu/~regev/teaching/lattices_fall_2004/ln/svpalg.pdf",
+      "locator": "PDF p. 1 algorithm, steps 1 and 3; analysis pp. 2–4; NV08 §3 following Theorem 3.1",
+      "sourceVersion": "Fall 2004 Lecture 8"
+    }
+  },
+  {
+    "id": "nv08-rigorous-aks",
+    "categoryId": "svp-provable",
+    "paperId": "paper-601546f46af3",
+    "date": "2008-09-11",
+    "datePrecision": "day",
+    "year": 2008,
+    "time": {
+      "coefficient": 5.9,
+      "expression": "2^{5.9 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 2.95,
+      "expression": "2^{2.95 n + o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "arbitrary lattices"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Theorem 3.1 gives the rigorous exact-SVP AKS analysis. This is a different claim from this paper’s heuristic (4/3)^n sieve already in the database. The theorem’s guarantee and constants were read directly in the author PDF. The date follows the existing institutional-repository online-publication chronology.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Exponentially close to 1",
+      "model": "Classical; polynomial input-size factors suppressed"
+    },
+    "evidence": {
+      "url": "https://people.csail.mit.edu/vidick/JoMC08.pdf",
+      "locator": "Theorem 3.1, printed p. 5 (PDF p. 5); parameter optimization, printed p. 12",
+      "sourceVersion": "Author manuscript, To appear in J. Math. Crypt. (2008)"
+    }
+  },
+  {
+    "id": "mv09-list-sieve",
+    "categoryId": "svp-provable",
+    "paperId": "micciancio-voulgaris-sieve-2009",
+    "date": "2009-08-10",
+    "datePrecision": "day",
+    "year": 2009,
+    "time": {
+      "coefficient": 3.199,
+      "expression": "2^{3.199 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1.325,
+      "expression": "2^{1.325 n + o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "arbitrary lattices"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "ListSieve’s optimized rigorous time point, ξ ≈ 0.685. The ECCC page distinguishes submission 31 July from publication 10 August 2009; the latter is used. This is the sieving paper, separate from the authors’ deterministic Voronoi-cell paper. The accompanying GaussSieve has no proven running-time bound and is not substituted for this theorem.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "High probability",
+      "model": "Classical; polynomial input-size factors suppressed"
+    },
+    "evidence": {
+      "url": "https://eccc.weizmann.ac.il/report/2009/065/download",
+      "locator": "Corollary 3.2, PDF p. 8; abstract; ECCC publication metadata",
+      "sourceVersion": "ECCC TR09-065, published 10 August 2009"
+    }
+  },
+  {
+    "id": "mv09-minimum-space",
+    "categoryId": "svp-provable",
+    "paperId": "micciancio-voulgaris-sieve-2009",
+    "date": "2009-08-10",
+    "datePrecision": "day",
+    "year": 2009,
+    "time": {
+      "coefficient": null,
+      "expression": "2^{O(n)}"
+    },
+    "space": {
+      "coefficient": 1.095,
+      "expression": "2^{1.095 n + o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "arbitrary lattices",
+      "time–space trade-off"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The same source gives a different rigorous ListSieve parameter choice using space 2^{1.095n} and still singly exponential time. No time coefficient is inferred for this space endpoint. It is an unranked time–space point, distinct from the 3.199/1.325 optimized-time point.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "High probability",
+      "model": "Classical; polynomial input-size factors suppressed"
+    },
+    "evidence": {
+      "url": "https://eccc.weizmann.ac.il/report/2009/065/download",
+      "locator": "Abstract; §3 time–space parameter discussion and Corollary 3.2",
+      "sourceVersion": "ECCC TR09-065, published 10 August 2009"
+    }
+  },
+  {
+    "id": "hps13-corrected-aks",
+    "categoryId": "svp-provable",
+    "paperId": "hanrot-pujol-stehle-2011",
+    "date": "2013-12-31",
+    "datePrecision": "year",
+    "year": 2013,
+    "time": {
+      "coefficient": 3.397,
+      "expression": "2^{3.397 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1.984,
+      "expression": "2^{1.984 n + o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "arbitrary lattices"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Corrected AKS analysis from the author PDF headed “Corrected version – 02/01/2013”. The exact day/month convention is not assumed; 31 December 2013 is the conservative year-only date. This is a later corrected analysis, not a new overall time record after PS09. The obsolete author PDF’s 3.346/2.173 pair is not imported.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Exponentially close to 1 after polynomial repetition",
+      "model": "Classical; polynomial input-size factors suppressed"
+    },
+    "evidence": {
+      "url": "https://perso.ens-lyon.fr/damien.stehle/downloads/SVPCVP.pdf",
+      "locator": "Theorem 4.2, PDF p. 16; Appendix A, PDF p. 32",
+      "sourceVersion": "Corrected version – 02/01/2013"
+    }
+  },
+  {
+    "id": "hps13-corrected-aks-birthday",
+    "categoryId": "svp-provable",
+    "paperId": "hanrot-pujol-stehle-2011",
+    "date": "2013-12-31",
+    "datePrecision": "year",
+    "year": 2013,
+    "time": {
+      "coefficient": 2.648,
+      "expression": "2^{2.648 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1.325,
+      "expression": "2^{1.325 n + o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "arbitrary lattices"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Corrected birthday-paradox analysis at γ ≈ 0.609 and ξ = 1. This replaces the obsolete 2.571/1.407 pair still repeated in some later literature. The coefficients are dated to the corrected 2013 source, not automatically to the original 2011 proceedings chapter. This is a historical variant, not an improvement over the 2009 ListSieveBirthday time record.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "At least 1/2 − o(1); polynomial repetition amplifies",
+      "model": "Classical; polynomial input-size factors suppressed"
+    },
+    "evidence": {
+      "url": "https://perso.ens-lyon.fr/damien.stehle/downloads/SVPCVP.pdf",
+      "locator": "§4.1 birthday discussion, PDF p. 17; Appendix A, final paragraph, PDF p. 33",
+      "sourceVersion": "Corrected version – 02/01/2013"
+    }
+  },
+  {
+    "id": "ccl17-classical-half-space",
+    "categoryId": "svp-provable",
+    "paperId": "chen-chung-lai-2017",
+    "date": "2017-08-31",
+    "datePrecision": "day",
+    "year": 2017,
+    "time": {
+      "coefficient": 2.05,
+      "expression": "2^{2.05 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "arbitrary lattices",
+      "time–space trade-off",
+      "half-exponential space"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The initial arXiv version explicitly states the classical 2.05 time / 0.5 space point. The coefficient is retained at the precision actually checked in v1; a more precise value from the 2018 revision is not silently backdated. This illustrates a smaller-space trade-off after the 2^n-time result, not a new fastest time.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Randomized exact SVP; source’s success analysis",
+      "model": "Classical; polynomial input-size factors suppressed"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1709.00378v1",
+      "locator": "Abstract, PDF p. 1; classical enumeration construction in §III",
+      "sourceVersion": "arXiv:1709.00378v1, 31 August 2017"
+    }
+  },
+  {
+    "id": "asd17-average-exact-svp",
+    "categoryId": "svp-provable",
+    "paperId": "aggarwal-stephens-davidowitz-2017-average",
+    "date": "2017-09-05",
+    "datePrecision": "day",
+    "year": 2017,
+    "time": {
+      "coefficient": 1,
+      "expression": "2^{1 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 1,
+      "expression": "2^{1 n + o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "arbitrary lattices"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "A simpler exact-SVP algorithm with the same leading time and space as ADRS15. The abstract explicitly removes a rejection-sampling step from ADRS. This is an equal-exponent algorithmic milestone; it does not lower the standing exponent below 1. The paper’s approximate-CVP statement has its own regime and is not used as an exact-SVP assumption.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Randomized exact-SVP guarantee stated by the source",
+      "model": "Classical; polynomial input-size factors suppressed"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/1709.01535",
+      "locator": "Abstract and submission history",
+      "sourceVersion": "arXiv:1709.01535v1, 5 September 2017"
+    }
+  },
+  {
+    "id": "mukh19-mixed-euclidean",
+    "categoryId": "svp-provable",
+    "paperId": "mukhopadhyay-2019-lp-sieving",
+    "date": "2019-07-09",
+    "datePrecision": "day",
+    "year": 2019,
+    "time": {
+      "coefficient": 2.25,
+      "expression": "2^{2.25 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "arbitrary lattices"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The version-specific v1 abstract already states 2.25 Euclidean time on 9 July 2019. The original full-text v1 was not retrievable, so its historical space is left unspecified. The checked v3 body (Theorem 4.1 and following comparison) later states 2.25 for both time and space. This improves a sieving-method bound but not ADRS15’s overall exponent 1.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "At least 1/2 in checked v3 theorem",
+      "model": "Classical; polynomial input-size factors suppressed"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/1907.04406v1",
+      "locator": "Version-specific v1 abstract; corroboration: v3 Theorem 4.1 and following comparison",
+      "sourceVersion": "arXiv:1907.04406v1, 9 July 2019; v3 body checked separately"
+    }
+  },
+  {
+    "id": "kim26-exact-svp",
+    "categoryId": "svp-provable",
+    "paperId": "kim-2026-one-dgs",
+    "date": "2026-08-04",
+    "datePrecision": "day",
+    "year": 2026,
+    "time": {
+      "coefficient": 0.7315,
+      "expression": "2^{c₀ n + o(n)}, c₀ ≈ 0.7315"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{n/2 + o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "arbitrary lattices",
+      "discrete Gaussian sampling",
+      "random superlattices"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The exact-SVP consequence is separate from the paper’s one-sample DGS theorem. Theorem 6.6 gives success probability at least 2/3, time coefficient c₀ = 1/2 + β_Lev²/(4e ln 2) ≈ 0.7315 and space coefficient 1/2 on every execution. This was not an overall time record: Hhan’s 0.6039 result had appeared the preceding day. Source checked; proof not independently audited.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "At least 2/3",
+      "model": "Randomized Turing machine; polynomial input-length factors suppressed",
+      "reference": "Theorem 6.6; §6 constants"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/2608.03220v1",
+      "locator": "Abstract; §6 constant definitions, printed p. 17; Theorem 6.6, printed p. 23",
+      "sourceVersion": "arXiv:2608.03220v1, 4 August 2026; original PDF checked"
+    }
+  }
+]

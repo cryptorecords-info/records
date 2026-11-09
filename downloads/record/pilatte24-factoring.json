@@ -1,0 +1,32 @@
+{
+  "id": "pilatte24-factoring",
+  "categoryId": "ifp-quantum",
+  "paperId": "pilatte24",
+  "date": "2024-04-25",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "Improved Regev-type quantum factoring circuit bounds with unconditional correctness"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not extracted from the source"
+  },
+  "tags": [
+    "unconditional correctness"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Proves an appropriate variant of the number-theoretic conjecture needed for Regev-type algorithms. This is a correctness improvement, not a new exponential time coefficient.",
+  "extra": {},
+  "evidence": {
+    "url": "https://arxiv.org/abs/2404.16450",
+    "locator": "Abstract; theorem statements",
+    "sourceVersion": "arXiv:2404.16450; first submitted 2024-04-25, latest inspected v3 2026-08-24"
+  }
+}

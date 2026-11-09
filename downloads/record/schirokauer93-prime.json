@@ -1,0 +1,32 @@
+{
+  "id": "schirokauer93-prime",
+  "categoryId": "dlog-prime-general",
+  "paperId": "schirokauer93",
+  "date": "1993-11-15",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 1.9229994270765445,
+    "expression": "L_p[1/3, (64/9)^{1/3}]"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not extracted from the source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Heuristic NFS discrete logarithms in a prime field, using local-unit information. Running time conjecture and algebraic hypotheses are explicit in the source; this precedes the fixed-degree extension construction published in 2000.",
+  "extra": {
+    "coefficientExact": "(64/9)^{1/3}"
+  },
+  "evidence": {
+    "url": "https://cr.yp.to/bib/1993/schirokauer.pdf",
+    "locator": "Abstract; NFS running-time conjecture",
+    "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+  }
+}

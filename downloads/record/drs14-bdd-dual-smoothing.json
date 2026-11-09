@@ -1,0 +1,43 @@
+{
+  "id": "drs14-bdd-dual-smoothing",
+  "categoryId": "bdd-polynomial-advice",
+  "paperId": "dadush-regev-stephens-davidowitz-2014",
+  "year": 2014,
+  "date": "2014-09-29",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "O(nN(1+log n/log(1/epsilon))) arithmetic operations"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "N=O(n log(1/epsilon)/sqrt(epsilon)) dual vectors"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "worst case",
+    "preprocessing",
+    "dual smoothing parameter"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Take epsilon inverse polynomial for polynomial advice and query cost. The matrix inverse can be stored during preprocessing. The radius depends on the lattice, rather than only lambda_1.",
+  "extra": {
+    "radius": "(1/2-2/(pi s_epsilon^2)) s_epsilon / eta_epsilon(L*), s_epsilon=sqrt(log(2(1+epsilon)/epsilon)/pi)",
+    "advice": "N=O(n log(1/epsilon)/sqrt(epsilon)) samples from D_{L*,eta_epsilon(L*)}",
+    "preprocessing": "Unbounded; dual samples and matrix inverse prepared before the target",
+    "success": "There exists advice valid for all targets in the decoding ball",
+    "model": "Arithmetic operations; epsilon inverse polynomial and 0 < epsilon < 1/200"
+  },
+  "evidence": {
+    "url": "https://www.noahsd.com/papers/cvpp.pdf",
+    "locator": "Theorem 3.1, printed pp. 13–14; §1.1",
+    "sourceVersion": "2014 author manuscript, corresponding to arXiv:1409.8063; first arXiv date shown, conference paper appeared earlier"
+  }
+}

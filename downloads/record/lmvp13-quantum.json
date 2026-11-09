@@ -1,0 +1,35 @@
+{
+  "id": "lmvp13-quantum",
+  "categoryId": "svp-quantum-heuristic",
+  "paperId": "paper-1873724e57d1",
+  "year": 2013,
+  "date": "2013-01-25",
+  "time": {
+    "coefficient": 0.312,
+    "expression": "2^{0.312 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.208,
+    "expression": "2^{0.208 n + o(n)}"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "PQCrypto 2013. The original arXiv abstract gives heuristic quantum SVP time 0.312 and separately provable time 1.799. This row records only the heuristic result. Uses Grover search within sieve algorithms; coherent lookup and memory details must be checked in the algorithm model. Audit: The original theorem supplies space and distinguishes classical coherent storage from ordinary qubits.",
+  "extra": {
+    "qram": "Quantum-addressable classical lists",
+    "qubits": "O(n) ordinary qubits",
+    "model": "Sequential quantum search under the sieve-distribution heuristic",
+    "reference": "LMvP13"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1301.6176v1",
+    "locator": "Theorem 1; Section 1.3.2",
+    "sourceVersion": "arXiv:1301.6176v1"
+  }
+}

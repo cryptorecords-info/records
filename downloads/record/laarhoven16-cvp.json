@@ -1,0 +1,35 @@
+{
+  "id": "laarhoven16-cvp",
+  "categoryId": "cvp-heuristic-sieving",
+  "paperId": "laarhoven-cvp-2016",
+  "date": "2016-07-16",
+  "year": 2016,
+  "time": {
+    "coefficient": 0.2924812503605781,
+    "expression": "(3/2)^{n/2 + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.20751874963942188,
+    "expression": "(4/3)^{n/2 + o(n)}"
+  },
+  "tags": [
+    "heuristic",
+    "CVP"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Theorem 1, assuming Heuristic 2.",
+  "extra": {
+    "model": "Classical; Heuristic 2"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1607.04789",
+    "locator": "Theorem 1, p.6",
+    "sourceVersion": "2016-07-16"
+  }
+}

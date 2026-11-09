@@ -1,0 +1,37 @@
+{
+  "id": "lmvp15-quantum-provable",
+  "categoryId": "svp-quantum-provable",
+  "paperId": "paper-caa5f6c38871",
+  "date": "2015-04-14",
+  "year": 2015,
+  "time": {
+    "coefficient": 1.799,
+    "expression": "2^{1.799 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 1.286,
+    "expression": "2^{1.286 n + o(n)}"
+  },
+  "tags": [
+    "quantum",
+    "provable",
+    "QCRAM"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The provable quantum sieving bound in the journal article.",
+  "extra": {
+    "model": "Quantum search; coherent classical-list access",
+    "reference": "DCC 77:375–400"
+  },
+  "evidence": {
+    "url": "https://link.springer.com/article/10.1007/s10623-015-0067-5",
+    "locator": "Abstract; provable sieve analysis",
+    "sourceVersion": "2015-04-14"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "rothvoss-venzin21-cvp-any-norm-approx",
+  "categoryId": "cvp-constant-approximation-any-norm",
+  "paperId": "rothvoss-venzin-2021",
+  "year": 2021,
+  "date": "2021-10-05",
+  "time": {
+    "coefficient": 0.802,
+    "expression": "2^{(0.802 + ε)n}, for every fixed ε > 0"
+  },
+  "space": {
+    "coefficient": 0.401,
+    "expression": "2^{(0.401 + ε)n}"
+  },
+  "tags": [
+    "arbitrary norms",
+    "constant approximation"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Theorem 3.3 extends constant-factor approximate CVP to any norm and rank-n lattice. The approximation constant depends on ε. Lemma 3.1 removes the full-rank restriction with a controlled approximation loss.",
+  "extra": {
+    "norm": "Any norm from a centrally symmetric convex body",
+    "approximation": "γ_ε = O_ε(1)",
+    "preprocessing": "Included",
+    "success": "Randomized approximation",
+    "model": "Norm-oracle/convex-body representation as in §2; polynomial encoding and precision factors suppressed"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/2110.02387",
+    "locator": "Theorem 3.3; Lemma 3.1; §2 representation conventions",
+    "sourceVersion": "arXiv:2110.02387v1, 5 October 2021"
+  }
+}

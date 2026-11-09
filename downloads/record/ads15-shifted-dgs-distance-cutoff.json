@@ -1,0 +1,43 @@
+{
+  "id": "ads15-shifted-dgs-distance-cutoff",
+  "categoryId": "dgs-shifted-distance-width",
+  "paperId": "paper-eb07a87a7ce7",
+  "year": 2015,
+  "date": "2015-09-29",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 1,
+    "expression": "2^{n+o(n)} when log n log f(n)=o(n)"
+  },
+  "space": {
+    "coefficient": 1,
+    "expression": "At most 2^{n+o(n)} storage from the list algorithm"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "worst case",
+    "shifted DGS",
+    "batch",
+    "distance relative"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The full theorem has runtime 2^{n+O(log n log f(n))}. The coefficient 1 requires the displayed growth restriction on f; this is a cutoff sampler rather than arbitrary-width shifted DGS.",
+  "extra": {
+    "width": "s > dist(t,L)/f(n), efficiently computable f(n) >= n^{omega(1)} and log f(n)=o(n/log n)",
+    "output": "At least m=rho_s(L-t)/max_{c in L/(2L)} rho_s(c-t) samples; m is instance- and width-dependent",
+    "error": "Joint total-variation error 2^{-C n^2}, source constant C",
+    "model": "Randomized classical; full list preparation included; polynomial input-size factors suppressed"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/1504.01995v2",
+    "locator": "Definition 2.11; Theorem 4.7, printed pp. 14–15",
+    "sourceVersion": "arXiv:1504.01995v2, 29 September 2015"
+  }
+}

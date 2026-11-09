@@ -1,0 +1,121 @@
+[
+  {
+    "id": "hs07-cvp-polynomial-space",
+    "categoryId": "cvp-polynomial-space",
+    "paperId": "hanrot-stehle-2007",
+    "date": "2007-05-07",
+    "year": 2007,
+    "time": {
+      "coefficient": 0.5,
+      "expression": "n^{n/2 + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "poly(n)"
+    },
+    "tags": [
+      "provable",
+      "polynomial space"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Polynomial-space exact CVP bound from the same analysis.",
+    "extra": {
+      "model": "Classical deterministic; polynomial space"
+    },
+    "evidence": {
+      "url": "https://perso.ens-lyon.fr/damien.stehle/downloads/crypto2007.pdf",
+      "locator": "Introduction, CVP corollary",
+      "sourceVersion": "2007-05-07"
+    }
+  },
+  {
+    "id": "kannan87-cvp-enumeration",
+    "categoryId": "cvp-polynomial-space",
+    "paperId": "kannan-1987",
+    "year": 1987,
+    "date": "1987-12-31",
+    "time": {
+      "coefficient": 1,
+      "expression": "O(n^n s) arithmetic operations = n^{n+o(n)} poly(s)"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "poly(s)"
+    },
+    "tags": [
+      "polynomial space",
+      "exact",
+      "enumeration"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Theorem 4.5 gives exact CVP in O(n^n s) arithmetic operations, where s is the input bit length. This establishes leading coefficient 1 on the n log n scale. The later n^{n/2+o(n)} CVP analysis is not backdated to Kannan.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "preprocessing": "Included; arbitrary input basis",
+      "target": "Arbitrary target",
+      "model": "Deterministic enumeration; bounded-bit arithmetic",
+      "success": "Exact output",
+      "costScale": "n log₂ n"
+    },
+    "evidence": {
+      "url": "https://www.math.ucdavis.edu/~deloera/MISC/LA-BIBLIO/trunk/Kannan/Kannan1.pdf",
+      "locator": "§4, Theorem 4.5; polynomial bit-length bounds in the following paragraph",
+      "sourceVersion": "Mathematics of Operations Research 12(3), 1987"
+    },
+    "datePrecision": "year"
+  },
+  {
+    "id": "blomer00-cvp-dual-hkz",
+    "categoryId": "cvp-polynomial-space",
+    "paperId": "blomer-2000",
+    "year": 2000,
+    "date": "2000-12-31",
+    "time": {
+      "coefficient": 1,
+      "expression": "n! · s^{O(1)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "poly(s)"
+    },
+    "tags": [
+      "polynomial space",
+      "exact",
+      "enumeration"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The publisher abstract states n! times a polynomial in input size for exact rank-n CVP. This improves the lower-order exponential factor while retaining leading coefficient 1 on the n log n scale; it is not a new smaller leading exponent.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "preprocessing": "Dual-HKZ computation included",
+      "target": "Arbitrary target",
+      "model": "Deterministic enumeration",
+      "success": "Exact output",
+      "costScale": "n log₂ n"
+    },
+    "evidence": {
+      "url": "https://link.springer.com/chapter/10.1007/3-540-45022-X_22",
+      "locator": "Abstract; Kannan and Helfrich comparison; see Hanrot–Stehlé extended analysis §1 for the polynomial-space enumeration context",
+      "sourceVersion": "ICALP 2000 proceedings, LNCS 1853"
+    },
+    "datePrecision": "year"
+  }
+]

@@ -1,0 +1,124 @@
+[
+  {
+    "id": "aks02-cvp-approximate",
+    "categoryId": "cvp-approximate-euclidean-parameterized",
+    "paperId": "ajtai-kumar-sivakumar-2002",
+    "year": 2002,
+    "date": "2002-05-21",
+    "time": {
+      "coefficient": null,
+      "expression": "2^{O((1 + 1/δ)n)} poly(input size)"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Exponential; no explicit leading constant recorded"
+    },
+    "tags": [
+      "approximate search",
+      "parameterized approximation"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The original abstract gives a randomized (1+δ)-approximation through exact SVP and short-vector sampling. The hidden constant is left unspecified. The dependence on δ prevents interpreting this as exact CVP.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "approximation": "1 + δ, for δ > 0",
+      "preprocessing": "Included",
+      "success": "Randomized approximation",
+      "model": "Classical randomized Turing reduction to exact SVP and short-vector sampling"
+    },
+    "evidence": {
+      "url": "https://research.ibm.com/publications/sampling-short-lattice-vectors-and-the-closest-lattice-vector-problem",
+      "locator": "Abstract, runtime and approximation statement",
+      "sourceVersion": "CCC 2002, author publication page dated 21 May 2002"
+    }
+  },
+  {
+    "id": "naszodi-venzin19-cvp-euclidean-near-exact",
+    "categoryId": "cvp-approximate-euclidean-parameterized",
+    "paperId": "naszodi-venzin-2019",
+    "year": 2022,
+    "date": "2019-08-22",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "2^{O(n)} (1/δ)^{n/2} poly(input size, log(1/δ)), 0<δ<1"
+    },
+    "space": {
+      "coefficient": 1,
+      "expression": "2^n poly(input size), using the general-norm constant-approximation solver"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "Euclidean",
+      "approximate search",
+      "covering",
+      "parameterized approximation"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The Euclidean specialization p=2 of the smoothness-based covering algorithm improves the dependence on approximation accuracy. This is an alternative algorithmic bound rather than a claim to beat the already known 2^{n+o(n)} exact Euclidean CVP bound. No numerical leading coefficient is inferred from the hidden 2^{O(n)} factor.",
+    "extra": {
+      "norm": "Euclidean ℓ₂ (p=2 specialization)",
+      "approximation": "Distance at most (1+δ) dist(t,L), for 0<δ<1",
+      "preprocessing": "Included, using a general-norm 2-CVP subroutine; covering generated locally",
+      "success": "Randomized success at least 1-2^{-n}; deterministic net enumeration is also discussed"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1908.08384v1",
+      "locator": "Abstract; §1, item (5); Theorem 4.6, using the ℓ₂ modulus of smoothness with power q=2",
+      "sourceVersion": "arXiv:1908.08384v1, 22 August 2019"
+    }
+  },
+  {
+    "id": "adrs14-cvp-197",
+    "categoryId": "cvp-approximate-euclidean-parameterized",
+    "paperId": "paper-86925aff6e6c",
+    "year": 2015,
+    "date": "2014-12-26",
+    "time": {
+      "coefficient": null,
+      "expression": "2^{n+o(n)} for approximation factor γ = 1.97"
+    },
+    "space": {
+      "coefficient": 1,
+      "expression": "2^{n+o(n)}"
+    },
+    "tags": [
+      "approximate search",
+      "discrete Gaussian"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The first arXiv abstract states a 1.97-approximate Euclidean search-CVP algorithm from discrete Gaussian sampling. The approximation factor is an entry parameter; this guarantee is not ranked against rows with another factor or a parameter-dependent cost. Exact CVP at the same leading time exponent appears in the later ADS paper.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "approximation": "γ = 1.97 (equivalently δ = 0.97)",
+      "preprocessing": "Included",
+      "success": "Randomized approximation; high-probability success",
+      "timeExponentAtStatedGuarantee": "1"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/1412.7994v1",
+      "locator": "Abstract, CVP consequence of discrete Gaussian sampling",
+      "sourceVersion": "arXiv:1412.7994v1, 26 December 2014"
+    }
+  }
+]

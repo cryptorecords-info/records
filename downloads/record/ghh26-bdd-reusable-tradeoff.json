@@ -1,0 +1,45 @@
+{
+  "id": "ghh26-bdd-reusable-tradeoff",
+  "categoryId": "bdd-preprocessing-tradeoffs",
+  "paperId": "paper-fd038bb9c63f",
+  "year": 2026,
+  "date": "2026-11-03",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "2^{b n+o(n)} per target"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "2^{(log_2(4/3)/2)n+o(n)} bits"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "worst case",
+    "BDD",
+    "preprocessing",
+    "dual Gaussian batch",
+    "parameterized bound"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The full-batch choice gives any fixed radius r < 0.3157071 with query exponent beta_G and preprocessing exponent alpha_G. The entire tradeoff is stored without a fabricated fixed score.",
+  "extra": {
+    "radius": "0 < r < sqrt(e b log(2))/(alpha A_KL), A_KL=2^{0.401}",
+    "preprocessing": "2^{alpha_G n+o(n)}, alpha_G=(1/2)log_2(3/2)",
+    "advice": "2^{beta_G n+o(n)} bits, beta_G=(1/2)log_2(4/3)",
+    "parameters": "Feasible (alpha,b) in source Eq. (125), or full-batch (alpha,b)=(3/2,beta_G)",
+    "success": "With probability 1-o(1), one advice string correctly decodes every rational target within r lambda_1(L)"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/2611.04336v1",
+    "locator": "Theorem 12.1, printed p. 59; Table 1, p. 7",
+    "sourceVersion": "arXiv:2611.04336v1, 3 November 2026; first ePrint release 30 October not inspected separately"
+  }
+}

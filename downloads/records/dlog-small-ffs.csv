@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"schirokauer02-ffs","schirokauer02","The Special Function Field Sieve","Oliver Schirokauer","SIAM Journal on Discrete Mathematics 2002","2002","published","2002-12-31","year","1.5262856567377758","L_Q[1/3, (32/9)^{1/3}], Q=p^n","","Not extracted from the source","https://epubs.siam.org/doi/10.1137/S0895480100372668","source-checked"

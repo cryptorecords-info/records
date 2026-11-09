@@ -1,0 +1,42 @@
+{
+  "id": "ams26-spherical-code-unconditional",
+  "categoryId": "svp-constant-approximation",
+  "paperId": "aggarwal-morolia-stephens-davidowitz-2026-spherical",
+  "date": "2026-10-07",
+  "datePrecision": "day",
+  "year": 2026,
+  "time": {
+    "coefficient": 0.6078,
+    "expression": "2^{(0.6078 + ε_μ)n + o(n)}, ε_μ → 0 as μ → ∞"
+  },
+  "space": {
+    "coefficient": 0.6078,
+    "expression": "2^{(0.6078 + ε_μ)n + o(n)}, ε_μ → 0 as μ → ∞"
+  },
+  "tags": [
+    "constant approximation",
+    "provable",
+    "spherical codes",
+    "nearest-neighbor sieving",
+    "large-factor limit"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Corollary 3.8 gives unconditional time and space with coefficient 0.6078 + ε_μ, where ε_μ tends to zero as the constant approximation factor μ grows. The stored 0.6078 is the limiting family coefficient; it is not an exact-SVP exponent or a guarantee at every fixed μ. Nearest-neighbor filtering and a perturbation proof give a new provable sieving method. Hhan’s earlier exact-SVP exponent 0.5 already implies a faster constant-approximation bound.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "approximation": "For every ε > 0 choose a sufficiently large constant μ(ε); μ is not uniform in ε",
+    "success": "High probability",
+    "model": "Classical randomized; unconditional spherical-code upper bound"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2026/2388.pdf",
+    "locator": "Theorem 1.1; Theorem 3.7; Corollary 3.8, printed p. 27 (PDF p. 28)",
+    "sourceVersion": "7 October 2026 preprint; full text checked through eprint.iacr.asia mirror"
+  }
+}

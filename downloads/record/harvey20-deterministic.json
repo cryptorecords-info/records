@@ -1,0 +1,32 @@
+{
+  "id": "harvey20-deterministic",
+  "categoryId": "ifp-deterministic",
+  "paperId": "harvey20",
+  "date": "2020-10-12",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 0.2,
+    "expression": "N^{1/5+o(1)} bit operations"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not extracted from the source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Unconditional deterministic complete factorization. This exponent is in N, so it is exponential in the input bitlength.",
+  "extra": {
+    "coefficientExact": "1/5"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/2010.05450",
+    "locator": "Abstract",
+    "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+  }
+}

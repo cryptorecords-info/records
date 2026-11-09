@@ -1,0 +1,40 @@
+{
+  "id": "drs14-cvpp-linear-advice-search",
+  "categoryId": "cvpp-polynomial-advice-search",
+  "paperId": "dadush-regev-stephens-davidowitz-2014",
+  "year": 2014,
+  "date": "2014-09-29",
+  "time": {
+    "coefficient": null,
+    "expression": "poly(input size) query time"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "O(n) advice vectors"
+  },
+  "tags": [
+    "preprocessing",
+    "linear advice",
+    "approximate search"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "A second advice–approximation tradeoff uses only linearly many preprocessing vectors and obtains an O(n) search approximation.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "approximation": "O(n)",
+    "preprocessing": "Unbounded; lattice-only advice",
+    "advice": "O(n) vectors; bit precision follows the input-size convention",
+    "success": "Approximate lattice-vector search"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/1409.8063v1",
+    "locator": "Abstract; full paper Theorem 5.2 and §1.1 discussion",
+    "sourceVersion": "arXiv:1409.8063v1, 29 September 2014"
+  }
+}

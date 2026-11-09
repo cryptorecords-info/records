@@ -1,0 +1,39 @@
+{
+  "id": "mukh19-mixed-euclidean",
+  "categoryId": "svp-provable",
+  "paperId": "mukhopadhyay-2019-lp-sieving",
+  "date": "2019-07-09",
+  "datePrecision": "day",
+  "year": 2019,
+  "time": {
+    "coefficient": 2.25,
+    "expression": "2^{2.25 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "arbitrary lattices"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The version-specific v1 abstract already states 2.25 Euclidean time on 9 July 2019. The original full-text v1 was not retrievable, so its historical space is left unspecified. The checked v3 body (Theorem 4.1 and following comparison) later states 2.25 for both time and space. This improves a sieving-method bound but not ADRS15’s overall exponent 1.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "At least 1/2 in checked v3 theorem",
+    "model": "Classical; polynomial input-size factors suppressed"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/1907.04406v1",
+    "locator": "Version-specific v1 abstract; corroboration: v3 Theorem 4.1 and following comparison",
+    "sourceVersion": "arXiv:1907.04406v1, 9 July 2019; v3 body checked separately"
+  }
+}

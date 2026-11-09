@@ -1,0 +1,100 @@
+[
+  {
+    "id": "lptwy17-mq2",
+    "categoryId": "mq-binary-classical-provable",
+    "paperId": "lptwy17",
+    "date": "2017-01-04",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.8765,
+      "expression": "O(2^{0.8765n})"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not stated in the checked source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Randomized worst-case bound for quadratic equations over F_2. Date is the publisher’s online publication date, not a claimed first-preprint date.",
+    "extra": {
+      "success": "Randomized",
+      "date-basis": "Published online 4 January 2017"
+    },
+    "evidence": {
+      "url": "https://epubs.siam.org/doi/abs/10.1137/1.9781611974782.143",
+      "locator": "Publisher abstract and publication history",
+      "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+    }
+  },
+  {
+    "id": "bkw19-mq2",
+    "categoryId": "mq-binary-classical-provable",
+    "paperId": "bkw19-mq",
+    "date": "2019-07-04",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.804,
+      "expression": "O*(2^{0.804n})"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not stated in the checked source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Worst-case bound for all Boolean quadratic systems. Date is the verified ICALP publication date.",
+    "extra": {
+      "success": "Randomized; parity-counting self-reduction"
+    },
+    "evidence": {
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ICALP.2019.26",
+      "locator": "Abstract; official publication date 2019-07-04",
+      "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+    }
+  },
+  {
+    "id": "dinur20-mq2",
+    "categoryId": "mq-binary-classical-provable",
+    "paperId": "dinur20-mq",
+    "date": "2020-05-10",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.6943,
+      "expression": "O(2^{0.6943n})"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not stated in the checked source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Worst-case randomized solution finding over F_2, degree at most 2. Rounded upper bound as stated in the abstract, not a numerical benchmark.",
+    "extra": {
+      "success": "Find a solution or decide none exists, with high probability",
+      "field": "F_2"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/2005.04800",
+      "locator": "Abstract, arXiv:2005.04800v2",
+      "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+    }
+  }
+]

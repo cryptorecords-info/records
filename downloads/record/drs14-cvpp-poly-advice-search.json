@@ -1,0 +1,40 @@
+{
+  "id": "drs14-cvpp-poly-advice-search",
+  "categoryId": "cvpp-polynomial-advice-search",
+  "paperId": "dadush-regev-stephens-davidowitz-2014",
+  "year": 2014,
+  "date": "2014-09-29",
+  "time": {
+    "coefficient": null,
+    "expression": "poly(input size) query time"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "poly(input size) advice"
+  },
+  "tags": [
+    "preprocessing",
+    "polynomial advice",
+    "approximate search"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Combining the close-target reduction with the LLM bounded-distance algorithm yields the stated improved approximation for search CVPP.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "approximation": "O(n/√(log n))",
+    "preprocessing": "Unbounded; lattice-only polynomial advice",
+    "advice": "Polynomially many dual-lattice vectors and projected instances",
+    "success": "Approximate lattice-vector search"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/1409.8063v1",
+    "locator": "Abstract; full paper Theorem 5.1 and §1.1 discussion",
+    "sourceVersion": "arXiv:1409.8063v1, 29 September 2014"
+  }
+}

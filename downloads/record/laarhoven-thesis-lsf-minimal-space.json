@@ -1,0 +1,39 @@
+{
+  "id": "laarhoven-thesis-lsf-minimal-space",
+  "categoryId": "svp-quantum-minimal-list-space",
+  "paperId": "laarhoven-thesis-2016",
+  "date": "2016-02-16",
+  "year": 2016,
+  "time": {
+    "coefficient": 0.2652573583493899,
+    "expression": "(13/9)^{n/2+o(n)}"
+  },
+  "space": {
+    "coefficient": 0.20751874963942188,
+    "expression": "(4/3)^{n/2+o(n)}"
+  },
+  "tags": [
+    "quantum",
+    "heuristic",
+    "bounded memory",
+    "Nguyen–Vidick"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Batch variant; the GaussSieve variant has different memory costs.",
+  "extra": {
+    "model": "Nguyen–Vidick; sequential processing of filter structures",
+    "qram": "RAM-like quantumly addressable classical memory",
+    "qubits": "Quantum search workspace; see Section 14.1"
+  },
+  "evidence": {
+    "url": "https://pure.tue.nl/ws/files/14673128/20160216_Laarhoven.pdf",
+    "locator": "Table 14.1; Figure 14.1 caption; Section 14.2.10",
+    "sourceVersion": "TU/e thesis public catalogue date 16 February 2016"
+  }
+}

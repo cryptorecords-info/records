@@ -1,0 +1,104 @@
+[
+  {
+    "id": "ps-haar24",
+    "categoryId": "svp-haar",
+    "paperId": "paper-90fa5a162759",
+    "year": 2026,
+    "date": "2024-11-04",
+    "time": {
+      "coefficient": 0.63269,
+      "expression": "2^{0.63269 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "Haar-random"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "EUROCRYPT 2026, first ePrint in 2024. Exact SVP on most Haar–Siegel random lattices. The 0.5-time theorem in the same work is approximate SVP and is not mixed into this exact-SVP category.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "High probability",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "distribution": "Haar–Siegel random real lattices",
+      "reference": "PS26"
+    }
+  },
+  {
+    "id": "dl-haar26",
+    "categoryId": "svp-haar",
+    "paperId": "paper-b05644e2a691",
+    "year": 2026,
+    "date": "2026-09-26",
+    "time": {
+      "coefficient": 0.2924812503605781,
+      "expression": "(3/2)^{n/2 + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.2075187496,
+      "expression": "2^{0.2075187496 n + o(n)}"
+    },
+    "tags": [
+      "Haar-random"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Preprint claim for Haar-random unimodular lattices: exact SVP with success 1−o(1) over lattice and algorithm randomness. This is a distributional theorem, not an arbitrary-lattice worst-case theorem. Source checked; proof not independently audited.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "1−o(1) over lattice and algorithm",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "distribution": "Haar-random unimodular lattices",
+      "reference": "DL26"
+    }
+  },
+  {
+    "id": "hkkl26-haar-classical",
+    "categoryId": "svp-haar",
+    "paperId": "paper-c70730f20075",
+    "date": "2026-11-04",
+    "year": 2026,
+    "time": {
+      "coefficient": 0.2924812503605781,
+      "expression": "(3/2)^{n/2 + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.20751874963942188,
+      "expression": "(4/3)^{n/2 + o(n)}"
+    },
+    "tags": [
+      "Haar-random",
+      "classical",
+      "provable"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Abstract states this bound for Haar-random lattices; no worst-case Haar identification is implied. The abstract says these bounds match Becker–Ducas–Gama–Laarhoven; exact normalization avoids treating rounded 0.292 as a new improvement over the same constant.",
+    "extra": {
+      "model": "Classical; Haar-random lattices"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2026/2761",
+      "locator": "Abstract, Haar-random clause",
+      "sourceVersion": "2026-11-04"
+    }
+  }
+]

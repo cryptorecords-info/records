@@ -1,0 +1,45 @@
+{
+  "id": "acfp15-binary-error-linear-samples",
+  "categoryId": "lwe-binary-error-algebraic-models",
+  "paperId": "albrecht-cid-faugere-perret2014-algebraic",
+  "year": 2014,
+  "date": "2015-02-26",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "O(n² · 2^{ωn(1+β)H₂(β/(1+β))+o(n)}), β=C−1/2−√(C(C−1))"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "O(n² · 2^{2n(1+β)H₂(β/(1+β))+o(n)})"
+  },
+  "tags": [
+    "binary error",
+    "linear samples",
+    "conditional",
+    "semi-regularity"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Conditional linear-sample tradeoff. For m=2n the source rounds the time exponent to 0.43ωn; for m≥6.6n it reports approximately 0.344n time and 0.289n memory. Rounded decimals are not ingested as exact coefficients.",
+  "extra": {
+    "parameters": "Odd prime q=q(n), polynomially bounded; n variables; m=Cn with fixed C>1; β=C−1/2−√(C(C−1)); 2≤ω<3.",
+    "noise": "Independent uniform errors in {0,1}.",
+    "secret": "Arbitrary s∈Z_q^n; this is binary ERROR, not an assumption of binary secret.",
+    "samples": "Exactly m=Cn; changing C changes the exponent.",
+    "objective": "Recover s by solving the error-free quadratic system.",
+    "model": "Arithmetic in Z_q; H₂(x)=−xlog₂x−(1−x)log₂(1−x). Formula follows Theorem 7 plus Proposition 1’s binomial coefficient.",
+    "assumptions": "Assumption 2: the specific quadratic equations are semi-regular.",
+    "success": "Conditional on Assumption 2 and the intended unique-solution regime."
+  },
+  "evidence": {
+    "url": "https://iacr.steepath.eu/2014/1018-AlgebraicAlgorithmsforLWE.pdf",
+    "locator": "§6, Theorem 7(ii)–(iii), Eqs. (10)–(11), pp. 12–13; proof Eq. (14) and Proposition 1",
+    "sourceVersion": "ePrint 2014/1018 revised 26 February 2015"
+  }
+}

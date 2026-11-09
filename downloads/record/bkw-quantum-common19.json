@@ -1,0 +1,38 @@
+{
+  "id": "bkw-quantum-common19",
+  "categoryId": "bkw-regev-quantum",
+  "paperId": "paper-c64ff7d0568b",
+  "year": 2019,
+  "date": "2019-01-09",
+  "time": {
+    "coefficient": 0.8795,
+    "expression": "2^{0.8795 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "quantum",
+    "heuristic",
+    "LWE",
+    "BKW",
+    "Regev regime",
+    "unlimited samples",
+    "coherent reads"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Quantum-search variant, optimized common factor. This coefficient is also reproduced in Mårtensson 2019 Table I.",
+  "extra": {
+    "samples": "2^{Θ(n)} fresh classical equations",
+    "model": "Assumptions of the cited BKW/list analysis",
+    "schedule": "Optimized constant γ",
+    "access": "Coherent indexed reads; Grover search"
+  }
+}

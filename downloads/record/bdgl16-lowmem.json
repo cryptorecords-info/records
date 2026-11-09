@@ -1,0 +1,38 @@
+{
+  "id": "bdgl16-lowmem",
+  "categoryId": "svp-low-memory",
+  "paperId": "paper-1bcb4e64b5f3",
+  "year": 2016,
+  "date": "2015-11-23",
+  "time": {
+    "coefficient": 0.2924812503605781,
+    "expression": "(3/2)^{n/2 + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.20751874963942188,
+    "expression": "2^{0.20751874963942188 n + o(n)}"
+  },
+  "tags": [
+    "SVP",
+    "classical",
+    "heuristic",
+    "arbitrary lattices",
+    "low memory",
+    "time–space trade-off"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "SODA 2016; first ePrint 23 November 2015. Spherical filters from structured random product codes yield heuristic time coefficient ½log₂(3/2) ≈ 0.2925 and space coefficient ½log₂(4/3) ≈ 0.2075. The list-distribution assumption remains heuristic; this is distinct from a Haar-random-lattice theorem. This row is the source variant satisfying the baseline-list-space constraint.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Under the stated sieve heuristic",
+    "model": "Classical randomized; polynomial factors suppressed",
+    "heuristic": "Sieve-list distribution / geometric heuristic",
+    "reference": "BDGL16"
+  }
+}

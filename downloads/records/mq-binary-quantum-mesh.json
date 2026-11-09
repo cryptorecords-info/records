@@ -1,0 +1,36 @@
+[
+  {
+    "id": "by17-mq2-mesh",
+    "categoryId": "mq-binary-quantum-mesh",
+    "paperId": "by17-mq",
+    "date": "2017-12-18",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.45743,
+      "expression": "2^{(0.45743+o(1))n} mesh time"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Area 2^{(0.01467+o(1))n}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Source model is a mesh-connected quantum computer, with area exponent 0.01467 and area-time exponent 0.47210. These resources must not be silently compared with sequential quantum gates.",
+    "extra": {
+      "area-exponent": "0.01467",
+      "area-time-exponent": "0.47210",
+      "assumptions": "Standard source assumptions; m=n, q=2"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2017/1206",
+      "locator": "Abstract",
+      "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "id": "regev23-factoring",
+  "categoryId": "ifp-quantum",
+  "paperId": "regev23",
+  "date": "2023-08-12",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "sqrt(n)+4 runs of a quantum circuit with O~(n^{3/2}) gates, plus polynomial classical post-processing"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not extracted; circuit width must be specified by implementation"
+  },
+  "tags": [
+    "number-theoretic heuristic",
+    "multiple quantum runs"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Original 2023 algorithm with its stated number-theoretic heuristic correctness assumption. Per-run circuit size is not the total cost. Later unconditional correctness results are separately sourced.",
+  "extra": {},
+  "evidence": {
+    "url": "https://arxiv.org/abs/2308.06572",
+    "locator": "Abstract",
+    "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+  }
+}

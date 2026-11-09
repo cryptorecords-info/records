@@ -1,0 +1,194 @@
+[
+  {
+    "id": "kmpm19-small-memory",
+    "categoryId": "svp-quantum-low-memory",
+    "paperId": "kirshanova-et-al-2019",
+    "date": "2019-09-10",
+    "year": 2019,
+    "time": {
+      "coefficient": 0.29893,
+      "expression": "2^{0.29893 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1395,
+      "expression": "2^{0.1395 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "QRAM",
+      "tuple sieving"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Heuristic low-memory tuple sieve in the QRAM model. Audit: Correctly classified as sequential time, not parallel depth. Added precision .29893 is not a new milestone.",
+    "extra": {
+      "model": "Sequential QRAM time; representative tuple size k=30; classical memory 2^{0.1395n+o(n)} and poly(n) qubits",
+      "qram": "2^{0.1395n+o(n)}",
+      "preprocessing": "Included",
+      "reference": "Table 2, k=28–30; Algorithms 4.1/4.2"
+    },
+    "evidence": {
+      "url": "https://elenakirshanova.github.io/Papers/quantum_sieving.pdf",
+      "locator": "Abstract; Table 2, k=28–30; Section 4 QRAM model",
+      "sourceVersion": "ePrint 2019/1016, 10 September 2019"
+    }
+  },
+  {
+    "id": "engelberts25-quantum-triple",
+    "categoryId": "svp-quantum-low-memory",
+    "paperId": "engelberts-et-al-2025",
+    "date": "2025-10-09",
+    "year": 2025,
+    "time": {
+      "coefficient": 0.2846,
+      "expression": "2^{0.2846 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "QCRAM",
+      "triple sieving"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Version 1 already states the bound; publication followed at CRYPTO 2026.",
+    "extra": {
+      "model": "Quantum; 2^{0.1887n} classical and QCRAM bits; 2^{o(n)} qubits"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/2510.08473v1",
+      "locator": "Abstract",
+      "sourceVersion": "2025-10-09"
+    }
+  },
+  {
+    "id": "kmpm19-triple-balanced",
+    "categoryId": "svp-quantum-low-memory",
+    "paperId": "kirshanova-et-al-2019",
+    "date": "2019-09-10",
+    "year": 2019,
+    "time": {
+      "coefficient": 0.3349,
+      "expression": "2^{0.3349 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "quantum",
+      "heuristic",
+      "triple sieving",
+      "QCRAM"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Configuration search without LSF.",
+    "extra": {
+      "model": "Sequential quantum time; .1887n classical QRAM exponent; poly(n) qubits",
+      "preprocessing": "Included",
+      "reference": "Table 2, low-memory k=3 column; Section 5.1"
+    },
+    "evidence": {
+      "url": "https://elenakirshanova.github.io/Papers/quantum_sieving.pdf",
+      "locator": "Table 2, low-memory k=3 column; Section 5.1",
+      "sourceVersion": "ePrint 2019/1016, 10 September 2019"
+    }
+  },
+  {
+    "id": "kmpm19-triple-lsf",
+    "categoryId": "svp-quantum-low-memory",
+    "paperId": "kirshanova-et-al-2019",
+    "date": "2019-09-10",
+    "year": 2019,
+    "time": {
+      "coefficient": 0.3266,
+      "expression": "2^{0.3266 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "quantum",
+      "heuristic",
+      "triple sieving",
+      "QCRAM"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Configuration search with LSF.",
+    "extra": {
+      "model": "Sequential quantum time; .1887n classical QRAM exponent; poly(n) qubits",
+      "preprocessing": "Included",
+      "reference": "Table 3, low-memory k=3 column; Appendix B.2"
+    },
+    "evidence": {
+      "url": "https://elenakirshanova.github.io/Papers/quantum_sieving.pdf",
+      "locator": "Table 3, low-memory k=3 column; Appendix B.2",
+      "sourceVersion": "ePrint 2019/1016, 10 September 2019"
+    }
+  },
+  {
+    "id": "cl23-triple-quantum-low-memory",
+    "categoryId": "svp-quantum-low-memory",
+    "paperId": "chailloux-loyer-tuple-2023",
+    "date": "2023-08-02",
+    "year": 2023,
+    "time": {
+      "coefficient": 0.3098,
+      "expression": "2^{0.3098 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "quantum",
+      "heuristic",
+      "triple sieving",
+      "QCRAM"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Triple-sieving point using tailored filtering.",
+    "extra": {
+      "model": "Sequential quantum time; .1887n classical QCRAM exponent; poly(n) qubits",
+      "preprocessing": "Included",
+      "reference": "Theorem 6"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2023/200.pdf",
+      "locator": "Theorem 6, pp. 26–27; Table 3",
+      "sourceVersion": "ePrint 2023/200 revision 2 August 2023; original full text checked via public mirror"
+    }
+  }
+]

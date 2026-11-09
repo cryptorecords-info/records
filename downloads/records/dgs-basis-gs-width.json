@@ -1,0 +1,46 @@
+[
+  {
+    "id": "gpv08-dgs-gs-width",
+    "categoryId": "dgs-basis-gs-width",
+    "paperId": "gentry-peikert-vaikuntanathan-2008",
+    "year": 2008,
+    "date": "2008-08-25",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "Probabilistic polynomial time"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Polynomial space (polynomial-time algorithm)"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "trapdoor",
+      "basis relative",
+      "shifted DGS"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The published paper title is retained. The checked full version adds the heading “How to Use a Short Basis”. The November 2007 preliminary manuscript only states a longest-basis-vector width, so the Gram–Schmidt bound is not backdated to 2007.",
+    "extra": {
+      "width": "s >= ||B_tilde|| omega(sqrt(log n)); ||B_tilde||=max_i ||b_tilde_i||",
+      "basis": "Any supplied lattice basis; obtaining a short basis is excluded",
+      "output": "One sample from a distribution close to D_{L,s,c}, arbitrary center c",
+      "error": "Statistical closeness; the proof makes it negligible with the stated superlogarithmic margin",
+      "model": "Probabilistic polynomial time, sequential randomized nearest plane"
+    },
+    "evidence": {
+      "url": "https://web.eecs.umich.edu/~cpeikert/pubs/trap_lattice.pdf",
+      "locator": "Theorem 4.1, printed p. 14; §4",
+      "sourceVersion": "Full author version dated 25 August 2008; STOC 2008 publication"
+    }
+  }
+]

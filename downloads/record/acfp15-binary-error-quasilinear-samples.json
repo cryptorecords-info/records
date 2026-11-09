@@ -1,0 +1,45 @@
+{
+  "id": "acfp15-binary-error-quasilinear-samples",
+  "categoryId": "lwe-binary-error-algebraic-models",
+  "paperId": "albrecht-cid-faugere-perret2014-algebraic",
+  "year": 2014,
+  "date": "2015-02-26",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "O(m² · 2^{ωn log₂log₂log₂(n)/(8log₂log₂(n))})"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "O(m² · 2^{2n log₂log₂log₂(n)/(8log₂log₂(n))})"
+  },
+  "tags": [
+    "binary error",
+    "quasilinear samples",
+    "conditional",
+    "subexponential"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Conditional subexponential bound in a quasilinear-sample regime. The hidden sample-count constant must be retained when instantiating the result.",
+  "extra": {
+    "parameters": "Odd prime q=q(n), polynomially bounded; source regime m=O(n log log n); 2≤ω<3.",
+    "noise": "Independent uniform errors in {0,1}.",
+    "secret": "Arbitrary s∈Z_q^n.",
+    "samples": "Quasilinear samples m=O(n log log n), as specified in Theorem 7(iv); not a claim for every smaller m.",
+    "objective": "Recover the secret via the generated quadratic equations.",
+    "model": "Field operations; dense linear-algebra exponent ω.",
+    "assumptions": "Assumption 2: semi-regularity.",
+    "success": "Conditional on semi-regularity and the intended unique-solution regime."
+  },
+  "evidence": {
+    "url": "https://iacr.steepath.eu/2014/1018-AlgebraicAlgorithmsforLWE.pdf",
+    "locator": "§6, Theorem 7(iv), Eq. (12), p. 13",
+    "sourceVersion": "ePrint 2014/1018 revised 26 February 2015"
+  }
+}

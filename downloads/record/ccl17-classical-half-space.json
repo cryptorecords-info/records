@@ -1,0 +1,41 @@
+{
+  "id": "ccl17-classical-half-space",
+  "categoryId": "svp-provable",
+  "paperId": "chen-chung-lai-2017",
+  "date": "2017-08-31",
+  "datePrecision": "day",
+  "year": 2017,
+  "time": {
+    "coefficient": 2.05,
+    "expression": "2^{2.05 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.5,
+    "expression": "2^{0.5 n + o(n)}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "arbitrary lattices",
+    "time–space trade-off",
+    "half-exponential space"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The initial arXiv version explicitly states the classical 2.05 time / 0.5 space point. The coefficient is retained at the precision actually checked in v1; a more precise value from the 2018 revision is not silently backdated. This illustrates a smaller-space trade-off after the 2^n-time result, not a new fastest time.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Randomized exact SVP; source’s success analysis",
+    "model": "Classical; polynomial input-size factors suppressed"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1709.00378v1",
+    "locator": "Abstract, PDF p. 1; classical enumeration construction in §III",
+    "sourceVersion": "arXiv:1709.00378v1, 31 August 2017"
+  }
+}

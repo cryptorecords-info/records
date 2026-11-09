@@ -1,0 +1,41 @@
+{
+  "id": "regev04-cvpp-poly-advice-decision",
+  "categoryId": "cvpp-polynomial-advice-decision",
+  "paperId": "regev-2004-cvpp",
+  "year": 2004,
+  "date": "2004-09-30",
+  "time": {
+    "coefficient": null,
+    "expression": "poly(input size) query time"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Polynomial-size lattice-dependent advice"
+  },
+  "tags": [
+    "preprocessing",
+    "polynomial advice",
+    "decision"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Section V explicitly solves Euclidean GAPCVPP_n. This row tracks a gap decision and distance-estimation guarantee; it does not claim an n-approximate lattice-vector finder.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "approximation": "Gap factor n",
+    "preprocessing": "Unrestricted; depends only on the lattice",
+    "advice": "Polynomial-size lattice description",
+    "success": "Polynomial-time threshold decision"
+  },
+  "evidence": {
+    "url": "https://cims.nyu.edu/~regev/papers/cvpp.pdf",
+    "locator": "§II Definition 2.5; §V Upper Bound, GAPCVPP_n",
+    "sourceVersion": "IEEE Transactions on Information Theory 50(9), September 2004"
+  },
+  "datePrecision": "month"
+}

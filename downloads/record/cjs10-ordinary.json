@@ -1,0 +1,34 @@
+{
+  "id": "cjs10-ordinary",
+  "categoryId": "ordinary-isogeny-quantum-grh",
+  "paperId": "cjs10",
+  "date": "2010-12-17",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 0.8660254037844386,
+    "expression": "L_q[1/2, sqrt(3)/2]"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Subexponential quantum space; polynomial-quantum-space claim has an erratum"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The time bound assumes GRH for ordinary curves with a common endomorphism ring. The claimed polynomial-quantum-space variant has an acknowledged erratum; this entry makes no such space claim.",
+  "extra": {
+    "assumption": "GRH",
+    "source-version": "arXiv:1012.4019v3, 16 April 2018",
+    "L-notation": "L_q[α,c]=exp((c+o(1))(ln q)^α(ln ln q)^{1−α})"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1012.4019",
+    "locator": "Introduction/main runtime statement; arXiv v3 erratum notice",
+    "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+  }
+}

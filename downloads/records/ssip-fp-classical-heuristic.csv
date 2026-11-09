@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"dg13-fp","dg13","Computing isogenies between supersingular elliptic curves over F_p","Christina Delfs · Steven D. Galbraith","Designs, Codes and Cryptography 2016","2016","published","2013-10-29","day","0.25","O~(p^{1/4})","","Not stated in the checked source","https://arxiv.org/abs/1310.7789","source-checked"

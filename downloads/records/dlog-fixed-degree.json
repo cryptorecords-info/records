@@ -1,0 +1,34 @@
+[
+  {
+    "id": "schirokauer00-fixed-degree",
+    "categoryId": "dlog-fixed-degree",
+    "paperId": "schirokauer00",
+    "date": "1999-05-24",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 1.9229994270765445,
+      "expression": "L_Q[1/3, (64/9)^{1/3}], Q=p^n, n fixed"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not extracted from the source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The paper describes the NFS adaptation for finite fields of arbitrary fixed extension degree; prime fields are degree one. The conjectured expected running time includes the complete computation. The date is the electronic publication (24 May 1999), while the journal issue is dated 2000. The source notes that its prime-field case was already covered by the author’s 1993 paper.",
+    "extra": {
+      "coefficientExact": "(64/9)^{1/3}"
+    },
+    "evidence": {
+      "url": "https://paperzz.com/doc/8630155/using-number-fields-to-compute-logarithms-in-finite",
+      "locator": "Abstract",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  }
+]

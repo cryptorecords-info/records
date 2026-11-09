@@ -1,0 +1,43 @@
+{
+  "id": "bl16-ideal",
+  "categoryId": "svp-ideal-heuristic",
+  "paperId": "paper-777c2d2d89d5",
+  "year": 2016,
+  "date": "2015-08-24",
+  "time": {
+    "coefficient": 0.2972,
+    "expression": "2^{0.2972 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "SVP",
+    "classical",
+    "heuristic",
+    "structured lattices",
+    "ideal lattices",
+    "cyclotomic",
+    "LSH"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The source gives the same 0.298 leading time coefficient for arbitrary and ideal lattices. For suitable cyclotomic ideal lattices, rotational symmetry yields linear-factor improvements in both time and space. These polynomial gains are not a smaller exponential coefficient. The selected ring and embedding must be specified for concrete comparisons. Theorem 1 gives 0.2972, often rounded to 0.298 in the abstract; this is a precision normalization, not a new algorithmic improvement.",
+  "extra": {
+    "norm": "Euclidean ℓ₂ under the source embedding",
+    "heuristic": "Ideal-lattice / GaussSieve heuristic",
+    "reference": "BL16",
+    "structure": "Cyclotomic ideal lattices"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2015/823",
+    "locator": "Theorem 1; identical asymptotic collision analysis to spherical LSH",
+    "sourceVersion": "AFRICACRYPT 2016 paper, originally ePrint 2015/823"
+  }
+}

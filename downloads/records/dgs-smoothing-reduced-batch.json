@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ghh26-dgs-smoothing-batch",
+    "categoryId": "dgs-smoothing-reduced-batch",
+    "paperId": "paper-fd038bb9c63f",
+    "year": 2026,
+    "date": "2026-11-03",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.2924812503605781,
+      "expression": "(3/2)^{n/2+o(n)} total batch time"
+    },
+    "space": {
+      "coefficient": 0.20751874963942188,
+      "expression": "(4/3)^{n/2+o(n)} including outputs"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "DGS",
+      "shifted",
+      "above smoothing",
+      "batch"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The batch is smaller than the 2^{n/2} outputs in ADRS15; its total cost is kept in a separate category.",
+    "extra": {
+      "width": "s >= (3/2) eta_{1/2}(L)",
+      "output": "floor((4/3)^{n/2}) samples on L+a",
+      "error": "Joint TV from independent target samples <= exp(-Omega(n/log^2(n+2)))",
+      "model": "Randomized word RAM; total batch cost and output storage included"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/2611.04336v1",
+      "locator": "Theorem 1.2 and following paragraph, printed p. 6",
+      "sourceVersion": "arXiv:2611.04336v1, 3 November 2026; first ePrint release 30 October not inspected separately"
+    }
+  }
+]

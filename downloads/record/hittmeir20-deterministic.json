@@ -1,0 +1,32 @@
+{
+  "id": "hittmeir20-deterministic",
+  "categoryId": "ifp-deterministic",
+  "paperId": "hittmeir20",
+  "date": "2020-06-30",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 0.2222222222222222,
+    "expression": "N^{2/9+o(1)} bit operations"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not extracted from the source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Unconditional deterministic improvement using a time-space tradeoff for a generalization of Lehman’s method.",
+  "extra": {
+    "coefficientExact": "2/9"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/2006.16729",
+    "locator": "Abstract",
+    "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+  }
+}

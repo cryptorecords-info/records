@@ -1,0 +1,99 @@
+[
+  {
+    "id": "shor95-factoring",
+    "categoryId": "ifp-quantum",
+    "paperId": "shor95",
+    "date": "1995-08-30",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "poly(log N) quantum and classical work"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not extracted from the source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Unconditional polynomial-time quantum factorization. The cited full-paper preprint dates from 1995; the preliminary FOCS paper Algorithms for quantum computation: Discrete logarithms and factoring appeared in November 1994. No exponential coefficient is assigned.",
+    "extra": {
+      "historicalPredecessor": "FOCS 1994, pp. 124–134; different paper title."
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/quant-ph/9508027",
+      "locator": "Abstract; introduction",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  },
+  {
+    "id": "regev23-factoring",
+    "categoryId": "ifp-quantum",
+    "paperId": "regev23",
+    "date": "2023-08-12",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "sqrt(n)+4 runs of a quantum circuit with O~(n^{3/2}) gates, plus polynomial classical post-processing"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not extracted; circuit width must be specified by implementation"
+    },
+    "tags": [
+      "number-theoretic heuristic",
+      "multiple quantum runs"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Original 2023 algorithm with its stated number-theoretic heuristic correctness assumption. Per-run circuit size is not the total cost. Later unconditional correctness results are separately sourced.",
+    "extra": {},
+    "evidence": {
+      "url": "https://arxiv.org/abs/2308.06572",
+      "locator": "Abstract",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  },
+  {
+    "id": "pilatte24-factoring",
+    "categoryId": "ifp-quantum",
+    "paperId": "pilatte24",
+    "date": "2024-04-25",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "Improved Regev-type quantum factoring circuit bounds with unconditional correctness"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not extracted from the source"
+    },
+    "tags": [
+      "unconditional correctness"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Proves an appropriate variant of the number-theoretic conjecture needed for Regev-type algorithms. This is a correctness improvement, not a new exponential time coefficient.",
+    "extra": {},
+    "evidence": {
+      "url": "https://arxiv.org/abs/2404.16450",
+      "locator": "Abstract; theorem statements",
+      "sourceVersion": "arXiv:2404.16450; first submitted 2024-04-25, latest inspected v3 2026-08-24"
+    }
+  }
+]

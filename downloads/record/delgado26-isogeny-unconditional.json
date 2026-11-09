@@ -1,0 +1,40 @@
+{
+  "categoryId": "ssip-classical-provable",
+  "year": 2026,
+  "datePrecision": "day",
+  "tags": [
+    "classical",
+    "supersingular isogenies",
+    "unconditional claim",
+    "preprint"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "id": "delgado26-isogeny-unconditional",
+  "paperId": "delgado26-unconditional-isogeny",
+  "date": "2026-09-18",
+  "time": {
+    "coefficient": 0.3333333333333333,
+    "expression": "p^{1/3} exp(O(sqrt(log p log log p))) = p^{1/3+o(1)} expected time"
+  },
+  "space": {
+    "coefficient": 0.3333333333333333,
+    "expression": "p^{1/3+o(1)} expected memory"
+  },
+  "notes": "The source abstract claims a Las Vegas OneEnd algorithm analyzed without a smoothness heuristic, with the displayed expected time and memory. Known unconditional reductions transfer OneEnd to the supersingular endomorphism-ring and isogeny problems. This is a preprint claim checked against the primary arXiv abstract; the full proof was not independently audited. The p exponent remains exponential in log p and is not a concrete parameter-set break.",
+  "extra": {
+    "model": "Classical Las Vegas; expected time and memory",
+    "reduction": "OneEnd to EndRing and Isogeny; see also arXiv:2502.17010",
+    "source-chronology": "arXiv v1 submitted 18 September 2026"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/2609.22018",
+    "locator": "Abstract",
+    "sourceVersion": "arXiv:2609.22018v1"
+  }
+}

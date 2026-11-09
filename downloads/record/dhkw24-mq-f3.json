@@ -1,0 +1,35 @@
+{
+  "id": "dhkw24-mq-f3",
+  "categoryId": "mq-f3-classical-provable",
+  "paperId": "dhkw24",
+  "date": "2024-10-26",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 0.696,
+    "expression": "O*(3^{0.696n})"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not stated in the checked source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Numerical upper bound from Figure 1 for fixed q=3, d=2. Theorem 1.1 defines the general exponent analytically in Section 3.5. This is a randomized worst-case decision bound.",
+  "extra": {
+    "success": "Bounded-error randomized decision",
+    "field": "F_3",
+    "degree": "2",
+    "normalization": "base 3, not base 2"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/html/2410.20162v1",
+    "locator": "Theorem 1.1 and Figure 1",
+    "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+  }
+}

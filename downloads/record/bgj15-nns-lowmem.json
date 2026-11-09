@@ -1,0 +1,38 @@
+{
+  "id": "bgj15-nns-lowmem",
+  "categoryId": "svp-low-memory",
+  "paperId": "paper-2f67f6ebf8c0",
+  "year": 2015,
+  "date": "2015-05-31",
+  "time": {
+    "coefficient": 0.3112,
+    "expression": "2^{0.3112 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.2075,
+    "expression": "2^{0.2075 n + o(n)}"
+  },
+  "tags": [
+    "SVP",
+    "classical",
+    "heuristic",
+    "arbitrary lattices",
+    "low memory",
+    "time–space trade-off"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "A low-memory improvement, rather than a chronological time record after SphereSieve. The source states heuristic time 0.3112 while retaining space 0.2075. The method adapts nearest-neighbor search for binary codes. First ePrint received 31 May 2015; source publication status is preprint. This row is the source variant satisfying the baseline-list-space constraint.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Under the stated sieve heuristic",
+    "model": "Classical randomized; polynomial factors suppressed",
+    "heuristic": "Sieve-list heuristic; geometric reduction to binary nearest-neighbor search",
+    "reference": "BGJ15"
+  }
+}

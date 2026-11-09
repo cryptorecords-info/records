@@ -1,0 +1,42 @@
+{
+  "id": "bkw-sieve17-without-preprocessing",
+  "categoryId": "bkw-regev",
+  "paperId": "paper-46a7c73ed460",
+  "date": "2017-12-03",
+  "datePrecision": "day",
+  "year": 2017,
+  "time": {
+    "coefficient": 0.9054,
+    "expression": "2^{0.9054 n+o(n)}"
+  },
+  "space": {
+    "coefficient": 0.9054,
+    "expression": "2^{0.9054 n+o(n)}"
+  },
+  "tags": [
+    "classical",
+    "heuristic",
+    "LWE",
+    "BKW",
+    "Regev regime",
+    "unlimited samples"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Published table’s four-decimal value for the version without plain-BKW preprocessing.",
+  "extra": {
+    "samples": "Exponential fresh samples",
+    "model": "Sieve/list-distribution heuristics",
+    "formula": "λ/[1−exp(−λ(1+2(c_q−c_s))/c_s)], λ=.292,c_q=2,c_s=1.5"
+  },
+  "evidence": {
+    "url": "https://iacr.org/archive/asiacrypt2017/106240219/106240219.pdf",
+    "locator": "§6.1, Theorem 1; §6.3, Table 1",
+    "sourceVersion": "ASIACRYPT 2017 proceedings version"
+  }
+}

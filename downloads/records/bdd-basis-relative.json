@@ -1,0 +1,45 @@
+[
+  {
+    "id": "klein00-bdd-basis-radius",
+    "categoryId": "bdd-basis-relative",
+    "paperId": "klein-2000",
+    "year": 2000,
+    "date": "2000-12-31",
+    "datePrecision": "year",
+    "time": {
+      "coefficient": null,
+      "expression": "n^{k^2+O(1)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not stated in the cited introduction"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "basis relative",
+      "randomized rounding"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The source guarantees a closest vector with high probability under the stated basis-relative distance promise. Year-only date; the indexed author PDF supplies the original page 937 statement.",
+    "extra": {
+      "radius": "dist(t,L) <= k min_i ||b_tilde_i||",
+      "basis": "Input basis B; its shortest Gram–Schmidt vector controls the runtime",
+      "preprocessing": "Basis construction excluded",
+      "success": "High probability",
+      "model": "Randomized classical arithmetic algorithm; k remains a parameter"
+    },
+    "evidence": {
+      "url": "https://cs.brown.edu/research/pubs/pdfs/2000/Klein-2000-FCL.pdf",
+      "locator": "Introduction, p. 937",
+      "sourceVersion": "SODA 2000 proceedings, pp. 937–941; primary PDF text indexed, live PDF URL unavailable at check"
+    }
+  }
+]

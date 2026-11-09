@@ -1,0 +1,32 @@
+{
+  "id": "vedenev2026-conditional-vector",
+  "categoryId": "goppa-conditional-key-recovery",
+  "paperId": "vedenev2026",
+  "date": "2026-10-07",
+  "time": {
+    "coefficient": null,
+    "expression": "2^{89.9}–2^{98.6} conditional bit operations across Classic McEliece sets"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Conditional rank/solver estimate; latest revision disputes applicability of the earlier Apon critique.",
+  "extra": {
+    "assumptions": "Source rank and solver assumptions",
+    "version_context": "Apon2026/1810 addresses an earlier revision; Wang2026/2769 gives further rank-geometry analysis"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2026/1747",
+    "locator": "Abstract; revision note",
+    "sourceVersion": "2026-10-07"
+  }
+}

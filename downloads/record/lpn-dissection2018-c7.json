@@ -1,0 +1,40 @@
+{
+  "id": "lpn-dissection2018-c7",
+  "categoryId": "lpn-memory-half",
+  "paperId": "esser2018-dissection-bkw",
+  "date": "2018-12-31",
+  "datePrecision": "year",
+  "year": 2018,
+  "time": {
+    "coefficient": 1.871569948038403,
+    "expression": "2^{(((1−2/6) log₂ 7)+ε) n/log₂ n}"
+  },
+  "space": {
+    "coefficient": 0.4678924870096007,
+    "expression": "2^{(log₂(7)/6+ε) n/log₂ n}"
+  },
+  "tags": [
+    "classical",
+    "heuristic",
+    "LPN",
+    "time-memory tradeoff"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "For every fixed ε>0.",
+  "extra": {
+    "samples": "Same leading exponent as memory",
+    "model": "Independence Heuristic",
+    "formula": "Magic-sequence index i=2, c_i=7"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2018/569.pdf",
+    "locator": "Theorem 5.1; Definition 5.3",
+    "sourceVersion": "ePrint 2018/569 full version, 31 pages, checked 2026-11-08; original-version diff not available"
+  }
+}

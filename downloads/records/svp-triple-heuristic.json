@@ -1,0 +1,372 @@
+[
+  {
+    "id": "hkl18-triple-list-memory",
+    "categoryId": "svp-triple-heuristic",
+    "paperId": "herold-kirshanova-laarhoven-2017",
+    "date": "2017-12-22",
+    "year": 2017,
+    "time": {
+      "coefficient": 0.3588,
+      "expression": "2^{0.3588 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "triple sieving"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "A triple-sieving time–memory tradeoff point from the abstract.",
+    "extra": {
+      "model": "Classical; heuristic tuple sieving"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2017/1228",
+      "locator": "Abstract",
+      "sourceVersion": "2017-12-22"
+    }
+  },
+  {
+    "id": "hkl18-triple-extra-memory",
+    "categoryId": "svp-triple-heuristic",
+    "paperId": "herold-kirshanova-laarhoven-2017",
+    "date": "2017-12-22",
+    "year": 2017,
+    "time": {
+      "coefficient": 0.33,
+      "expression": "2^{0.33 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.2075,
+      "expression": "2^{0.2075 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "triple sieving"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "A triple-sieving time–memory tradeoff point from the abstract.",
+    "extra": {
+      "model": "Classical; heuristic tuple sieving"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2017/1228",
+      "locator": "Abstract",
+      "sourceVersion": "2017-12-22"
+    }
+  },
+  {
+    "id": "bls16-triple-naive",
+    "categoryId": "svp-triple-heuristic",
+    "paperId": "bai-laarhoven-stehle-2016",
+    "date": "2016-07-21",
+    "year": 2016,
+    "time": {
+      "coefficient": 0.5661,
+      "expression": "2^{0.5661 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "triple sieving"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Unfiltered triple enumeration.",
+    "extra": {
+      "model": "Classical; heuristic spherical lists",
+      "preprocessing": "Included in asymptotic analysis",
+      "reference": "Abstract; Sections 3.2–3.3"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2016/713",
+      "locator": "Abstract; Sections 3.2–3.3",
+      "sourceVersion": "ePrint 2016/713; first received 21 July 2016; published text August 2016"
+    }
+  },
+  {
+    "id": "bls16-triple-filtered",
+    "categoryId": "svp-triple-heuristic",
+    "paperId": "bai-laarhoven-stehle-2016",
+    "date": "2016-07-21",
+    "year": 2016,
+    "time": {
+      "coefficient": 0.4812,
+      "expression": "2^{0.4812 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "triple sieving"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Pair filtering before the third-vector search.",
+    "extra": {
+      "model": "Classical; heuristic spherical lists",
+      "preprocessing": "Included in asymptotic analysis",
+      "reference": "Abstract; Section 4"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2016/713",
+      "locator": "Abstract; Section 4",
+      "sourceVersion": "ePrint 2016/713; first received 21 July 2016; published text August 2016"
+    }
+  },
+  {
+    "id": "hk17-triple-config",
+    "categoryId": "svp-triple-heuristic",
+    "paperId": "herold-kirshanova-2017",
+    "date": "2017-01-26",
+    "year": 2017,
+    "time": {
+      "coefficient": 0.3962,
+      "expression": "2^{0.3962 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "triple sieving"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Configuration search without configuration extension.",
+    "extra": {
+      "model": "Classical; heuristic spherical lists",
+      "preprocessing": "Included",
+      "reference": "Corollary 3, p. 12; Section 7.2"
+    },
+    "evidence": {
+      "url": "https://elenakirshanova.github.io/Papers/improved_kList_euclid.pdf",
+      "locator": "Corollary 3, p. 12; Section 7.2",
+      "sourceVersion": "ePrint 2017/017 revised 26 January 2017"
+    }
+  },
+  {
+    "id": "hk17-triple-confext",
+    "categoryId": "svp-triple-heuristic",
+    "paperId": "herold-kirshanova-2017",
+    "date": "2017-01-26",
+    "year": 2017,
+    "time": {
+      "coefficient": 0.3717,
+      "expression": "2^{0.3717 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "triple sieving"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Configuration extension retains the triple-list space exponent.",
+    "extra": {
+      "model": "Classical; heuristic spherical lists",
+      "preprocessing": "Included",
+      "reference": "Abstract; Section 7.2, p. 21"
+    },
+    "evidence": {
+      "url": "https://elenakirshanova.github.io/Papers/improved_kList_euclid.pdf",
+      "locator": "Abstract; Section 7.2, p. 21",
+      "sourceVersion": "ePrint 2017/017 revised 26 January 2017"
+    }
+  },
+  {
+    "id": "laarhoven17-triple-list",
+    "categoryId": "svp-triple-heuristic",
+    "paperId": "laarhoven-tuple-2017",
+    "date": "2017-05-08",
+    "year": 2017,
+    "time": {
+      "coefficient": 0.3588,
+      "expression": "2^{0.3588 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "triple sieving",
+      "time–space trade-off"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Original solo preprint; later joint work gives additional tradeoffs.",
+    "extra": {
+      "model": "Classical; spherical locality-sensitive filters",
+      "preprocessing": "Included",
+      "reference": "Section 5 and Table 1, pp. 10–11"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1705.02828v1",
+      "locator": "Section 5 and Table 1, pp. 10–11",
+      "sourceVersion": "arXiv:1705.02828v1, 8 May 2017"
+    }
+  },
+  {
+    "id": "laarhoven17-triple-baseline-memory",
+    "categoryId": "svp-triple-heuristic",
+    "paperId": "laarhoven-tuple-2017",
+    "date": "2017-05-08",
+    "year": 2017,
+    "time": {
+      "coefficient": 0.3317,
+      "expression": "2^{0.3317 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.2075,
+      "expression": "2^{0.2075 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "triple sieving",
+      "time–space trade-off"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Original solo preprint; later joint work gives additional tradeoffs.",
+    "extra": {
+      "model": "Classical; spherical locality-sensitive filters",
+      "preprocessing": "Included",
+      "reference": "Section 5, p. 11"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1705.02828v1",
+      "locator": "Section 5, p. 11",
+      "sourceVersion": "arXiv:1705.02828v1, 8 May 2017"
+    }
+  },
+  {
+    "id": "laarhoven17-triple-time-optimal",
+    "categoryId": "svp-triple-heuristic",
+    "paperId": "laarhoven-tuple-2017",
+    "date": "2017-05-08",
+    "year": 2017,
+    "time": {
+      "coefficient": 0.3307,
+      "expression": "2^{0.3307 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.2108,
+      "expression": "2^{0.2108 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "triple sieving",
+      "time–space trade-off"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Original solo preprint; later joint work gives additional tradeoffs.",
+    "extra": {
+      "model": "Classical; spherical locality-sensitive filters",
+      "preprocessing": "Included",
+      "reference": "Section 5, pp. 10–11"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1705.02828v1",
+      "locator": "Section 5, pp. 10–11",
+      "sourceVersion": "arXiv:1705.02828v1, 8 May 2017"
+    }
+  },
+  {
+    "id": "cl23-triple-classical-low-memory",
+    "categoryId": "svp-triple-heuristic",
+    "paperId": "chailloux-loyer-tuple-2023",
+    "date": "2023-08-02",
+    "year": 2023,
+    "time": {
+      "coefficient": 0.3383,
+      "expression": "2^{0.3383 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "triple sieving",
+      "tailored LSF"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Original theorem uses .338; .3383 follows the later comparison table. This is one result, not two improvements.",
+    "extra": {
+      "model": "Classical Nguyen–Vidick style; spherical-list heuristic",
+      "preprocessing": "Included",
+      "reference": "Theorem 4; later Table 1"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/2510.08473",
+      "locator": "Original Theorem 4 rounds to .338; finer .3383 in Engelberts et al., Table 1 (arXiv:2510.08473v3)",
+      "sourceVersion": "CL23 ePrint revision 2 August 2023; finer precision checked in arXiv:2510.08473v3, 7 July 2026"
+    }
+  }
+]

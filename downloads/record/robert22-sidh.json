@@ -1,0 +1,32 @@
+{
+  "id": "robert22-sidh",
+  "categoryId": "sidh-classical-provable",
+  "paperId": "robert22",
+  "date": "2022-08-10",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "Polynomial in the input size"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not stated in the checked source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Classical polynomial-time SIDH break, including a random starting curve. Auxiliary SIDH information is part of the input. The ePrint publication-info field incorrectly names EUROCRYPT 2016; the note and DOI identify EUROCRYPT 2023.",
+  "extra": {
+    "publication-metadata-correction": "EUROCRYPT 2023, not the erroneous EUROCRYPT 2016 ePrint metadata field"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2022/1038",
+    "locator": "Abstract; publication note and DOI",
+    "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "hhan-midpoint-q26",
+  "categoryId": "svp-quantum-provable",
+  "paperId": "paper-2fcc11c09e6a",
+  "year": 2026,
+  "date": "2026-08-03",
+  "time": {
+    "coefficient": 0.5411,
+    "expression": "2^{0.5411 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.5,
+    "expression": "2^{0.5 n + o(n)}"
+  },
+  "tags": [
+    "arbitrary lattices",
+    "Euclidean"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Preprint abstract states quantum time 0.5411 and space 0.5. Access-model details must be checked in the paper before comparison with other quantum models. This starter category is incomplete and does not assert the current best quantum result.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Randomized",
+    "model": "Quantum; see source for operation and memory accounting",
+    "qram": "Consult full paper",
+    "reference": "Hhan26a"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dinur20-mq2",
+  "categoryId": "mq-binary-classical-provable",
+  "paperId": "dinur20-mq",
+  "date": "2020-05-10",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 0.6943,
+    "expression": "O(2^{0.6943n})"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not stated in the checked source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Worst-case randomized solution finding over F_2, degree at most 2. Rounded upper bound as stated in the abstract, not a numerical benchmark.",
+  "extra": {
+    "success": "Find a solution or decide none exists, with high probability",
+    "field": "F_2"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/2005.04800",
+    "locator": "Abstract, arXiv:2005.04800v2",
+    "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+  }
+}

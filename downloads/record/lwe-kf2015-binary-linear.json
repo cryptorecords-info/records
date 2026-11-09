@@ -1,0 +1,42 @@
+{
+  "id": "lwe-kf2015-binary-linear",
+  "categoryId": "lwe-binary-linear-samples",
+  "paperId": "paper-e014be9a6925",
+  "date": "2015-06-29",
+  "datePrecision": "day",
+  "year": 2015,
+  "time": {
+    "coefficient": 0.34657359027997264,
+    "expression": "2^{(ln(2)/2+o(1)) n/log₂ log₂ n}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not separately normalized"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "LWE",
+    "binary secret",
+    "binary errors",
+    "linear samples"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Decision bound for binary secret/error, q≈n², m=n. The corollary gap is Θ(log n), satisfying HKM’s stronger amplification condition.",
+  "extra": {
+    "samples": "n original equations",
+    "model": "Uniform binary secret and errors; prime modulus q≈n²",
+    "formula": "ln(2)/2 on the n/log₂log₂n scale"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1506.02717v4",
+    "locator": "Abstract; §5.2, Definition 11 and Corollary 6",
+    "sourceVersion": "arXiv:1506.02717v4, 29 June 2015"
+  }
+}

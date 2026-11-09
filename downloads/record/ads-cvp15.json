@@ -1,0 +1,30 @@
+{
+  "id": "ads-cvp15",
+  "categoryId": "cvp-exact",
+  "paperId": "paper-eb07a87a7ce7",
+  "year": 2015,
+  "date": "2015-04-08",
+  "time": {
+    "coefficient": 1,
+    "expression": "2^{n + o(n)}"
+  },
+  "space": {
+    "coefficient": 1,
+    "expression": "2^{1 n + o(n)}"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "FOCS 2015. Randomized exact CVP on arbitrary n-dimensional Euclidean lattices and arbitrary targets; total time and space 2^{n+o(n)}.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "preprocessing": "Included",
+    "target": "Arbitrary target",
+    "reference": "ADS15"
+  }
+}

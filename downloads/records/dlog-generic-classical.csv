@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"pollard78-generic","pollard78","Monte Carlo methods for index computation (mod p)","John M. Pollard","Mathematics of Computation 1978","1978","published","1978-07-31","month","0.5","O(sqrt(r)) expected group operations","","O(1) group elements","https://www.ams.org/mcom/1978-32-143/S0025-5718-1978-0491431-9/S0025-5718-1978-0491431-9.pdf","source-checked"

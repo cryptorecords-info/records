@@ -1,0 +1,40 @@
+{
+  "id": "lpn-qbkw2018-c4",
+  "categoryId": "lpn-quantum-memory-two-thirds",
+  "paperId": "esser2018-dissection-bkw",
+  "date": "2018-12-31",
+  "datePrecision": "year",
+  "year": 2018,
+  "time": {
+    "coefficient": 1.3333333333333333,
+    "expression": "2^{((4/(2·3)) log₂(4)+ε) n/log₂ n}"
+  },
+  "space": {
+    "coefficient": 0.6666666666666666,
+    "expression": "2^{(log₂(4)/3+ε) n/log₂ n}"
+  },
+  "tags": [
+    "quantum",
+    "heuristic",
+    "LPN",
+    "coherent reads"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The theorem coefficient is used rather than the informal introductory simplification.",
+  "extra": {
+    "samples": "Same leading exponent as memory",
+    "model": "Independence Heuristic; coherent sorted-list membership oracle",
+    "formula": "c=4; time c log₂c/[2(c−1)]"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2018/569.pdf",
+    "locator": "Theorem 4.3; Lemma 4.2",
+    "sourceVersion": "ePrint 2018/569 full version, 31 pages, checked 2026-11-08; original-version diff not available"
+  }
+}

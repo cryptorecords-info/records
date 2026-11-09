@@ -1,0 +1,35 @@
+{
+  "id": "bcss23",
+  "categoryId": "svp-quantum-heuristic",
+  "paperId": "paper-8837c0491680",
+  "year": 2023,
+  "date": "2022-05-27",
+  "time": {
+    "coefficient": 0.2563,
+    "expression": "2^{0.2563 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "EUROCRYPT 2023. Reuses a quantum-walk state to find many collisions. The SVP application retains the lattice-sieving heuristic. Date tracks first arXiv availability, arXiv:2205.14023.",
+  "extra": {
+    "qram": "Quantum random access; see algorithm model",
+    "qubits": "Time-memory trade-off; see source",
+    "model": "Quantum sieving, random-list heuristic",
+    "reference": "BCSS23"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/2205.14023v1",
+    "locator": "Version 1 abstract gives the 0.2563 SVP bound; arXiv submission history records 27 May 2022, 14:50:45 UTC",
+    "sourceVersion": "arXiv:2205.14023v1, 27 May 2022; earlier than the 30 May ePrint receipt"
+  }
+}

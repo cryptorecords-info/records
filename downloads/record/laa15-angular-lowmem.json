@@ -1,0 +1,38 @@
+{
+  "id": "laa15-angular-lowmem",
+  "categoryId": "svp-low-memory",
+  "paperId": "paper-1156d8d47edf",
+  "year": 2015,
+  "date": "2014-09-26",
+  "time": {
+    "coefficient": 0.3366,
+    "expression": "2^{0.3366 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.2075,
+    "expression": "2^{0.2075 n + o(n)}"
+  },
+  "tags": [
+    "SVP",
+    "classical",
+    "heuristic",
+    "arbitrary lattices",
+    "low memory",
+    "time–space trade-off"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "CRYPTO 2015; first ePrint 26 September 2014. Charikar angular LSH accelerates the pair search. The source gives heuristic time 0.3366 and space 0.2075 for its Nguyen–Vidick variant. The practical GaussSieve-based HashSieve has a separate conjectured time/space bound 0.3366/0.3366; the smaller-space NV bound should not be attributed to that implementation. This row is the source variant satisfying the baseline-list-space constraint.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Under the stated sieve heuristic",
+    "model": "Classical randomized; polynomial factors suppressed",
+    "heuristic": "Nguyen–Vidick list-distribution heuristic",
+    "reference": "Laa15"
+  }
+}

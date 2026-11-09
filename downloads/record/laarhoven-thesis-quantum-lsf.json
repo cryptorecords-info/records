@@ -1,0 +1,38 @@
+{
+  "id": "laarhoven-thesis-quantum-lsf",
+  "categoryId": "svp-quantum-heuristic",
+  "paperId": "laarhoven-thesis-2016",
+  "date": "2016-02-16",
+  "year": 2016,
+  "time": {
+    "coefficient": 0.2652573583493899,
+    "expression": "(13/9)^{n/2 + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.2652573583493899,
+    "expression": "(13/9)^{n/2 + o(n)}"
+  },
+  "tags": [
+    "quantum",
+    "heuristic",
+    "QCRAM",
+    "LSF"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Section 14.2.10, equation (14.6)–(14.7): heuristic quantum LSF bound. The author-hosted draft is dated 10 November 2015; chronology uses the documented thesis publication date.",
+  "extra": {
+    "model": "Quantum RAM access to classical data; heuristic spherical list model",
+    "reference": "Section 14.2.10"
+  },
+  "evidence": {
+    "url": "https://thijs.com/docs/phd.pdf",
+    "locator": "Chapter 14, Section 14.2.10, printed p.186 / PDF p.193",
+    "sourceVersion": "2016-02-16"
+  }
+}

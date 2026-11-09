@@ -1,0 +1,67 @@
+[
+  {
+    "id": "dg13-general",
+    "categoryId": "ssip-classical-heuristic",
+    "paperId": "dg13",
+    "date": "2013-10-29",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.5,
+      "expression": "O~(p^{1/2})"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not stated in the checked source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The F_p-subfield strategy gives a low-storage general isogeny-search method. The source uses random-walk heuristics; its F_p connectivity argument uses GRH. The p^{1/4} subroutine does not make the general algorithm p^{1/4}.",
+    "extra": {
+      "output": "A composition of isogenies; not necessarily a fixed-degree short path"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1310.7789",
+      "locator": "Section 4: The General Isogeny Problem",
+      "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+    }
+  },
+  {
+    "id": "wesolowski26-general",
+    "categoryId": "ssip-classical-heuristic",
+    "paperId": "wesolowski26-isogeny",
+    "date": "2026-07-23",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.3333333333333333,
+      "expression": "p^{1/3+o(1)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "p^{1/3+o(1)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The time and memory bound assumes smoothness of certain random integers. The source notes a superpolynomial overhead hidden in o(1) and substantial memory requirements; concrete impact is not established.",
+    "extra": {
+      "assumption": "Smoothness heuristic",
+      "source-chronology": "Received 20 July; approved 23 July 2026"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2026/1486",
+      "locator": "Abstract; approved 2026-07-23",
+      "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+    }
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "id": "lpn-kf2015-low-noise",
+  "categoryId": "lpn-low-noise-sqrt",
+  "paperId": "paper-e014be9a6925",
+  "date": "2015-06-29",
+  "datePrecision": "day",
+  "year": 2015,
+  "time": {
+    "coefficient": 1.4426950408889634,
+    "expression": "O(n⁴ exp(√n))"
+  },
+  "space": {
+    "coefficient": 0,
+    "expression": "poly(n)"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "LPN",
+    "low noise"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The stated p=1/√n specialization solves search LPN with negligible failure.",
+  "extra": {
+    "samples": "Fresh batches of 34n; repeated n(1−p)^{−n} times",
+    "model": "Sequential repetitions; polynomial working memory",
+    "formula": "log₂(e) on the √n scale"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1506.02717v4",
+    "locator": "Appendix C, Theorem 19 and following specialization",
+    "sourceVersion": "arXiv:1506.02717v4, 29 June 2015"
+  }
+}

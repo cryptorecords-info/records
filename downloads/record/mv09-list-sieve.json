@@ -1,0 +1,39 @@
+{
+  "id": "mv09-list-sieve",
+  "categoryId": "svp-provable",
+  "paperId": "micciancio-voulgaris-sieve-2009",
+  "date": "2009-08-10",
+  "datePrecision": "day",
+  "year": 2009,
+  "time": {
+    "coefficient": 3.199,
+    "expression": "2^{3.199 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 1.325,
+    "expression": "2^{1.325 n + o(n)}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "arbitrary lattices"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "ListSieve’s optimized rigorous time point, ξ ≈ 0.685. The ECCC page distinguishes submission 31 July from publication 10 August 2009; the latter is used. This is the sieving paper, separate from the authors’ deterministic Voronoi-cell paper. The accompanying GaussSieve has no proven running-time bound and is not substituted for this theorem.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "High probability",
+    "model": "Classical; polynomial input-size factors suppressed"
+  },
+  "evidence": {
+    "url": "https://eccc.weizmann.ac.il/report/2009/065/download",
+    "locator": "Corollary 3.2, PDF p. 8; abstract; ECCC publication metadata",
+    "sourceVersion": "ECCC TR09-065, published 10 August 2009"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "llm06-bdd-polynomial-advice",
+  "categoryId": "bdd-polynomial-advice",
+  "paperId": "liu-lyubashevsky-micciancio-2006",
+  "year": 2006,
+  "date": "2006-08-31",
+  "datePrecision": "month",
+  "time": {
+    "coefficient": null,
+    "expression": "poly(input size)"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "poly(input size) advice"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "worst case",
+    "preprocessing",
+    "periodic Gaussian"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The decoding radius improves the O(lambda_1/n) predecessor. The asymptotic radius hides a suitable constant; no universal constant-radius guarantee is asserted.",
+  "extra": {
+    "radius": "c sqrt(log n/n) lambda_1(L), suitable absolute c > 0",
+    "advice": "Polynomial-size advice string, including the periodic-Gaussian estimator",
+    "preprocessing": "Unbounded target-independent preprocessing",
+    "success": "Advice supports every target within the promised radius",
+    "model": "Polynomial-time online exact decoding"
+  },
+  "evidence": {
+    "url": "https://cseweb.ucsd.edu/~vlyubash/papers/bdd.pdf",
+    "locator": "Abstract; §3, Theorems 1 and 2",
+    "sourceVersion": "RANDOM 2006 author version; month established by author publication page"
+  }
+}

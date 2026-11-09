@@ -1,0 +1,45 @@
+{
+  "id": "kim26-dgs-arbitrary-one",
+  "categoryId": "dgs-arbitrary-width",
+  "paperId": "kim-2026-one-dgs",
+  "year": 2026,
+  "date": "2026-08-04",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 0.5,
+    "expression": "2^{n/2+o(n)} expected bit operations"
+  },
+  "space": {
+    "coefficient": 0.5,
+    "expression": "2^{n/2+o(n)} bits on every execution"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "worst case",
+    "DGS",
+    "arbitrary width",
+    "centered",
+    "single sample"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "One centered sample, rather than the older 2^{n/2}-output arbitrary-width batch. Polynomial dependence on basis and squared-width encoding lengths is explicit in the theorem.",
+  "extra": {
+    "width": "Any rational s^2 > 0 on a rank-n lattice with rational basis",
+    "output": "One sample from D_{L,s}",
+    "error": "exp(-Omega(n^3)) statistical distance",
+    "model": "Randomized classical; expected time and bounded space per execution",
+    "reference": "Kim26"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/2608.03220v1",
+    "locator": "Theorem 4.3, printed p. 10; Theorem 1.1",
+    "sourceVersion": "arXiv:2608.03220v1, 4 August 2026"
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "adrs15-gapsvp193",
+    "categoryId": "svp-gap-euclidean-parameterized",
+    "paperId": "paper-86925aff6e6c",
+    "year": 2015,
+    "date": "2014-12-26",
+    "time": {
+      "coefficient": null,
+      "expression": "2^{n/2+o(n)} for gap factor γ = 1.93"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{0.5 n + o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "GapSVP",
+      "approximate",
+      "decision"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The above-smoothing sampler implies a 1.93-approximate decision-SVP algorithm in the stated total time and space. The source does not claim an approximate shortest vector with this cost. The factor is retained as an entry parameter; bounds for different gap factors are not assigned a common numerical rank.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "approximation": "γ = 1.93",
+      "output": "Promise decision: λ₁(L) ≤ r versus λ₁(L) > γr",
+      "model": "Randomized classical",
+      "reference": "ADRS15",
+      "timeExponentAtStatedGuarantee": "0.5"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/1412.7994v1",
+      "locator": "Abstract, above-smoothing DGS and 1.93-approximate decision-SVP consequence",
+      "sourceVersion": "arXiv:1412.7994v1, 26 December 2014"
+    }
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "adrs14-bdd-radius-0422",
+    "categoryId": "bdd-total-cost",
+    "paperId": "paper-86925aff6e6c",
+    "year": 2015,
+    "date": "2014-12-26",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "2^{n/2+o(n)} total time at radius (0.422−o(1)) λ₁(L)"
+    },
+    "space": {
+      "coefficient": 0.5,
+      "expression": "2^{n/2+o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "BDD",
+      "constant radius",
+      "preprocessing included"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The first arXiv version already contains this corollary. Above-smoothing Gaussian sampling supplies the dual-vector advice within the displayed total cost. The guarantee is radius (0.422−o(1)) lambda_1(L), not every radius below lambda_1(L)/2. Radius is an entry parameter, so this row is not numerically ranked against a bound for another decoding promise.",
+    "extra": {
+      "radius": "(0.422-o(1)) lambda_1(L)",
+      "preprocessing": "Included: one above-smoothing DGS call and polynomial-time decoding work",
+      "success": "Randomized exact decoding under the distance promise; constant success can be amplified",
+      "model": "Classical randomized; total time, not an online-only cost",
+      "timeExponentAtStatedGuarantee": "0.5"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/1412.7994v1",
+      "locator": "§7.2, Theorem 7.3 and Corollary 7.4; Theorem 5.11",
+      "sourceVersion": "arXiv:1412.7994v1, 26 December 2014"
+    }
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "id": "lpn-kf2015-fixed-noise",
+  "categoryId": "lpn-fixed-noise",
+  "paperId": "paper-e014be9a6925",
+  "date": "2015-06-29",
+  "datePrecision": "day",
+  "year": 2015,
+  "time": {
+    "coefficient": 1,
+    "expression": "2^{(1+o(1)) n/log₂ n}"
+  },
+  "space": {
+    "coefficient": 1,
+    "expression": "2^{(1+o(1)) n/log₂ n}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "LPN",
+    "BKW"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Fixed-noise specialization of the paper’s decision-LPN bound.",
+  "extra": {
+    "samples": "2^{(1+o(1)) n/log₂ n}",
+    "model": "Independent samples; decision LPN",
+    "formula": "Leading normalized coefficient 1"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1506.02717v4",
+    "locator": "§3.1; Appendix C, Theorem 18",
+    "sourceVersion": "arXiv:1506.02717v4, 29 June 2015"
+  }
+}

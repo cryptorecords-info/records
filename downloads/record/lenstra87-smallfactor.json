@@ -1,0 +1,32 @@
+{
+  "id": "lenstra87-smallfactor",
+  "categoryId": "ifp-small-factor-ecm",
+  "paperId": "lenstra87",
+  "date": "1987-11-30",
+  "datePrecision": "month",
+  "time": {
+    "coefficient": 1.4142135623730951,
+    "expression": "L_p[1/2, sqrt(2)] (log N)^2"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not extracted from the source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Conjectured expected cost, where p is the least prime dividing N. This record measures dependence on the factor p, not general NFS complexity.",
+  "extra": {
+    "coefficientExact": "sqrt(2)"
+  },
+  "evidence": {
+    "url": "https://annals.math.princeton.edu/1987/126-3/p09",
+    "locator": "Abstract",
+    "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "udovenko26-general",
+  "categoryId": "ssip-classical-provable",
+  "paperId": "udovenko26-isogeny",
+  "date": "2026-08-03",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 0.4,
+    "expression": "p^{2/5+o(1)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "p^{2/5+o(1)}"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Unconditional asymptotic time and memory bound based on theoretical bivariate multipoint evaluation. The source explicitly cautions that this does not provide a practical threat to current parameter sets.",
+  "extra": {
+    "source-chronology": "Received 31 July; approved 3 August 2026"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2026/1575",
+    "locator": "Abstract; approved 2026-08-03",
+    "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+  }
+}

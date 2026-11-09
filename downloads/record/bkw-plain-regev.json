@@ -1,0 +1,46 @@
+{
+  "id": "bkw-plain-regev",
+  "categoryId": "bkw-regev",
+  "paperId": "paper-87fab2296b57",
+  "year": 2012,
+  "date": "2012-11-11",
+  "time": {
+    "coefficient": 1,
+    "expression": "2^{n+o(n)}"
+  },
+  "space": {
+    "coefficient": 1,
+    "expression": "2^{n+o(n)}"
+  },
+  "tags": [
+    "classical",
+    "heuristic",
+    "LWE",
+    "BKW",
+    "Regev regime",
+    "unlimited samples",
+    "unstructured"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Decision-LWE specialization of the original free-depth corollary: choose a≈2 log₂n and b=n/a. Then q^b=2^{n+o(n)} and m=exp(O(n/log₂⁴n))=2^{o(n)}. The simplified Search-LWE Theorem 1 fixes a≈log₂n and instead gives coefficient 2; do not conflate the two statements.",
+  "extra": {
+    "samples": "2^{n+o(n)} fresh samples",
+    "model": "Original Decision-LWE corollary; expectation and distribution assumptions as in the source",
+    "schedule": "Exact block cancellation",
+    "access": "Classical tables",
+    "variant": "Decision-LWE",
+    "formula": "a≈2 log₂n, b=n/a; q^b=2^{n+o(n)}",
+    "success": "Constant target distinguishing advantage; polynomial amplification permitted"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2012/636.pdf",
+    "locator": "Corollary 1, pp. 2–3; Corollary 3, Equations (15)–(18); distinguish simplified Search-LWE Theorem 1",
+    "sourceVersion": "ePrint 2012/636 PDF checked 2026-11-08; original version not separately diffed"
+  }
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "hs07-enumeration",
+    "categoryId": "svp-enumeration",
+    "paperId": "hanrot-stehle-2007",
+    "date": "2007-05-07",
+    "year": 2007,
+    "time": {
+      "coefficient": 0.18393972058572117,
+      "expression": "n^{n/(2e) + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "poly(n)"
+    },
+    "tags": [
+      "provable",
+      "polynomial space",
+      "n log n scale"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Polynomial-space worst-case bound including the recursive basis preprocessing.",
+    "extra": {
+      "model": "Classical deterministic; polynomial space"
+    },
+    "evidence": {
+      "url": "https://perso.ens-lyon.fr/damien.stehle/downloads/crypto2007.pdf",
+      "locator": "Introduction, main complexity bound",
+      "sourceVersion": "2007-05-07"
+    }
+  },
+  {
+    "id": "fgl26-polynomial-space",
+    "categoryId": "svp-enumeration",
+    "paperId": "feng-gao-liu-2026",
+    "date": "2026-09-18",
+    "year": 2026,
+    "time": {
+      "coefficient": 0.09196986029286058,
+      "expression": "n^{n/(4e) + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "poly(n)"
+    },
+    "tags": [
+      "provable",
+      "polynomial space",
+      "n log n scale"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Randomized polynomial-space algorithm; compare on the n log n scale.",
+    "extra": {
+      "model": "Classical randomized; polynomial space"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/2609.21612",
+      "locator": "Abstract",
+      "sourceVersion": "2026-09-18"
+    }
+  },
+  {
+    "id": "kannan83-enumeration",
+    "categoryId": "svp-enumeration",
+    "paperId": "kannan-1983",
+    "date": "1983-12-31",
+    "datePrecision": "year",
+    "year": 1983,
+    "time": {
+      "coefficient": 1,
+      "expression": "n^{n+o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "poly(input size)"
+    },
+    "tags": [
+      "enumeration",
+      "polynomial space",
+      "n log n scale"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Historical n^{n+o(n)} bound attributed to Kannan 1983 in Hanrot–Stehlé 2007, introduction. The original STOC full text was not retrieved. Kannan’s 1987 full version, p. 416, was independently inspected and states O(n^n s) arithmetic operations for SVP (s is input length). The historical score is thus checked as an explicit attribution and corroborated in the author’s full version. The 2007 bibliography has incorrect STOC page numbers; this paper’s BibTeX follows ACM’s 193–206. ACM lists publication on 1 December 1983, while the STOC conference was earlier that year; year precision is used conservatively rather than asserting an exact priority day.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Deterministic exact algorithm",
+      "model": "Classical; polynomial input-size factors suppressed"
+    },
+    "evidence": {
+      "url": "https://perso.ens-lyon.fr/damien.stehle/downloads/crypto2007.pdf",
+      "locator": "Introduction, PDF p. 2; reference [16]; corroboration: Kannan 1987, printed p. 416",
+      "sourceVersion": "CRYPTO 2007 author preprint; checked historical attribution"
+    }
+  },
+  {
+    "id": "helfrich85-enumeration",
+    "categoryId": "svp-enumeration",
+    "paperId": "helfrich-1985",
+    "date": "1985-12-31",
+    "datePrecision": "year",
+    "year": 1985,
+    "time": {
+      "coefficient": 0.5,
+      "expression": "n^{n/2+o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "poly(input size)"
+    },
+    "tags": [
+      "enumeration",
+      "polynomial space",
+      "n log n scale"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The n^{n/2+o(n)} SVP refinement is explicitly attributed to Helfrich 1985 by Hanrot–Stehlé 2007. That later primary research paper was read; the original Helfrich theorem was not retrieved. This row records the checked historical attribution, rather than claiming an independent reading of the 1985 proof. The scale is n log n and must remain separate from singly exponential SVP.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Deterministic exact algorithm",
+      "model": "Classical; polynomial input-size factors suppressed"
+    },
+    "evidence": {
+      "url": "https://perso.ens-lyon.fr/damien.stehle/downloads/crypto2007.pdf",
+      "locator": "Introduction, PDF p. 2; §3.3; reference [13]",
+      "sourceVersion": "CRYPTO 2007 author preprint; checked historical attribution"
+    }
+  }
+]

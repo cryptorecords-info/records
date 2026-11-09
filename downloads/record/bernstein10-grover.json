@@ -1,0 +1,41 @@
+{
+  "id": "bernstein10-grover",
+  "categoryId": "isd-quantum-full-distance",
+  "paperId": "paper-1121d4329e21",
+  "year": 2010,
+  "date": "2009-11-23",
+  "time": {
+    "coefficient": 0.06035,
+    "expression": "2^{0.06035 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "quantum",
+    "ISD",
+    "binary",
+    "random codes",
+    "full GV distance",
+    "maximum over rates",
+    "quantum walks"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Prange with Grover search. The five-digit full-GV specialization is tabulated in Kachigar–Tillich 2017. Date is the author-listed original manuscript date.",
+  "extra": {
+    "field": "𝔽₂",
+    "rate": "Maximize over 0≤R≤1",
+    "weight": "Full GV distance: n H₂⁻¹(1−R)",
+    "model": "Quantum Grover search of information sets",
+    "access": "Polynomial-size decoding circuit; no exponential lookup table",
+    "reference": "Bernstein10",
+    "coefficient_source": "https://arxiv.org/pdf/1703.00263"
+  }
+}

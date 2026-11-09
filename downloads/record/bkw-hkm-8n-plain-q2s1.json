@@ -1,0 +1,40 @@
+{
+  "id": "bkw-hkm-8n-plain-q2s1",
+  "categoryId": "bkw-q2-s1-8n",
+  "paperId": "hkm2015-asymptotic",
+  "date": "2018-12-31",
+  "datePrecision": "year",
+  "year": 2018,
+  "time": {
+    "coefficient": 1.3333333333333333,
+    "expression": "2^{(2/[4−2−4/8]+o(1)) n}"
+  },
+  "space": {
+    "coefficient": 1.3333333333333333,
+    "expression": "2^{(2/[4−2−4/8]+o(1)) n}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "LWE",
+    "BKW"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Parameter substitution in the checked analysis; no priority claim for the underlying algorithm.",
+  "extra": {
+    "samples": "m=(8+o(1))n original samples",
+    "model": "q exponent 2; Gaussian-width exponent 1; the strict theorem inequalities hold",
+    "formula": "2/[4−2−4/8]"
+  },
+  "evidence": {
+    "url": "https://elenakirshanova.github.io/Papers/on_the_asymptotic_complexity.pdf",
+    "locator": "Theorem 11, second display",
+    "sourceVersion": "Undated 30-page author manuscript checked 2026-11-08; journal 86(1), 2018; original 2015 preprint not version-compared"
+  }
+}

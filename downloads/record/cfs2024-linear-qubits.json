@@ -1,0 +1,32 @@
+{
+  "id": "cfs2024-linear-qubits",
+  "categoryId": "isd-quantum-polynomial-qubits",
+  "paperId": "chevignard-fouque-schrottenloher2024",
+  "date": "2024-09-10",
+  "time": {
+    "coefficient": 0.06035,
+    "expression": "2^{0.06035 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0,
+    "expression": "O(n) qubits"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Same exponential search coefficient as quantum Prange; linear qubits.",
+  "extra": {
+    "per_iterate_Toffoli_gates": "O(n³)",
+    "depth": "O(n² log n)"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2024/907",
+    "locator": "Abstract, first trade-off",
+    "sourceVersion": "2024-09-10"
+  }
+}

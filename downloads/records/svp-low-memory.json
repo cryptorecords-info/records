@@ -1,0 +1,192 @@
+[
+  {
+    "id": "nv08-lowmem",
+    "categoryId": "svp-low-memory",
+    "paperId": "paper-601546f46af3",
+    "year": 2008,
+    "date": "2008-09-11",
+    "time": {
+      "coefficient": 0.41503749927884376,
+      "expression": "(4/3)^{n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.20751874963942188,
+      "expression": "2^{0.20751874963942188 n + o(n)}"
+    },
+    "tags": [
+      "SVP",
+      "classical",
+      "heuristic",
+      "arbitrary lattices",
+      "low memory",
+      "time–space trade-off"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Heuristic AKS variant: limiting time coefficient log₂(4/3) ≈ 0.4150 and space coefficient ½log₂(4/3) ≈ 0.2075. The source states (4/3+ε)^n time for every fixed ε>0. Chronology uses the 11 September 2008 online-publication date reported by the institutional repository, https://authors.library.caltech.edu/records/etxts-sdp80; it does not assert the earliest circulated draft date. This row is the source variant satisfying the baseline-list-space constraint.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Under the stated sieve heuristic",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "heuristic": "Sieve-list uniformity heuristic",
+      "reference": "NV08"
+    }
+  },
+  {
+    "id": "laa15-angular-lowmem",
+    "categoryId": "svp-low-memory",
+    "paperId": "paper-1156d8d47edf",
+    "year": 2015,
+    "date": "2014-09-26",
+    "time": {
+      "coefficient": 0.3366,
+      "expression": "2^{0.3366 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.2075,
+      "expression": "2^{0.2075 n + o(n)}"
+    },
+    "tags": [
+      "SVP",
+      "classical",
+      "heuristic",
+      "arbitrary lattices",
+      "low memory",
+      "time–space trade-off"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "CRYPTO 2015; first ePrint 26 September 2014. Charikar angular LSH accelerates the pair search. The source gives heuristic time 0.3366 and space 0.2075 for its Nguyen–Vidick variant. The practical GaussSieve-based HashSieve has a separate conjectured time/space bound 0.3366/0.3366; the smaller-space NV bound should not be attributed to that implementation. This row is the source variant satisfying the baseline-list-space constraint.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Under the stated sieve heuristic",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "heuristic": "Nguyen–Vidick list-distribution heuristic",
+      "reference": "Laa15"
+    }
+  },
+  {
+    "id": "bgj15-nns-lowmem",
+    "categoryId": "svp-low-memory",
+    "paperId": "paper-2f67f6ebf8c0",
+    "year": 2015,
+    "date": "2015-05-31",
+    "time": {
+      "coefficient": 0.3112,
+      "expression": "2^{0.3112 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.2075,
+      "expression": "2^{0.2075 n + o(n)}"
+    },
+    "tags": [
+      "SVP",
+      "classical",
+      "heuristic",
+      "arbitrary lattices",
+      "low memory",
+      "time–space trade-off"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "A low-memory improvement, rather than a chronological time record after SphereSieve. The source states heuristic time 0.3112 while retaining space 0.2075. The method adapts nearest-neighbor search for binary codes. First ePrint received 31 May 2015; source publication status is preprint. This row is the source variant satisfying the baseline-list-space constraint.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Under the stated sieve heuristic",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "heuristic": "Sieve-list heuristic; geometric reduction to binary nearest-neighbor search",
+      "reference": "BGJ15"
+    }
+  },
+  {
+    "id": "bdgl16-lowmem",
+    "categoryId": "svp-low-memory",
+    "paperId": "paper-1bcb4e64b5f3",
+    "year": 2016,
+    "date": "2015-11-23",
+    "time": {
+      "coefficient": 0.2924812503605781,
+      "expression": "(3/2)^{n/2 + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.20751874963942188,
+      "expression": "2^{0.20751874963942188 n + o(n)}"
+    },
+    "tags": [
+      "SVP",
+      "classical",
+      "heuristic",
+      "arbitrary lattices",
+      "low memory",
+      "time–space trade-off"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "SODA 2016; first ePrint 23 November 2015. Spherical filters from structured random product codes yield heuristic time coefficient ½log₂(3/2) ≈ 0.2925 and space coefficient ½log₂(4/3) ≈ 0.2075. The list-distribution assumption remains heuristic; this is distinct from a Haar-random-lattice theorem. This row is the source variant satisfying the baseline-list-space constraint.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Under the stated sieve heuristic",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "heuristic": "Sieve-list distribution / geometric heuristic",
+      "reference": "BDGL16"
+    }
+  },
+  {
+    "id": "ldw15-nv-published-low-memory",
+    "categoryId": "svp-low-memory",
+    "paperId": "paper-2b6476ef7d09",
+    "date": "2015-08-31",
+    "datePrecision": "month",
+    "time": {
+      "coefficient": 0.2972,
+      "expression": "2^{0.2972 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.20751874963942188,
+      "expression": "(4/3)^{n/2+o(n)}"
+    },
+    "tags": [
+      "classical",
+      "heuristic",
+      "sequential hash tables",
+      "low memory"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The published LATINCRYPT 2015 chapter, Theorem 1, explicitly gives time exponent 0.2972 with baseline list space by processing hash tables sequentially. This is distinct from Proposition 1's balanced time/space point. Date is a conservative cutoff for the August 2015 published chapter; it does not assert that this memory refinement was present in the first March preprint.",
+    "extra": {
+      "model": "Nguyen–Vidick variant with one hash table stored at a time",
+      "version": "LATINCRYPT 2015 published chapter, pages 101–118"
+    },
+    "evidence": {
+      "url": "https://math.deweger.net/papers/%5B56%5DLdW-SievLSH-LatinCrypt%5B2015%5D.pdf",
+      "locator": "Theorem 1, printed page 111; preceding sequential-table argument",
+      "sourceVersion": "Published LATINCRYPT 2015 chapter"
+    }
+  }
+]

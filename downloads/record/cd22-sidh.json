@@ -1,0 +1,33 @@
+{
+  "id": "cd22-sidh",
+  "categoryId": "sidh-classical-conditional",
+  "paperId": "cd22",
+  "date": "2022-07-30",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "Heuristic polynomial time, apart from parameter-dependent integer factorizations"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not stated in the checked source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Known starting-curve endomorphism ring is assumed. The attack exploits the auxiliary torsion images in a SIDH public key. The source reports an SIKEp434 break in about ten minutes on one core; that timing is not a universal complexity exponent.",
+  "extra": {
+    "attack-information": "SIDH public auxiliary torsion images",
+    "assumption": "Known endomorphism ring; stated heuristic and integer-factorization qualifications"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2022/975",
+    "locator": "Abstract",
+    "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+  }
+}

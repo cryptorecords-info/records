@@ -1,0 +1,37 @@
+[
+  {
+    "id": "gwz15-ecdlp",
+    "categoryId": "ecdlp-classical-sqrtspace",
+    "paperId": "gwz15",
+    "date": "2015-06-28",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.5,
+      "expression": "O(sqrt(r)) group operations; improved average-case constants"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "O(sqrt(r)) group elements"
+    },
+    "tags": [
+      "baby-step giant-step",
+      "average-case constants"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Improved baby-step/giant-step methods for ECDLP with square-root storage. The exponent is still 1/2; the paper improves operation constants and analyses average-case performance, including heuristic components. No exponent improvement is claimed.",
+    "extra": {
+      "coefficientExact": "1/2"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2015/605",
+      "locator": "Introduction; Sections 2–5",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "bbhl20-ecc-binary",
+    "categoryId": "ecdlp-binary-quantum",
+    "paperId": "bbhl20",
+    "date": "2020-10-19",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "48n^3 + 8n^{log₂(3)+1} + 352n² log₂(n) + 512n² + O(n^{log₂(3)}) logical Toffoli gates"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "7n + floor(log₂ n) + 9 logical qubits"
+    },
+    "tags": [
+      "logical Toffoli gates",
+      "logical qubits",
+      "double-and-add"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Double-and-add scalar multiplication variant over F_{2^n}. The source also provides a fixed-window variant with a logarithmic factor improvement. These are logical resource bounds, not physical attack timings.",
+    "extra": {},
+    "evidence": {
+      "url": "https://eprint.iacr.org/2020/1296",
+      "locator": "Abstract",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  }
+]

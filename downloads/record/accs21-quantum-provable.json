@@ -1,0 +1,37 @@
+{
+  "id": "accs21-quantum-provable",
+  "categoryId": "svp-quantum-provable",
+  "paperId": "accs-stacs-2021",
+  "date": "2021-03-10",
+  "year": 2021,
+  "time": {
+    "coefficient": 0.9533,
+    "expression": "2^{0.9533 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.5,
+    "expression": "2^{0.5 n + o(n)}"
+  },
+  "tags": [
+    "provable",
+    "quantum",
+    "no QRAM"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Published conference version; polynomially many qubits and exponential classical memory.",
+  "extra": {
+    "model": "Quantum; poly(n) qubits; no QRAM",
+    "classical-memory": "2^{0.5n+o(n)}"
+  },
+  "evidence": {
+    "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.STACS.2021.4",
+    "locator": "Abstract, result 2",
+    "sourceVersion": "2021-03-10"
+  }
+}

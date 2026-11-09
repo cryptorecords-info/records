@@ -1,0 +1,44 @@
+{
+  "id": "aps15-lwe-decoding-optimization",
+  "categoryId": "lwe-lattice-decoding-models",
+  "paperId": "albrecht-player-scott2015-concrete",
+  "year": 2015,
+  "date": "2015-10-02",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "min_{δ₀,d: P(d,δ₀)≥ε} [T_BKZ(m,δ₀) + t_node ∏_i d_i]"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Depends on the selected lattice reduction and enumeration implementation."
+  },
+  "tags": [
+    "decoding",
+    "historical cost model",
+    "tradeoff"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Explicit optimization of the reduction/enumeration balance. The source observes that Lindner–Peikert’s example choices were not necessarily optimal. This records a cost model, not a new universal exponent.",
+  "extra": {
+    "parameters": "Fix n,q,m, Gaussian width αq, target success ε, per-node cost and reduced-basis profile.",
+    "noise": "Gaussian width αq; discrete/continuous approximation as in the decoding analysis.",
+    "secret": "General LWE secret.",
+    "samples": "Survey allows unlimited samples; a finite deployment must enforce its actual m cap.",
+    "objective": "Recover the secret by BDD decoding.",
+    "model": "Minimize total preprocessing plus enumeration over δ₀ and branch counts d.",
+    "assumptions": "Basis-profile model (typically GSA) and Gaussian-coordinate decoding probabilities.",
+    "success": "P(d,δ₀)=∏_i erf(d_i||b_i*||√π/(2αq))≥ε."
+  },
+  "evidence": {
+    "url": "https://www.degruyterbrill.com/document/doi/10.1515/jmc-2015-0016/pdf?licenseType=open-access",
+    "locator": "§5.4, pp. 187–189, equation defining t_dec(ε) and discussion of optimizing Lindner–Peikert",
+    "sourceVersion": "Journal of Mathematical Cryptology 9(3), published 2 October 2015"
+  }
+}

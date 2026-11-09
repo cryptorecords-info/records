@@ -1,0 +1,40 @@
+{
+  "id": "mukh21-exact-infinity",
+  "categoryId": "svp-infinity-provable",
+  "paperId": "mukhopadhyay-2019-lp-sieving",
+  "date": "2021-12-19",
+  "datePrecision": "day",
+  "year": 2021,
+  "time": {
+    "coefficient": 2.443,
+    "expression": "2^{2.443 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 2.443,
+    "expression": "2^{2.443 n + o(n)}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "arbitrary lattices",
+    "ℓ∞"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Specializing the linear birthday sieve to ℓ∞, with the stated subdivision, yields the displayed bound at γ = 0.501 and ξ = 0.738. This improves the 2.82/2.82 specialization in Aggarwal–Mukhopadhyay 2018. The row is conservatively dated to the checked v3 rather than backdating the numerical refinement to v1.",
+  "extra": {
+    "norm": "ℓ∞",
+    "success": "At least 1/2",
+    "model": "Classical; polynomial input-size factors suppressed"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/html/1907.04406v3",
+    "locator": "§3.3, paragraph beginning “For p = ∞”; Table 1",
+    "sourceVersion": "arXiv:1907.04406v3, 19 December 2021"
+  }
+}

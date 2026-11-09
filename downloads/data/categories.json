@@ -1,0 +1,4035 @@
+[
+  {
+    "id": "bdd-basis-relative",
+    "problemId": "bdd",
+    "name": "Classical · basis-relative radius",
+    "regime": "Closest-vector search with distance promised relative to the supplied Gram–Schmidt basis",
+    "metric": "Parameterized arithmetic time",
+    "parameter": "n",
+    "direction": "min",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "description": "Basis-quality-dependent decoding statements, prior to basis-independent constant-radius BDD bounds.",
+    "rules": "Supply a basis B and state the promise using min_i ||b_tilde_i||. Basis construction is excluded unless explicitly included. Do not turn a growing radius parameter into a fixed linear time exponent.",
+    "fields": [
+      {
+        "key": "radius",
+        "label": "Decoding promise"
+      },
+      {
+        "key": "basis",
+        "label": "Supplied basis"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "basis relative",
+      "Euclidean"
+    ]
+  },
+  {
+    "id": "bdd-polynomial-advice",
+    "problemId": "bdd",
+    "name": "Classical · polynomial query and advice",
+    "regime": "Preprocessed exact decoding; polynomial online time and advice, variable radius",
+    "metric": "Polynomial online time; radius in entry",
+    "parameter": "n",
+    "direction": "min",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "description": "Historical polynomial-advice BDD algorithms, retaining the basis-independent radius guarantee of each source.",
+    "rules": "Preprocessing time is unbounded; query time and advice are polynomial in input size. Radius guarantees differ and must be read per entry. The numeric exponent is null: polynomial time is not a zero exponent record.",
+    "fields": [
+      {
+        "key": "radius",
+        "label": "Decoding radius"
+      },
+      {
+        "key": "advice",
+        "label": "Advice size"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing cost"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      },
+      {
+        "key": "model",
+        "label": "Query model"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "preprocessing",
+      "polynomial query"
+    ]
+  },
+  {
+    "id": "bdd-preprocessing-tradeoffs",
+    "problemId": "bdd",
+    "name": "Classical · preprocessing/radius tradeoffs",
+    "regime": "Reusable exact BDD data structures with explicit decoding radius",
+    "metric": "Parameterized query time",
+    "parameter": "n",
+    "direction": "min",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "description": "Radius-dependent time and advice formulas; preprocessing and per-target costs remain separate.",
+    "rules": "Record the decoding radius, preprocessing P, query D, storage S, and probability that one advice string works for all promised targets. Parameter-dependent exponents stay unranked until a fixed promise is chosen.",
+    "fields": [
+      {
+        "key": "radius",
+        "label": "Decoding radius"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing time"
+      },
+      {
+        "key": "advice",
+        "label": "Advice / space"
+      },
+      {
+        "key": "parameters",
+        "label": "Parameter domain"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "preprocessing",
+      "tradeoff"
+    ]
+  },
+  {
+    "id": "bdd-total-cost",
+    "problemId": "bdd",
+    "name": "Classical · total cost · radius dependent",
+    "regime": "Exact BDD on arbitrary Euclidean lattices; decoding radius is specified per result and preprocessing is included",
+    "metric": "Parameterized total time bound in n and decoding radius",
+    "parameter": "n",
+    "direction": "min",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "description": "BDD algorithms with their full radius/time guarantees and all lattice preparation charged. Different radii are parameters of the result, not separate factor-specific categories.",
+    "rules": "For the radius alpha stated by each entry, return the nearest lattice point for targets satisfying dist(t,L) ≤ alpha lambda_1(L). Count every preprocessing and advice-construction step in total time. Do not rank bounds for different radii as a common numerical leaderboard. Keep supplied-basis, unbounded-preprocessing query and polynomial-advice models separate.",
+    "fields": [
+      {
+        "key": "radius",
+        "label": "Decoding radius"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "Euclidean",
+      "radius dependent",
+      "preprocessing included",
+      "total cost"
+    ]
+  },
+  {
+    "id": "bkw-q2-s1-8n",
+    "problemId": "lwe",
+    "name": "BKW · q ≍ n², width ≍ n · 8n samples",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Uniform random equations",
+    "regime": "Uniform-secret LWE, prime q=Θ(n²), discrete-Gaussian width s=Θ(n); m=(8+o(1))n original samples",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "BKW",
+      "Gaussian noise",
+      "sample budget"
+    ],
+    "featured": false,
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "model",
+        "label": "Model / assumptions"
+      },
+      {
+        "key": "formula",
+        "label": "Exact coefficient / bound"
+      }
+    ],
+    "description": "Uniform-secret LWE, prime q=Θ(n²), discrete-Gaussian width s=Θ(n); m=(8+o(1))n original samples",
+    "rules": "Use q=Θ(n²), Gaussian width s=Θ(n), and exactly the displayed asymptotic sample budget. Constant Gaussian normalizations do not change these exponents. These are interior parameters c_q=2,c_s=1; they are not the Regev q≈n²,width≈n^{3/2}/polylog(n) regime."
+  },
+  {
+    "id": "bkw-q2-s1-nlogn",
+    "problemId": "lwe",
+    "name": "BKW · q ≍ n², width ≍ n · Θ(n log n) samples",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Uniform random equations",
+    "regime": "Uniform-secret LWE, prime q=Θ(n²), discrete-Gaussian width s=Θ(n); Θ(n log n) original samples",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "BKW",
+      "Gaussian noise",
+      "sample budget"
+    ],
+    "featured": false,
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "model",
+        "label": "Model / assumptions"
+      },
+      {
+        "key": "formula",
+        "label": "Exact coefficient / bound"
+      }
+    ],
+    "description": "Uniform-secret LWE, prime q=Θ(n²), discrete-Gaussian width s=Θ(n); Θ(n log n) original samples",
+    "rules": "Use q=Θ(n²), Gaussian width s=Θ(n), and exactly the displayed asymptotic sample budget. Constant Gaussian normalizations do not change these exponents. These are interior parameters c_q=2,c_s=1; they are not the Regev q≈n²,width≈n^{3/2}/polylog(n) regime."
+  },
+  {
+    "id": "bkw-q2-s1-unlimited",
+    "problemId": "lwe",
+    "name": "BKW · q ≍ n², width ≍ n · unlimited samples",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Uniform random equations",
+    "regime": "Uniform-secret LWE, prime q=Θ(n²), discrete-Gaussian width s=Θ(n); Unlimited fresh samples",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "BKW",
+      "Gaussian noise",
+      "sample budget"
+    ],
+    "featured": false,
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "model",
+        "label": "Model / assumptions"
+      },
+      {
+        "key": "formula",
+        "label": "Exact coefficient / bound"
+      }
+    ],
+    "description": "Uniform-secret LWE, prime q=Θ(n²), discrete-Gaussian width s=Θ(n); Unlimited fresh samples",
+    "rules": "Use q=Θ(n²), Gaussian width s=Θ(n), and exactly the displayed asymptotic sample budget. Constant Gaussian normalizations do not change these exponents. These are interior parameters c_q=2,c_s=1; they are not the Regev q≈n²,width≈n^{3/2}/polylog(n) regime."
+  },
+  {
+    "problemId": "lwe",
+    "rigor": "Heuristic list model",
+    "instance": "LWE distribution",
+    "regime": "q ≍ n²; σ = q/(√(2πn) (log₂ n)²); polynomially many fresh samples",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "schedule",
+        "label": "Reduction schedule"
+      },
+      {
+        "key": "access",
+        "label": "Memory access"
+      },
+      {
+        "key": "model",
+        "label": "Distribution model"
+      },
+      {
+        "key": "objective",
+        "label": "Source objective"
+      }
+    ],
+    "id": "bkw-regev-polynomial-quantum",
+    "name": "BKW · Regev · polynomial samples · quantum",
+    "computation": "Quantum",
+    "featured": false,
+    "tags": [
+      "quantum",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "polynomial samples"
+    ],
+    "description": "Coded-BKW exponents with a polynomial fresh-sample budget.",
+    "rules": "Fix the Regev regime and restrict fresh input to poly(n) samples. Amplification creates additional equations at increased noise. Score total asymptotic time under the cited list model. Quantum rows retain the coherent table-access model. Objective: Decision-LWE with constant target distinguishing advantage. Search-LWE algorithms are admissible as decision upper bounds; a search-only theorem is not silently identified with the source's optimized decision corollary."
+  },
+  {
+    "problemId": "lwe",
+    "rigor": "Heuristic list model",
+    "instance": "LWE distribution",
+    "regime": "q ≍ n²; σ = q/(√(2πn) (log₂ n)²); polynomially many fresh samples",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "schedule",
+        "label": "Reduction schedule"
+      },
+      {
+        "key": "access",
+        "label": "Memory access"
+      },
+      {
+        "key": "model",
+        "label": "Distribution model"
+      },
+      {
+        "key": "objective",
+        "label": "Source objective"
+      }
+    ],
+    "id": "bkw-regev-polynomial",
+    "name": "BKW · Regev · polynomial samples",
+    "computation": "Classical",
+    "featured": false,
+    "tags": [
+      "classical",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "polynomial samples"
+    ],
+    "description": "Coded-BKW exponents with a polynomial fresh-sample budget.",
+    "rules": "Fix the Regev regime and restrict fresh input to poly(n) samples. Amplification creates additional equations at increased noise. Score total asymptotic time under the cited list model. Quantum rows retain the coherent table-access model. Objective: Decision-LWE with constant target distinguishing advantage. Search-LWE algorithms are admissible as decision upper bounds; a search-only theorem is not silently identified with the source's optimized decision corollary."
+  },
+  {
+    "problemId": "lwe",
+    "rigor": "Heuristic list model",
+    "instance": "LWE distribution",
+    "regime": "q ≍ n²; σ = q/(√(2πn) (log₂ n)²); independent fresh samples",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "schedule",
+        "label": "Reduction schedule"
+      },
+      {
+        "key": "access",
+        "label": "Memory access"
+      },
+      {
+        "key": "model",
+        "label": "Distribution model"
+      },
+      {
+        "key": "objective",
+        "label": "Source objective"
+      }
+    ],
+    "id": "bkw-regev-quantum",
+    "name": "BKW · Regev · quantum / Grover",
+    "computation": "Quantum",
+    "featured": true,
+    "tags": [
+      "quantum",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "unlimited samples",
+      "coherent reads"
+    ],
+    "description": "Quantum-search variants of coded BKW with abundant classical input samples.",
+    "rules": "Use the same Regev modulus, error and fresh classical sample convention as the classical category. Grover-based geometric searches assume coherent indexed reads of their working tables. Record the coherent-access assumption explicitly. A reusable-walk method that requires coherent writes or a stronger distribution model belongs in a separately tagged comparison category; no such unpublished claim is seeded here. Objective: Decision-LWE with constant target distinguishing advantage. Search-LWE algorithms are admissible as decision upper bounds; a search-only theorem is not silently identified with the source's optimized decision corollary."
+  },
+  {
+    "problemId": "lwe",
+    "rigor": "Heuristic list model",
+    "instance": "LWE distribution",
+    "regime": "q ≍ n²; σ = q/(√(2πn) (log₂ n)²); independent fresh samples",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "schedule",
+        "label": "Reduction schedule"
+      },
+      {
+        "key": "access",
+        "label": "Memory access"
+      },
+      {
+        "key": "model",
+        "label": "Distribution model"
+      },
+      {
+        "key": "objective",
+        "label": "Source objective"
+      }
+    ],
+    "id": "bkw-regev",
+    "name": "BKW · Regev · unlimited samples",
+    "computation": "Classical",
+    "featured": true,
+    "tags": [
+      "classical",
+      "heuristic",
+      "LWE",
+      "BKW",
+      "Regev regime",
+      "unlimited samples",
+      "unstructured"
+    ],
+    "description": "Historical classical BKW coefficients at the Regev error scale, with abundant fresh input equations.",
+    "rules": "Fix prime q ≍ n² and Gaussian error standard deviation σ = q/(√(2πn) (log₂ n)²). Exponentially many independent classical samples with the same secret may be read; sample acquisition is charged. The coordinate distribution and independence assumptions of each analysis remain part of the claim. These bounds are not for a fixed finite sample budget, small binary errors, or a structured ring instance. The score is the leading coefficient of n in log₂ time. Memory bounds are recorded separately when identified. Objective: Decision-LWE with constant target distinguishing advantage. Search-LWE algorithms are admissible as decision upper bounds; a search-only theorem is not silently identified with the source's optimized decision corollary."
+  },
+  {
+    "id": "cm-action-quantum-polynomial-space",
+    "problemId": "cm-action-inversion",
+    "name": "Quantum · cyclic class group · polynomial qubits",
+    "computation": "Quantum",
+    "rigor": "Conditional",
+    "instance": "Cyclic ideal class group",
+    "regime": "CM action inversion, including CRS/CSIDH, with cyclic class group and source sampling assumptions",
+    "metric": "Parameter-dependent",
+    "parameter": "log N, log p",
+    "direction": "min",
+    "tags": [
+      "CSIDH",
+      "CRS",
+      "cyclic class group",
+      "polynomial quantum space"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "CM action inversion, including CRS/CSIDH, with cyclic class group and source sampling assumptions",
+    "rules": "Separate classical precomputation/storage from quantum space. The checked paper restricts its analysis to cyclic class groups and only conjectures extension to the general case. No numerical exponent is entered without a matching normalization."
+  },
+  {
+    "id": "cvp-approximate-euclidean-parameterized",
+    "problemId": "cvp",
+    "name": "Approximate search · Euclidean",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "regime": "Approximate Euclidean search CVP; each result states its factor γ or error parameter δ",
+    "metric": "Parameterized time bound in n and approximation factor",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "approximation",
+        "label": "Approximation guarantee"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "description": "Approximation algorithms with their full factor/time dependence. Fixed factors and parameterized guarantees are retained in the result fields, not separate leaderboards.",
+    "rules": "Find v in L with ||v-t||₂ ≤ γ dist₂(t,L), with the guarantee γ (or γ=1+δ) stated by each entry. Include all lattice preparation. Different approximation guarantees are not directly ranked against each other; preserve their time expressions and explicit factors. This is approximate search CVP, not exact CVP, promise decision or an online-only query problem.",
+    "tags": [
+      "Euclidean",
+      "approximate search",
+      "parameterized approximation"
+    ]
+  },
+  {
+    "id": "cvp-constant-approximation-any-norm",
+    "problemId": "cvp",
+    "name": "Constant approximation · arbitrary norm",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "regime": "For every ε > 0, some constant γ_ε approximates search CVP in any norm",
+    "metric": "2^{(c + ε) n}, any fixed ε > 0",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "approximation",
+        "label": "Approximation guarantee"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "description": "Constant-factor search CVP for arbitrary centrally symmetric convex norm balls, with the paper’s norm representation and oracle assumptions.",
+    "rules": "For each fixed ε > 0 return a γ_ε-approximate closest vector for any norm and arbitrary rank-n lattice. The constant may depend on ε. Preserve norm representation, oracle precision and polynomial input-size factors. This differs from an exact-CVP guarantee and from constant factors fixed independently of ε.",
+    "tags": [
+      "arbitrary norms",
+      "constant approximation"
+    ]
+  },
+  {
+    "id": "cvp-constant-approximation-lp",
+    "problemId": "cvp",
+    "name": "Constant approximation · ℓp norms",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "regime": "For every ε > 0 and fixed p ∈ [1,∞], some constant γ(p,ε) approximates full-rank CVP_p",
+    "metric": "2^{(c + ε) n}, any fixed ε > 0",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "approximation",
+        "label": "Approximation guarantee"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "description": "A family of constant-factor guarantees over ℓp norms. The approximation constant may grow as the time slack ε tends to zero.",
+    "rules": "For each fixed ε > 0 and fixed p ∈ [1,∞], find a γ(p,ε)-approximate closest lattice vector on full-rank lattices L ⊂ R^n. Compare c only under these quantifiers. Include preprocessing. Do not interpret the bound as exact CVP, fixed 1.97-CVP, or a fixed approximation constant uniform in ε.",
+    "tags": [
+      "ℓp norms",
+      "constant approximation",
+      "full rank"
+    ]
+  },
+  {
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "id": "cvp-exact",
+    "problemId": "cvp",
+    "name": "Exact · worst case",
+    "regime": "Exact Euclidean CVP, arbitrary targets",
+    "description": "Exact closest vectors for arbitrary lattices and arbitrary targets.",
+    "rules": "An unrestricted exact-CVP bound includes preprocessing in total time. CVPP query bounds, approximate CVP, and distance-guarantee CVP belong in separate categories.",
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing included"
+      },
+      {
+        "key": "target",
+        "label": "Target guarantee"
+      }
+    ],
+    "featured": true,
+    "tags": []
+  },
+  {
+    "id": "cvp-haar",
+    "problemId": "cvp",
+    "name": "CVP · Haar-random lattices",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Haar random",
+    "regime": "Fix the target model, success probability and whether preprocessing is allowed",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "description": "An open comparison category. Its rules must be fixed before adding comparable results.",
+    "rules": "Record the exact parameter regime, cost unit, distribution and access assumptions. A source and BibTeX are required for new submissions. This template makes no claim to a universal exponent.",
+    "fields": [],
+    "tags": [
+      "Haar-random",
+      "average-case",
+      "Euclidean"
+    ],
+    "featured": false
+  },
+  {
+    "id": "cvp-heuristic-sieving",
+    "problemId": "cvp",
+    "name": "Heuristic · classical",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "Arbitrary lattice; heuristic spherical-list model",
+    "regime": "Exact Euclidean CVP; include all target-dependent work",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "model",
+        "label": "Computation model"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing cost"
+      },
+      {
+        "key": "reference",
+        "label": "Source locator"
+      }
+    ],
+    "description": "Exact Euclidean CVP; include all target-dependent work",
+    "rules": "Compare total time for one exact CVP instance under the cited spherical-list heuristics. Keep CVPP query-only costs in a separate variant.",
+    "tags": [
+      "CVP",
+      "heuristic",
+      "sieving"
+    ]
+  },
+  {
+    "id": "cvp-lp-exact-arithmetic",
+    "problemId": "cvp",
+    "name": "Exact · general ℓp norms",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "regime": "Exact search CVP for every fixed 1 < p < ∞, target in the lattice span",
+    "metric": "n^{c n + o(n)} arithmetic operations",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "approximation",
+        "label": "Approximation guarantee"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "description": "Exact CVP for the family of ℓp norms, with arithmetic operation counts and space guarantees stated per source version.",
+    "rules": "For each fixed 1 < p < ∞ return a closest vector in an arbitrary full-rank rational n-dimensional lattice under ℓp distance. The target lies in the span of the lattice. Count arithmetic operations, with polynomial input-size factors separated. Preserve p-dependence and bit-size/space guarantees. Euclidean-only algorithms do not solve this whole norm-family contract.",
+    "tags": [
+      "ℓp norms",
+      "exact",
+      "arithmetic model"
+    ]
+  },
+  {
+    "id": "cvp-polyhedral-exact-arithmetic",
+    "problemId": "cvp",
+    "name": "Exact · polyhedral norms",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "regime": "Exact search CVP for rational polyhedral norms, target in the lattice span",
+    "metric": "n^{c n + o(n)} arithmetic operations",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "approximation",
+        "label": "Approximation guarantee"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "description": "Exact CVP for a norm ball described by rational linear inequalities; the input-size factor includes its constraints.",
+    "rules": "Given a rational centrally symmetric full-dimensional polytope with s inequalities, a rational full-rank lattice and a target in its span, return a closest vector in the induced norm. Count arithmetic operations; keep the polynomial factor in s and the coefficient bit length explicit. This is a polyhedral-norm guarantee, not a result for an arbitrary oracle norm.",
+    "tags": [
+      "polyhedral norms",
+      "exact",
+      "arithmetic model"
+    ]
+  },
+  {
+    "id": "cvp-polynomial-space",
+    "problemId": "cvp",
+    "name": "Provable · polynomial space",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "regime": "Exact Euclidean CVP with polynomial workspace",
+    "metric": "n^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "model",
+        "label": "Computation model"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing cost"
+      },
+      {
+        "key": "reference",
+        "label": "Source locator"
+      }
+    ],
+    "description": "Exact Euclidean CVP with polynomial workspace",
+    "rules": "Normalize log(time)/(n log n); do not mix singly exponential coefficients with this scale. Include recursive preprocessing in the total time.",
+    "tags": [
+      "CVP",
+      "enumeration",
+      "polynomial space"
+    ]
+  },
+  {
+    "id": "cvpp-compact-basis",
+    "problemId": "cvp",
+    "name": "Exact · polynomial-space query · compact basis",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case; c-compact basis supplied as advice",
+    "regime": "Exact Euclidean CVPP with polynomial-space query computation and an explicitly bounded compactness c",
+    "metric": "Parameterized query time in n and compactness c",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "description": "Exact closest-vector queries using a compact representation of the Voronoi-relevant vectors.",
+    "rules": "A supplied basis is c-compact if every Voronoi-relevant vector has basis coordinates bounded in absolute value by c. Count online query time and polynomial working storage. Constructing the compact basis is preprocessing and is excluded; the existence of a compact basis does not imply an efficient preprocessing algorithm. Keep c explicit and do not infer a numeric exponent from asymptotic notation.",
+    "fields": [
+      {
+        "key": "compactness",
+        "label": "Compactness bound"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Advice and preprocessing"
+      },
+      {
+        "key": "target",
+        "label": "Targets"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      }
+    ],
+    "tags": [
+      "CVPP",
+      "exact",
+      "classical",
+      "provable",
+      "polynomial space",
+      "compact Voronoi representation",
+      "preprocessing"
+    ]
+  },
+  {
+    "id": "cvpp-heuristic-query",
+    "problemId": "cvp",
+    "name": "Heuristic · preprocessing query cost",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "Fixed lattice; arbitrary target",
+    "regime": "Exact CVPP query time; preprocessing and storage bounded by 2^{n+o(n)}",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "model",
+        "label": "Computation model"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing cost"
+      },
+      {
+        "key": "reference",
+        "label": "Source locator"
+      }
+    ],
+    "description": "Exact CVPP query time; preprocessing and storage bounded by 2^{n+o(n)}",
+    "rules": "Rank target-query time only, with preprocessing time and storage at most 2^{n+o(n)}. Record each point’s actual preprocessing and storage; larger-memory points cannot be interpreted as total-CVP speedups.",
+    "tags": [
+      "CVPP",
+      "preprocessing",
+      "heuristic"
+    ]
+  },
+  {
+    "id": "cvpp-polynomial-advice-decision",
+    "problemId": "cvp",
+    "name": "Approximate decision · polynomial advice",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "regime": "Euclidean GapCVPP with polynomial-size lattice-dependent advice and polynomial query time",
+    "metric": "Gap factor γ(n); polynomial query time",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "approximation",
+        "label": "Approximation guarantee"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "description": "Distance-threshold decisions after lattice preprocessing, separated from algorithms that must produce a close vector.",
+    "rules": "Decide dist₂(t,L) ≤ r versus dist₂(t,L) > γ(n)r using lattice-only polynomial-size advice and polynomial query time. Preprocessing is unrestricted. Preserve gap-factor quantifiers; a decision result does not assert an approximate lattice-vector finder.",
+    "tags": [
+      "Euclidean",
+      "preprocessing",
+      "polynomial advice",
+      "decision"
+    ]
+  },
+  {
+    "id": "cvpp-polynomial-advice-search",
+    "problemId": "cvp",
+    "name": "Approximate search · polynomial advice",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "regime": "Euclidean search CVPP with polynomial-size lattice-dependent advice and polynomial query time",
+    "metric": "Approximation guarantee γ(n); polynomial query time",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "approximation",
+        "label": "Approximation guarantee"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "description": "History of approximation factors when unbounded lattice preprocessing is allowed but its advice and the online algorithm are polynomial.",
+    "rules": "Return a lattice vector within factor γ(n) of optimal for every target. Preprocessing depends only on the lattice and is not charged as query time. Record advice size separately. A polynomial query bound has no numeric 2^{cn} score. Distance estimation and bounded-distance promises belong in separate variants.",
+    "tags": [
+      "Euclidean",
+      "preprocessing",
+      "polynomial advice",
+      "approximate search"
+    ]
+  },
+  {
+    "id": "cvpp-query",
+    "problemId": "cvp",
+    "name": "CVP with preprocessing · query cost",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Arbitrary targets",
+    "regime": "Separate lattice-dependent preprocessing from per-target query time",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "description": "Query bounds require the preprocessing time and storage to be stated separately.",
+    "rules": "Record the exact parameter regime, cost unit, distribution and access assumptions. A source and BibTeX are required for new submissions. This template makes no claim to a universal exponent.",
+    "fields": [],
+    "tags": [
+      "CVPP",
+      "preprocessing",
+      "query complexity",
+      "arbitrary lattices"
+    ],
+    "featured": false
+  },
+  {
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "id": "dgs-above-smoothing-batch",
+    "problemId": "dgs",
+    "name": "Above smoothing · batch sampling",
+    "regime": "DGS above the lattice smoothing parameter; output 2^{n/2} samples",
+    "description": "Sampling above smoothing with the full exponential output batch charged to the running time.",
+    "rules": "Fix an output batch of 2^{n/2} discrete Gaussian samples. Count total preprocessing, sampling time and space. Preserve the smoothing-parameter restriction and error guarantee of the cited theorem.",
+    "fields": [
+      {
+        "key": "width",
+        "label": "Width restriction"
+      },
+      {
+        "key": "output",
+        "label": "Output samples"
+      },
+      {
+        "key": "error",
+        "label": "Distribution error"
+      },
+      {
+        "key": "model",
+        "label": "Computation model"
+      }
+    ],
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "DGS",
+      "above smoothing",
+      "batch sampling"
+    ],
+    "featured": false
+  },
+  {
+    "id": "dgs-arbitrary-width-inverse-poly-error",
+    "problemId": "dgs",
+    "name": "Classical · centered · arbitrary width · inverse-polynomial error",
+    "regime": "One centered sample; (1+1/f(n),2^{-f(n)}) accuracy for polynomial f",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "description": "Arbitrary-width centered DGS with inverse-polynomial statistical accuracy.",
+    "rules": "For any positive width, produce a distribution within 2^{-f(n)} of a pointwise (1+1/f(n))-multiplicative approximation. f is polynomial, so implied total-variation accuracy is inverse polynomial. Do not merge with negligible-error DGS without a separate argument.",
+    "fields": [
+      {
+        "key": "width",
+        "label": "Width requirement"
+      },
+      {
+        "key": "output",
+        "label": "Output"
+      },
+      {
+        "key": "error",
+        "label": "Accuracy convention"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "centered",
+      "arbitrary width",
+      "inverse-polynomial error"
+    ]
+  },
+  {
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "id": "dgs-arbitrary-width",
+    "problemId": "dgs",
+    "name": "Arbitrary width · worst case",
+    "regime": "Centered DGS on arbitrary Euclidean lattices; any positive width",
+    "description": "Worst-case total-cost bounds for obtaining a discrete Gaussian sample at an unrestricted width.",
+    "rules": "Include preprocessing in total time. Record the output batch size and statistical error per entry; a batch upper bound also bounds the cost of retaining one sample. Do not divide total batch cost into an amortized per-sample score. Large-width-only samplers have a separate category.",
+    "fields": [
+      {
+        "key": "width",
+        "label": "Width restriction"
+      },
+      {
+        "key": "output",
+        "label": "Output samples"
+      },
+      {
+        "key": "error",
+        "label": "Distribution error"
+      },
+      {
+        "key": "model",
+        "label": "Computation model"
+      }
+    ],
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "DGS",
+      "arbitrary width",
+      "unstructured"
+    ],
+    "featured": true
+  },
+  {
+    "id": "dgs-basis-gs-width",
+    "problemId": "dgs",
+    "name": "Classical · supplied basis · Gram–Schmidt width",
+    "regime": "Shifted discrete Gaussian sampling above a supplied-basis width",
+    "metric": "Polynomial time",
+    "parameter": "n",
+    "direction": "min",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "description": "Polynomial-time sampling with width controlled by the longest Gram–Schmidt vector.",
+    "rules": "The basis is part of the input. Require s >= ||B_tilde|| omega(sqrt(log n)); the cost of obtaining a short basis is excluded. This is not arbitrary-width DGS from an arbitrary lattice description.",
+    "fields": [
+      {
+        "key": "width",
+        "label": "Gaussian-width requirement"
+      },
+      {
+        "key": "basis",
+        "label": "Basis contract"
+      },
+      {
+        "key": "output",
+        "label": "Output"
+      },
+      {
+        "key": "error",
+        "label": "Distribution error"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "trapdoor",
+      "basis relative",
+      "shifted"
+    ]
+  },
+  {
+    "id": "dgs-operator-width-online",
+    "problemId": "dgs",
+    "name": "Classical · supplied basis · parallel online",
+    "regime": "Shifted DGS with width controlled by the basis operator norm",
+    "metric": "Online arithmetic operations",
+    "parameter": "n",
+    "direction": "min",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "description": "Offline/online sampling with explicit parallel online cost.",
+    "rules": "Record covariance and basis assumptions; exclude offline preparation only when explicit. Real-arithmetic counts are not bit-operation exponents. Operator-norm and Gram–Schmidt width conditions are different contracts.",
+    "fields": [
+      {
+        "key": "width",
+        "label": "Width / covariance"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Offline preparation"
+      },
+      {
+        "key": "output",
+        "label": "Output"
+      },
+      {
+        "key": "error",
+        "label": "Distribution error"
+      },
+      {
+        "key": "model",
+        "label": "Online model"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "trapdoor",
+      "offline online",
+      "parallel",
+      "shifted"
+    ]
+  },
+  {
+    "id": "dgs-qary-online",
+    "problemId": "dgs",
+    "name": "Classical · q-ary supplied basis · online",
+    "regime": "Shifted DGS over integral q-ary lattices with integral shift",
+    "metric": "Online integer operations",
+    "parameter": "n",
+    "direction": "min",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "description": "Optimized offline/online Gaussian sampling for q Z^n contained in L contained in Z^n.",
+    "rules": "A supplied basis and q are required; the shift is integral. Retain the rounding calls and width condition. Precomputed perturbation vectors must be refreshed between outputs.",
+    "fields": [
+      {
+        "key": "width",
+        "label": "Width requirement"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Offline preparation"
+      },
+      {
+        "key": "output",
+        "label": "Output"
+      },
+      {
+        "key": "error",
+        "label": "Distribution error"
+      },
+      {
+        "key": "model",
+        "label": "Online model"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "q-ary",
+      "trapdoor",
+      "offline online"
+    ]
+  },
+  {
+    "id": "dgs-shifted-distance-width",
+    "problemId": "dgs",
+    "name": "Classical · shifted · distance-relative width",
+    "regime": "Shifted Gaussian samples with width above dist(t,L)/f(n)",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "description": "Shifted sampling below smoothing, with a remaining distance-relative cutoff.",
+    "rules": "For efficiently computable superpolynomial f, require s > dist(t,L)/f(n). The coefficient 1 is only normalized when log n log f(n)=o(n). Output count is mass dependent, not a fixed 2^{n/2} batch. This is not all-width shifted DGS.",
+    "fields": [
+      {
+        "key": "width",
+        "label": "Width and parameter regime"
+      },
+      {
+        "key": "output",
+        "label": "Output batch"
+      },
+      {
+        "key": "error",
+        "label": "Joint distribution error"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "shifted",
+      "below smoothing",
+      "batch"
+    ]
+  },
+  {
+    "id": "dgs-smoothing-reduced-batch",
+    "problemId": "dgs",
+    "name": "Classical · shifted · above smoothing · 2^{0.2075n} batch",
+    "regime": "Jointly independent shifted-Gaussian approximation; s >= 3 eta_{1/2}(L)/2",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "description": "Total resource cost for floor((4/3)^{n/2}) samples at a fixed width threshold.",
+    "rules": "Batch size is floor(2^{beta n}), beta=(1/2)log_2(4/3); compare total cost, not amortized single-sample cost. The older ADRS batch has 2^{n/2} outputs and remains in a different list.",
+    "fields": [
+      {
+        "key": "width",
+        "label": "Width requirement"
+      },
+      {
+        "key": "output",
+        "label": "Output batch"
+      },
+      {
+        "key": "error",
+        "label": "Joint distribution error"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "shifted",
+      "above smoothing",
+      "batch"
+    ]
+  },
+  {
+    "id": "dgs-smoothing-single",
+    "problemId": "dgs",
+    "name": "Classical · shifted · above smoothing · one sample",
+    "regime": "One shifted sample at s >= alpha eta_{1/2}(L), fixed alpha > 1",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "description": "Single-sample algorithms above a specified smoothing threshold.",
+    "rules": "Return one sample for any rational shift; retain alpha and the actual total-variation guarantee. Do not compare the total cost of unequal output batches as though it were per sample.",
+    "fields": [
+      {
+        "key": "width",
+        "label": "Width requirement"
+      },
+      {
+        "key": "output",
+        "label": "Output"
+      },
+      {
+        "key": "error",
+        "label": "Distribution error"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "shifted",
+      "above smoothing",
+      "single sample"
+    ]
+  },
+  {
+    "id": "dlog-fixed-degree",
+    "problemId": "finite-field-dlog",
+    "name": "Fixed extension degree · classical heuristic",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "finite fields of arbitrary fixed extension degree",
+    "regime": "Q=p^n with n fixed and p growing",
+    "metric": "L_Q[1/3,c]",
+    "parameter": "Q",
+    "direction": "min",
+    "tags": [
+      "number field sieve",
+      "fixed extension degree",
+      "heuristic"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "NFS over a fixed-degree extension field. Includes the complete general-input discrete logarithm computation. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural.",
+    "rules": "NFS over a fixed-degree extension field. Includes the complete general-input discrete logarithm computation. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "dlog-fixed-proven",
+    "problemId": "finite-field-dlog",
+    "name": "Fixed characteristic · proven",
+    "computation": "Classical randomized",
+    "rigor": "Provable",
+    "instance": "all extension fields of fixed prime characteristic",
+    "regime": "F_{p^n}, with p fixed; randomized expected time",
+    "metric": "Expression only",
+    "parameter": "p,n",
+    "direction": "min",
+    "tags": [
+      "fixed characteristic",
+      "quasi-polynomial",
+      "unconditional"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Provable quasi-polynomial DLP in every extension field of fixed characteristic; infinite explicit subfamilies alone do not satisfy this category.",
+    "rules": "Provable quasi-polynomial DLP in every extension field of fixed characteristic; infinite explicit subfamilies alone do not satisfy this category. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "dlog-generic-classical",
+    "problemId": "generic-dlog",
+    "name": "Classical · randomized low storage",
+    "computation": "Classical randomized",
+    "rigor": "Heuristic random-walk model",
+    "instance": "prime-order cyclic groups",
+    "regime": "Group order r; expected generic group operations; no representation-specific index calculus",
+    "metric": "r^{c+o(1)} group operations",
+    "parameter": "r",
+    "direction": "min",
+    "tags": [
+      "generic groups",
+      "rho",
+      "low storage"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Generic random-walk upper bounds. Random-function assumptions for rho are distinct from unconditional generic lower bounds.",
+    "rules": "Generic random-walk upper bounds. Random-function assumptions for rho are distinct from unconditional generic lower bounds. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "dlog-generic-quantum",
+    "problemId": "generic-dlog",
+    "name": "Quantum · abelian groups",
+    "computation": "Quantum",
+    "rigor": "Provable",
+    "instance": "efficiently represented cyclic groups",
+    "regime": "Coherent efficient group operations and order information as required",
+    "metric": "Expression only",
+    "parameter": "log₂ r",
+    "direction": "min",
+    "tags": [
+      "quantum",
+      "abelian groups",
+      "polynomial time"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Quantum polynomial-time discrete logarithms; generic classical lower bounds do not apply to this computation model.",
+    "rules": "Quantum polynomial-time discrete logarithms; generic classical lower bounds do not apply to this computation model. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "dlog-prime-general",
+    "problemId": "finite-field-dlog",
+    "name": "Prime fields · classical heuristic",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "general prime fields F_p",
+    "regime": "No deliberately supplied special-form modulus; includes full relation generation and logarithm computation",
+    "metric": "L_p[1/3,c]",
+    "parameter": "p",
+    "direction": "min",
+    "tags": [
+      "prime fields",
+      "number field sieve",
+      "heuristic"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Prime-field NFS bounds. Precomputation cost and per-target logarithm cost should not be mixed. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural.",
+    "rules": "Prime-field NFS bounds. Precomputation cost and per-target logarithm cost should not be mixed. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "dlog-prime-quantum",
+    "problemId": "finite-field-dlog",
+    "name": "Prime fields · quantum",
+    "computation": "Quantum",
+    "rigor": "source dependent",
+    "instance": "prime fields",
+    "regime": "Logical circuit and classical post-processing; assumptions stated per paper",
+    "metric": "Expression only",
+    "parameter": "n = ceil(log₂ p)",
+    "direction": "min",
+    "tags": [
+      "prime fields",
+      "quantum",
+      "polynomial time"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Quantum polynomial-time DLP for prime fields, with circuit size per run separate from total work and post-processing.",
+    "rules": "Quantum polynomial-time DLP for prime fields, with circuit size per run separate from total work and post-processing. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "dlog-prime-special",
+    "problemId": "finite-field-dlog",
+    "name": "Special prime fields · classical heuristic",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "special-form prime fields F_p",
+    "regime": "p = r^e − s with r and s small; exploitable representation supplied",
+    "metric": "L_p[1/3,c]",
+    "parameter": "p",
+    "direction": "min",
+    "tags": [
+      "special number field sieve",
+      "special primes",
+      "heuristic"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Special-prime DLP with an essential representation restriction. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural.",
+    "rules": "Special-prime DLP with an essential representation restriction. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "dlog-small-ffs",
+    "problemId": "finite-field-dlog",
+    "name": "Small characteristic · heuristic L(1/3)",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "F_{p^n} with restricted characteristic",
+    "regime": "p ≤ n^{o(√n)} in the cited function-field-sieve analysis",
+    "metric": "L_{p^n}[1/3,c]",
+    "parameter": "Q = p^n",
+    "direction": "min",
+    "tags": [
+      "function field sieve",
+      "small characteristic",
+      "heuristic"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Fixed-alpha L(1/3) history only. Quasi-polynomial algorithms live in other categories. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural.",
+    "rules": "Fixed-alpha L(1/3) history only. Quasi-polynomial algorithms live in other categories. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "dlog-small-heuristic-expression",
+    "problemId": "finite-field-dlog",
+    "name": "Small characteristic · heuristic expressions",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "small-characteristic finite fields",
+    "regime": "Characteristic growth and field presentations as specified in each source",
+    "metric": "Expression only",
+    "parameter": "n = log₂ Q",
+    "direction": "min",
+    "tags": [
+      "small characteristic",
+      "quasi-polynomial",
+      "heuristic"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "A chronology of complexity classes, including L(1/4+o(1)) and quasi-polynomial bounds. No artificial scalar exponent is assigned across these scales.",
+    "rules": "A chronology of complexity classes, including L(1/4+o(1)) and quasi-polynomial bounds. No artificial scalar exponent is assigned across these scales. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "dlog-small-proven",
+    "problemId": "finite-field-dlog",
+    "name": "Small characteristic · proven",
+    "computation": "Classical randomized",
+    "rigor": "Provable",
+    "instance": "all finite fields of small characteristic",
+    "regime": "F_{p^n} with n > p in the cited theorem",
+    "metric": "Expression only",
+    "parameter": "Q = p^n",
+    "direction": "min",
+    "tags": [
+      "small characteristic",
+      "quasi-polynomial",
+      "unconditional"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Provable quasi-polynomial bounds under an explicit characteristic-growth condition.",
+    "rules": "Provable quasi-polynomial bounds under an explicit characteristic-growth condition. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "ecdlp-anomalous",
+    "problemId": "elliptic-curve-dlog",
+    "name": "Anomalous prime-field curves",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "curves E/F_p with #E(F_p)=p",
+    "regime": "Trace one; p-adic lift techniques",
+    "metric": "Expression only",
+    "parameter": "log₂ p",
+    "direction": "min",
+    "tags": [
+      "anomalous curves",
+      "trace one",
+      "p-adic logarithm"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Exceptional curve family admitting polynomial-time attacks; this does not apply to ordinary cryptographic prime-order curves.",
+    "rules": "Exceptional curve family admitting polynomial-time attacks; this does not apply to ordinary cryptographic prime-order curves. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "ecdlp-binary-quantum",
+    "problemId": "elliptic-curve-dlog",
+    "name": "Binary fields · quantum resource bounds",
+    "computation": "Quantum",
+    "rigor": "Provable circuit analysis",
+    "instance": "elliptic curves over F_{2^n}",
+    "regime": "Logical Toffoli count and logical qubits; scalar-multiplication variant specified",
+    "metric": "Expression only",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "binary fields",
+      "quantum",
+      "logical resources"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Quantum ECDLP over binary fields. These formulas should not be ranked directly against prime-field circuits.",
+    "rules": "Quantum ECDLP over binary fields. These formulas should not be ranked directly against prime-field circuits. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "ecdlp-classical-lowspace",
+    "problemId": "elliptic-curve-dlog",
+    "name": "Generic prime-order groups · classical low storage",
+    "computation": "Classical randomized",
+    "rigor": "Heuristic random-walk model",
+    "instance": "prime-order elliptic-curve subgroups",
+    "regime": "Group order r; rho and negation-map variants; no anomalous-curve promise",
+    "metric": "r^{c+o(1)} group operations",
+    "parameter": "r",
+    "direction": "min",
+    "tags": [
+      "classical",
+      "generic groups",
+      "rho",
+      "low storage"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Square-root ECDLP with low storage. Constant-factor improvements do not change the leading exponent 1/2.",
+    "rules": "Square-root ECDLP with low storage. Constant-factor improvements do not change the leading exponent 1/2. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "ecdlp-classical-sqrtspace",
+    "problemId": "elliptic-curve-dlog",
+    "name": "Generic prime-order groups · classical square-root storage",
+    "computation": "Classical",
+    "rigor": "source-dependent average-case analysis",
+    "instance": "prime-order elliptic-curve subgroups",
+    "regime": "Group order r; baby-step/giant-step variants; O(sqrt(r)) group-element storage",
+    "metric": "r^{c+o(1)} group operations",
+    "parameter": "r",
+    "direction": "min",
+    "tags": [
+      "classical",
+      "baby-step giant-step",
+      "square-root storage"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Baby-step/giant-step methods: square-root leading exponent and storage. The source distinguishes deterministic coverage from heuristic average-case constant analysis.",
+    "rules": "Baby-step/giant-step methods: square-root leading exponent and storage. The source distinguishes deterministic coverage from heuristic average-case constant analysis. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "ecdlp-prime-quantum",
+    "problemId": "elliptic-curve-dlog",
+    "name": "Prime fields · quantum resource bounds",
+    "computation": "Quantum",
+    "rigor": "Provable circuit analysis",
+    "instance": "elliptic curves over prime fields",
+    "regime": "Logical Toffoli count and logical qubits; no physical error-correction overhead",
+    "metric": "Expression only",
+    "parameter": "n = ceil(log₂ p)",
+    "direction": "min",
+    "tags": [
+      "prime fields",
+      "quantum",
+      "logical resources"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Gate-level resource formulas for quantum ECDLP over prime fields.",
+    "rules": "Gate-level resource formulas for quantum ECDLP over prime fields. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "computation": "Classical",
+    "rigor": "Regime dependent",
+    "instance": "LWE distribution",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "id": "fhe-lwe",
+    "problemId": "lwe",
+    "name": "FHE range · custom regime",
+    "regime": "Large-modulus LWE; define the q-to-noise and dimension scaling",
+    "description": "FHE-range LWE is a family of regimes. Configure a particular scaling before collecting comparable exponents.",
+    "rules": "State whether the object is LWE, RLWE, or MLWE; fix the ring/module dimension, modulus and error scaling, secret distribution, and sample access. Do not compare n-normalized exponents across different meanings of n.",
+    "fields": [
+      {
+        "key": "structure",
+        "label": "LWE / RLWE / MLWE"
+      },
+      {
+        "key": "q",
+        "label": "Modulus scaling"
+      },
+      {
+        "key": "error",
+        "label": "Error scaling"
+      },
+      {
+        "key": "secret",
+        "label": "Secret distribution"
+      },
+      {
+        "key": "samples",
+        "label": "Sample access"
+      }
+    ],
+    "featured": false,
+    "tags": []
+  },
+  {
+    "id": "goppa-conditional-key-recovery",
+    "problemId": "goppa-key-recovery",
+    "name": "Classical · conditional concrete estimates",
+    "computation": "Classical",
+    "rigor": "Conditional estimates",
+    "instance": "Specified Classic McEliece parameter sets",
+    "regime": "Fix parameter set, source version, solver assumptions and memory-cost model",
+    "metric": "Concrete bit-operation estimates",
+    "parameter": "parameter set",
+    "direction": "min",
+    "tags": [
+      "Goppa codes",
+      "key recovery",
+      "conditional",
+      "concrete cost",
+      "version sensitive"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Recent structural key-recovery cost claims.",
+    "rules": "Entries here are deliberately unranked cost vectors. The 2026 sources impose rank/solver or locator-uniqueness assumptions and charge memory differently. Do not present their arithmetic estimates as unconditional breaks. The August2026 Apon critique targets an earlier Vedenev revision; Vedenev’s October revision disputes its applicability."
+  },
+  {
+    "id": "goppa-generic-classical",
+    "problemId": "goppa-decoding",
+    "name": "Classical · public-code decoding",
+    "computation": "Classical",
+    "rigor": "Source analysis",
+    "instance": "Binary Goppa public codes",
+    "regime": "Fix (n,k,t) or an explicit asymptotic family",
+    "metric": "Parameterized in n,k,t",
+    "parameter": "n,k,t",
+    "direction": "min",
+    "tags": [
+      "Goppa codes",
+      "public key only",
+      "generic ISD"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Generic decoding cost for Goppa public keys.",
+    "rules": "Generic ISD applies to the public code but a random-code full-GV maximum is not the cost of a particular McEliece parameter set. The private Goppa trapdoor is unavailable. Key recovery, distinguishers and side-information attacks belong in separate lists."
+  },
+  {
+    "id": "ifp-deterministic",
+    "problemId": "integer-factorization",
+    "name": "General integers · proven deterministic",
+    "computation": "Classical deterministic",
+    "rigor": "Provable",
+    "instance": "arbitrary positive integers",
+    "regime": "Unconditional deterministic bit complexity",
+    "metric": "N^{c+o(1)}",
+    "parameter": "N",
+    "direction": "min",
+    "tags": [
+      "deterministic",
+      "unconditional",
+      "bit complexity"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Exponent in the integer N itself, not in log N. Ties in c may still differ by logarithmic factors.",
+    "rules": "Exponent in the integer N itself, not in log N. Ties in c may still differ by logarithmic factors. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "ifp-general-heuristic",
+    "problemId": "integer-factorization",
+    "name": "General integers · heuristic · L(1/3)",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "general composite integers",
+    "regime": "General-purpose factorization; no special low-degree polynomial form supplied",
+    "metric": "L_N[1/3,c]",
+    "parameter": "N",
+    "direction": "min",
+    "tags": [
+      "number field sieve",
+      "general integers",
+      "heuristic"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Heuristic subexponential general-purpose factoring bounds. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural.",
+    "rules": "Heuristic subexponential general-purpose factoring bounds. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "ifp-lhalf-heuristic",
+    "problemId": "integer-factorization",
+    "name": "General integers · heuristic · L(1/2)",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "general composite integers",
+    "regime": "Worst dependence on N, including balanced semiprimes",
+    "metric": "L_N[1/2,c]",
+    "parameter": "N",
+    "direction": "min",
+    "tags": [
+      "elliptic curve method",
+      "balanced factors",
+      "heuristic"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Historical L(1/2) scale, kept separate from L(1/3). Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural.",
+    "rules": "Historical L(1/2) scale, kept separate from L(1/3). Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "ifp-lhalf-proven",
+    "problemId": "integer-factorization",
+    "name": "General integers · proven randomized · L(1/2)",
+    "computation": "Classical randomized",
+    "rigor": "Provable",
+    "instance": "arbitrary composite integers",
+    "regime": "Unconditional expected-time bounds; randomness allowed",
+    "metric": "L_N[1/2,c]",
+    "parameter": "N",
+    "direction": "min",
+    "tags": [
+      "unconditional",
+      "randomized",
+      "class groups"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Rigorously analysed randomized integer factorization. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural.",
+    "rules": "Rigorously analysed randomized integer factorization. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "ifp-quantum",
+    "problemId": "integer-factorization",
+    "name": "Quantum · polynomial-time expressions",
+    "computation": "Quantum",
+    "rigor": "source dependent",
+    "instance": "general composite integers",
+    "regime": "Logical circuits plus classical post-processing; conditional and unconditional claims labelled separately",
+    "metric": "Expression only",
+    "parameter": "n = ceil(log₂ N)",
+    "direction": "min",
+    "tags": [
+      "quantum",
+      "logical circuits",
+      "polynomial time"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Quantum factoring is polynomial in input length. Circuit size per run, number of runs, classical cost and correctness assumptions must remain explicit.",
+    "rules": "Quantum factoring is polynomial in input length. Circuit size per run, number of runs, classical cost and correctness assumptions must remain explicit. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "ifp-small-factor-ecm",
+    "problemId": "small-factor",
+    "name": "Heuristic · dependence on smallest factor",
+    "computation": "Classical randomized",
+    "rigor": "Heuristic",
+    "instance": "N with smallest prime divisor p",
+    "regime": "Expected small-factor cost, including polynomial arithmetic overhead in log N",
+    "metric": "L_p[1/2,c] · poly(log N)",
+    "parameter": "p",
+    "direction": "min",
+    "tags": [
+      "elliptic curve method",
+      "small prime factors",
+      "heuristic"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Expected cost is parameterised by the least prime factor p, not by N. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural.",
+    "rules": "Expected cost is parameterised by the least prime factor p, not by N. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "ifp-special-heuristic",
+    "problemId": "integer-factorization",
+    "name": "Special form · heuristic · L(1/3)",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "special-form composites",
+    "regime": "N = r^e ± s with r and |s| bounded; polynomial representation supplied",
+    "metric": "L_N[1/3,c]",
+    "parameter": "N",
+    "direction": "min",
+    "tags": [
+      "special number field sieve",
+      "structured integers",
+      "heuristic"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Factoring special-form integers; the algebraic representation is an essential input restriction. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural.",
+    "rules": "Factoring special-form integers; the algebraic representation is an essential input restriction. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "computation": "Classical",
+    "rigor": "Source analysis",
+    "instance": "Random binary linear codes",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "id": "isd-full-distance",
+    "problemId": "isd",
+    "name": "Binary · full GV distance",
+    "regime": "Binary random linear codes; full Gilbert–Varshamov distance; maximum over rates",
+    "description": "Historical full-distance ISD bounds, separate from the bounded half-distance convention.",
+    "rules": "Use random binary linear codes of rate R=k/n, error weight n H₂⁻¹(1−R), and maximize the exponent over 0≤R≤1. The parameter n is code length. Keep half-distance and fixed-rate bounds separate. Historical coefficients are rounded as in their cited sources; they are upper bounds, not claimed optimal values.",
+    "fields": [
+      {
+        "key": "field",
+        "label": "Code alphabet"
+      },
+      {
+        "key": "rate",
+        "label": "Rate convention"
+      },
+      {
+        "key": "weight",
+        "label": "Error weight"
+      },
+      {
+        "key": "model",
+        "label": "Computation model"
+      }
+    ],
+    "tags": [
+      "classical",
+      "ISD",
+      "binary",
+      "random codes",
+      "full GV distance",
+      "maximum over rates"
+    ],
+    "featured": true
+  },
+  {
+    "computation": "Classical",
+    "rigor": "Asymptotic analysis",
+    "instance": "Random binary codes",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "id": "isd-half-distance",
+    "problemId": "isd",
+    "name": "Binary · half distance",
+    "regime": "Half-distance decoding; worst asymptotic rate",
+    "description": "Classical information-set decoding in the half-distance convention used by the cited asymptotic papers.",
+    "rules": "n is binary code length. Use half the Gilbert–Varshamov distance and the paper’s worst-rate convention. Full-distance decoding, fixed-rate instances, q-ary decoding, and quantum ISD require their own categories. These are historical reference bounds, not a complete current leaderboard.",
+    "fields": [
+      {
+        "key": "field",
+        "label": "Field"
+      },
+      {
+        "key": "rate",
+        "label": "Code rate convention"
+      },
+      {
+        "key": "weight",
+        "label": "Error-weight regime"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      }
+    ],
+    "featured": false,
+    "tags": []
+  },
+  {
+    "computation": "Quantum",
+    "rigor": "Source analysis",
+    "instance": "Random binary linear codes",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "id": "isd-quantum-full-distance",
+    "problemId": "isd",
+    "name": "Quantum · full GV distance",
+    "regime": "Quantum ISD for random binary codes at full GV distance; maximum over rates",
+    "description": "Quantum full-distance ISD with the source memory and oracle model attached.",
+    "rules": "Use random binary linear codes of rate R=k/n, error weight n H₂⁻¹(1−R), and maximize the exponent over 0≤R≤1. The parameter n is code length. Keep half-distance and fixed-rate bounds separate. Historical coefficients are rounded as in their cited sources; they are upper bounds, not claimed optimal values. Quantum-walk entries charge the setup/update/check model of the source. These are not claims for a memory-free quantum circuit model.",
+    "fields": [
+      {
+        "key": "field",
+        "label": "Code alphabet"
+      },
+      {
+        "key": "rate",
+        "label": "Rate convention"
+      },
+      {
+        "key": "weight",
+        "label": "Error weight"
+      },
+      {
+        "key": "model",
+        "label": "Computation model"
+      }
+    ],
+    "tags": [
+      "quantum",
+      "ISD",
+      "binary",
+      "random codes",
+      "full GV distance",
+      "maximum over rates",
+      "quantum walks"
+    ],
+    "featured": true
+  },
+  {
+    "id": "isd-quantum-polynomial-qubits",
+    "problemId": "isd",
+    "name": "Quantum · polynomial qubits · full GV",
+    "computation": "Quantum",
+    "rigor": "Source asymptotic analysis",
+    "instance": "Random binary codes",
+    "regime": "Full GV distance; maximum over rates; polynomial quantum workspace",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "quantum",
+      "polynomial qubits",
+      "full GV distance",
+      "maximum over rates"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Quantum decoding with a polynomial qubit bound.",
+    "rules": "Restrict quantum workspace to a polynomial in n. The listed coefficient is the maximum over code rates at full GV distance. Polynomial gates/depth and qubit scaling remain visible in the record; they must not be conflated with exponential-list quantum walk algorithms."
+  },
+  {
+    "id": "isd-quantum-r0454",
+    "problemId": "isd",
+    "name": "Quantum · R = 0.454 · full GV",
+    "computation": "Quantum",
+    "rigor": "Source asymptotic analysis",
+    "instance": "Random binary codes",
+    "regime": "k/n = 0.454; t/n = H₂⁻¹(0.546) ≈ 0.125869",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "quantum",
+      "full GV distance",
+      "fixed rate",
+      "quantum memory"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Fixed-rate quantum ISD comparisons.",
+    "rules": "The code length is n. Fix R=0.454 and relative error weight H₂⁻¹(1−R). Charge quantum subset-sum, nearest-neighbor and Grover costs as in each source. This list is not a maximum over all code rates."
+  },
+  {
+    "id": "isd-quantum-template",
+    "problemId": "isd",
+    "name": "Quantum ISD · fixed-rate template",
+    "computation": "Quantum",
+    "rigor": "Asymptotic analysis",
+    "instance": "Random binary codes",
+    "regime": "Specify code rate R, relative error weight τ, QRAM access and qubit cost before comparing",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "description": "An open comparison category. Its rules must be fixed before adding comparable results.",
+    "rules": "Record the exact parameter regime, cost unit, distribution and access assumptions. A source and BibTeX are required for new submissions. This template makes no claim to a universal exponent.",
+    "fields": [],
+    "tags": [
+      "quantum",
+      "random codes",
+      "fixed rate",
+      "QRAM model"
+    ],
+    "featured": false
+  },
+  {
+    "id": "lpn-fixed-noise",
+    "problemId": "lpn",
+    "name": "Decision · fixed noise · unlimited samples",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Uniform random equations",
+    "regime": "Decisional LPN; constant Bernoulli error probability 0 < p < 1/2; unlimited samples",
+    "metric": "limsup log₂(T) log₂(n) / n",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "constant noise",
+      "unlimited samples",
+      "subexponential"
+    ],
+    "featured": false,
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "model",
+        "label": "Model / assumptions"
+      },
+      {
+        "key": "formula",
+        "label": "Exact coefficient / bound"
+      }
+    ],
+    "description": "Decisional LPN; constant Bernoulli error probability 0 < p < 1/2; unlimited samples",
+    "rules": "Compare bounds only under the displayed noise, sample and memory conditions."
+  },
+  {
+    "id": "lpn-low-noise-sqrt",
+    "problemId": "lpn",
+    "name": "Classical · noise probability 1/√n",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Uniform random equations",
+    "regime": "Bernoulli error probability p = n^{-1/2}; unlimited fresh samples",
+    "metric": "2^{c √n + o(√n)}",
+    "parameter": "√n",
+    "direction": "min",
+    "tags": [
+      "low noise",
+      "unlimited samples"
+    ],
+    "featured": false,
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "model",
+        "label": "Model / assumptions"
+      },
+      {
+        "key": "formula",
+        "label": "Exact coefficient / bound"
+      }
+    ],
+    "description": "Bernoulli error probability p = n^{-1/2}; unlimited fresh samples",
+    "rules": "Compare bounds only under the displayed noise, sample and memory conditions."
+  },
+  {
+    "id": "lpn-memory-half",
+    "problemId": "lpn",
+    "name": "Classical · memory coefficient ≤ 1/2",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "Uniform random equations",
+    "regime": "Constant Bernoulli noise; limiting memory coefficient ≤1/2 on the n/log₂n scale",
+    "metric": "limsup log₂(T) log₂(n) / n",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "constant noise",
+      "time-memory tradeoff",
+      "independence heuristic"
+    ],
+    "featured": false,
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "model",
+        "label": "Model / assumptions"
+      },
+      {
+        "key": "formula",
+        "label": "Exact coefficient / bound"
+      }
+    ],
+    "description": "Constant Bernoulli noise; memory ≤ 2^{(1/2+o(1)) n/log₂ n}",
+    "rules": "Compare the leading time coefficient at the stated subexponential memory cap. The c-sum methods use the Independence Heuristic; tailored rows additionally require the Tailoring Heuristic. Every fixed positive exponent slack is allowed. Quantum rows assume coherent indexed access to the stored list."
+  },
+  {
+    "id": "lpn-memory-two-thirds",
+    "problemId": "lpn",
+    "name": "Classical · memory coefficient ≤ 2/3",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "Uniform random equations",
+    "regime": "Constant Bernoulli noise; limiting memory coefficient ≤2/3 on the n/log₂n scale",
+    "metric": "limsup log₂(T) log₂(n) / n",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "constant noise",
+      "time-memory tradeoff",
+      "independence heuristic"
+    ],
+    "featured": false,
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "model",
+        "label": "Model / assumptions"
+      },
+      {
+        "key": "formula",
+        "label": "Exact coefficient / bound"
+      }
+    ],
+    "description": "Constant Bernoulli noise; memory ≤ 2^{(2/3+o(1)) n/log₂ n}",
+    "rules": "Compare the leading time coefficient at the stated subexponential memory cap. The c-sum methods use the Independence Heuristic; tailored rows additionally require the Tailoring Heuristic. Every fixed positive exponent slack is allowed. Quantum rows assume coherent indexed access to the stored list."
+  },
+  {
+    "id": "lpn-polynomial-samples",
+    "problemId": "lpn",
+    "name": "Classical · fixed noise · polynomial samples",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Uniform random equations",
+    "regime": "Constant Bernoulli noise; n^{1+δ} samples for each fixed δ > 0",
+    "metric": "2^{O(n / log₂ log₂ n)}",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "constant noise",
+      "polynomial samples",
+      "sample amplification"
+    ],
+    "featured": false,
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "model",
+        "label": "Model / assumptions"
+      },
+      {
+        "key": "formula",
+        "label": "Exact coefficient / bound"
+      }
+    ],
+    "description": "Constant Bernoulli noise; n^{1+δ} samples for each fixed δ > 0",
+    "rules": "Compare bounds only under the displayed noise, sample and memory conditions."
+  },
+  {
+    "id": "lpn-quantum-memory-half",
+    "problemId": "lpn",
+    "name": "Quantum · memory coefficient ≤ 1/2",
+    "computation": "Quantum",
+    "rigor": "Heuristic",
+    "instance": "Uniform random equations",
+    "regime": "Constant Bernoulli noise; limiting memory coefficient ≤1/2 on the n/log₂n scale",
+    "metric": "limsup log₂(T) log₂(n) / n",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "constant noise",
+      "time-memory tradeoff",
+      "independence heuristic",
+      "coherent reads"
+    ],
+    "featured": false,
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "model",
+        "label": "Model / assumptions"
+      },
+      {
+        "key": "formula",
+        "label": "Exact coefficient / bound"
+      }
+    ],
+    "description": "Constant Bernoulli noise; memory ≤ 2^{(1/2+o(1)) n/log₂ n}",
+    "rules": "Compare the leading time coefficient at the stated subexponential memory cap. The c-sum methods use the Independence Heuristic; tailored rows additionally require the Tailoring Heuristic. Every fixed positive exponent slack is allowed. Quantum rows assume coherent indexed access to the stored list."
+  },
+  {
+    "id": "lpn-quantum-memory-two-thirds",
+    "problemId": "lpn",
+    "name": "Quantum · memory coefficient ≤ 2/3",
+    "computation": "Quantum",
+    "rigor": "Heuristic",
+    "instance": "Uniform random equations",
+    "regime": "Constant Bernoulli noise; limiting memory coefficient ≤2/3 on the n/log₂n scale",
+    "metric": "limsup log₂(T) log₂(n) / n",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "constant noise",
+      "time-memory tradeoff",
+      "independence heuristic",
+      "coherent reads"
+    ],
+    "featured": false,
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "model",
+        "label": "Model / assumptions"
+      },
+      {
+        "key": "formula",
+        "label": "Exact coefficient / bound"
+      }
+    ],
+    "description": "Constant Bernoulli noise; memory ≤ 2^{(2/3+o(1)) n/log₂ n}",
+    "rules": "Compare the leading time coefficient at the stated subexponential memory cap. The c-sum methods use the Independence Heuristic; tailored rows additionally require the Tailoring Heuristic. Every fixed positive exponent slack is allowed. Quantum rows assume coherent indexed access to the stored list."
+  },
+  {
+    "id": "lwe-binary-error-algebraic-models",
+    "problemId": "lwe",
+    "name": "Binary error · conditional algebraic bounds",
+    "computation": "Classical",
+    "rigor": "Conditional: semi-regularity",
+    "instance": "Uniform random LWE samples; explicit parameter contract",
+    "metric": "Parameter-dependent time and space expressions",
+    "parameter": "n, q, error width, secret distribution, sample budget and attack parameters",
+    "direction": "min",
+    "regime": "Uniform errors in {0,1}, arbitrary secret over an odd prime field; linear and quasilinear sample regimes remain separate parameter contracts",
+    "description": "Historical LWE bounds and cost models with parameters retained. Entries without a common fixed asymptotic scale are listed without a numerical rank.",
+    "rules": "Specify q(n), error distribution and width convention, secret distribution, available samples, search versus decision objective, success criterion and lattice/algebraic assumptions. Formula-only entries have null coefficients. A concrete instance estimate is not an exponent c in 2^{cn}.",
+    "fields": [
+      {
+        "key": "parameters",
+        "label": "Parameters"
+      },
+      {
+        "key": "noise",
+        "label": "Error distribution"
+      },
+      {
+        "key": "secret",
+        "label": "Secret distribution"
+      },
+      {
+        "key": "samples",
+        "label": "Sample budget"
+      },
+      {
+        "key": "objective",
+        "label": "Objective"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      },
+      {
+        "key": "assumptions",
+        "label": "Assumptions"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "binary error",
+      "algebraic",
+      "semi-regularity",
+      "sample-sensitive"
+    ]
+  },
+  {
+    "id": "lwe-binary-error-hybrid-models",
+    "problemId": "lwe",
+    "name": "Binary secret and error · hybrid models",
+    "computation": "Classical",
+    "rigor": "Heuristic / model-dependent",
+    "instance": "Uniform random LWE samples; explicit parameter contract",
+    "metric": "Parameter-dependent time and space expressions",
+    "parameter": "n, q, error width, secret distribution, sample budget and attack parameters",
+    "direction": "min",
+    "regime": "Uniform binary secret and error; exact finite n,m,q and preprocessing cost specified",
+    "description": "Historical LWE bounds and cost models with parameters retained. Entries without a common fixed asymptotic scale are listed without a numerical rank.",
+    "rules": "Specify q(n), error distribution and width convention, secret distribution, available samples, search versus decision objective, success criterion and lattice/algebraic assumptions. Formula-only entries have null coefficients. A concrete instance estimate is not an exponent c in 2^{cn}.",
+    "fields": [
+      {
+        "key": "parameters",
+        "label": "Parameters"
+      },
+      {
+        "key": "noise",
+        "label": "Error distribution"
+      },
+      {
+        "key": "secret",
+        "label": "Secret distribution"
+      },
+      {
+        "key": "samples",
+        "label": "Sample budget"
+      },
+      {
+        "key": "objective",
+        "label": "Objective"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      },
+      {
+        "key": "assumptions",
+        "label": "Assumptions"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "binary error",
+      "binary secret",
+      "hybrid",
+      "finite instance"
+    ]
+  },
+  {
+    "id": "lwe-binary-linear-samples",
+    "problemId": "lwe",
+    "name": "Decision · binary secret and error · n samples",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Uniform random equations",
+    "regime": "Decisional LWE; both secret and errors uniform in {0,1}; n samples; prime modulus q=Θ(n²)",
+    "metric": "2^{c n / log₂ log₂ n + o(n/log₂ log₂ n)}",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "binary secret",
+      "binary errors",
+      "linear samples"
+    ],
+    "featured": false,
+    "fields": [
+      {
+        "key": "samples",
+        "label": "Input samples"
+      },
+      {
+        "key": "model",
+        "label": "Model / assumptions"
+      },
+      {
+        "key": "formula",
+        "label": "Exact coefficient / bound"
+      }
+    ],
+    "description": "Decisional LWE; both secret and errors uniform in {0,1}; n samples; prime modulus q=Θ(n²)",
+    "rules": "Compare bounds only under the displayed noise, sample and memory conditions."
+  },
+  {
+    "id": "lwe-dual-lattice-models",
+    "problemId": "lwe",
+    "name": "Dual lattice · parameterized models",
+    "computation": "Classical",
+    "rigor": "Heuristic / model-dependent",
+    "instance": "Uniform random LWE samples; explicit parameter contract",
+    "metric": "Parameter-dependent time and space expressions",
+    "parameter": "n, q, error width, secret distribution, sample budget and attack parameters",
+    "direction": "min",
+    "regime": "Decision-LWE with Gaussian errors, with q(n), Gaussian width and sample availability specified per entry",
+    "description": "Historical LWE bounds and cost models with parameters retained. Entries without a common fixed asymptotic scale are listed without a numerical rank.",
+    "rules": "Specify q(n), error distribution and width convention, secret distribution, available samples, search versus decision objective, success criterion and lattice/algebraic assumptions. Formula-only entries have null coefficients. A concrete instance estimate is not an exponent c in 2^{cn}.",
+    "fields": [
+      {
+        "key": "parameters",
+        "label": "Parameters"
+      },
+      {
+        "key": "noise",
+        "label": "Error distribution"
+      },
+      {
+        "key": "secret",
+        "label": "Secret distribution"
+      },
+      {
+        "key": "samples",
+        "label": "Sample budget"
+      },
+      {
+        "key": "objective",
+        "label": "Objective"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      },
+      {
+        "key": "assumptions",
+        "label": "Assumptions"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "dual",
+      "Gaussian error",
+      "parameterized"
+    ]
+  },
+  {
+    "id": "lwe-gaussian-algebraic-history",
+    "problemId": "lwe",
+    "name": "Gaussian error · algebraic bounds",
+    "computation": "Classical",
+    "rigor": "Mixed: theorem / conditional",
+    "instance": "Uniform random LWE samples; explicit parameter contract",
+    "metric": "Parameter-dependent time and space expressions",
+    "parameter": "n, q, error width, secret distribution, sample budget and attack parameters",
+    "direction": "min",
+    "regime": "Search-LWE over prime fields; arbitrary full secret and explicit Gaussian width, with algebraic sample requirements",
+    "description": "Historical LWE bounds and cost models with parameters retained. Entries without a common fixed asymptotic scale are listed without a numerical rank.",
+    "rules": "Specify q(n), error distribution and width convention, secret distribution, available samples, search versus decision objective, success criterion and lattice/algebraic assumptions. Formula-only entries have null coefficients. A concrete instance estimate is not an exponent c in 2^{cn}.",
+    "fields": [
+      {
+        "key": "parameters",
+        "label": "Parameters"
+      },
+      {
+        "key": "noise",
+        "label": "Error distribution"
+      },
+      {
+        "key": "secret",
+        "label": "Secret distribution"
+      },
+      {
+        "key": "samples",
+        "label": "Sample budget"
+      },
+      {
+        "key": "objective",
+        "label": "Objective"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      },
+      {
+        "key": "assumptions",
+        "label": "Assumptions"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "algebraic",
+      "Gaussian error",
+      "sample-sensitive"
+    ]
+  },
+  {
+    "computation": "Classical",
+    "rigor": "Regime dependent",
+    "instance": "LWE distribution",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "id": "lwe-general",
+    "problemId": "lwe",
+    "name": "LWE · custom regime",
+    "regime": "Specify dimension, modulus, error, secret, and samples",
+    "description": "A template for comparing primal, dual, hybrid, algebraic, or combinatorial algorithms in one fixed LWE regime.",
+    "rules": "Fix q(n), error and secret distributions, sample access, and search/decision objective. Record the attack model and any SVP-oracle heuristic. Different parameter regimes require different categories.",
+    "fields": [
+      {
+        "key": "q",
+        "label": "Modulus q(n)"
+      },
+      {
+        "key": "error",
+        "label": "Error distribution"
+      },
+      {
+        "key": "secret",
+        "label": "Secret distribution"
+      },
+      {
+        "key": "samples",
+        "label": "Sample budget"
+      },
+      {
+        "key": "objective",
+        "label": "Search or decision"
+      }
+    ],
+    "featured": false,
+    "tags": []
+  },
+  {
+    "id": "lwe-lattice-decoding-models",
+    "problemId": "lwe",
+    "name": "Lattice decoding · parameterized models",
+    "computation": "Classical",
+    "rigor": "Heuristic / model-dependent",
+    "instance": "Uniform random LWE samples; explicit parameter contract",
+    "metric": "Parameter-dependent time and space expressions",
+    "parameter": "n, q, error width, secret distribution, sample budget and attack parameters",
+    "direction": "min",
+    "regime": "Search-LWE through BDD; basis reduction, enumeration parameters and target success probability stay explicit",
+    "description": "Historical LWE bounds and cost models with parameters retained. Entries without a common fixed asymptotic scale are listed without a numerical rank.",
+    "rules": "Specify q(n), error distribution and width convention, secret distribution, available samples, search versus decision objective, success criterion and lattice/algebraic assumptions. Formula-only entries have null coefficients. A concrete instance estimate is not an exponent c in 2^{cn}.",
+    "fields": [
+      {
+        "key": "parameters",
+        "label": "Parameters"
+      },
+      {
+        "key": "noise",
+        "label": "Error distribution"
+      },
+      {
+        "key": "secret",
+        "label": "Secret distribution"
+      },
+      {
+        "key": "samples",
+        "label": "Sample budget"
+      },
+      {
+        "key": "objective",
+        "label": "Objective"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      },
+      {
+        "key": "assumptions",
+        "label": "Assumptions"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "primal",
+      "BDD",
+      "Gaussian error",
+      "parameterized"
+    ]
+  },
+  {
+    "id": "lwe-primal-embedding-models",
+    "problemId": "lwe",
+    "name": "Primal embedding · Gaussian error",
+    "computation": "Classical",
+    "rigor": "Heuristic / model-dependent",
+    "instance": "Uniform random LWE samples; explicit parameter contract",
+    "metric": "Parameter-dependent time and space expressions",
+    "parameter": "n, q, error width, secret distribution, sample budget and attack parameters",
+    "direction": "min",
+    "regime": "Search-LWE through BDD-to-uSVP embedding with a specified empirical gap-to-reduction model",
+    "description": "Historical LWE bounds and cost models with parameters retained. Entries without a common fixed asymptotic scale are listed without a numerical rank.",
+    "rules": "Specify q(n), error distribution and width convention, secret distribution, available samples, search versus decision objective, success criterion and lattice/algebraic assumptions. Formula-only entries have null coefficients. A concrete instance estimate is not an exponent c in 2^{cn}.",
+    "fields": [
+      {
+        "key": "parameters",
+        "label": "Parameters"
+      },
+      {
+        "key": "noise",
+        "label": "Error distribution"
+      },
+      {
+        "key": "secret",
+        "label": "Secret distribution"
+      },
+      {
+        "key": "samples",
+        "label": "Sample budget"
+      },
+      {
+        "key": "objective",
+        "label": "Objective"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      },
+      {
+        "key": "assumptions",
+        "label": "Assumptions"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "primal",
+      "uSVP",
+      "embedding",
+      "Gaussian error"
+    ]
+  },
+  {
+    "id": "lwe-small-secret-hybrid-models",
+    "problemId": "lwe",
+    "name": "Small secret · guessing and lattice reduction",
+    "computation": "Classical",
+    "rigor": "Heuristic / model-dependent",
+    "instance": "Uniform random LWE samples; explicit parameter contract",
+    "metric": "Parameter-dependent time and space expressions",
+    "parameter": "n, q, error width, secret distribution, sample budget and attack parameters",
+    "direction": "min",
+    "regime": "Secret guessing followed by a reduced-dimension Gaussian-error lattice attack; distribution and guessed coordinates explicit",
+    "description": "Historical LWE bounds and cost models with parameters retained. Entries without a common fixed asymptotic scale are listed without a numerical rank.",
+    "rules": "Specify q(n), error distribution and width convention, secret distribution, available samples, search versus decision objective, success criterion and lattice/algebraic assumptions. Formula-only entries have null coefficients. A concrete instance estimate is not an exponent c in 2^{cn}.",
+    "fields": [
+      {
+        "key": "parameters",
+        "label": "Parameters"
+      },
+      {
+        "key": "noise",
+        "label": "Error distribution"
+      },
+      {
+        "key": "secret",
+        "label": "Secret distribution"
+      },
+      {
+        "key": "samples",
+        "label": "Sample budget"
+      },
+      {
+        "key": "objective",
+        "label": "Objective"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      },
+      {
+        "key": "assumptions",
+        "label": "Assumptions"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "small secret",
+      "hybrid",
+      "Gaussian error"
+    ]
+  },
+  {
+    "id": "lwe-small-secret-rescaled-primal",
+    "problemId": "lwe",
+    "name": "Small secret · rescaled primal",
+    "computation": "Classical",
+    "rigor": "Heuristic / model-dependent",
+    "instance": "Uniform random LWE samples; explicit parameter contract",
+    "metric": "Parameter-dependent time and space expressions",
+    "parameter": "n, q, error width, secret distribution, sample budget and attack parameters",
+    "direction": "min",
+    "regime": "Binary or ternary secret with Gaussian error; secret/error scaling and available sample count specified",
+    "description": "Historical LWE bounds and cost models with parameters retained. Entries without a common fixed asymptotic scale are listed without a numerical rank.",
+    "rules": "Specify q(n), error distribution and width convention, secret distribution, available samples, search versus decision objective, success criterion and lattice/algebraic assumptions. Formula-only entries have null coefficients. A concrete instance estimate is not an exponent c in 2^{cn}.",
+    "fields": [
+      {
+        "key": "parameters",
+        "label": "Parameters"
+      },
+      {
+        "key": "noise",
+        "label": "Error distribution"
+      },
+      {
+        "key": "secret",
+        "label": "Secret distribution"
+      },
+      {
+        "key": "samples",
+        "label": "Sample budget"
+      },
+      {
+        "key": "objective",
+        "label": "Objective"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      },
+      {
+        "key": "assumptions",
+        "label": "Assumptions"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "small secret",
+      "rescaling",
+      "primal",
+      "Gaussian error"
+    ]
+  },
+  {
+    "id": "lwe-sparse-secret-dual-models",
+    "problemId": "lwe",
+    "name": "Sparse secret · dual reductions",
+    "computation": "Classical",
+    "rigor": "Heuristic / model-dependent",
+    "instance": "Uniform random LWE samples; explicit parameter contract",
+    "metric": "Parameter-dependent time and space expressions",
+    "parameter": "n, q, error width, secret distribution, sample budget and attack parameters",
+    "direction": "min",
+    "regime": "Fixed Hamming weight sparse secrets with q, error width, weight and reduction parameters specified",
+    "description": "Historical LWE bounds and cost models with parameters retained. Entries without a common fixed asymptotic scale are listed without a numerical rank.",
+    "rules": "Specify q(n), error distribution and width convention, secret distribution, available samples, search versus decision objective, success criterion and lattice/algebraic assumptions. Formula-only entries have null coefficients. A concrete instance estimate is not an exponent c in 2^{cn}.",
+    "fields": [
+      {
+        "key": "parameters",
+        "label": "Parameters"
+      },
+      {
+        "key": "noise",
+        "label": "Error distribution"
+      },
+      {
+        "key": "secret",
+        "label": "Secret distribution"
+      },
+      {
+        "key": "samples",
+        "label": "Sample budget"
+      },
+      {
+        "key": "objective",
+        "label": "Objective"
+      },
+      {
+        "key": "model",
+        "label": "Cost model"
+      },
+      {
+        "key": "assumptions",
+        "label": "Assumptions"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "sparse secret",
+      "dual",
+      "small secret",
+      "parameterized"
+    ]
+  },
+  {
+    "id": "minrank-classical",
+    "problemId": "minrank",
+    "name": "Classical · specified dimensions and target rank",
+    "computation": "Classical",
+    "rigor": "Model dependent",
+    "instance": "Specified matrix distribution",
+    "regime": "MinRank over F_q with m matrices of size a×b and target rank r",
+    "metric": "Parameter-dependent",
+    "parameter": "q, m, a, b, r",
+    "direction": "min",
+    "tags": [
+      "rank",
+      "algebraic attacks"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "MinRank over F_q with m matrices of size a×b and target rank r",
+    "rules": "Specify field, number and dimensions of matrices, target rank, solution count and structural assumptions. Rectangular MinRank attacks on Rainbow are not automatically attacks on plain UOV. Source: https://eprint.iacr.org/2020/1343."
+  },
+  {
+    "id": "mq-binary-classical-algebraic",
+    "problemId": "mq",
+    "name": "Boolean · classical · algebraic assumptions",
+    "computation": "Classical",
+    "rigor": "Conditional",
+    "instance": "Algebraic regularity assumptions",
+    "regime": "m=n quadratic equations over F_2 satisfying the source algebraic hypotheses",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "binary field",
+      "semi-regularity",
+      "m=n"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "m=n quadratic equations over F_2 satisfying the source algebraic hypotheses",
+    "rules": "The source must state its algebraic hypotheses. Expected Las Vegas and deterministic guarantees are recorded in the entry. These are not unconditional worst-case bounds."
+  },
+  {
+    "id": "mq-binary-classical-provable",
+    "problemId": "mq",
+    "name": "Boolean · classical · worst case",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Arbitrary Boolean quadratic systems",
+    "regime": "Degree at most 2 over F_2; n variables; polynomially many explicitly represented equations",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "binary field",
+      "worst-case",
+      "bounded error"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Degree at most 2 over F_2; n variables; polynomially many explicitly represented equations",
+    "rules": "Compare randomized worst-case solution-finding bounds over F_2, suppressing polynomial factors. Do not mix algebraic regularity assumptions, fixed equation-density heuristics, or higher-degree bounds into this list."
+  },
+  {
+    "id": "mq-binary-quantum-algebraic",
+    "problemId": "mq",
+    "name": "Boolean · quantum gates · algebraic assumptions",
+    "computation": "Quantum",
+    "rigor": "Conditional",
+    "instance": "Algebraic regularity assumptions",
+    "regime": "m=n quadratic equations over F_2; sequential quantum gate complexity",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "binary field",
+      "quantum gates",
+      "m=n"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "m=n quadratic equations over F_2; sequential quantum gate complexity",
+    "rules": "Compare sequential quantum gate counts with source algebraic assumptions attached. Mesh depth, physical area and gate count are different resources and must not share a scalar ranking."
+  },
+  {
+    "id": "mq-binary-quantum-mesh",
+    "problemId": "mq",
+    "name": "Boolean · quantum mesh · algebraic assumptions",
+    "computation": "Quantum",
+    "rigor": "Conditional",
+    "instance": "Mesh-connected quantum computation",
+    "regime": "m=n over F_2; mesh time exponent with an explicit area budget",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "binary field",
+      "quantum mesh",
+      "area-time"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "m=n over F_2; mesh time exponent with an explicit area budget",
+    "rules": "Time refers to the mesh-connected architecture in the source, not a sequential gate count. Keep the area exponent beside the time exponent; an unrestricted parallel-time leaderboard would be meaningless."
+  },
+  {
+    "id": "mq-f3-classical-provable",
+    "problemId": "mq",
+    "name": "F_3 · classical · worst case",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Arbitrary quadratic systems over F_3",
+    "regime": "Fixed q=3, degree d=2, n variables, explicitly represented equations",
+    "metric": "3^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "field size 3",
+      "worst-case",
+      "bounded error"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Fixed q=3, degree d=2, n variables, explicitly represented equations",
+    "rules": "Normalize in base 3, not base 2. The coefficient is meaningful only for fixed q=3, degree 2. Compare decision or solution-finding guarantees explicitly; self-reduction is polynomial for fixed degree and field."
+  },
+  {
+    "id": "mq-f4-classical-provable",
+    "problemId": "mq",
+    "name": "F_4 · classical · worst case",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Arbitrary quadratic systems over F_4",
+    "regime": "Fixed q=4, degree d=2, n variables, explicitly represented equations",
+    "metric": "4^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "tags": [
+      "field size 4",
+      "worst-case",
+      "bounded error"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Fixed q=4, degree d=2, n variables, explicitly represented equations",
+    "rules": "Normalize in base 4, not base 2. The coefficient is meaningful only for fixed q=4, degree 2. Compare decision or solution-finding guarantees explicitly; self-reduction is polynomial for fixed degree and field."
+  },
+  {
+    "id": "mq-overdetermined-algebraic",
+    "problemId": "mq",
+    "name": "Overdetermined · algebraic solvers",
+    "computation": "Classical",
+    "rigor": "Conditional",
+    "instance": "Specified equation density",
+    "regime": "Quadratic systems over F_q with fixed m/n > 1; q and density fixed",
+    "metric": "Parameter-dependent",
+    "parameter": "q, n, m",
+    "direction": "min",
+    "tags": [
+      "overdetermined",
+      "Groebner bases",
+      "semi-regularity"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Quadratic systems over F_q with fixed m/n > 1; q and density fixed",
+    "rules": "Set q and the equation-density limit m/n before adding a normalized coefficient. Algorithms with different linear-algebra models or regularity assumptions require separate tags/variants. Source: https://eprint.iacr.org/2022/708."
+  },
+  {
+    "id": "ordinary-isogeny-classical",
+    "problemId": "ordinary-isogeny",
+    "name": "Classical · horizontal isogenies",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "Same endomorphism ring",
+    "regime": "Two ordinary curves over F_q with the same cardinality and endomorphism ring",
+    "metric": "q^{c+o(1)}",
+    "parameter": "q",
+    "direction": "min",
+    "tags": [
+      "ordinary curves",
+      "horizontal isogenies",
+      "random walks"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Two ordinary curves over F_q with the same cardinality and endomorphism ring",
+    "rules": "Specify the common order/discriminant and allowed isogeny representation. Random-walk heuristics and practical constant-factor improvements remain explicit."
+  },
+  {
+    "id": "ordinary-isogeny-quantum-grh",
+    "problemId": "ordinary-isogeny",
+    "name": "Quantum · GRH",
+    "computation": "Quantum",
+    "rigor": "Conditional on GRH",
+    "instance": "Same endomorphism ring",
+    "regime": "Horizontally isogenous ordinary elliptic curves over F_q",
+    "metric": "L_q[1/2,c]",
+    "parameter": "q",
+    "direction": "min",
+    "tags": [
+      "ordinary curves",
+      "quantum",
+      "GRH"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Horizontally isogenous ordinary elliptic curves over F_q",
+    "rules": "L_q[α,c]=exp((c+o(1))(ln q)^α(ln ln q)^{1−α}). Compare the leading constant at α=1/2 only. Account for the quantum evaluation of the hiding functions. CJS has an acknowledged erratum to its claimed polynomial-quantum-space variant."
+  },
+  {
+    "id": "qary-classical",
+    "problemId": "qary-decoding",
+    "name": "Classical · parameterized alphabet",
+    "computation": "Classical",
+    "rigor": "Source asymptotic analysis",
+    "instance": "Random q-ary codes",
+    "regime": "Fix q, R=k/n, τ=t/n and bit-vs-field-operation model",
+    "metric": "Parameterized in q, R and τ",
+    "parameter": "q,R,τ",
+    "direction": "min",
+    "tags": [
+      "q-ary",
+      "Hamming metric",
+      "fixed alphabet"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Non-binary Hamming decoding references.",
+    "rules": "Binary coefficients cannot be transferred to q≥3. Instantiate alphabet q, code rate and relative weight before assigning a scalar exponent. See Hirose2016 and Elbro–Santini2025; the latter distinguishes memory-less and meet-in-the-middle algorithms."
+  },
+  {
+    "id": "qary-polynomial-memory",
+    "problemId": "qary-decoding",
+    "name": "Classical · polynomial memory",
+    "computation": "Classical",
+    "rigor": "Source asymptotic analysis",
+    "instance": "Random q-ary codes",
+    "regime": "Fix q, R and τ; polynomial workspace",
+    "metric": "Parameterized in q, R and τ",
+    "parameter": "q,R,τ",
+    "direction": "min",
+    "tags": [
+      "q-ary",
+      "polynomial memory"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Polynomial-space non-binary ISD.",
+    "rules": "The 2025 Elbro–Santini source identifies a memory-less algorithm. A cost point requires a specified field and error regime; no universal binary coefficient is inserted."
+  },
+  {
+    "id": "rank-general-classical",
+    "problemId": "rank-decoding",
+    "name": "Classical · general m/n",
+    "computation": "Classical",
+    "rigor": "Source asymptotic analysis",
+    "instance": "Random rank-metric codes",
+    "regime": "Fix q,m/n,k/n,r/n",
+    "metric": "Parameterized in q,m,n,k,r",
+    "parameter": "q,m,n,k,r",
+    "direction": "min",
+    "tags": [
+      "rank metric",
+      "parameterized"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Rank decoding with arbitrary extension ratio.",
+    "rules": "Keep q, m/n, k/n and r/n fixed. Polynomial and exponential factors use the source’s F_q operation model. A point with m=n belongs in the square-regime list."
+  },
+  {
+    "id": "rank-square-classical",
+    "problemId": "rank-decoding",
+    "name": "Classical · m = n · worst parameters",
+    "computation": "Classical",
+    "rigor": "Source asymptotic analysis",
+    "instance": "Random rank-metric codes",
+    "regime": "Extension degree m=n; worst decoding parameters in the source convention",
+    "metric": "2^{c n² + o(n²)}",
+    "parameter": "n²",
+    "direction": "min",
+    "tags": [
+      "rank metric",
+      "m=n",
+      "quadratic exponent"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Square-regime rank-decoding baseline.",
+    "rules": "Use the n² exponential scale. This is the source’s worst-parameter baseline for m=n, not a Hamming-decoding exponent or an assertion of optimality among all algorithms."
+  },
+  {
+    "id": "rsa-classical-heuristic",
+    "problemId": "rsa-factorization",
+    "name": "Balanced semiprimes · classical heuristic",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "RSA-type balanced semiprimes",
+    "regime": "No special polynomial form, partial factors or weak keys supplied",
+    "metric": "L_N[1/3,c]",
+    "parameter": "N",
+    "direction": "min",
+    "tags": [
+      "rsa",
+      "balanced semiprimes",
+      "number field sieve"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "General-purpose NFS bound applied to RSA-type balanced semiprimes; no claim about concrete hardware timings. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural.",
+    "rules": "General-purpose NFS bound applied to RSA-type balanced semiprimes; no claim about concrete hardware timings. Here L_X[α,c] = exp((c+o(1))(ln X)^α(ln ln X)^(1−α)); all logarithms in this definition are natural. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "rsa-quantum",
+    "problemId": "rsa-factorization",
+    "name": "Balanced semiprimes · quantum",
+    "computation": "Quantum",
+    "rigor": "Provable",
+    "instance": "RSA-type balanced semiprimes",
+    "regime": "Logical quantum computation with polynomial classical post-processing",
+    "metric": "Expression only",
+    "parameter": "n = ceil(log₂ N)",
+    "direction": "min",
+    "tags": [
+      "rsa",
+      "quantum",
+      "polynomial time"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Quantum asymptotic factorization bounds for RSA-type semiprimes. Concrete resource estimates require an explicit circuit and error-correction model.",
+    "rules": "Quantum asymptotic factorization bounds for RSA-type semiprimes. Concrete resource estimates require an explicit circuit and error-correction model. Only compare entries with this cost scale, input domain and computational model. Polynomial and quasi-polynomial expressions without an extracted scalar are not ranked."
+  },
+  {
+    "id": "sidh-classical-conditional",
+    "problemId": "sidh-key-recovery",
+    "name": "Classical · known endomorphism ring",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "SIDH public auxiliary torsion images",
+    "regime": "SIDH with known endomorphism ring of the starting curve; source factorization conditions",
+    "metric": "Parameter-dependent",
+    "parameter": "log p",
+    "direction": "min",
+    "tags": [
+      "SIDH",
+      "auxiliary torsion",
+      "known endomorphism ring"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "SIDH with known endomorphism ring of the starting curve; source factorization conditions",
+    "rules": "A SIDH public key supplies auxiliary torsion-point images. Attacks exploiting these images must not be listed as polynomial algorithms for the unadorned supersingular isogeny problem. Do not replace a polynomial expression by an invented exponent zero."
+  },
+  {
+    "id": "sidh-classical-provable",
+    "problemId": "sidh-key-recovery",
+    "name": "Classical · polynomial time",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "SIDH public auxiliary torsion images",
+    "regime": "SIDH key recovery including a random starting curve",
+    "metric": "Polynomial in input size",
+    "parameter": "log p",
+    "direction": "min",
+    "tags": [
+      "SIDH",
+      "auxiliary torsion",
+      "polynomial time"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "SIDH key recovery including a random starting curve",
+    "rules": "Structural breaks are displayed by their full complexity class rather than a scalar exponent. Auxiliary torsion images are essential, and this does not solve unrestricted supersingular isogeny search in polynomial time."
+  },
+  {
+    "computation": "Classical",
+    "rigor": "Regime dependent",
+    "instance": "Uniform matrix",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "id": "sis-euclidean",
+    "problemId": "sis",
+    "name": "Euclidean SIS · custom regime",
+    "regime": "Specify q(n), m(n), and the output norm bound β(n)",
+    "description": "An open category template: SIS needs a fixed modulus, density, norm, and success condition before an exponent is meaningful.",
+    "rules": "No universal SIS exponent is seeded. Define q, m, β, the norm, and the asymptotic variable in the category before ranking results. Use separate categories for SIS∞, Euclidean SIS, and structured matrices.",
+    "fields": [
+      {
+        "key": "q",
+        "label": "Modulus q(n)"
+      },
+      {
+        "key": "m",
+        "label": "Number of columns m(n)"
+      },
+      {
+        "key": "beta",
+        "label": "Norm bound β(n)"
+      },
+      {
+        "key": "norm",
+        "label": "Norm"
+      }
+    ],
+    "featured": false,
+    "tags": []
+  },
+  {
+    "id": "ssip-classical-heuristic",
+    "problemId": "supersingular-isogeny",
+    "name": "General curves · classical · heuristic",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "Supersingular curves over F_{p^2}",
+    "regime": "Any explicit isogeny between two supersingular elliptic curves; p→∞",
+    "metric": "p^{c+o(1)}",
+    "parameter": "p",
+    "direction": "min",
+    "tags": [
+      "general supersingular curves",
+      "heuristic"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Any explicit isogeny between two supersingular elliptic curves; p→∞",
+    "rules": "The output may be a compact chain of isogenies of varying degrees. A fixed-degree or short-path problem is different. Keep smoothness/random-walk assumptions and memory costs explicit. A p exponent is not a base-2 dimension exponent."
+  },
+  {
+    "id": "ssip-classical-provable",
+    "problemId": "supersingular-isogeny",
+    "name": "General curves · classical · unconditional",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Supersingular curves over F_{p^2}",
+    "regime": "Any explicit isogeny between supersingular elliptic curves; unconditional asymptotic analysis",
+    "metric": "p^{c+o(1)}",
+    "parameter": "p",
+    "direction": "min",
+    "tags": [
+      "general supersingular curves",
+      "unconditional"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Any explicit isogeny between supersingular elliptic curves; unconditional asymptotic analysis",
+    "rules": "Include only bounds established without a smoothness heuristic or GRH. Theoretical multipoint-evaluation bounds need not imply a practical cryptanalytic improvement."
+  },
+  {
+    "id": "ssip-fp-classical-heuristic",
+    "problemId": "supersingular-isogeny",
+    "name": "F_p-rational curves · classical · heuristic",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "Both curves defined over F_p",
+    "regime": "Find an isogeny between F_p-rational supersingular curves using small-degree isogenies",
+    "metric": "p^{c+o(1)}",
+    "parameter": "p",
+    "direction": "min",
+    "tags": [
+      "F_p rational",
+      "random walks",
+      "GRH"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Find an isogeny between F_p-rational supersingular curves using small-degree isogenies",
+    "rules": "The number of F_p-rational vertices is about p^{1/2}, unlike the full F_{p^2} graph. Keep the source random-walk assumptions and GRH connectivity condition; do not mix this easier input restriction with general supersingular curves."
+  },
+  {
+    "id": "ssip-fp-quantum-grh",
+    "problemId": "supersingular-isogeny",
+    "name": "F_p-rational curves · quantum · GRH",
+    "computation": "Quantum",
+    "rigor": "Conditional on GRH",
+    "instance": "Both curves defined over F_p",
+    "regime": "Quantum isogeny construction between F_p-rational supersingular curves",
+    "metric": "L_p[1/2,c]",
+    "parameter": "p",
+    "direction": "min",
+    "tags": [
+      "F_p rational",
+      "quantum",
+      "GRH"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Quantum isogeny construction between F_p-rational supersingular curves",
+    "rules": "L_p[α,c]=exp((c+o(1))(ln p)^α(ln ln p)^{1−α}). Compare c only at fixed α=1/2. This easier commutative-action case is not general supersingular isogeny search."
+  },
+  {
+    "id": "ssip-quantum-grh",
+    "problemId": "supersingular-isogeny",
+    "name": "General curves · quantum · GRH",
+    "computation": "Quantum",
+    "rigor": "Conditional on GRH",
+    "instance": "Supersingular curves over F_{p^2}",
+    "regime": "Quantum explicit-isogeny construction under GRH",
+    "metric": "p^{c+o(1)}",
+    "parameter": "p",
+    "direction": "min",
+    "tags": [
+      "quantum",
+      "GRH",
+      "general supersingular curves"
+    ],
+    "featured": false,
+    "fields": [],
+    "description": "Quantum explicit-isogeny construction under GRH",
+    "rules": "Use the full quantum computation cost, including evaluation of the group action. This is not the fixed-degree SIDH key-recovery problem, and no polynomial-quantum-space claim follows from the time exponent."
+  },
+  {
+    "id": "svp-constant-approximation",
+    "problemId": "svp",
+    "name": "Constant approximation · large-factor limit",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "regime": "For every fixed ε > 0, some constant μ(ε) yields μ-SVP on arbitrary Euclidean lattices",
+    "metric": "2^{(c + ε) n}, any fixed ε > 0",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "approximation",
+        "label": "Approximation guarantee"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      },
+      {
+        "key": "model",
+        "label": "Computation model"
+      }
+    ],
+    "description": "Leading time coefficients for constant-factor SVP families. The approximation constant may depend on the allowed exponent slack.",
+    "rules": "For each fixed ε > 0, find a μ(ε)-approximate nonzero vector for some constant μ(ε). Compare c under these quantifiers only. A limiting coefficient is not a fixed-factor exact-SVP bound. Exact algorithms also qualify, and such transferred guarantees are identified in the notes.",
+    "tags": [
+      "constant approximation",
+      "large-factor limit",
+      "arbitrary lattices"
+    ]
+  },
+  {
+    "id": "svp-enumeration",
+    "problemId": "svp",
+    "name": "Enumeration · superexponential scale",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Arbitrary lattices",
+    "regime": "Exact Euclidean SVP; specify basis reduction and preprocessing",
+    "metric": "n^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "description": "Enumeration coefficients live on the n log n scale, separately from singly exponential algorithms.",
+    "rules": "Record the exact parameter regime, cost unit, distribution and access assumptions. A source and BibTeX are required for new submissions. This template makes no claim to a universal exponent.",
+    "fields": [],
+    "tags": [
+      "enumeration",
+      "arbitrary lattices",
+      "n log n scale",
+      "basis reduction"
+    ],
+    "featured": false
+  },
+  {
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "metric": "Parameterized time bound in n and gap factor γ",
+    "parameter": "n",
+    "direction": "min",
+    "id": "svp-gap-euclidean-parameterized",
+    "problemId": "svp",
+    "name": "Approximate decision · Euclidean",
+    "regime": "Euclidean GapSVP on arbitrary lattices; approximation factor γ is stated per result",
+    "description": "Promise-decision algorithms with their full gap-factor/time dependence. No shortest vector is required as output.",
+    "rules": "For the factor γ stated by each entry, distinguish λ₁(L) ≤ r from λ₁(L) > γr, subject to the source theorem guarantee. This is promise decision, not approximate or exact vector search. Include preprocessing in total cost. Do not rank time bounds for different gap factors as one numerical leaderboard.",
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "approximation",
+        "label": "Approximation factor"
+      },
+      {
+        "key": "output",
+        "label": "Problem variant"
+      },
+      {
+        "key": "model",
+        "label": "Computation model"
+      }
+    ],
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "GapSVP",
+      "approximate",
+      "decision",
+      "parameterized approximation"
+    ],
+    "featured": false
+  },
+  {
+    "id": "svp-haar-quantum",
+    "problemId": "svp",
+    "name": "Haar-random · quantum",
+    "computation": "Quantum",
+    "rigor": "Provable",
+    "instance": "Haar random",
+    "regime": "Haar–Siegel random determinant-one lattices; specify coherent access and success guarantee",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "description": "An open comparison category. Its rules must be fixed before adding comparable results.",
+    "rules": "Record the exact parameter regime, cost unit, distribution and access assumptions. A source and BibTeX are required for new submissions. This template makes no claim to a universal exponent.",
+    "fields": [],
+    "tags": [
+      "Haar-random",
+      "quantum",
+      "Euclidean",
+      "average-case"
+    ],
+    "featured": false
+  },
+  {
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Haar random",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "id": "svp-haar",
+    "problemId": "svp",
+    "name": "Classical · Haar random",
+    "regime": "Exact SVP on Haar–Siegel random unimodular lattices",
+    "description": "Average-case theorems for the Haar distribution, distinct from heuristic sieving claims.",
+    "rules": "Use the Haar–Siegel measure on determinant-one real lattices. Specify probability over the lattice and algorithm. Do not identify Haar randomness with a cryptographic q-ary distribution without a reduction.",
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      },
+      {
+        "key": "model",
+        "label": "Computation model"
+      },
+      {
+        "key": "distribution",
+        "label": "Lattice distribution"
+      }
+    ],
+    "featured": true,
+    "tags": [
+      "Haar-random"
+    ]
+  },
+  {
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "Heuristic random lists",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "id": "svp-heuristic",
+    "problemId": "svp",
+    "name": "Classical · heuristic",
+    "regime": "Euclidean SVP under sieve heuristics",
+    "description": "Sieving bounds whose analysis relies on heuristic list-distribution assumptions.",
+    "rules": "State the sieve heuristic and memory model. A heuristic exponent cannot be entered as a worst-case provable result. No practical timing or concrete-security claim follows from the leading exponent alone.",
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      },
+      {
+        "key": "model",
+        "label": "Computation model"
+      },
+      {
+        "key": "heuristic",
+        "label": "Heuristic assumption"
+      }
+    ],
+    "featured": true,
+    "tags": []
+  },
+  {
+    "problemId": "svp",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "Ideal lattices",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "heuristic",
+        "label": "Heuristic assumption"
+      },
+      {
+        "key": "reference",
+        "label": "Reference"
+      }
+    ],
+    "id": "svp-ideal-heuristic",
+    "name": "Ideal lattices · heuristic",
+    "regime": "Exact Euclidean SVP in cyclotomic ideal lattices",
+    "description": "Structured-lattice sieve improvements, with polynomial and exponential gains kept separate.",
+    "rules": "State the ideal/ring family and norm. A linear factor gained from rotational symmetry does not by itself change the leading n-normalized exponent. Do not claim a lower exponent merely from a polynomial speedup. These bounds still use sieve heuristics.",
+    "tags": [
+      "SVP",
+      "classical",
+      "heuristic",
+      "structured lattices",
+      "ideal lattices",
+      "cyclotomic",
+      "LSH"
+    ],
+    "featured": false
+  },
+  {
+    "id": "svp-infinity-provable",
+    "problemId": "svp",
+    "name": "Classical · ℓ∞ norm",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "regime": "Exact SVP on arbitrary rational full-rank lattices; ℓ∞ norm",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "description": "Proven bounds for exact shortest vectors in ℓ∞ norm.",
+    "rules": "Compare exact SVP in the specified norm regime. The norm is part of the problem, not a change of units. Polynomial input-size factors are suppressed; record space and success separately. Source-checked means the stated source claim was checked, not that the proof was independently verified.",
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      },
+      {
+        "key": "model",
+        "label": "Computation model"
+      }
+    ],
+    "tags": [
+      "arbitrary lattices",
+      "exact SVP",
+      "ℓ∞ norm"
+    ],
+    "featured": false
+  },
+  {
+    "id": "svp-kissing-constant",
+    "problemId": "svp",
+    "name": "Kissing-constant assumptions",
+    "computation": "Classical",
+    "rigor": "Conditional theorem",
+    "instance": "Arbitrary lattices",
+    "regime": "Fix a uniform kissing/point-counting bound and its exponent β before comparing c(β)",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "description": "A place for conditional time bounds parameterized by lattice point counting. Pin the exact β and theorem assumptions before entering numeric coefficients.",
+    "rules": "Record the exact parameter regime, cost unit, distribution and access assumptions. A source and BibTeX are required for new submissions. This template makes no claim to a universal exponent.",
+    "fields": [],
+    "tags": [
+      "kissing-constant assumption",
+      "point counting",
+      "arbitrary lattices",
+      "conditional",
+      "Euclidean"
+    ],
+    "featured": false
+  },
+  {
+    "problemId": "svp",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "Arbitrary input; heuristic analysis",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "heuristic",
+        "label": "Heuristic assumption"
+      },
+      {
+        "key": "reference",
+        "label": "Reference"
+      }
+    ],
+    "id": "svp-low-memory",
+    "name": "Heuristic · minimal list space",
+    "regime": "Exact Euclidean SVP; space ≤ 2^{(½log₂(4/3)+o(1))n}",
+    "description": "Time improvements while preserving the baseline sieve-list space exponent.",
+    "rules": "Only compare variants using space 2^{(½log₂(4/3)+o(1))n}, up to the displayed rounding of 0.2075/0.208. Extra hash tables must fit the same exponent. Unknown-space variants do not automatically qualify. The sieve-distribution heuristic remains an assumption.",
+    "tags": [
+      "SVP",
+      "classical",
+      "heuristic",
+      "arbitrary lattices",
+      "low memory",
+      "time–space trade-off"
+    ],
+    "featured": false
+  },
+  {
+    "id": "svp-lp-provable",
+    "problemId": "svp",
+    "name": "Classical · all ℓp norms",
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "regime": "Exact SVP on arbitrary rational full-rank lattices; Every fixed ℓp norm, 1 ≤ p ≤ ∞",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "description": "Proven bounds for exact shortest vectors in Every fixed ℓp norm, 1 ≤ p ≤ ∞.",
+    "rules": "Compare exact SVP in the specified norm regime. The norm is part of the problem, not a change of units. Polynomial input-size factors are suppressed; record space and success separately. Source-checked means the stated source claim was checked, not that the proof was independently verified.",
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      },
+      {
+        "key": "model",
+        "label": "Computation model"
+      }
+    ],
+    "tags": [
+      "arbitrary lattices",
+      "exact SVP",
+      "Every fixed ℓp norm, 1 ≤ p ≤ ∞"
+    ],
+    "featured": false
+  },
+  {
+    "computation": "Classical",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "id": "svp-provable",
+    "problemId": "svp",
+    "name": "Classical · worst case",
+    "regime": "Exact Euclidean SVP on arbitrary full-rank lattices",
+    "description": "The history of proven asymptotic bounds for exact SVP. Recent preprints remain explicitly marked.",
+    "rules": "Return a shortest nonzero vector in an arbitrary n-dimensional Euclidean lattice. Compare the coefficient c in 2^{c n+o(n)} time; polynomial input-size factors are suppressed. Record space separately.",
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      },
+      {
+        "key": "model",
+        "label": "Computation model"
+      }
+    ],
+    "featured": true,
+    "tags": [
+      "arbitrary lattices",
+      "Euclidean"
+    ]
+  },
+  {
+    "computation": "Quantum",
+    "rigor": "Heuristic",
+    "instance": "Heuristic random lists",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "id": "svp-quantum-heuristic",
+    "problemId": "svp",
+    "name": "Quantum · heuristic",
+    "regime": "Quantum lattice sieving with random access",
+    "description": "Quantum SVP sieve exponents, with quantum memory and access assumptions attached to each result.",
+    "rules": "Keep the random-list heuristic explicit. State QRAM access, quantum memory, and the operation-count model. Results in different access models need separate categories.",
+    "fields": [
+      {
+        "key": "qram",
+        "label": "QRAM / random access"
+      },
+      {
+        "key": "qubits",
+        "label": "Quantum memory"
+      },
+      {
+        "key": "model",
+        "label": "Operation model"
+      }
+    ],
+    "featured": true,
+    "tags": []
+  },
+  {
+    "id": "svp-quantum-low-memory",
+    "problemId": "svp",
+    "name": "Heuristic · quantum · memory ≤ 0.1887n",
+    "computation": "Quantum",
+    "rigor": "Heuristic",
+    "instance": "Heuristic spherical lists",
+    "regime": "Quantum SVP; classical and quantum-addressable memory at most 2^{0.1887n+o(n)}",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "model",
+        "label": "Computation model"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing cost"
+      },
+      {
+        "key": "reference",
+        "label": "Source locator"
+      }
+    ],
+    "description": "Quantum SVP; classical and quantum-addressable memory at most 2^{0.1887n+o(n)}",
+    "rules": "Compare sequential quantum time, not parallel circuit depth. Record classical, QCRAM and qubit costs separately. Total memory exponent must not exceed 0.1887.",
+    "tags": [
+      "quantum",
+      "heuristic",
+      "bounded memory"
+    ]
+  },
+  {
+    "id": "svp-quantum-minimal-list-space",
+    "problemId": "svp",
+    "name": "Heuristic · quantum · minimal sieve-list space",
+    "computation": "Quantum",
+    "rigor": "Heuristic",
+    "instance": "Arbitrary input; spherical-list heuristic",
+    "regime": "Sequential quantum sieving; space ≤ 2^{(½log₂(4/3)+o(1))n}",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "model",
+        "label": "Computation model"
+      },
+      {
+        "key": "qram",
+        "label": "Coherent classical access"
+      },
+      {
+        "key": "qubits",
+        "label": "Quantum workspace"
+      }
+    ],
+    "description": "Quantum analogues retaining the baseline pair-sieve list-space exponent.",
+    "rules": "Compare sequential time with total classical-list storage at most the baseline exponent, allowing displayed rounding 0.2075/0.208. Batch Nguyen–Vidick variants and GaussSieve variants must be identified: sequential hash-table processing is not automatically valid for GaussSieve. Require coherent access where used and record ordinary-qubit requirements separately.",
+    "tags": [
+      "SVP",
+      "quantum",
+      "heuristic",
+      "bounded memory",
+      "Nguyen–Vidick",
+      "GaussSieve"
+    ]
+  },
+  {
+    "id": "svp-quantum-no-qram",
+    "problemId": "svp",
+    "name": "Quantum · no QRAM",
+    "computation": "Quantum without QRAM",
+    "rigor": "Model dependent",
+    "instance": "Arbitrary lattices",
+    "regime": "Exact Euclidean SVP without coherent random access to an exponential classical database",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "description": "Worst-case quantum SVP with no quantum random access to an exponential classical database.",
+    "rules": "Record the exact parameter regime, cost unit, distribution and access assumptions. A source and BibTeX are required for new submissions. This template makes no claim to a universal exponent.",
+    "fields": [],
+    "tags": [
+      "quantum",
+      "no QRAM",
+      "arbitrary lattices",
+      "access model"
+    ],
+    "featured": false
+  },
+  {
+    "id": "svp-quantum-parallel-depth",
+    "problemId": "svp",
+    "name": "Heuristic · parallel quantum depth",
+    "computation": "Quantum parallel",
+    "rigor": "Heuristic",
+    "instance": "Heuristic spherical lists",
+    "regime": "Parallel quantum circuit depth with 2^{0.2075n+o(n)} quantum memory",
+    "metric": "2^{c n + o(n)} depth",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "model",
+        "label": "Computation model"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing cost"
+      },
+      {
+        "key": "reference",
+        "label": "Source locator"
+      }
+    ],
+    "description": "Parallel quantum circuit depth with 2^{0.2075n+o(n)} quantum memory",
+    "rules": "This measures parallel depth using exponentially many quantum memory cells, not sequential operations or total work. Never compare its coefficient with a sequential-time leaderboard.",
+    "tags": [
+      "quantum",
+      "parallel depth",
+      "heuristic"
+    ]
+  },
+  {
+    "computation": "Quantum",
+    "rigor": "Provable",
+    "instance": "Worst case",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "id": "svp-quantum-provable",
+    "problemId": "svp",
+    "name": "Quantum · worst case",
+    "regime": "Exact Euclidean SVP; model must be specified per entry",
+    "description": "Quantum upper bounds for exact Euclidean SVP on arbitrary lattices. Each result retains its memory and access model.",
+    "rules": "Return an exact shortest vector on arbitrary full-rank lattices. The general list allows quantum random access where stated; it is not a no-QRAM ranking. Record classical memory, coherent access and quantum memory assumptions per result. The separate no-QRAM category excludes algorithms requiring quantum access to an exponential database. Publication, source checking and independent proof review are separate metadata.",
+    "fields": [
+      {
+        "key": "norm",
+        "label": "Norm"
+      },
+      {
+        "key": "success",
+        "label": "Success guarantee"
+      },
+      {
+        "key": "model",
+        "label": "Computation model"
+      },
+      {
+        "key": "qram",
+        "label": "QRAM / coherent access"
+      }
+    ],
+    "featured": true,
+    "tags": [
+      "arbitrary lattices",
+      "Euclidean"
+    ]
+  },
+  {
+    "id": "svp-triple-heuristic",
+    "problemId": "svp",
+    "name": "Heuristic · triple sieving",
+    "computation": "Classical",
+    "rigor": "Heuristic",
+    "instance": "Heuristic spherical lists",
+    "regime": "Triple lattice sieving; compare time and memory jointly",
+    "metric": "2^{c n + o(n)}",
+    "parameter": "n",
+    "direction": "min",
+    "featured": false,
+    "fields": [
+      {
+        "key": "model",
+        "label": "Computation model"
+      },
+      {
+        "key": "preprocessing",
+        "label": "Preprocessing cost"
+      },
+      {
+        "key": "reference",
+        "label": "Source locator"
+      }
+    ],
+    "description": "Triple lattice sieving; compare time and memory jointly",
+    "rules": "Include triple sieving under the source’s spherical-list heuristics. Different time–memory tradeoff points are listed with both costs; a smaller time is not an unconditional improvement at the same memory.",
+    "tags": [
+      "SVP",
+      "triple sieving",
+      "heuristic"
+    ]
+  },
+  {
+    "id": "uov-forgery",
+    "problemId": "uov",
+    "name": "UOV · signature forgery",
+    "computation": "Classical",
+    "rigor": "Regime dependent",
+    "instance": "Random UOV systems",
+    "regime": "Fix q, oil/vinegar dimensions, target signature model and cost unit",
+    "metric": "q^{c v + o(v)}",
+    "parameter": "v",
+    "direction": "min",
+    "description": "An open comparison category. Its rules must be fixed before adding comparable results.",
+    "rules": "Record the exact parameter regime, cost unit, distribution and access assumptions. A source and BibTeX are required for new submissions. This template makes no claim to a universal exponent.",
+    "fields": [],
+    "tags": [
+      "forgery",
+      "multivariate",
+      "finite fields",
+      "parameterized regime"
+    ],
+    "featured": false
+  },
+  {
+    "computation": "Classical",
+    "rigor": "Regime dependent",
+    "instance": "Random UOV keys",
+    "metric": "q^{c v + o(v)}",
+    "parameter": "v",
+    "direction": "min",
+    "id": "uov-key-recovery",
+    "problemId": "uov",
+    "name": "UOV · key recovery",
+    "regime": "Fix field q and oil-to-vinegar ratio o/v",
+    "description": "A configurable starting point for UOV key-recovery algorithms.",
+    "rules": "Use separate categories for key recovery and signature forgery. Fix q, o, v, the ratio o/v, and the cost unit; do not place field-operation counts and bit-operation counts on one leaderboard. No universal UOV exponent is seeded.",
+    "fields": [
+      {
+        "key": "q",
+        "label": "Field size q"
+      },
+      {
+        "key": "ratio",
+        "label": "Oil-to-vinegar ratio o/v"
+      },
+      {
+        "key": "objective",
+        "label": "Attack objective"
+      },
+      {
+        "key": "operations",
+        "label": "Field or bit operations"
+      }
+    ],
+    "featured": false,
+    "tags": []
+  }
+]

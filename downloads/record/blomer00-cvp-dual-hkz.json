@@ -1,0 +1,42 @@
+{
+  "id": "blomer00-cvp-dual-hkz",
+  "categoryId": "cvp-polynomial-space",
+  "paperId": "blomer-2000",
+  "year": 2000,
+  "date": "2000-12-31",
+  "time": {
+    "coefficient": 1,
+    "expression": "n! · s^{O(1)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "poly(s)"
+  },
+  "tags": [
+    "polynomial space",
+    "exact",
+    "enumeration"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The publisher abstract states n! times a polynomial in input size for exact rank-n CVP. This improves the lower-order exponential factor while retaining leading coefficient 1 on the n log n scale; it is not a new smaller leading exponent.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "preprocessing": "Dual-HKZ computation included",
+    "target": "Arbitrary target",
+    "model": "Deterministic enumeration",
+    "success": "Exact output",
+    "costScale": "n log₂ n"
+  },
+  "evidence": {
+    "url": "https://link.springer.com/chapter/10.1007/3-540-45022-X_22",
+    "locator": "Abstract; Kannan and Helfrich comparison; see Hanrot–Stehlé extended analysis §1 for the polynomial-space enumeration context",
+    "sourceVersion": "ICALP 2000 proceedings, LNCS 1853"
+  },
+  "datePrecision": "year"
+}

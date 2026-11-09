@@ -1,0 +1,31 @@
+{
+  "id": "zph13",
+  "categoryId": "svp-heuristic",
+  "paperId": "paper-57677bda59d7",
+  "year": 2013,
+  "date": "2014-10-22",
+  "time": {
+    "coefficient": 0.3778,
+    "expression": "2^{0.3778 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.2833,
+    "expression": "2^{0.2833 n + o(n)}"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "SAC 2013. The current source gives 0.3778 time and 0.2833 space. The ePrint explicitly reports a mistake in the previous version, corrected on 22 October 2014; this conservative chronology dates this coefficient to that corrected version, rather than backdating it to the first 30 August 2013 submission.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Under the stated sieve heuristic",
+    "model": "Classical randomized; polynomial factors suppressed",
+    "heuristic": "Uniform sieve lists; three-level covering",
+    "reference": "ZPH13"
+  }
+}

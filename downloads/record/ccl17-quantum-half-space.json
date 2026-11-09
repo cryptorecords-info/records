@@ -1,0 +1,39 @@
+{
+  "id": "ccl17-quantum-half-space",
+  "categoryId": "svp-quantum-provable",
+  "paperId": "chen-chung-lai-2017",
+  "date": "2017-08-31",
+  "year": 2017,
+  "time": {
+    "coefficient": 1.2553,
+    "expression": "2^{1.2553 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.5,
+    "expression": "2^{0.5 n + o(n)}"
+  },
+  "tags": [
+    "quantum",
+    "provable",
+    "bounded memory"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Classical discrete-Gaussian advice; polynomial quantum workspace.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Randomized; high success probability",
+    "model": "Elementary quantum-gate complexity; sequential",
+    "qram": "Classical advice and poly(n) qubits; see circuit construction"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/1709.00378v1",
+    "locator": "arXiv v1 abstract; final Theorem 12, pp. 18–19",
+    "sourceVersion": "arXiv:1709.00378v1, 31 August 2017; final theorem checked in v2"
+  }
+}

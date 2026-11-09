@@ -1,0 +1,44 @@
+{
+  "id": "naszodi-venzin19-cvp-euclidean-near-exact",
+  "categoryId": "cvp-approximate-euclidean-parameterized",
+  "paperId": "naszodi-venzin-2019",
+  "year": 2022,
+  "date": "2019-08-22",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "2^{O(n)} (1/δ)^{n/2} poly(input size, log(1/δ)), 0<δ<1"
+  },
+  "space": {
+    "coefficient": 1,
+    "expression": "2^n poly(input size), using the general-norm constant-approximation solver"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "worst case",
+    "Euclidean",
+    "approximate search",
+    "covering",
+    "parameterized approximation"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The Euclidean specialization p=2 of the smoothness-based covering algorithm improves the dependence on approximation accuracy. This is an alternative algorithmic bound rather than a claim to beat the already known 2^{n+o(n)} exact Euclidean CVP bound. No numerical leading coefficient is inferred from the hidden 2^{O(n)} factor.",
+  "extra": {
+    "norm": "Euclidean ℓ₂ (p=2 specialization)",
+    "approximation": "Distance at most (1+δ) dist(t,L), for 0<δ<1",
+    "preprocessing": "Included, using a general-norm 2-CVP subroutine; covering generated locally",
+    "success": "Randomized success at least 1-2^{-n}; deterministic net enumeration is also discussed"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1908.08384v1",
+    "locator": "Abstract; §1, item (5); Theorem 4.6, using the ℓ₂ modulus of smoothness with power q=2",
+    "sourceVersion": "arXiv:1908.08384v1, 22 August 2019"
+  }
+}

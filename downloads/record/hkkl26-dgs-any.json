@@ -1,0 +1,38 @@
+{
+  "id": "hkkl26-dgs-any",
+  "categoryId": "dgs-arbitrary-width",
+  "paperId": "paper-c70730f20075",
+  "year": 2026,
+  "date": "2026-11-04",
+  "time": {
+    "coefficient": 0.292,
+    "expression": "2^{0.292 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.208,
+    "expression": "2^{0.208 n + o(n)}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "worst case",
+    "DGS",
+    "arbitrary width",
+    "unstructured"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Public preprint abstract claims arbitrary-width DGS with polynomial dependence on κ for error 2^{-κ}. Source-attributed bound; proof not independently audited.",
+  "extra": {
+    "width": "Any positive Gaussian parameter",
+    "output": "One fresh sample; output batch not normalized",
+    "error": "2^{-κ}; poly(κ) factors suppressed",
+    "model": "Randomized classical worst-case analysis",
+    "reference": "HKKL26"
+  }
+}

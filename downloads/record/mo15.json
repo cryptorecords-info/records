@@ -1,0 +1,31 @@
+{
+  "id": "mo15",
+  "categoryId": "isd-half-distance",
+  "paperId": "paper-bb2a5c84c79d",
+  "year": 2015,
+  "date": "2015-04-26",
+  "time": {
+    "coefficient": 0.0473,
+    "expression": "2^{0.0473 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "EUROCRYPT 2015. Source gives 0.0473 in the half (bounded) distance setting. Historical reference, not a claim that all later ISD improvements have been included. Date denotes EUROCRYPT 2015 opening day, not a verified first preprint date.",
+  "extra": {
+    "field": "𝔽₂",
+    "rate": "Worst rate in the half-distance convention",
+    "weight": "Half the GV distance",
+    "model": "Asymptotic nearest-neighbor ISD",
+    "reference": "MO15"
+  }
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "saarinen2026-conditional-vector",
+    "categoryId": "goppa-conditional-key-recovery",
+    "paperId": "saarinen2026-holdout",
+    "date": "2026-09-15",
+    "time": {
+      "coefficient": null,
+      "expression": "2^{126.77}–2^{145.22} conditional bit operations across parameter sets"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "2^{51.33}–2^{59.10} bits"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Conditional arithmetic estimates excluding address generation and memory traffic; not unconditional work factors.",
+    "extra": {
+      "mceliece348864": "time 2^126.77; memory 2^51.33 bits",
+      "mceliece460896": "time 2^145.22; memory 2^59.10 bits",
+      "mceliece6688128": "time 2^137.48; memory 2^55.18 bits",
+      "mceliece6960119": "time 2^136.65; memory 2^54.86 bits",
+      "mceliece8192128": "time 2^137.48; memory 2^55.18 bits",
+      "assumption": "Compatible locator values are uniquely recovered by public tests"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2026/1786",
+      "locator": "Abstract",
+      "sourceVersion": "2026-09-15"
+    }
+  },
+  {
+    "id": "vedenev2026-conditional-vector",
+    "categoryId": "goppa-conditional-key-recovery",
+    "paperId": "vedenev2026",
+    "date": "2026-10-07",
+    "time": {
+      "coefficient": null,
+      "expression": "2^{89.9}–2^{98.6} conditional bit operations across Classic McEliece sets"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Conditional rank/solver estimate; latest revision disputes applicability of the earlier Apon critique.",
+    "extra": {
+      "assumptions": "Source rank and solver assumptions",
+      "version_context": "Apon2026/1810 addresses an earlier revision; Wang2026/2769 gives further rank-geometry analysis"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2026/1747",
+      "locator": "Abstract; revision note",
+      "sourceVersion": "2026-10-07"
+    }
+  }
+]

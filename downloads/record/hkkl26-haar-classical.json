@@ -1,0 +1,36 @@
+{
+  "id": "hkkl26-haar-classical",
+  "categoryId": "svp-haar",
+  "paperId": "paper-c70730f20075",
+  "date": "2026-11-04",
+  "year": 2026,
+  "time": {
+    "coefficient": 0.2924812503605781,
+    "expression": "(3/2)^{n/2 + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.20751874963942188,
+    "expression": "(4/3)^{n/2 + o(n)}"
+  },
+  "tags": [
+    "Haar-random",
+    "classical",
+    "provable"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Abstract states this bound for Haar-random lattices; no worst-case Haar identification is implied. The abstract says these bounds match Becker–Ducas–Gama–Laarhoven; exact normalization avoids treating rounded 0.292 as a new improvement over the same constant.",
+  "extra": {
+    "model": "Classical; Haar-random lattices"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2026/2761",
+    "locator": "Abstract, Haar-random clause",
+    "sourceVersion": "2026-11-04"
+  }
+}

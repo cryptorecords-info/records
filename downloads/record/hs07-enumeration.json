@@ -1,0 +1,36 @@
+{
+  "id": "hs07-enumeration",
+  "categoryId": "svp-enumeration",
+  "paperId": "hanrot-stehle-2007",
+  "date": "2007-05-07",
+  "year": 2007,
+  "time": {
+    "coefficient": 0.18393972058572117,
+    "expression": "n^{n/(2e) + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "poly(n)"
+  },
+  "tags": [
+    "provable",
+    "polynomial space",
+    "n log n scale"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Polynomial-space worst-case bound including the recursive basis preprocessing.",
+  "extra": {
+    "model": "Classical deterministic; polynomial space"
+  },
+  "evidence": {
+    "url": "https://perso.ens-lyon.fr/damien.stehle/downloads/crypto2007.pdf",
+    "locator": "Introduction, main complexity bound",
+    "sourceVersion": "2007-05-07"
+  }
+}

@@ -1,0 +1,334 @@
+[
+  {
+    "id": "bjmm12-full-distance",
+    "categoryId": "isd-full-distance",
+    "paperId": "paper-f1a990a4cd6f",
+    "year": 2012,
+    "date": "2012-01-20",
+    "time": {
+      "coefficient": 0.102,
+      "expression": "2^{0.102 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "classical",
+      "ISD",
+      "binary",
+      "random codes",
+      "full GV distance",
+      "maximum over rates"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Rounded full-distance coefficient stated in May–Ozerov 2015 abstract; 0.0494 is the different half-distance bound.",
+    "extra": {
+      "field": "𝔽₂",
+      "rate": "Maximize over 0≤R≤1",
+      "weight": "Full GV distance: n H₂⁻¹(1−R)",
+      "model": "Classical random-code ISD analysis",
+      "reference": "BJMM12",
+      "coefficient_source": "https://link.springer.com/chapter/10.1007/978-3-662-46800-5_9"
+    }
+  },
+  {
+    "id": "mo15-stern-full-distance",
+    "categoryId": "isd-full-distance",
+    "paperId": "paper-bb2a5c84c79d",
+    "year": 2015,
+    "date": "2015-04-26",
+    "time": {
+      "coefficient": 0.114,
+      "expression": "2^{0.114 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "classical",
+      "ISD",
+      "binary",
+      "random codes",
+      "full GV distance",
+      "maximum over rates"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Rounded full-distance bound from the paper abstract. Date is the EUROCRYPT opening day; earlier disclosure is not established here.",
+    "extra": {
+      "field": "𝔽₂",
+      "rate": "Maximize over 0≤R≤1",
+      "weight": "Full GV distance: n H₂⁻¹(1−R)",
+      "model": "Classical random-code ISD analysis",
+      "reference": "MO15",
+      "coefficient_source": "https://link.springer.com/chapter/10.1007/978-3-662-46800-5_9"
+    }
+  },
+  {
+    "id": "mo15-bjmm-full-distance",
+    "categoryId": "isd-full-distance",
+    "paperId": "paper-bb2a5c84c79d",
+    "year": 2015,
+    "date": "2015-04-26",
+    "time": {
+      "coefficient": 0.097,
+      "expression": "2^{0.097 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "classical",
+      "ISD",
+      "binary",
+      "random codes",
+      "full GV distance",
+      "maximum over rates"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Rounded full-distance bound from the paper abstract. Date is the EUROCRYPT opening day; earlier disclosure is not established here.",
+    "extra": {
+      "field": "𝔽₂",
+      "rate": "Maximize over 0≤R≤1",
+      "weight": "Full GV distance: n H₂⁻¹(1−R)",
+      "model": "Classical random-code ISD analysis",
+      "reference": "MO15",
+      "coefficient_source": "https://link.springer.com/chapter/10.1007/978-3-662-46800-5_9"
+    }
+  },
+  {
+    "id": "prange1962-full-gv",
+    "categoryId": "isd-full-distance",
+    "paperId": "prange1962",
+    "date": "1962-12-31",
+    "time": {
+      "coefficient": 0.1207,
+      "expression": "2^{0.1207 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0,
+      "expression": "poly(n)"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Historical full-GV specialization.",
+    "extra": {},
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1703.00263",
+      "locator": "Introduction, classical comparison table",
+      "sourceVersion": "2017-04-22"
+    },
+    "datePrecision": "year"
+  },
+  {
+    "id": "mmt2011-full-gv",
+    "categoryId": "isd-full-distance",
+    "paperId": "mmt2011",
+    "date": "2011-12-31",
+    "time": {
+      "coefficient": 0.1114,
+      "expression": "2^{0.1114 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Rounded full-GV specialization.",
+    "extra": {},
+    "evidence": {
+      "url": "https://arxiv.org/pdf/1703.00263",
+      "locator": "Introduction, classical comparison table",
+      "sourceVersion": "2017-04-22"
+    },
+    "datePrecision": "year"
+  },
+  {
+    "id": "both-may2017-full-depth2",
+    "categoryId": "isd-full-distance",
+    "paperId": "both-may2017-high-error",
+    "date": "2017-11-27",
+    "time": {
+      "coefficient": 0.0982,
+      "expression": "2^{0.0982 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.0717,
+      "expression": "2^{0.0717 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Depth 2; Figure 6.",
+    "extra": {
+      "depth": "2"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2017/1139.pdf",
+      "locator": "Theorem 3; Figure 6",
+      "sourceVersion": "2018-01-31"
+    }
+  },
+  {
+    "id": "both-may2017-full-depth3",
+    "categoryId": "isd-full-distance",
+    "paperId": "both-may2017-high-error",
+    "date": "2017-11-27",
+    "time": {
+      "coefficient": 0.0926,
+      "expression": "2^{0.0926 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.0647,
+      "expression": "2^{0.0647 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Depth 3; Figure 6.",
+    "extra": {
+      "depth": "3"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2017/1139.pdf",
+      "locator": "Theorem 3; Figure 6",
+      "sourceVersion": "2018-01-31"
+    }
+  },
+  {
+    "id": "both-may2017-full-depth4",
+    "categoryId": "isd-full-distance",
+    "paperId": "both-may2017-high-error",
+    "date": "2017-11-27",
+    "time": {
+      "coefficient": 0.0885,
+      "expression": "2^{0.0885 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.0736,
+      "expression": "2^{0.0736 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Depth 4; Figure 6.",
+    "extra": {
+      "depth": "4"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2017/1139.pdf",
+      "locator": "Theorem 3; Figure 6",
+      "sourceVersion": "2018-01-31"
+    }
+  },
+  {
+    "id": "deek2024-full-baseline",
+    "categoryId": "isd-full-distance",
+    "paperId": "deek2023",
+    "date": "2024-03-18",
+    "time": {
+      "coefficient": 0.117,
+      "expression": "2^{0.117 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Initial sieving baseline analyzed in this source.",
+    "extra": {
+      "variant": "Baseline sieving analysis"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2023/1577",
+      "locator": "Abstract",
+      "sourceVersion": "2024-03-18"
+    }
+  },
+  {
+    "id": "deek2024-full-improved",
+    "categoryId": "isd-full-distance",
+    "paperId": "deek2023",
+    "date": "2024-03-18",
+    "time": {
+      "coefficient": 0.101,
+      "expression": "2^{0.101 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Improved sieving bound; not an improvement over Both–May.",
+    "extra": {
+      "variant": "Improved sieving analysis"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2023/1577",
+      "locator": "Abstract",
+      "sourceVersion": "2024-03-18"
+    }
+  }
+]

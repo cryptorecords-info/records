@@ -1,0 +1,38 @@
+{
+  "id": "lmvp14-quantum-angular-preprint",
+  "categoryId": "svp-quantum-heuristic",
+  "paperId": "paper-caa5f6c38871",
+  "date": "2014-11-04",
+  "year": 2014,
+  "time": {
+    "coefficient": 0.286,
+    "expression": "2^{0.286 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "quantum",
+    "heuristic",
+    "angular LSH"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Earlier preprint abstract states .286. Space for that original version was not independently recovered.",
+  "extra": {
+    "qram": "Quantum-addressable classical lists",
+    "qubits": "Consult source version",
+    "model": "Sequential quantum search with angular LSH"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2014/907",
+    "locator": "Abstract and archive history (2014-11-04 received); later journal Theorem 3",
+    "sourceVersion": "ePrint 2014/907 abstract; received 4 November 2014"
+  }
+}

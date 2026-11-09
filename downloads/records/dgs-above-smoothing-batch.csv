@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"adrs15-dgs-smoothing","paper-86925aff6e6c","Solving the Shortest Vector Problem in 2^n Time via Discrete Gaussian Sampling","Divesh Aggarwal · Daniel Dadush · Oded Regev · Noah Stephens-Davidowitz","STOC 2015","2015","published","2014-12-26","day","0.5","2^{0.5 n + o(n)}","0.5","2^{0.5 n + o(n)}","https://arxiv.org/abs/1412.7994","source-checked"

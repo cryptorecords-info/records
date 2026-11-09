@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"lp92-unconditional","lp92","A rigorous time bound for factoring integers","Hendrik W. Lenstra Jr. · Carl Pomerance","Journal of the American Mathematical Society 1992","1992","published","1992-07-31","month","1","L_N[1/2, 1]","","Not extracted from the source","https://doi.org/10.1090/S0894-0347-1992-1137100-0","source-checked"

@@ -1,0 +1,33 @@
+{
+  "id": "bgjt13-smallchar",
+  "categoryId": "dlog-small-heuristic-expression",
+  "paperId": "bgjt13",
+  "date": "2013-06-18",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "n^{O(log n)}, n = log₂ Q"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not extracted from the source"
+  },
+  "tags": [
+    "heuristic descent",
+    "quasi-polynomial"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Heuristic quasi-polynomial DLP in finite fields of small characteristic; the abstract explicitly defines n as the bit-size of the field cardinality. This is a different scale from L_Q[1/4,c].",
+  "extra": {},
+  "evidence": {
+    "url": "https://arxiv.org/abs/1306.4244",
+    "locator": "Abstract",
+    "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+  }
+}

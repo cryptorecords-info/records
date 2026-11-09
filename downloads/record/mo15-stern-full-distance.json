@@ -1,0 +1,39 @@
+{
+  "id": "mo15-stern-full-distance",
+  "categoryId": "isd-full-distance",
+  "paperId": "paper-bb2a5c84c79d",
+  "year": 2015,
+  "date": "2015-04-26",
+  "time": {
+    "coefficient": 0.114,
+    "expression": "2^{0.114 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "classical",
+    "ISD",
+    "binary",
+    "random codes",
+    "full GV distance",
+    "maximum over rates"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Rounded full-distance bound from the paper abstract. Date is the EUROCRYPT opening day; earlier disclosure is not established here.",
+  "extra": {
+    "field": "𝔽₂",
+    "rate": "Maximize over 0≤R≤1",
+    "weight": "Full GV distance: n H₂⁻¹(1−R)",
+    "model": "Classical random-code ISD analysis",
+    "reference": "MO15",
+    "coefficient_source": "https://link.springer.com/chapter/10.1007/978-3-662-46800-5_9"
+  }
+}

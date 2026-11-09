@@ -1,0 +1,39 @@
+{
+  "id": "hps13-corrected-aks",
+  "categoryId": "svp-provable",
+  "paperId": "hanrot-pujol-stehle-2011",
+  "date": "2013-12-31",
+  "datePrecision": "year",
+  "year": 2013,
+  "time": {
+    "coefficient": 3.397,
+    "expression": "2^{3.397 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 1.984,
+    "expression": "2^{1.984 n + o(n)}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "arbitrary lattices"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Corrected AKS analysis from the author PDF headed “Corrected version – 02/01/2013”. The exact day/month convention is not assumed; 31 December 2013 is the conservative year-only date. This is a later corrected analysis, not a new overall time record after PS09. The obsolete author PDF’s 3.346/2.173 pair is not imported.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Exponentially close to 1 after polynomial repetition",
+    "model": "Classical; polynomial input-size factors suppressed"
+  },
+  "evidence": {
+    "url": "https://perso.ens-lyon.fr/damien.stehle/downloads/SVPCVP.pdf",
+    "locator": "Theorem 4.2, PDF p. 16; Appendix A, PDF p. 32",
+    "sourceVersion": "Corrected version – 02/01/2013"
+  }
+}

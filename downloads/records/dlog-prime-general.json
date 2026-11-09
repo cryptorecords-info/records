@@ -1,0 +1,101 @@
+[
+  {
+    "id": "gordon93-prime-dlog",
+    "categoryId": "dlog-prime-general",
+    "paperId": "gordon93",
+    "date": "1993-02-28",
+    "datePrecision": "month",
+    "time": {
+      "coefficient": 2.080083823051904,
+      "expression": "L_p[1/3, 3^{2/3}]"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not extracted from the source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Heuristic expected full discrete-logarithm computation in a general prime field, as stated in the paper abstract.",
+    "extra": {
+      "coefficientExact": "3^{2/3}"
+    },
+    "evidence": {
+      "url": "https://epubs.siam.org/doi/10.1137/0406010",
+      "locator": "Abstract",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  },
+  {
+    "id": "schirokauer93-prime",
+    "categoryId": "dlog-prime-general",
+    "paperId": "schirokauer93",
+    "date": "1993-11-15",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 1.9229994270765445,
+      "expression": "L_p[1/3, (64/9)^{1/3}]"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not extracted from the source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Heuristic NFS discrete logarithms in a prime field, using local-unit information. Running time conjecture and algebraic hypotheses are explicit in the source; this precedes the fixed-degree extension construction published in 2000.",
+    "extra": {
+      "coefficientExact": "(64/9)^{1/3}"
+    },
+    "evidence": {
+      "url": "https://cr.yp.to/bib/1993/schirokauer.pdf",
+      "locator": "Abstract; NFS running-time conjecture",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  },
+  {
+    "id": "matyukhin03-prime",
+    "categoryId": "dlog-prime-general",
+    "paperId": "matyukhin03",
+    "date": "2003-12-31",
+    "datePrecision": "year",
+    "time": {
+      "coefficient": 1.9018836118648392,
+      "expression": "L_p[1/3, (92+26 sqrt(13))^{1/3}/3]"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not extracted from the source"
+    },
+    "tags": [
+      "multiple number fields",
+      "theoretical asymptotics"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Modification of NFS DLP for prime fields with the same asymptotic heuristic constant as Coppersmith’s integer-factoring algorithm. Precomputation is included; no per-target/fixed-prime amortized cost is substituted.",
+    "extra": {
+      "coefficientExact": "(92+26 sqrt(13))^{1/3}/3"
+    },
+    "evidence": {
+      "url": "https://www.mathnet.ru/eng/dm184",
+      "locator": "Abstract; comparison with Coppersmith bound",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  }
+]

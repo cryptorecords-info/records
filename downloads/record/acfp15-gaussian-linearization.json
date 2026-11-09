@@ -1,0 +1,44 @@
+{
+  "id": "acfp15-gaussian-linearization",
+  "categoryId": "lwe-gaussian-algebraic-history",
+  "paperId": "albrecht-cid-faugere-perret2014-algebraic",
+  "year": 2014,
+  "date": "2015-02-26",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": null,
+    "expression": "O(2^{ω D log₂(n/D)} · σq log q) if D=o(n); O(2^{ω n log₂(D/n)} · σq log q) if n=o(σ² log n); D=8σ² log₂ n+1"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Replace ω by 2 in the two time exponents."
+  },
+  "tags": [
+    "algebraic",
+    "linearization",
+    "Gaussian error"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Refined historical analysis of linearization, distinct from the conditional Gröbner-basis improvement. Bounds are recorded as source asymptotic expressions.",
+  "extra": {
+    "parameters": "Prime q polynomial in n; σ=αq/√(2π); D=8σ²log₂n+1; 2≤ω<3.",
+    "noise": "Discrete Gaussian error with standard-deviation convention σ.",
+    "secret": "Arbitrary secret in Z_q^n.",
+    "samples": "As many samples as the linearization construction requires; exponential/subexponential sample counts are permitted.",
+    "objective": "Recover the secret.",
+    "model": "Classical dense linear algebra over Z_q; field-operation count.",
+    "assumptions": "Gaussian-tail truncation and algebraic linearization as analyzed in Theorem 4.",
+    "success": "As in the paper’s truncation/linearization construction; not a limited-sample guarantee."
+  },
+  "evidence": {
+    "url": "https://iacr.steepath.eu/2014/1018-AlgebraicAlgorithmsforLWE.pdf",
+    "locator": "§4, Theorem 4, pp. 8–9; D_AG definition; multiplicative σq log q factor",
+    "sourceVersion": "ePrint 2014/1018 revised 26 February 2015"
+  }
+}

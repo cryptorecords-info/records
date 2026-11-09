@@ -1,0 +1,43 @@
+{
+  "id": "bgj14-cvp-heuristic",
+  "categoryId": "cvp-heuristic-sieving",
+  "paperId": "paper-9617f5d3fa09",
+  "year": 2014,
+  "date": "2013-10-24",
+  "time": {
+    "coefficient": 0.3774,
+    "expression": "2^{0.3774 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.2925,
+    "expression": "2^{0.2925 n + o(n)}"
+  },
+  "tags": [
+    "CVP",
+    "classical",
+    "heuristic",
+    "arbitrary lattices",
+    "overlattices",
+    "Gaussian heuristic"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Heuristic exact CVP via overlattice towers and translated cosets, under Gaussian-heuristic assumptions for intermediate samples. The displayed total cost includes initialization and target handling as specified in the source. This is distinct from an unrestricted worst-case theorem and from a preprocessing-only online query cost.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "heuristic": "Gaussian heuristic in overlattice towers and translated cosets",
+    "reference": "Abstract and Table 1 of ePrint 2013/685",
+    "model": "Classical; Gaussian heuristic for the intermediate overlattice samples",
+    "preprocessing": "Initialization and target handling included in the displayed total cost"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2013/685.pdf",
+    "locator": "Abstract and Table 1; CVP adaptation in the algorithm analysis",
+    "sourceVersion": "ePrint 2013/685; first public preprint 24 October 2013"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "kannan87-cvp-enumeration",
+  "categoryId": "cvp-polynomial-space",
+  "paperId": "kannan-1987",
+  "year": 1987,
+  "date": "1987-12-31",
+  "time": {
+    "coefficient": 1,
+    "expression": "O(n^n s) arithmetic operations = n^{n+o(n)} poly(s)"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "poly(s)"
+  },
+  "tags": [
+    "polynomial space",
+    "exact",
+    "enumeration"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Theorem 4.5 gives exact CVP in O(n^n s) arithmetic operations, where s is the input bit length. This establishes leading coefficient 1 on the n log n scale. The later n^{n/2+o(n)} CVP analysis is not backdated to Kannan.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "preprocessing": "Included; arbitrary input basis",
+    "target": "Arbitrary target",
+    "model": "Deterministic enumeration; bounded-bit arithmetic",
+    "success": "Exact output",
+    "costScale": "n log₂ n"
+  },
+  "evidence": {
+    "url": "https://www.math.ucdavis.edu/~deloera/MISC/LA-BIBLIO/trunk/Kannan/Kannan1.pdf",
+    "locator": "§4, Theorem 4.5; polynomial bit-length bounds in the following paragraph",
+    "sourceVersion": "Mathematics of Operations Research 12(3), 1987"
+  },
+  "datePrecision": "year"
+}

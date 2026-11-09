@@ -1,0 +1,35 @@
+[
+  {
+    "id": "lido22-smallchar",
+    "categoryId": "dlog-small-proven",
+    "paperId": "lido22",
+    "date": "2025-02-22",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "(log Q)^{O(log log Q)} expected time"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not extracted from the source"
+    },
+    "tags": [
+      "unconditional",
+      "elliptic presentations"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Theorem 1.1 covers all small-characteristic fields F_{p^n} with n > p, using elliptic presentations. Inspected theorem is in the revised 2025 version; record date therefore uses that version, not the 2022 first submission date.",
+    "extra": {},
+    "evidence": {
+      "url": "https://arxiv.org/html/2206.10327v2",
+      "locator": "Theorem 1.1; introduction definition of small characteristic",
+      "sourceVersion": "arXiv:2206.10327v2, 2025-02-22"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "id": "lptwy17-mq2",
+  "categoryId": "mq-binary-classical-provable",
+  "paperId": "lptwy17",
+  "date": "2017-01-04",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 0.8765,
+    "expression": "O(2^{0.8765n})"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not stated in the checked source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Randomized worst-case bound for quadratic equations over F_2. Date is the publisher’s online publication date, not a claimed first-preprint date.",
+  "extra": {
+    "success": "Randomized",
+    "date-basis": "Published online 4 January 2017"
+  },
+  "evidence": {
+    "url": "https://epubs.siam.org/doi/abs/10.1137/1.9781611974782.143",
+    "locator": "Publisher abstract and publication history",
+    "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+  }
+}

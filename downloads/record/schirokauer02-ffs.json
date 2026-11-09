@@ -1,0 +1,32 @@
+{
+  "id": "schirokauer02-ffs",
+  "categoryId": "dlog-small-ffs",
+  "paperId": "schirokauer02",
+  "date": "2002-12-31",
+  "datePrecision": "year",
+  "time": {
+    "coefficient": 1.5262856567377758,
+    "expression": "L_Q[1/3, (32/9)^{1/3}], Q=p^n"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not extracted from the source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Function-field-sieve modification retaining the same constant while extending the characteristic range to p ≤ n^{o(sqrt(n))}. The analysis is conjectural.",
+  "extra": {
+    "coefficientExact": "(32/9)^{1/3}"
+  },
+  "evidence": {
+    "url": "https://epubs.siam.org/doi/10.1137/S0895480100372668",
+    "locator": "Abstract",
+    "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+  }
+}

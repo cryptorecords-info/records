@@ -1,0 +1,36 @@
+{
+  "id": "kmpm19-parallel-depth",
+  "categoryId": "svp-quantum-parallel-depth",
+  "paperId": "kirshanova-et-al-2019",
+  "date": "2019-09-10",
+  "year": 2019,
+  "time": {
+    "coefficient": 0.1037,
+    "expression": "2^{0.1037 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.2075,
+    "expression": "2^{0.2075 n + o(n)}"
+  },
+  "tags": [
+    "heuristic",
+    "parallel depth"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Parallel quantum circuit time; excluded from sequential-time rankings.",
+  "extra": {
+    "model": "Parallel quantum circuit model",
+    "quantum-memory": "2^{0.2075n+o(n)} qubits / memory cells"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2019/1016",
+    "locator": "Abstract, final result",
+    "sourceVersion": "2019-09-10"
+  }
+}

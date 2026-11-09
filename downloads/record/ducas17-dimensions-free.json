@@ -1,0 +1,40 @@
+{
+  "id": "ducas17-dimensions-free",
+  "categoryId": "svp-heuristic",
+  "paperId": "ducas-2017-dimensions-free",
+  "date": "2017-10-11",
+  "datePrecision": "day",
+  "year": 2017,
+  "time": {
+    "coefficient": 0.2924812503605781,
+    "expression": "(3/2)^{n/2 + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "heuristic",
+    "dimensions for free",
+    "subexponential improvement"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Reduces dimension n to a few sieve calls in dimensions below n − d, where d = Θ(n/log n). Applying this to the cited spherical-filter sieve preserves its leading coefficient ½log₂(3/2), while improving the subexponential factor. The row therefore ties the standing exponent; it is not a new exponent record. The paper also implements a simpler (4/3)^n sieve. No separate total-space coefficient is inferred from the checked abstract.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "Under the underlying sieve and reduction heuristics",
+    "model": "Classical; underlying sieve oracle with subexponential dimension saving",
+    "heuristic": "Underlying sieve-distribution heuristic and dimensions-for-free analysis"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2017/999",
+    "locator": "Abstract, paragraphs 1–3; ePrint history; institutional EUROCRYPT 2018 publication record",
+    "sourceVersion": "First ePrint received 11 October 2017; minor revision 26 October 2017"
+  }
+}

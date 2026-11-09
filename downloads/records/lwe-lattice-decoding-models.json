@@ -1,0 +1,90 @@
+[
+  {
+    "id": "lp10-lwe-nearest-planes",
+    "categoryId": "lwe-lattice-decoding-models",
+    "paperId": "lindner-peikert2010-lwe",
+    "year": 2011,
+    "date": "2010-11-30",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "T_reduce(B) + poly(m) ∏_{i=1}^m d_i"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Polynomial working space for depth-first search; the ∏d_i output set need not all be retained."
+    },
+    "tags": [
+      "decoding",
+      "nearest planes",
+      "sample-sensitive"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The post-reduction search cost is a tradeoff in the branching vector d. The Gaussian success formula is exact for continuous noise; transferring it to discrete LWE is an approximation. The original empirical BKZ seconds fit is not treated as an asymptotic bound.",
+    "extra": {
+      "parameters": "Fix n,q,m,s, reduced basis B and positive integer branching factors d_1,…,d_m.",
+      "noise": "Continuous Gaussian D_s with density proportional to exp(−π||e||²/s²); wide discrete Gaussian approximated by it.",
+      "secret": "General LWE secret; lattice target is As+e mod q.",
+      "samples": "m given LWE samples; no unlimited-sample substitution.",
+      "objective": "Recover the error and secret by lattice decoding.",
+      "model": "NearestPlanes visits ∏d_i leaves, each polynomial work; include basis reduction in total time.",
+      "assumptions": "Success probability formula uses independent Gaussian projections; basis-profile estimates can additionally use GSA.",
+      "success": "P = ∏_i erf(d_i ||b_i*||√π/(2s)); choose d to meet an explicit target P."
+    },
+    "evidence": {
+      "url": "https://web.eecs.umich.edu/~cpeikert/pubs/lwe-analysis.pdf",
+      "locator": "§4, Lemma 4.1, p. 11, and Eq. (4.1), p. 12",
+      "sourceVersion": "Author manuscript dated 30 November 2010"
+    }
+  },
+  {
+    "id": "aps15-lwe-decoding-optimization",
+    "categoryId": "lwe-lattice-decoding-models",
+    "paperId": "albrecht-player-scott2015-concrete",
+    "year": 2015,
+    "date": "2015-10-02",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "min_{δ₀,d: P(d,δ₀)≥ε} [T_BKZ(m,δ₀) + t_node ∏_i d_i]"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Depends on the selected lattice reduction and enumeration implementation."
+    },
+    "tags": [
+      "decoding",
+      "historical cost model",
+      "tradeoff"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Explicit optimization of the reduction/enumeration balance. The source observes that Lindner–Peikert’s example choices were not necessarily optimal. This records a cost model, not a new universal exponent.",
+    "extra": {
+      "parameters": "Fix n,q,m, Gaussian width αq, target success ε, per-node cost and reduced-basis profile.",
+      "noise": "Gaussian width αq; discrete/continuous approximation as in the decoding analysis.",
+      "secret": "General LWE secret.",
+      "samples": "Survey allows unlimited samples; a finite deployment must enforce its actual m cap.",
+      "objective": "Recover the secret by BDD decoding.",
+      "model": "Minimize total preprocessing plus enumeration over δ₀ and branch counts d.",
+      "assumptions": "Basis-profile model (typically GSA) and Gaussian-coordinate decoding probabilities.",
+      "success": "P(d,δ₀)=∏_i erf(d_i||b_i*||√π/(2αq))≥ε."
+    },
+    "evidence": {
+      "url": "https://www.degruyterbrill.com/document/doi/10.1515/jmc-2015-0016/pdf?licenseType=open-access",
+      "locator": "§5.4, pp. 187–189, equation defining t_dec(ε) and discussion of optimizing Lindner–Peikert",
+      "sourceVersion": "Journal of Mathematical Cryptology 9(3), published 2 October 2015"
+    }
+  }
+]

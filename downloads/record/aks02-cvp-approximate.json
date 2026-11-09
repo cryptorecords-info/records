@@ -1,0 +1,39 @@
+{
+  "id": "aks02-cvp-approximate",
+  "categoryId": "cvp-approximate-euclidean-parameterized",
+  "paperId": "ajtai-kumar-sivakumar-2002",
+  "year": 2002,
+  "date": "2002-05-21",
+  "time": {
+    "coefficient": null,
+    "expression": "2^{O((1 + 1/δ)n)} poly(input size)"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Exponential; no explicit leading constant recorded"
+  },
+  "tags": [
+    "approximate search",
+    "parameterized approximation"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The original abstract gives a randomized (1+δ)-approximation through exact SVP and short-vector sampling. The hidden constant is left unspecified. The dependence on δ prevents interpreting this as exact CVP.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "approximation": "1 + δ, for δ > 0",
+    "preprocessing": "Included",
+    "success": "Randomized approximation",
+    "model": "Classical randomized Turing reduction to exact SVP and short-vector sampling"
+  },
+  "evidence": {
+    "url": "https://research.ibm.com/publications/sampling-short-lattice-vectors-and-the-closest-lattice-vector-problem",
+    "locator": "Abstract, runtime and approximation statement",
+    "sourceVersion": "CCC 2002, author publication page dated 21 May 2002"
+  }
+}

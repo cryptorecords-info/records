@@ -1,0 +1,31 @@
+{
+  "id": "deek2024-full-improved",
+  "categoryId": "isd-full-distance",
+  "paperId": "deek2023",
+  "date": "2024-03-18",
+  "time": {
+    "coefficient": 0.101,
+    "expression": "2^{0.101 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Improved sieving bound; not an improvement over Both–May.",
+  "extra": {
+    "variant": "Improved sieving analysis"
+  },
+  "evidence": {
+    "url": "https://eprint.iacr.org/2023/1577",
+    "locator": "Abstract",
+    "sourceVersion": "2024-03-18"
+  }
+}

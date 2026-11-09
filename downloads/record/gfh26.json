@@ -1,0 +1,33 @@
+{
+  "id": "gfh26",
+  "categoryId": "svp-provable",
+  "paperId": "paper-0cb7a1aa50d2",
+  "year": 2026,
+  "date": "2026-08-03",
+  "time": {
+    "coefficient": 0.7314,
+    "expression": "2^{0.7314 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.5,
+    "expression": "2^{0.5 n + o(n)}"
+  },
+  "tags": [
+    "arbitrary lattices",
+    "Euclidean"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Preprint claim. The source gives E₀ = 0.73133754… and states the rounded bound 0.7314. This corrects the transposed 0.713 in the illustrative sequence. Source checked; proof not independently audited.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "High probability",
+    "model": "Classical randomized; polynomial factors suppressed",
+    "reference": "GFH26"
+  }
+}

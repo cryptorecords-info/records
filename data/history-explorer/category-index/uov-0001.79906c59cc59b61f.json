@@ -1,0 +1,1 @@
+[{"id":"uov-key-recovery","name":"UOV · key recovery","metric":"q^{c v + o(v)}","parameter":"v","direction":"min","historyCount":0,"featured":false},{"id":"uov-forgery","name":"UOV · signature forgery","metric":"q^{c v + o(v)}","parameter":"v","direction":"min","historyCount":0,"featured":false}]

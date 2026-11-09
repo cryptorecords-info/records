@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"evv2026-square","esser-verbel-villanueva2026","Rank Syndrome Decoding Estimator - An Asymptotic and Concrete Analysis","Andre Esser · Javier Verbel · Ricardo Villanueva-Polanco","ePrint 2026/082","2026","preprint","2026-01-19","day","0.1481","2^{0.1481 n² + o(n²)}","","","https://eprint.iacr.org/2026/082","source-checked"

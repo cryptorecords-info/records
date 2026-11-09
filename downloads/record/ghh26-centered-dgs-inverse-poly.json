@@ -1,0 +1,44 @@
+{
+  "id": "ghh26-centered-dgs-inverse-poly",
+  "categoryId": "dgs-arbitrary-width-inverse-poly-error",
+  "paperId": "paper-fd038bb9c63f",
+  "year": 2026,
+  "date": "2026-11-03",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 0.413,
+    "expression": "2^{0.4130n+o(n)} per sample"
+  },
+  "space": {
+    "coefficient": 0.3138,
+    "expression": "2^{0.3138n+o(n)}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "worst case",
+    "DGS",
+    "centered",
+    "arbitrary width",
+    "inverse-polynomial error"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Uses a corrected centered-DGS-to-SVP reduction; Appendix D identifies and repairs the radius-grid issue in the earlier reduction. Accuracy is weaker than negligible TV.",
+  "extra": {
+    "width": "Every positive rational width on any rational full-rank lattice",
+    "output": "One centered sample",
+    "error": "(1+1/f(n),2^{-f(n)}) accuracy for efficiently computable 1 <= f(n) <= poly(n); implies TV O(1/f(n))+2^{-f(n)}",
+    "model": "Randomized classical with polynomial reduction overhead"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/2611.04336v1",
+    "locator": "Corollary 1.4, printed p. 7; §12.4 and Appendix D",
+    "sourceVersion": "arXiv:2611.04336v1, 3 November 2026; first ePrint release 30 October not inspected separately"
+  }
+}

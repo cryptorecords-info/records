@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ghh26-dgs-smoothing-one",
+    "categoryId": "dgs-smoothing-single",
+    "paperId": "paper-fd038bb9c63f",
+    "year": 2026,
+    "date": "2026-11-03",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.2924812503605781,
+      "expression": "(3/2)^{n/2+o(n)}"
+    },
+    "space": {
+      "coefficient": 0.20751874963942188,
+      "expression": "(4/3)^{n/2+o(n)}"
+    },
+    "tags": [
+      "classical",
+      "provable",
+      "worst case",
+      "DGS",
+      "shifted",
+      "above smoothing",
+      "single sample"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Exact logarithmic coefficients are used rather than rounded 0.292/0.208. This theorem concerns widths above smoothing.",
+    "extra": {
+      "width": "s >= alpha eta_{1/2}(L), any fixed alpha > 1",
+      "output": "One sample on any rational shift L+a",
+      "error": "TV <= exp(-Omega(n/log^{2+xi}(n+2))), fixed xi > 0",
+      "model": "Randomized word RAM; time and bit space bounded on every execution"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/2611.04336v1",
+      "locator": "Theorem 1.1, printed p. 6",
+      "sourceVersion": "arXiv:2611.04336v1, 3 November 2026; first ePrint release 30 October not inspected separately"
+    }
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "id": "lls90-cvpp-poly-advice-search",
+    "categoryId": "cvpp-polynomial-advice-search",
+    "paperId": "lagarias-lenstra-schnorr-1990",
+    "year": 1990,
+    "date": "1990-12-31",
+    "time": {
+      "coefficient": null,
+      "expression": "poly(input size) query time"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Polynomial-size preprocessed bases"
+    },
+    "tags": [
+      "preprocessing",
+      "polynomial advice",
+      "approximate search"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Reciprocal Korkin–Zolotarev bases yield the classical O(n^{3/2}) search-CVPP approximation. The original transference and closest-point bounds are in Theorem 2.7 and §6; the preprocessing interpretation is explicitly described by Regev §I and DRS §1.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "approximation": "O(n^{3/2})",
+      "preprocessing": "Unbounded; lattice-only reciprocal KZ bases",
+      "advice": "Polynomial-size collection of bases",
+      "success": "Deterministic online search"
+    },
+    "evidence": {
+      "url": "https://citeseerx.ist.psu.edu/document?doi=5b2ea968d8ad845f0af8c6ed8f2c55f6f5b7973f&repid=rep1&type=pdf",
+      "locator": "Theorem 2.7 and §6; interpretation cross-checked in Regev 2004 §I and DRS 2014 §1",
+      "sourceVersion": "Combinatorica 10(4), 1990"
+    },
+    "datePrecision": "year"
+  },
+  {
+    "id": "drs14-cvpp-poly-advice-search",
+    "categoryId": "cvpp-polynomial-advice-search",
+    "paperId": "dadush-regev-stephens-davidowitz-2014",
+    "year": 2014,
+    "date": "2014-09-29",
+    "time": {
+      "coefficient": null,
+      "expression": "poly(input size) query time"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "poly(input size) advice"
+    },
+    "tags": [
+      "preprocessing",
+      "polynomial advice",
+      "approximate search"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Combining the close-target reduction with the LLM bounded-distance algorithm yields the stated improved approximation for search CVPP.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "approximation": "O(n/√(log n))",
+      "preprocessing": "Unbounded; lattice-only polynomial advice",
+      "advice": "Polynomially many dual-lattice vectors and projected instances",
+      "success": "Approximate lattice-vector search"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/1409.8063v1",
+      "locator": "Abstract; full paper Theorem 5.1 and §1.1 discussion",
+      "sourceVersion": "arXiv:1409.8063v1, 29 September 2014"
+    }
+  },
+  {
+    "id": "drs14-cvpp-linear-advice-search",
+    "categoryId": "cvpp-polynomial-advice-search",
+    "paperId": "dadush-regev-stephens-davidowitz-2014",
+    "year": 2014,
+    "date": "2014-09-29",
+    "time": {
+      "coefficient": null,
+      "expression": "poly(input size) query time"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "O(n) advice vectors"
+    },
+    "tags": [
+      "preprocessing",
+      "linear advice",
+      "approximate search"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "A second advice–approximation tradeoff uses only linearly many preprocessing vectors and obtains an O(n) search approximation.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "approximation": "O(n)",
+      "preprocessing": "Unbounded; lattice-only advice",
+      "advice": "O(n) vectors; bit precision follows the input-size convention",
+      "success": "Approximate lattice-vector search"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/1409.8063v1",
+      "locator": "Abstract; full paper Theorem 5.2 and §1.1 discussion",
+      "sourceVersion": "arXiv:1409.8063v1, 29 September 2014"
+    }
+  }
+]

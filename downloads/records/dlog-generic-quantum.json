@@ -1,0 +1,32 @@
+[
+  {
+    "id": "shor95-generic-dlog",
+    "categoryId": "dlog-generic-quantum",
+    "paperId": "shor95",
+    "date": "1995-08-30",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "poly(log r) quantum work with efficient coherent group arithmetic"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not extracted from the source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Quantum discrete logarithm algorithm. The efficient coherent group-operation model is essential; no claim about classical generic algorithms follows.",
+    "extra": {},
+    "evidence": {
+      "url": "https://arxiv.org/abs/quant-ph/9508027",
+      "locator": "Abstract; discrete logarithm algorithm",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  }
+]

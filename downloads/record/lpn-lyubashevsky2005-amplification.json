@@ -1,0 +1,40 @@
+{
+  "id": "lpn-lyubashevsky2005-amplification",
+  "categoryId": "lpn-polynomial-samples",
+  "paperId": "lyubashevsky2005-parity-noise",
+  "date": "2005-12-31",
+  "datePrecision": "year",
+  "year": 2005,
+  "time": {
+    "coefficient": null,
+    "expression": "2^{O(n/log₂ log₂ n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not separately normalized"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "LPN",
+    "polynomial samples"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Any fixed sample exponent δ>0; constant noise is a specialization of the stated bias range.",
+  "extra": {
+    "samples": "n^{1+δ}, fixed δ>0",
+    "model": "Sample amplification analyzed with the leftover hash lemma",
+    "formula": "Big-O exponent retained"
+  },
+  "evidence": {
+    "url": "https://citeseerx.ist.psu.edu/document?doi=94d370245b0d9435e7f374fbec22ee77372f08d8&repid=rep1&type=pdf",
+    "locator": "Abstract; §2, Theorem 1",
+    "sourceVersion": "RANDOM 2005 extended abstract, 12 pages"
+  }
+}

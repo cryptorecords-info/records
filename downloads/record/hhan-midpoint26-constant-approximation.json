@@ -1,0 +1,35 @@
+{
+  "id": "hhan-midpoint26-constant-approximation",
+  "categoryId": "svp-constant-approximation",
+  "paperId": "paper-2fcc11c09e6a",
+  "year": 2026,
+  "date": "2026-08-03",
+  "time": {
+    "coefficient": 0.6039,
+    "expression": "2^{0.6039 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0.5,
+    "expression": "2^{0.5 n + o(n)}"
+  },
+  "tags": [
+    "arbitrary lattices",
+    "Euclidean",
+    "exact implies constant approximation"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The exact-SVP theorem immediately supplies this approximation guarantee without changing time or space. This is a transferred guarantee, not another algorithm or a separate new result. Preprint claim, also arXiv:2608.02478. Uses the Hessian of the periodic Gaussian at a half shortest vector. First arXiv date shown. Source checked; proof not independently audited.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "High probability",
+    "model": "Classical randomized; polynomial factors suppressed",
+    "reference": "Hhan26a",
+    "approximation": "Exact output (μ = 1), hence meets every relaxed constant-factor guarantee"
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "mv12-cvpp-query",
+    "categoryId": "cvpp-query",
+    "paperId": "paper-a68a0bb5d70f",
+    "date": "2011-12-31",
+    "time": {
+      "coefficient": 2,
+      "expression": "Õ(2^{2n}) query time"
+    },
+    "space": {
+      "coefficient": 1,
+      "expression": "Õ(2^n) stored advice"
+    },
+    "tags": [
+      "preprocessing",
+      "exact"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Exact online CVP given the list of Voronoi-relevant vectors. Theorem 4.2 costs Õ(2^n |VR|), and |VR| ≤ 2(2^n−1). The lattice-only Voronoi computation costs Õ(4^n) and is excluded from query time. The original 2011 chapter explicitly presents the 2^{2n} time / 2^n space Voronoi result. The separate 22-page author full version is dated 8 December 2010, but its first public date is unverified. A conservative public-by-2011 date is therefore supported without backdating the result to the original 2010 conference abstract.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "preprocessing": "Õ(4^n) time; not included in query score",
+      "advice": "At most 2(2^n−1) Voronoi-relevant vectors",
+      "target": "Arbitrary target",
+      "success": "Deterministic exact output"
+    },
+    "evidence": {
+      "url": "https://perso.ens-lyon.fr/guillaume.hanrot/Papers/iwcc.pdf",
+      "locator": "Original 2011 chapter, introduction and Table 1, PDF p. 3; §3.1, PDF pp. 8–10; end of §3.2, PDF p. 13",
+      "sourceVersion": "Original uncorrected IWCC 2011 author PDF"
+    },
+    "datePrecision": "year"
+  },
+  {
+    "id": "dadush-bonifas14-cvpp-query",
+    "categoryId": "cvpp-query",
+    "paperId": "dadush-bonifas-2014",
+    "year": 2014,
+    "date": "2014-12-18",
+    "time": {
+      "coefficient": 1,
+      "expression": "Õ(2^n) expected query time"
+    },
+    "space": {
+      "coefficient": 1,
+      "expression": "Õ(2^n) stored advice and space"
+    },
+    "tags": [
+      "preprocessing",
+      "exact",
+      "Las Vegas"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "A Las Vegas query algorithm given the Voronoi-relevant vectors, improving the previous Õ(4^n) query bound. The theorem counts polynomially many operations per relevant vector. Generating the advice is separate and may use the Õ(4^n) Voronoi algorithm.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "preprocessing": "VR list supplied; Õ(4^n) construction available",
+      "advice": "All Voronoi-relevant vectors, at most 2(2^n−1)",
+      "target": "Arbitrary target",
+      "success": "Las Vegas: exact answer, expected running time",
+      "model": "Randomized arithmetic operations; polynomial dependence on encoded basis and target"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/1412.6168v1",
+      "locator": "Abstract; full paper Theorem 8 (CVP with VR advice)",
+      "sourceVersion": "arXiv:1412.6168v1, 18 December 2014"
+    }
+  }
+]

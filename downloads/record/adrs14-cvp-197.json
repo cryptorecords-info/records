@@ -1,0 +1,39 @@
+{
+  "id": "adrs14-cvp-197",
+  "categoryId": "cvp-approximate-euclidean-parameterized",
+  "paperId": "paper-86925aff6e6c",
+  "year": 2015,
+  "date": "2014-12-26",
+  "time": {
+    "coefficient": null,
+    "expression": "2^{n+o(n)} for approximation factor γ = 1.97"
+  },
+  "space": {
+    "coefficient": 1,
+    "expression": "2^{n+o(n)}"
+  },
+  "tags": [
+    "approximate search",
+    "discrete Gaussian"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The first arXiv abstract states a 1.97-approximate Euclidean search-CVP algorithm from discrete Gaussian sampling. The approximation factor is an entry parameter; this guarantee is not ranked against rows with another factor or a parameter-dependent cost. Exact CVP at the same leading time exponent appears in the later ADS paper.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "approximation": "γ = 1.97 (equivalently δ = 0.97)",
+    "preprocessing": "Included",
+    "success": "Randomized approximation; high-probability success",
+    "timeExponentAtStatedGuarantee": "1"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/1412.7994v1",
+    "locator": "Abstract, CVP consequence of discrete Gaussian sampling",
+    "sourceVersion": "arXiv:1412.7994v1, 26 December 2014"
+  }
+}

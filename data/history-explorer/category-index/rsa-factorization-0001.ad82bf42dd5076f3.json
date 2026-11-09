@@ -1,0 +1,1 @@
+[{"id":"rsa-classical-heuristic","name":"Balanced semiprimes · classical heuristic","metric":"L_N[1/3,c]","parameter":"N","direction":"min","historyCount":1,"featured":false},{"id":"rsa-quantum","name":"Balanced semiprimes · quantum","metric":"Expression only","parameter":"n = ceil(log₂ N)","direction":"min","historyCount":0,"featured":false}]

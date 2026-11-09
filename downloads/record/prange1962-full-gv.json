@@ -1,0 +1,30 @@
+{
+  "id": "prange1962-full-gv",
+  "categoryId": "isd-full-distance",
+  "paperId": "prange1962",
+  "date": "1962-12-31",
+  "time": {
+    "coefficient": 0.1207,
+    "expression": "2^{0.1207 n + o(n)}"
+  },
+  "space": {
+    "coefficient": 0,
+    "expression": "poly(n)"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Historical full-GV specialization.",
+  "extra": {},
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1703.00263",
+    "locator": "Introduction, classical comparison table",
+    "sourceVersion": "2017-04-22"
+  },
+  "datePrecision": "year"
+}

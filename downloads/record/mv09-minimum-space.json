@@ -1,0 +1,40 @@
+{
+  "id": "mv09-minimum-space",
+  "categoryId": "svp-provable",
+  "paperId": "micciancio-voulgaris-sieve-2009",
+  "date": "2009-08-10",
+  "datePrecision": "day",
+  "year": 2009,
+  "time": {
+    "coefficient": null,
+    "expression": "2^{O(n)}"
+  },
+  "space": {
+    "coefficient": 1.095,
+    "expression": "2^{1.095 n + o(n)}"
+  },
+  "tags": [
+    "classical",
+    "provable",
+    "arbitrary lattices",
+    "time–space trade-off"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "The same source gives a different rigorous ListSieve parameter choice using space 2^{1.095n} and still singly exponential time. No time coefficient is inferred for this space endpoint. It is an unranked time–space point, distinct from the 3.199/1.325 optimized-time point.",
+  "extra": {
+    "norm": "Euclidean ℓ₂",
+    "success": "High probability",
+    "model": "Classical; polynomial input-size factors suppressed"
+  },
+  "evidence": {
+    "url": "https://eccc.weizmann.ac.il/report/2009/065/download",
+    "locator": "Abstract; §3 time–space parameter discussion and Corollary 3.2",
+    "sourceVersion": "ECCC TR09-065, published 10 August 2009"
+  }
+}

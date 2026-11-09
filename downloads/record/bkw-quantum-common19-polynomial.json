@@ -1,0 +1,38 @@
+{
+  "id": "bkw-quantum-common19-polynomial",
+  "categoryId": "bkw-regev-polynomial-quantum",
+  "paperId": "paper-c64ff7d0568b",
+  "year": 2019,
+  "date": "2019-01-09",
+  "time": {
+    "coefficient": 1.6211,
+    "expression": "2^{1.6211 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "quantum",
+    "heuristic",
+    "LWE",
+    "BKW",
+    "Regev regime",
+    "polynomial samples"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Polynomial-sample column of Mårtensson 2019 Table I; amplification noise included. First public archive date shown.",
+  "extra": {
+    "samples": "poly(n) fresh input equations; amplification allowed",
+    "model": "Assumptions of the cited BKW/list analysis",
+    "schedule": "Optimized constant γ",
+    "access": "Coherent indexed reads; Grover search",
+    "coefficient_source": "https://arxiv.org/html/1901.06558v2#S6.T1"
+  }
+}

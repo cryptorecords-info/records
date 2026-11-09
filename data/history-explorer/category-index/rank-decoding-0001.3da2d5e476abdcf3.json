@@ -1,0 +1,1 @@
+[{"id":"rank-square-classical","name":"Classical · m = n · worst parameters","metric":"2^{c n² + o(n²)}","parameter":"n²","direction":"min","historyCount":1,"featured":false},{"id":"rank-general-classical","name":"Classical · general m/n","metric":"Parameterized in q,m,n,k,r","parameter":"q,m,n,k,r","direction":"min","historyCount":0,"featured":false}]

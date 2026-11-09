@@ -1,0 +1,36 @@
+[
+  {
+    "id": "bfss11-las-vegas",
+    "categoryId": "mq-binary-classical-algebraic",
+    "paperId": "bfss11",
+    "date": "2011-12-29",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": 0.792,
+      "expression": "O(2^{0.792n}) expected"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not stated in the checked source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "For m=n, the Las Vegas bound is conditional on the stated algebraic assumptions. The same paper also gives a deterministic 0.841 bound; it is not a separate improvement in the unrestricted randomized-time list.",
+    "extra": {
+      "success": "Las Vegas; expected time",
+      "equations": "m=n",
+      "field": "F_2"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/abs/1112.6263v2",
+      "locator": "Abstract, arXiv v2; compare algebraic hypotheses in the paper",
+      "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+    }
+  }
+]

@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"bfss11-las-vegas","bfss11","On the Complexity of Solving Quadratic Boolean Systems","Magali Bardet · Jean-Charles Faugère · Bruno Salvy · Pierre-Jean Spaenlehauer","Journal of Complexity 2013","2013","published","2011-12-29","day","0.792","O(2^{0.792n}) expected","","Not stated in the checked source","https://arxiv.org/abs/1112.6263","source-checked"

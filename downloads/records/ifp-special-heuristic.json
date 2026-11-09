@@ -1,0 +1,34 @@
+[
+  {
+    "id": "llmp90-special",
+    "categoryId": "ifp-special-heuristic",
+    "paperId": "llmp90",
+    "date": "1990-12-31",
+    "datePrecision": "year",
+    "time": {
+      "coefficient": 1.5262856567377758,
+      "expression": "L_N[1/3, (32/9)^{1/3}]"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not extracted from the source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The paper explicitly assumes N = r^e ± s with bounded r and |s|; this number-theoretic structure is essential. The expected-time analysis is heuristic.",
+    "extra": {
+      "coefficientExact": "(32/9)^{1/3}"
+    },
+    "evidence": {
+      "url": "https://wstein.org/129/references/Lenstra-Lenstra-Manasse-Pollard-The%20number%20field%20sieve.pdf",
+      "locator": "Introduction, equation (1.1)",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  }
+]

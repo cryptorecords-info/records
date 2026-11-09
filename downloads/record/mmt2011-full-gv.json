@@ -1,0 +1,30 @@
+{
+  "id": "mmt2011-full-gv",
+  "categoryId": "isd-full-distance",
+  "paperId": "mmt2011",
+  "date": "2011-12-31",
+  "time": {
+    "coefficient": 0.1114,
+    "expression": "2^{0.1114 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Rounded full-GV specialization.",
+  "extra": {},
+  "evidence": {
+    "url": "https://arxiv.org/pdf/1703.00263",
+    "locator": "Introduction, classical comparison table",
+    "sourceVersion": "2017-04-22"
+  },
+  "datePrecision": "year"
+}

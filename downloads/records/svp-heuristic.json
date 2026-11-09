@@ -1,0 +1,482 @@
+[
+  {
+    "id": "bdgl16",
+    "categoryId": "svp-heuristic",
+    "paperId": "paper-1bcb4e64b5f3",
+    "year": 2016,
+    "date": "2015-11-23",
+    "time": {
+      "coefficient": 0.2924812503605781,
+      "expression": "(3/2)^{n/2 + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.20751874963942188,
+      "expression": "2^{0.20751874963942188 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "SODA 2016; first ePrint 23 November 2015. Spherical filters from structured random product codes yield heuristic time coefficient ½log₂(3/2) ≈ 0.2925 and space coefficient ½log₂(4/3) ≈ 0.2075. The list-distribution assumption remains heuristic; this is distinct from a Haar-random-lattice theorem.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Under the stated sieve heuristic",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "heuristic": "Sieve-list distribution / geometric heuristic",
+      "reference": "BDGL16"
+    }
+  },
+  {
+    "id": "nv08",
+    "categoryId": "svp-heuristic",
+    "paperId": "paper-601546f46af3",
+    "year": 2008,
+    "date": "2008-09-11",
+    "time": {
+      "coefficient": 0.41503749927884376,
+      "expression": "(4/3)^{n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.20751874963942188,
+      "expression": "2^{0.20751874963942188 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Heuristic AKS variant: limiting time coefficient log₂(4/3) ≈ 0.4150 and space coefficient ½log₂(4/3) ≈ 0.2075. The source states (4/3+ε)^n time for every fixed ε>0. Chronology uses the 11 September 2008 online-publication date reported by the institutional repository, https://authors.library.caltech.edu/records/etxts-sdp80; it does not assert the earliest circulated draft date.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Under the stated sieve heuristic",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "heuristic": "Sieve-list uniformity heuristic",
+      "reference": "NV08"
+    }
+  },
+  {
+    "id": "wltb11",
+    "categoryId": "svp-heuristic",
+    "paperId": "paper-0d12f3e7f365",
+    "year": 2011,
+    "date": "2010-12-21",
+    "time": {
+      "coefficient": 0.3836,
+      "expression": "2^{0.3836 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.2557,
+      "expression": "2^{0.2557 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "ASIACCS 2011; first ePrint received 21 December 2010. The source states time coefficient 0.3836 and space 0.2557. Two-level sphere covering trades additional memory for a better time exponent. Uses the Nguyen–Vidick sieve heuristic.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Under the stated sieve heuristic",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "heuristic": "Uniform sieve lists; two-level spherical covering",
+      "reference": "WLTB11"
+    }
+  },
+  {
+    "id": "zph13",
+    "categoryId": "svp-heuristic",
+    "paperId": "paper-57677bda59d7",
+    "year": 2013,
+    "date": "2014-10-22",
+    "time": {
+      "coefficient": 0.3778,
+      "expression": "2^{0.3778 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.2833,
+      "expression": "2^{0.2833 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "SAC 2013. The current source gives 0.3778 time and 0.2833 space. The ePrint explicitly reports a mistake in the previous version, corrected on 22 October 2014; this conservative chronology dates this coefficient to that corrected version, rather than backdating it to the first 30 August 2013 submission.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Under the stated sieve heuristic",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "heuristic": "Uniform sieve lists; three-level covering",
+      "reference": "ZPH13"
+    }
+  },
+  {
+    "id": "bgj-overlattice14",
+    "categoryId": "svp-heuristic",
+    "paperId": "paper-9617f5d3fa09",
+    "year": 2014,
+    "date": "2013-10-24",
+    "time": {
+      "coefficient": 0.3774,
+      "expression": "2^{0.3774 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.2925,
+      "expression": "2^{0.2925 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "ANTS 2014, published under “A sieve algorithm based on overlattices”; first ePrint 24 October 2013. A tower of overlattices and translated cosets replaces a single-lattice sieve. The stated decimal coefficients are rounded: time 0.3774 and memory 0.2925. Analysis depends on the Gaussian heuristic, rather than an arbitrary-lattice correctness theorem.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Under the stated sieve heuristic",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "heuristic": "Gaussian heuristic for intermediate overlattices and cosets",
+      "reference": "BGJ14"
+    }
+  },
+  {
+    "id": "laa15-angular",
+    "categoryId": "svp-heuristic",
+    "paperId": "paper-1156d8d47edf",
+    "year": 2015,
+    "date": "2014-09-26",
+    "time": {
+      "coefficient": 0.3366,
+      "expression": "2^{0.3366 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.2075,
+      "expression": "2^{0.2075 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "CRYPTO 2015; first ePrint 26 September 2014. Charikar angular LSH accelerates the pair search. The source gives heuristic time 0.3366 and space 0.2075 for its Nguyen–Vidick variant. The practical GaussSieve-based HashSieve has a separate conjectured time/space bound 0.3366/0.3366; the smaller-space NV bound should not be attributed to that implementation.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Under the stated sieve heuristic",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "heuristic": "Nguyen–Vidick list-distribution heuristic",
+      "reference": "Laa15"
+    }
+  },
+  {
+    "id": "ldw15-spherical",
+    "categoryId": "svp-heuristic",
+    "paperId": "paper-2b6476ef7d09",
+    "year": 2015,
+    "date": "2015-03-06",
+    "time": {
+      "coefficient": 0.2972,
+      "expression": "2^{0.2972 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "LATINCRYPT 2015; first ePrint 6 March 2015. Spherical LSH gives the stated 0.298 time bound. The current 2018-revised abstract states space 0.208, while the original balanced SphereSieve presentation uses space about 0.298. Space is left unspecified on this historical row to avoid silently backdating the later memory refinement. Specify the variant when submitting a tighter space claim. Audit: More precise coefficient for the existing spherical-LSH result; do not create a later improvement from .298 to .2972. Original March paper/version needs checking before changing its space field.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Under the stated sieve heuristic",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "heuristic": "Sieve-list heuristic; spherical locality-sensitive hashing",
+      "reference": "LdW15"
+    },
+    "evidence": {
+      "url": "https://pure.tue.nl/ws/files/18141878/LaarhovenFinding2015.pdf",
+      "locator": "Section 6.2; thesis Section 14.2.8 also agrees",
+      "sourceVersion": "DCC version, 14 April 2015"
+    }
+  },
+  {
+    "id": "bgj15-nns",
+    "categoryId": "svp-heuristic",
+    "paperId": "paper-2f67f6ebf8c0",
+    "year": 2015,
+    "date": "2015-05-31",
+    "time": {
+      "coefficient": 0.3112,
+      "expression": "2^{0.3112 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.2075,
+      "expression": "2^{0.2075 n + o(n)}"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "A low-memory improvement, rather than a chronological time record after SphereSieve. The source states heuristic time 0.3112 while retaining space 0.2075. The method adapts nearest-neighbor search for binary codes. First ePrint received 31 May 2015; source publication status is preprint.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Under the stated sieve heuristic",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "heuristic": "Sieve-list heuristic; geometric reduction to binary nearest-neighbor search",
+      "reference": "BGJ15"
+    }
+  },
+  {
+    "id": "bl16-crosspolytope",
+    "categoryId": "svp-heuristic",
+    "paperId": "paper-777c2d2d89d5",
+    "year": 2016,
+    "date": "2015-08-24",
+    "time": {
+      "coefficient": 0.2972,
+      "expression": "2^{0.2972 n + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "AFRICACRYPT 2016; first ePrint 24 August 2015. Independently reaches the 0.298 time level through efficiently computable cross-polytope hashes, improving practicality over SphereSieve. The abstract applies to arbitrary and ideal lattices. A numeric space coefficient is not inferred from the abstract; consult the chosen variant. Theorem 1 gives 0.2972, often rounded to 0.298 in the abstract; this is a precision normalization, not a new algorithmic improvement.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Under the stated sieve heuristic",
+      "model": "Classical randomized; polynomial factors suppressed",
+      "heuristic": "GaussSieve heuristic; cross-polytope LSH",
+      "reference": "BL16"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2015/823",
+      "locator": "Theorem 1; identical asymptotic collision analysis to spherical LSH",
+      "sourceVersion": "AFRICACRYPT 2016 paper, originally ePrint 2015/823"
+    }
+  },
+  {
+    "id": "bls16-triple-filtered-unrestricted",
+    "categoryId": "svp-heuristic",
+    "paperId": "bai-laarhoven-stehle-2016",
+    "date": "2016-07-21",
+    "year": 2016,
+    "time": {
+      "coefficient": 0.4812,
+      "expression": "2^{0.4812 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "triple sieving",
+      "memory tradeoff"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Introduces tuple sieving to reduce the sieve-list memory. The representative filtered triple-sieve point is included in the unrestricted heuristic SVP literature even though it does not improve the standing time exponent. Pair filtering before the third-vector search.",
+    "extra": {
+      "model": "Classical; heuristic spherical lists",
+      "preprocessing": "Included in asymptotic analysis",
+      "reference": "Abstract; Section 4"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2016/713",
+      "locator": "Abstract; Section 4",
+      "sourceVersion": "ePrint 2016/713; first received 21 July 2016; published text August 2016"
+    }
+  },
+  {
+    "id": "hk17-triple-confext-unrestricted",
+    "categoryId": "svp-heuristic",
+    "paperId": "herold-kirshanova-2017",
+    "date": "2017-01-26",
+    "year": 2017,
+    "time": {
+      "coefficient": 0.3717,
+      "expression": "2^{0.3717 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "triple sieving",
+      "memory tradeoff"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Configuration extension gives a new triple-sieving method at smaller list space. This is a method and memory advance, not a new unrestricted SVP time record. Configuration extension retains the triple-list space exponent.",
+    "extra": {
+      "model": "Classical; heuristic spherical lists",
+      "preprocessing": "Included",
+      "reference": "Abstract; Section 7.2, p. 21"
+    },
+    "evidence": {
+      "url": "https://elenakirshanova.github.io/Papers/improved_kList_euclid.pdf",
+      "locator": "Abstract; Section 7.2, p. 21",
+      "sourceVersion": "ePrint 2017/017 revised 26 January 2017"
+    }
+  },
+  {
+    "id": "hkl18-triple-list-memory-unrestricted",
+    "categoryId": "svp-heuristic",
+    "paperId": "herold-kirshanova-laarhoven-2017",
+    "date": "2017-12-22",
+    "year": 2017,
+    "time": {
+      "coefficient": 0.3588,
+      "expression": "2^{0.3588 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "triple sieving",
+      "memory tradeoff"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Combines configuration search with spherical locality-sensitive filtering. This representative low-memory point advances tuple sieving but is slower than the unrestricted pair-sieving time record. A triple-sieving time–memory tradeoff point from the abstract.",
+    "extra": {
+      "model": "Classical; heuristic tuple sieving"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2017/1228",
+      "locator": "Abstract",
+      "sourceVersion": "2017-12-22"
+    }
+  },
+  {
+    "id": "cl23-triple-classical-unrestricted",
+    "categoryId": "svp-heuristic",
+    "paperId": "chailloux-loyer-tuple-2023",
+    "date": "2023-08-02",
+    "year": 2023,
+    "time": {
+      "coefficient": 0.3383,
+      "expression": "2^{0.3383 n + o(n)}"
+    },
+    "space": {
+      "coefficient": 0.1887,
+      "expression": "2^{0.1887 n + o(n)}"
+    },
+    "tags": [
+      "heuristic",
+      "triple sieving",
+      "tailored LSF",
+      "memory tradeoff"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Tailored filtering improves the low-memory triple-sieving method. It does not lower the unrestricted pair-sieving exponent. The original theorem rounds time to 0.338; the displayed 0.3383 is the later comparison-table precision, not another improvement. Original theorem uses .338; .3383 follows the later comparison table. This is one result, not two improvements.",
+    "extra": {
+      "model": "Classical Nguyen–Vidick style; spherical-list heuristic",
+      "preprocessing": "Included",
+      "reference": "Theorem 4; later Table 1"
+    },
+    "evidence": {
+      "url": "https://arxiv.org/pdf/2510.08473",
+      "locator": "Original Theorem 4 rounds to .338; finer .3383 in Engelberts et al., Table 1 (arXiv:2510.08473v3)",
+      "sourceVersion": "CL23 ePrint revision 2 August 2023; finer precision checked in arXiv:2510.08473v3, 7 July 2026"
+    }
+  },
+  {
+    "id": "ducas17-dimensions-free",
+    "categoryId": "svp-heuristic",
+    "paperId": "ducas-2017-dimensions-free",
+    "date": "2017-10-11",
+    "datePrecision": "day",
+    "year": 2017,
+    "time": {
+      "coefficient": 0.2924812503605781,
+      "expression": "(3/2)^{n/2 + o(n)}"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": ""
+    },
+    "tags": [
+      "heuristic",
+      "dimensions for free",
+      "subexponential improvement"
+    ],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Reduces dimension n to a few sieve calls in dimensions below n − d, where d = Θ(n/log n). Applying this to the cited spherical-filter sieve preserves its leading coefficient ½log₂(3/2), while improving the subexponential factor. The row therefore ties the standing exponent; it is not a new exponent record. The paper also implements a simpler (4/3)^n sieve. No separate total-space coefficient is inferred from the checked abstract.",
+    "extra": {
+      "norm": "Euclidean ℓ₂",
+      "success": "Under the underlying sieve and reduction heuristics",
+      "model": "Classical; underlying sieve oracle with subexponential dimension saving",
+      "heuristic": "Underlying sieve-distribution heuristic and dimensions-for-free analysis"
+    },
+    "evidence": {
+      "url": "https://eprint.iacr.org/2017/999",
+      "locator": "Abstract, paragraphs 1–3; ePrint history; institutional EUROCRYPT 2018 publication record",
+      "sourceVersion": "First ePrint received 11 October 2017; minor revision 26 October 2017"
+    }
+  }
+]

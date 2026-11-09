@@ -1,0 +1,32 @@
+{
+  "id": "li2025-quantum-full-gv",
+  "categoryId": "isd-quantum-full-distance",
+  "paperId": "li2025-ternary",
+  "date": "2025-10-12",
+  "time": {
+    "coefficient": 0.058326,
+    "expression": "2^{0.058326 n + o(n)}"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": ""
+  },
+  "tags": [
+    "heuristic",
+    "exponential qubits"
+  ],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Published heuristic claim using exponential quantum workspace.",
+  "extra": {},
+  "evidence": {
+    "url": "https://doi.org/10.3390/info16100887",
+    "locator": "Abstract; Table 1; Section 5",
+    "sourceVersion": "Published 2025-10-12"
+  }
+}

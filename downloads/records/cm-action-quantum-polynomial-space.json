@@ -1,0 +1,36 @@
+[
+  {
+    "id": "jllr20-cm-action",
+    "categoryId": "cm-action-quantum-polynomial-space",
+    "paperId": "jllr20",
+    "date": "2020-06-14",
+    "datePrecision": "day",
+    "time": {
+      "coefficient": null,
+      "expression": "Subexponential time in log N, with N=|Cl(O)|"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Polynomial quantum space; subexponential classical precomputation/storage"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "The checked analysis assumes the class group is cyclic. It uses classical subexponential precomputation and storage, but polynomial quantum space for the online action-inversion computation. Extension to non-cyclic groups is conjectured in Section 3.1.",
+    "extra": {
+      "restriction": "Cyclic class group",
+      "application": "CRS and CSIDH CM group-action inversion",
+      "method": "BKW-like classical precomputation"
+    },
+    "evidence": {
+      "url": "https://www.degruyterbrill.com/document/doi/10.1515/jmc-2015-0057/html",
+      "locator": "Abstract; Sections 3.1 and 4.4",
+      "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+    }
+  }
+]

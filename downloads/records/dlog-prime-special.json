@@ -1,0 +1,34 @@
+[
+  {
+    "id": "schirokauer02-special-prime",
+    "categoryId": "dlog-prime-special",
+    "paperId": "schirokauer02",
+    "date": "2002-12-31",
+    "datePrecision": "year",
+    "time": {
+      "coefficient": 1.5262856567377758,
+      "expression": "L_p[1/3, (32/9)^{1/3}]"
+    },
+    "space": {
+      "coefficient": null,
+      "expression": "Not extracted from the source"
+    },
+    "tags": [],
+    "review": {
+      "status": "source-checked"
+    },
+    "certificate": {
+      "status": "not-provided",
+      "lean": null
+    },
+    "notes": "Conjectured expected DLP cost for special primes p = r^e − s with small r and s. This is a structured-modulus category, not general prime fields.",
+    "extra": {
+      "coefficientExact": "(32/9)^{1/3}"
+    },
+    "evidence": {
+      "url": "https://epubs.siam.org/doi/10.1137/S0895480100372668",
+      "locator": "Abstract",
+      "sourceVersion": "Version available at the cited URL; bibliographic metadata and stated bound checked on 2026-11-08"
+    }
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "id": "fhkkkp17-mq2",
+  "categoryId": "mq-binary-quantum-algebraic",
+  "paperId": "fhkkkp17",
+  "date": "2017-12-19",
+  "datePrecision": "day",
+  "time": {
+    "coefficient": 0.462,
+    "expression": "O(2^{0.462n}) expected quantum gates"
+  },
+  "space": {
+    "coefficient": null,
+    "expression": "Not stated in the checked source"
+  },
+  "tags": [],
+  "review": {
+    "status": "source-checked"
+  },
+  "certificate": {
+    "status": "not-provided",
+    "lean": null
+  },
+  "notes": "Las Vegas quantum gate count for m=n, under the source algebraic assumption. No claim of unconditional worst-case improvement is made.",
+  "extra": {
+    "success": "Las Vegas; expected quantum gates",
+    "equations": "m=n",
+    "field": "F_2"
+  },
+  "evidence": {
+    "url": "https://arxiv.org/abs/1712.07211",
+    "locator": "Abstract, arXiv:1712.07211v1",
+    "sourceVersion": "Checked 2026-11-08; see linked source version/date"
+  }
+}

@@ -1,0 +1,2 @@
+"id","paper_id","title","authors","publication_venue","publication_year","publication_status","date","date_precision","time_coefficient","time_expression","space_coefficient","space_expression","source_url","review_status"
+"rothvoss-venzin21-cvp-any-norm-approx","rothvoss-venzin-2021","Approximate CVP in time 2^(0.802 n) -- now in any norm!","Thomas Rothvoss · Moritz Venzin","IPCO 2022","2022","published","2021-10-05","day","0.802","2^{(0.802 + ε)n}, for every fixed ε > 0","0.401","2^{(0.401 + ε)n}","https://arxiv.org/abs/2110.02387","source-checked"
